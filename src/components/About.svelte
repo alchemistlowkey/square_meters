@@ -1,40 +1,52 @@
 <div class="container-fluid homepage_banner aboutpage_banner">
   <div class="pt-5 container body">
-    <p class="title-bar text-white text-center">About Us</p>
-    <div class="first_head mt-4 col-lg-12 px-0 fs-b">
-      Building friendships with our customers for life
-    </div>
-    <div class="second_head col-lg-12 px-0 fs-a">
-      To put a smile on the faces of investors by delivering and improving the
-      quality of work.
-    </div>
-    <div class="mt-3 text-center">
-      <a
-        href="/"
-        class="text-decoration-none text-white py-lg-3 px-lg-3 p-4 news-read-more btn"
-      >
-        Know what we value
-      </a>
+    <div class="row">
+      <p class="title-bar text-white text-center fs-c">About Us</p>
+      <div class="first_head mt-4 col-md-12 col-12 px-0 fs-b">
+        Building friendships with our customers for life
+      </div>
+      <div class="second_head col-md-12 col-12 px-0 py-3 fs-6">
+        To put a smile on the faces of investors by delivering and improving the
+        quality of work.
+      </div>
+      <div class="mt-3 text-center">
+        <a
+          href="/"
+          class="text-decoration-none text-white py-lg-3 px-lg-3 p-4 news-read-more btn"
+        >
+          Know what we value
+        </a>
+      </div>
     </div>
   </div>
 </div>
 
 <div class="container mt-4">
   <div class="w-100">
-    <div class="col-lg-12 mt-2 text-lg-center">
+    <div class="col-lg-12 mt-2 text-lg-center text-center">
       <span class="seamingly">Who We Are</span>
     </div>
     <div class="col-lg-8 offset-lg-2 px-0 mt-2">
       <!-- For more features use the AutoHTML plugin window in figma ... -->
-      <div class="text-green text-lg-center text-left fs-a">
-        At Square Metres Construction Limited, we are passionate about driving a
-        wholesome experience for you through timely project delivery,
-        safeguarding your investment and guaranteeing high returns on your
-        investment. Our Journey began with a simple yet profound goal which is
-        to provide investors with an experience that truly reflects the
-        potential of their real estate investment We recognize that good real
-        estate can complete ones living experience and increase life expectancy,
-        giving ones life more meaning at old age.
+      <div class="text-green text-lg-center text-center fs-6">
+        <p>
+          At Square Metres Construction Limited, we are passionate about driving
+          a wholesome experience for you through timely project delivery,
+          safeguarding your investment and guaranteeing high returns on your
+          investment.
+        </p>
+        <br />
+        <p>
+          Our Journey began with a simple yet profound goal which is to provide
+          investors with an experience that truly reflects the potential of
+          their real estate investment.
+        </p>
+        <br />
+        <p>
+          We recognize that good real estate can complete ones living experience
+          and increase life expectancy, giving ones life more meaning at old
+          age.
+        </p>
       </div>
     </div>
   </div>
@@ -179,19 +191,16 @@
 </div>
 
 <style>
-  .fs-a {
-    font-family: Poppins;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 37.5px;
-    text-align: center;
-  }
   .fs-b {
     font-family: Poppins;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
-    line-height: 67.5px;
     letter-spacing: 0.05em;
     text-align: center;
+  }
+  .fs-c {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
   }
 </style>

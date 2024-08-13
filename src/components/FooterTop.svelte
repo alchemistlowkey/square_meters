@@ -1,5 +1,3 @@
-<script></script>
-
 <section class="footer-top">
   <div class="container text-green p-5">
     <div class="row">
@@ -17,7 +15,7 @@
         <h3 class="product">Who We Are</h3>
         <ul class="list-unstyled mt-3">
           <li class="list-unstyled pt-2">
-            <a href="about-us">About Us</a>
+            <a href="/about-us">About Us</a>
           </li>
           <li class="list-unstyled pt-2">
             <a href="career">Career</a>
@@ -88,7 +86,13 @@
     <div class="newsletter-footer-1">
       <div class="row p-3 pt-5">
         <div class="col">
-          <div class=""><img src="/images/sqm-footer-logo.png" class="img-fluid" alt="logo"/></div>
+          <div class="">
+            <img
+              src="/images/sqm-footer-logo.png"
+              class="img-fluid"
+              alt="logo"
+            />
+          </div>
         </div>
         <div class="col pt-5">
           <div class="content text-wrap">
@@ -98,9 +102,15 @@
         <div class="col-md-5 col-sm-12 pt-5">
           <div class="">
             <form action="">
-                <div class="input-group">
-                    <input type="email" class="form-control" placeholder="Type your email address">
-                    <button type="submit" class="btn bg-green text-white fw-6">SIGN UP</button>
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Type your email address"
+                />
+                <button type="submit" class="btn bg-green text-white fw-6"
+                  >SIGN UP</button
+                >
               </div>
             </form>
           </div>
@@ -111,18 +121,17 @@
 </section>
 
 <style>
-  
   .text-green {
     color: #0d493d;
   }
   .newsletter-footer-1 {
-    background-color: #F6FFFD;
+    background-color: #f6fffd;
   }
   .bg-green {
     background-color: #0d493d;
   }
   .text-white {
-    color:#F6FFFD;
+    color: #f6fffd;
   }
   .fw-6 {
     font-weight: 600;

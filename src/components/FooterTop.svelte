@@ -85,7 +85,7 @@
   </div>
 
   <div class="container">
-    <div class="newsletter-footer">
+    <div class="newsletter-footer-1">
       <div class="row p-3 pt-5">
         <div class="col">
           <div class=""><img src="/images/sqm-footer-logo.png" class="img-fluid" alt="logo"/></div>
@@ -115,7 +115,7 @@
   .text-green {
     color: #0d493d;
   }
-  .newsletter-footer {
+  .newsletter-footer-1 {
     background-color: #F6FFFD;
   }
   .bg-green {

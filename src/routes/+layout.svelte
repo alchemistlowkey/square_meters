@@ -7,11 +7,12 @@
   import Nav from "../components/Nav.svelte";
 </script>
 
-<WaIcon />
 
-<Nav />
+<!-- <Nav /> -->
 
 <slot></slot>
+
+<WaIcon />
 
 <Footer />
 

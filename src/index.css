@@ -679,7 +679,7 @@ a.see-selling-projects {
 .aboutpage_banner{
 
         background-image: linear-gradient(#0000009e, #0d493dc2),
-            url(./../about/bg.jpeg);
+            url(./lib/img/bg.jpeg);
         background-size: cover;
         background-position: center center;
 

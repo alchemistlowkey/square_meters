@@ -3,7 +3,7 @@
 <footer class="footer-top">
   <div class="container text-green p-5">
     <div class="row">
-      <div class="col-md-3 col-sm-4 col-xs-4 mt-5">
+      <div class="col-md-3 col-sm-4 col-4 mt-5">
         <h3 class="product">What We Do</h3>
         <ul class="list-unstyled mt-3">
           <li class="list-unstyled pt-2">
@@ -13,7 +13,7 @@
           <li class="list-unstyled pt-2"><a href="/">Agency</a></li>
         </ul>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-4 mt-5">
+      <div class="col-md-3 col-sm-4 col-4 mt-5">
         <h3 class="product">Who We Are</h3>
         <ul class="list-unstyled mt-3">
           <li class="list-unstyled pt-2">
@@ -25,7 +25,7 @@
           <li class="list-unstyled pt-2"><a href="blog">Blog</a></li>
         </ul>
       </div>
-      <div class="col-md-3 col-sm-4 col-xs-4 mt-5">
+      <div class="col-md-3 col-sm-4 col-4 mt-5">
         <h3 class="product">Helpful Links</h3>
         <ul class="list-unstyled mt-3">
           <li class="list-unstyled pt-2">
@@ -130,5 +130,15 @@
   }
   .img-fluid {
     width: 200px;
+  }
+  .product {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26.31px;
+  }
+  .list-unstyled {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26.31px;
   }
 </style>

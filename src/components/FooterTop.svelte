@@ -1,6 +1,6 @@
 <script></script>
 
-<footer class="footer-top">
+<section class="footer-top">
   <div class="container text-green p-5">
     <div class="row">
       <div class="col-md-3 col-sm-4 col-4 mt-5">
@@ -108,7 +108,7 @@
       </div>
     </div>
   </div>
-</footer>
+</section>
 
 <style>
   

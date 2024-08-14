@@ -48,8 +48,8 @@
               Watch Onion Nigeria CEO,Mordi Orchi, discuss working with Square
               Metres
             </div>
-            <div class="col-1">
-              <img src="images/play.png" class="w-100 img-white" alt="" />
+            <div class="col-1 pl-0 pt-2 pt-md-4">
+              <i class="bi bi-play-circle-fill md:text-6xl text-5xl"></i>
             </div>
           </div>
         </div>

@@ -61,7 +61,7 @@
                     <i class="bi-envelope-fill"></i>
                   </a>
                 </div>
-                <div class="col-10 ps-md-2 ps-3">hello@squaremetres.ng</div>
+                <div class="col-10 ps-md-2 pl-4">hello@squaremetres.ng</div>
               </div>
             </a>
           </li>
@@ -73,7 +73,7 @@
                     <i class="bi-telephone-fill"></i>
                   </a>
                 </div>
-                <div class="col-10 pl-5 md:pl-3 sm:pl-6">08066267094</div>
+                <div class="col-10 pl-6 md:pl-3 sm:pl-6">08066267094</div>
               </div>
             </a>
           </li>

@@ -1,9 +1,12 @@
 <section class="footer-bottom border-top mt-5 pt-3 pb-5">
   <div class="container">
     <div class="row text-green fs-5">
-      <div class="col-6 col-md-6 float-start fw-semibold px-1 pt-3">
+      <div class="col-6 col-md-6 float-start fw-semibold px-sm-0 px-md-4 px-1 pt-3">
         <p class="" data-wow-duration="1s">
-          &copy;2024 Squaremetres. All rights reserved
+          &copy;2024 Squaremetres.
+        </p>
+        <p class="" data-wow-duration="4s">
+          All rights reserved
         </p>
       </div>
       <div class="col-6 col-md-6 float-end pt-3">

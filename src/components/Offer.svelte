@@ -1,7 +1,7 @@
 <div class="container pt-3">
   <div class="row mx-0 offer-cite">
-    <div class="col ps-4">
-      <div class="first text-nowrap">Experience SquareMetres Now</div>
+    <div class="col ps-lg-4">
+      <div class="first text-wrap lg:text-nowrap">Experience SquareMetres Now</div>
 
       <div class="second text-center pt-3">Start Investing Today</div>
     </div>

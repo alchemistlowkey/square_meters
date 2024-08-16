@@ -1,5 +1,5 @@
 <div class="container pt-3">
-  <div class="row offer-cite">
+  <div class="row mx-0 offer-cite">
     <div class="col ps-4">
       <div class="first text-nowrap">Experience SquareMetres Now</div>
 

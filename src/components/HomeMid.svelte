@@ -16,11 +16,15 @@
 <div class="container mt-4">
   <div class="w-100">
     <div class="mx-0 row">
-      <div class="col-md-6 mb-sm-1">
+      <div class="col-md-4 mb-sm-1">
         <div class="prod-land">Land</div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
+        <div class="prod-investment">Investment</div>
+      </div>
+
+      <div class="col-md-4">
         <div class="prod-investment">Investment</div>
       </div>
     </div>

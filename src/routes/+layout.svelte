@@ -5,8 +5,10 @@
   import WaIcon from "../components/WaIcon.svelte";
   import Footers from "../components/Footers.svelte";
   import Nav from "../components/Nav.svelte";
+  import NavBar from "../components/NavBar.svelte";
 </script>
 
+<!-- <NavBar /> -->
 
 <!-- <Nav /> -->
 

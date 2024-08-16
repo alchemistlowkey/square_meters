@@ -1,16 +1,20 @@
 <div class="container-fluid homepage_banner">
   <div class="pt-4 container body">
-    <div class="first_head mt-4 col-lg-8 offset-lg-2 px-0">
-      Discover Joy, Increase Wealth
-    </div>
-    <div class="second_head col-lg-8 offset-lg-2 px-0">
-      We seek to do real estate better on your behalf
+    <div class="row mx-0">
+
+      <div class="mt-4 col-12 pt-5 fs-1 fw-semibold text-white px-0 text-center lg:text-nowrap">
+        Wholesome Real Estate and Investment Solutions
+      </div>
+      <div class="col-12 col-lg-8 offset-lg-2 text-center fs-4 text-gray-300 text-wrap fw-lighter px-0">
+        Square Metres helps you do real estate better than anyone else does,
+        prioritizing quality and timely project delivery
+      </div>
     </div>
   </div>
   <div class="container pt-lg-5 pt-3 pb-lg-5 mb-lg-4 mb-3">
     <div class="row mx-0">
       <div class="col-lg-6">
-        <div class="w-100 pt-3 trust-text text-start text-white">
+        <div class="w-100 pt-3 trust-text1 text-start text-white">
           Trusted by over 1000 individuals
         </div>
         <div class="w-100 pt-3">
@@ -49,7 +53,9 @@
               Metres
             </div>
             <div class="col-1 pl-0 pt-2 pt-md-4">
+              <a class="icon-link" href="https://youtu.be/mKAkIrad4vA?si=I9hmd2rLsqXBVcTR" target="_blank">
               <i class="bi bi-play-circle-fill md:text-6xl text-5xl"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -57,3 +63,16 @@
     </div>
   </div>
 </div>
+
+<style>
+  .trust-text1 {
+    text-align: center;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 10px;
+    backdrop-filter: blur(2.5px);
+    padding: 13px;
+  }
+</style>

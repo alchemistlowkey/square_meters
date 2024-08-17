@@ -1,17 +1,17 @@
 <script>
 </script>
 
-<section class="privacy-bg">
+<section class="career-bg">
   <div class="container">
     <div class="row mx-0 py-16">
       <div class="col-12 col-md-10 py-10 mx-auto text-center">
-        <h1 class="text-w privacy-data lg:text-nowrap">
-          Privacy & Data Protection Policy
+        <p class="career text-w">Careers at SQUARE METRES</p>
+        <h1 class="text-w privacy-data">
+            A Successful team is a group of many hand and one mind.
         </h1>
         <p class="text-w p-content fs-md-6">
-          This following document outlines our practices regarding the
-          collection, use, and disclosure of certain information, including your
-          personal information in connection with our brand (SQUARE METRES).
+            We've assembled an exceptional team of forward thinkers, fueled by
+            passion and wielding skills that surpasses the ordinary.
         </p>
         <button class="btn privacy-btn mt-3">
           <a href="/contact" target="_blank"> Contact Us </a>
@@ -190,22 +190,28 @@
     section{
         font-family: Poppins;
     }
-  .privacy-bg {
+  .career-bg {
     background-image: linear-gradient(#0000009e, #001410),
-      url("../lib/img/privacy.jpeg");
+      url("../lib/img/career.jpeg");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+  }
+  .career {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
   }
   .privacy-data {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
-    line-height: 67.5px;
     letter-spacing: 0.05em;
     text-align: center;
   }
   .p-content {
     font-weight: 400;
     text-align: center;
+    font-size: 15px;
   }
   .privacy-btn {
     background-color: #f96b29;

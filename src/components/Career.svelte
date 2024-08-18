@@ -2,6 +2,7 @@
   import DropCard from "./DropCard.svelte";
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
+  import Offer from "../shared/Offer.svelte";
 </script>
 
 <section class="career-bg">
@@ -98,6 +99,8 @@
     </div>
   </div>
 </section>
+
+<Offer />
 
 <style>
   .career-bg {

@@ -5,7 +5,7 @@
         <h3 class="product">What We Do</h3>
         <ul class="list-unstyled mt-3">
           <li class="list-unstyled pt-2">
-            <a href="/">Fitila Signatures</a>
+            <a href="/fitila-signature">Fitila Signatures</a>
           </li>
           <li class="list-unstyled pt-2"><a href="/investment">Investment</a></li>
           <li class="list-unstyled pt-2"><a href="/agency">Agency</a></li>

@@ -21,12 +21,20 @@ section {
   }
   .privacy-btn {
     background-color: #f96b29;
-    padding: 20px 108px 20px 109px;
+    padding: 15px 80px 15px 80px;
     gap: 0px;
     border: 1px;
     border-radius: 6px;
     opacity: 0px;
   }
+  @media (max-width: 768px) {
+    .privacy-btn {
+      padding: 15px 40px 15px 40px;
+      margin-top: 20px;
+    }
+    
+  }
+
   .text-w {
     color: #f6fffd;
   }

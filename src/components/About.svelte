@@ -1,6 +1,8 @@
 <script>
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
+  import CardText from "../shared/CardText.svelte";
+  import Offer from "../shared/Offer.svelte";
 </script>
 
 <section class="about-bg">
@@ -15,36 +17,23 @@
   </PageHead>
 </section>
 
-<div class="container mt-4">
-  <div class="w-100">
-    <div class="col-lg-12 mt-2 text-lg-center text-center">
-      <span class="seamingly">Who We Are</span>
-    </div>
-    <div class="col-lg-8 offset-lg-2 px-0 mt-2">
-      <!-- For more features use the AutoHTML plugin window in figma ... -->
-      <div class="text-green text-lg-center text-center fs-6">
-        <p>
-          At Square Metres Construction Limited, we are passionate about driving
+<section>
+  <div class="container">
+    <CardText
+      TextHeader="Who We Are"
+      TextContent="At Square Metres Construction Limited, we are passionate about driving
           a wholesome experience for you through timely project delivery,
           safeguarding your investment and guaranteeing high returns on your
-          investment.
-        </p>
-        <br />
-        <p>
-          Our Journey began with a simple yet profound goal which is to provide
+          investment."
+      TextContent2="Our Journey began with a simple yet profound goal which is to provide
           investors with an experience that truly reflects the potential of
-          their real estate investment.
-        </p>
-        <br />
-        <p>
-          We recognize that good real estate can complete ones living experience
+          their real estate investment."
+      TextContent3="We recognize that good real estate can complete ones living experience
           and increase life expectancy, giving ones life more meaning at old
-          age.
-        </p>
-      </div>
-    </div>
+          age."
+    ></CardText>
   </div>
-</div>
+</section>
 
 <div class="bg-green py-5 mt-lg-5 mt-3 container-fluid">
   <div class="container py-5">
@@ -184,11 +173,13 @@
   </div>
 </div>
 
+<Offer />
+
 <style>
-  .about-bg{
+  .about-bg {
     background-image: linear-gradient(#0000009e, #001410),
       url("../lib/img/bg.jpeg");
     background-size: cover;
     background-position: center;
-  }  
+  }
 </style>

@@ -1,6 +1,7 @@
 <script>
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
+  import Offer from "../shared/Offer.svelte";
 </script>
 
 <section class="investment-bg">
@@ -12,6 +13,8 @@
     <Button btnDetails={{ text: "Reserve a Slot", link: "/reserve" }} />
   </PageHead>
 </section>
+
+<Offer />
 
 <style>
     .investment-bg {

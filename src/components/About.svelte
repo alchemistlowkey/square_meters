@@ -1,25 +1,19 @@
-<div class="container-fluid homepage_banner aboutpage_banner">
-  <div class="pt-5 container body">
-    <div class="row">
-      <p class="title-bar text-white text-center fs-c">About Us</p>
-      <div class="first_head mt-4 col-md-12 col-12 px-0 fs-b">
-        Building friendships with our customers for life
-      </div>
-      <div class="second_head col-md-12 col-12 px-0 py-3 fs-6">
-        To put a smile on the faces of investors by delivering and improving the
-        quality of work.
-      </div>
-      <div class="mt-3 text-center">
-        <a
-          href="/"
-          class="text-decoration-none text-white py-lg-3 px-lg-3 p-4 news-read-more btn"
-        >
-          Know what we value
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+<script>
+  import PageHead from "../shared/PageHead.svelte";
+  import Button from "../shared/Button.svelte";
+</script>
+
+<section class="about-bg">
+  <PageHead
+    CardHeader="About Us"
+    CardContent="Building friendships with our customers for life"
+    CardContent3="To put a smile on the faces of investors by delivering and improving the
+        quality of work."
+  >
+    <Button btnDetails={{ text: "Know what we value", link: "#values" }}
+    ></Button>
+  </PageHead>
+</section>
 
 <div class="container mt-4">
   <div class="w-100">
@@ -113,7 +107,7 @@
     </div>
   </div>
 </div>
-<div class="container mt-4">
+<div class="container mt-4" id="values">
   <div class="w-100">
     <div class="col-lg-12 mt-2 text-lg-center">
       <span class="seamingly"> What Defines Us </span>
@@ -191,17 +185,10 @@
 </div>
 
 <style>
-  .fs-b {
-    font-family: Poppins;
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-align: center;
-  }
-  .fs-c {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  
+  .about-bg{
+    background-image: linear-gradient(#0000009e, #001410),
+      url("../lib/img/bg.jpeg");
+    background-size: cover;
+    background-position: center;
+  }  
 </style>

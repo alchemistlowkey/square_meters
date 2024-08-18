@@ -1,24 +1,19 @@
 <script>
+  import PageHead from "../shared/PageHead.svelte";
+  import Button from "../shared/Button.svelte";
 </script>
 
 <section class="privacy-bg">
-  <div class="container">
-    <div class="row mx-0 py-16">
-      <div class="col-12 col-md-10 py-10 mx-auto text-center">
-        <h1 class="text-w privacy-data lg:text-nowrap">
-          Privacy & Data Protection Policy
-        </h1>
-        <p class="text-w p-content fs-md-6">
-          This following document outlines our practices regarding the
+  <PageHead
+    CardContent="Privacy & Data Protection Policy"
+    CardContent3="This following document outlines our practices regarding the
           collection, use, and disclosure of certain information, including your
-          personal information in connection with our brand (SQUARE METRES).
-        </p>
-        <button class="btn privacy-btn mt-3">
-          <a href="/contact" target="_blank"> Contact Us </a>
-        </button>
-      </div>
-    </div>
-  </div>
+          personal information in connection with our brand (SQUARE METRES)."
+  >
+    <Button btnDetails={{ text: "Contact Us", link: "/contact" }}
+    ></Button>
+  </PageHead>
+
 </section>
 
 <section class="py-10 mb-16">
@@ -195,27 +190,6 @@
       url("../lib/img/privacy.jpeg");
     background-size: cover;
     background-position: center center;
-  }
-  .privacy-data {
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 67.5px;
-    letter-spacing: 0.05em;
-    text-align: center;
-  }
-  .p-content {
-    font-weight: 400;
-    text-align: center;
-  }
-  .privacy-btn {
-    background-color: #f96b29;
-    padding: 20px 108px 20px 109px;
-    gap: 0px;
-    border-radius: 6px;
-    opacity: 0px;
-  }
-  .text-w {
-    color: #f6fffd;
   }
   .collection {
     font-size: 30px;

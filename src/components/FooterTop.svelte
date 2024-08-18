@@ -7,8 +7,8 @@
           <li class="list-unstyled pt-2">
             <a href="/">Fitila Signatures</a>
           </li>
-          <li class="list-unstyled pt-2"><a href="/">Investment</a></li>
-          <li class="list-unstyled pt-2"><a href="/">Agency</a></li>
+          <li class="list-unstyled pt-2"><a href="/investment">Investment</a></li>
+          <li class="list-unstyled pt-2"><a href="/agency">Agency</a></li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-4 col-4 mt-5">

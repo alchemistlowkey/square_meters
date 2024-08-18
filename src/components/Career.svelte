@@ -1,25 +1,19 @@
 <script>
   import DropCard from "./DropCard.svelte";
+  import PageHead from "../shared/PageHead.svelte";
+  import Button from "../shared/Button.svelte";
 </script>
 
 <section class="career-bg">
-  <div class="container">
-    <div class="row mx-0 py-16">
-      <div class="col-12 col-md-10 py-10 mx-auto text-center">
-        <p class="career text-w pb-3">Careers at SQUARE METRES</p>
-        <h1 class="text-w privacy-data py-4">
-          A Successful team is a group of many hand and one mind.
-        </h1>
-        <p class="text-w p-content fs-md-6 pb-4">
-          We've assembled an exceptional team of forward thinkers, fueled by
-          passion and wielding skills that surpasses the ordinary.
-        </p>
-        <button class="btn privacy-btn text-w">
-          <a href="/contact" target="_blank">All Open Roles</a>
-        </button>
-      </div>
-    </div>
-  </div>
+  <PageHead
+    CardHeader="Careers at SQUARE METRES"
+    CardContent="A Successful team is a group of many hand and one mind."
+    CardContent3="We've assembled an exceptional team of forward thinkers, fueled by
+          passion and wielding skills that surpasses the ordinary."
+  >
+    <Button btnDetails={{ text: "All Open Roles", link: "#positions" }}
+    ></Button>
+  </PageHead>
 </section>
 
 <section class="py-10 mb-16">
@@ -45,7 +39,7 @@
       </div>
     </div>
 
-    <div class="row mx-0 py-10 p-text text-cgreen text-center">
+    <div class="row mx-0 py-2 p-text text-cgreen text-center">
       <div class="col-md-10 offset-md-1">
         <div class="collection text-center">Life at Square Metres</div>
         <p class="py-2">
@@ -55,8 +49,8 @@
       </div>
     </div>
 
-    <div class="row mx-0 pt-c p-text text-cgreen text-center">
-      <div class="col-4 text-center">
+    <div class="row mx-0 md:pt-16 p-text text-cgreen text-center">
+      <div class="col-md-4 py-md-0 py-5 text-center">
         <img src="/images/goal.png" alt="" class="mx-auto d-block" />
         <p class="py-4 fw-bold">Find your Balance</p>
         <p>
@@ -64,7 +58,7 @@
           collaboration & nurture career growth
         </p>
       </div>
-      <div class="col-4 text-center">
+      <div class="col-md-4 py-md-0 py-5 text-center">
         <img src="/images/growth.png" alt="" class="mx-auto d-block" />
         <p class="py-4 fw-bold">A Place For All</p>
         <p>
@@ -72,7 +66,7 @@
           space for everyone at Square Metres
         </p>
       </div>
-      <div class="col-4 text-center">
+      <div class="col-md-4 py-md-0 py-5 text-center">
         <img src="/images/core-values.png" alt="" class="mx-auto d-block" />
         <p class="py-4 fw-bold">Thrive With Us</p>
         <p>
@@ -82,7 +76,7 @@
       </div>
     </div>
 
-    <div class="row mx-0 py-10 p-text text-cgreen text-center">
+    <div class="row mx-0 py-10 p-text text-cgreen text-center" id="positions">
       <div class="collection text-center py-4">Open positions</div>
       <DropCard />
       <DropCard
@@ -111,8 +105,5 @@
       url("../lib/img/career.jpeg");
     background-size: cover;
     background-position: center;
-  }
-  .privacy-btn:hover {
-    background-color: #f96b29;
   }
 </style>

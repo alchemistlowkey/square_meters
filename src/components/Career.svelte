@@ -112,4 +112,7 @@
     background-size: cover;
     background-position: center;
   }
+  .privacy-btn:hover {
+    background-color: #f96b29;
+  }
 </style>

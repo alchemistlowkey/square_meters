@@ -3,6 +3,7 @@
   import Button from "../shared/Button.svelte";
   import CardText from "../shared/CardText.svelte";
   import Offer from "../shared/Offer.svelte";
+  import BoxCard from "../shared/BoxCard.svelte";
 </script>
 
 <section class="about-bg">
@@ -96,82 +97,35 @@
     </div>
   </div>
 </div>
-<div class="container mt-4" id="values">
-  <div class="w-100">
-    <div class="col-lg-12 mt-2 text-lg-center">
-      <span class="seamingly"> What Defines Us </span>
-    </div>
-    <div class="col-lg-8 offset-lg-2 px-0 mt-2">
-      <!-- For more features use the AutoHTML plugin window in figma ... -->
-      <div class="text-green text-lg-center text-left">
-        Our values define the SquareMetres culture, who we are, and why we do
-        what we do. Shaping our interaction with all stakeholders: customers,
-        regulators, investors, partners and our host communities.
-      </div>
-    </div>
+
+<section>
+  <div class="container">
+    <CardText
+      TextHeader="What Defines Us"
+      TextContent="Our values define the SquareMetres culture, who we are, and why we do what we do. Shaping our interaction with all stakeholders: customers, regulators, investors, partners and our host communities."
+    ></CardText>
   </div>
-</div>
+</section>
 
-<div class="container my-lg-5 pt-3">
-  <div class="col-lg-8 offset-lg-2">
-    <div class="mx-0 row">
-      <div class="col-lg-6 mb-3">
-        <div class="about_define_box">
-          <div class="image">
-            <img src="images/people.png" alt="" />
-          </div>
-          <div class="title my-3">Customer-centric</div>
-          <div class="body text-green">
-            Your view shapes our vision. focused on driving an experience that
-            prioritizes you above all else across all touch points.
-          </div>
-        </div>
-      </div>
+<section>
+  <BoxCard
+    BoxSrc="images/people.png"
+    BoxHead="Customer-centric"
+    BoxBody="Your view shapes our vision. focused on driving an experience that prioritizes you above all else across all touch points."
+    BoxSrc1="images/innovationAbout.png"
+    BoxHead1="Innovation"
+    BoxBody1="Innovating for inclusivity, we thrive in creating spaces where diversity thrives. we not only stay ahead but lead, shaping a future where every corner of our developments reflects unity and forward-thinking inclusiveness."
+  ></BoxCard>
 
-      <div class="col-lg-6 mb-3">
-        <div class="about_define_box">
-          <div class="image">
-            <img src="images/innovation.png" alt="" />
-          </div>
-          <div class="title my-3">Innovation</div>
-          <div class="body text-green">
-            Innovating for inclusivity, we thrive in creating spaces where
-            diversity thrives. we not only stay ahead but lead, shaping a future
-            where every corner of our developments reflects unity and
-            forward-thinking inclusiveness.
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mb-3">
-        <div class="about_define_box">
-          <div class="image">
-            <img src="images/badge.png" alt="" />
-          </div>
-          <div class="title my-3">Project Delivery</div>
-          <div class="body text-green">
-            Providing timely delivery is our promise, and every brick reflects
-            our commitment to excellence.
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mb-3">
-        <div class="about_define_box">
-          <div class="image">
-            <img src="images/globe.png" alt="" />
-          </div>
-          <div class="title my-3">Connecting Lives</div>
-          <div class="body text-green">
-            Beyond real estate; we're crafting neighborhoods where lives
-            intertwine and flourish, embodying our commitment to connecting
-            lives beyond brick and mortar
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <BoxCard
+    BoxSrc="images/badge.png"
+    BoxHead="Project Delivery"
+    BoxBody="Providing timely delivery is our promise, and every brick reflects our commitment to excellence."
+    BoxSrc1="images/globe.png"
+    BoxHead1="Connecting Lives"
+    BoxBody1="Beyond real estate; we're crafting neighborhoods where lives intertwine and flourish, embodying our commitment to connecting lives beyond brick and mortar"
+  ></BoxCard>
+</section>
 
 <Offer />
 

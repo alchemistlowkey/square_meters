@@ -3,6 +3,7 @@
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
   import Offer from "../shared/Offer.svelte";
+  import CardText from "../shared/CardText.svelte";
 </script>
 
 <section class="career-bg">
@@ -19,38 +20,25 @@
 
 <section class="py-10 mb-16">
   <div class="container">
-    <div class="row mx-0 py-10 p-text text-cgreen text-center">
-      <div class="col-md-10 offset-md-1">
-        <div class="collection text-center">A little about working with us</div>
-        <p class="py-2">
-          At Square Meters, we prioritize the well-being of our team because
+    <CardText
+      TextHeader="A little about working with us"
+      TextContent="At Square Meters, we prioritize the well-being of our team because
           it's not only the right thing to do, as it is what empowers us to
-          deliver our best work.
-        </p>
-
-        <p class="py-2">
-          Are you beginning your career or already a star, our system provides
+          deliver our best work."
+      TextContent2="Are you beginning your career or already a star, our system provides
           numerous opportunities for you to make a positive impact on people's
-          lives.
-        </p>
-        <p class="py-2">
-          SquareMetres is a welcoming place for everyone, and we do our best to
-          make sure our people feel supported and happy at work.
-        </p>
-      </div>
-    </div>
+          lives."
+      TextContent3="SquareMetres is a welcoming place for everyone, and we do our best to
+          make sure our people feel supported and happy at work."
+    ></CardText>
 
-    <div class="row mx-0 py-2 p-text text-cgreen text-center">
-      <div class="col-md-10 offset-md-1">
-        <div class="collection text-center">Life at Square Metres</div>
-        <p class="py-2">
-          In everything we do, we uphold these values without compromise. At
-          Square Meters, its people over process and teamwork over perfection.
-        </p>
-      </div>
-    </div>
+    <CardText
+      TextHeader="Life at Square Metres"
+      TextContent="In everything we do, we uphold these values without compromise. At
+          Square Meters, its people over process and teamwork over perfection."
+    ></CardText>
 
-    <div class="row mx-0 md:pt-16 p-text text-cgreen text-center">
+    <div class="row mx-0 pt-md-1 p-text text-cgreen text-center">
       <div class="col-md-4 py-md-0 py-5 text-center">
         <img src="/images/goal.png" alt="" class="mx-auto d-block" />
         <p class="py-4 fw-bold">Find your Balance</p>

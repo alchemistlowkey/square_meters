@@ -51,7 +51,7 @@
         <img src="/images/growth.png" alt="" class="mx-auto d-block" />
         <p class="py-4 fw-bold">A Place For All</p>
         <p>
-          Diversity and inclusion are at the core of our beingnetfl. There's a
+          Diversity and inclusion are at the core of our being. There's a
           space for everyone at Square Metres
         </p>
       </div>

@@ -11,14 +11,14 @@
           <li class="list-unstyled pt-2"><a href="/agency">Agency</a></li>
         </ul>
       </div>
-      <div class="col-md-3 col-sm-4 col-4 mt-5">
-        <h3 class="product">Who We Are</h3>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-4 mt-5">
+        <h3 class="product text-nowrap">Who We Are</h3>
         <ul class="list-unstyled mt-3">
           <li class="list-unstyled pt-2">
             <a href="/about-us">About Us</a>
           </li>
           <li class="list-unstyled pt-2">
-            <a href="career">Career</a>
+            <a href="/career">Career</a>
           </li>
           <li class="list-unstyled pt-2"><a href="blog">Blog</a></li>
         </ul>
@@ -27,15 +27,15 @@
         <h3 class="product">Helpful Links</h3>
         <ul class="list-unstyled mt-3">
           <li class="list-unstyled pt-2">
-            <a href="terms">Terms of service</a>
+            <a href="/policy">Terms of service</a>
           </li>
           <li class="list-unstyled pt-2">
-            <a href="policy">Policy service</a>
+            <a href="/policy">Policy service</a>
           </li>
           <li class="list-unstyled pt-2"><a href="faq">FAQ’s</a></li>
         </ul>
       </div>
-      <div class="col-md-3 col-sm-12 col-xs-12 mt-5">
+      <div class="col-md-4 col-lg-3 col-sm-12 col-12 mt-5">
         <h3 class="product">Contact Us</h3>
         <ul class="list-unstyled footer-social mt-3">
           <li class="list-unstyled pt-2">

@@ -14,7 +14,7 @@
     CardContent3="To put a smile on the faces of investors by delivering and improving the
         quality of work."
   >
-    <Button btnDetails={{ text: "Know what we value", link: "#values" }}
+    <Button btnDetails="Know what we value"
     ></Button>
   </PageHead>
 </Bg>

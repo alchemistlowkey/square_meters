@@ -12,8 +12,8 @@
 <section class="bg-white">
   <div class="container text-cgreen text-start fw-medium">
     <div class="row mx-0">
-      <h1 class="fw-bold fs-3">{formHeader}</h1>
-      <p class="text-uppercase mt-3">{formText}</p>
+      <h1 class="fw-bold fs-2">{formHeader}</h1>
+      <p class="text-uppercase fw-normal fs-5 mt-3">{formText}</p>
     </div>
     <form action="">
       <div class="row mx-0 my-4">
@@ -82,45 +82,45 @@
       </div>
       <div class="row mx-0">
         {#if preferredSize}
-        <div>
-          <p>Preferred Size</p>
-          <div class="mt-3">
-            <div class="form-check">
-              <input
-                class="form-check-input mt-[12px]"
-                type="radio"
-                name="flexRadioDefault"
-                id="defaultCheckRadio"
-                checked
-              />
-              <label class="form-check-label px-2" for="defaultRadio">
-                300sqm
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input  mt-[12px]"
-                type="radio"
-                name="flexRadioDefault"
-                id="defaultRadio"
-              />
-              <label class="form-check-label px-2" for="defaultCheckRadio">
-                500sqm
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input  mt-[12px]"
-                type="radio"
-                name="flexRadioDefault"
-                id="defaultRadio"
-              />
-              <label class="form-check-label px-2" for="defaultCheckRadio">
-                1000sqm
-              </label>
+          <div>
+            <p>Preferred Size</p>
+            <div class="mt-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input mt-[12px]"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="defaultCheckRadio"
+                  checked
+                />
+                <label class="form-check-label px-2" for="defaultRadio">
+                  300sqm
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input mt-[12px]"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="defaultRadio"
+                />
+                <label class="form-check-label px-2" for="defaultCheckRadio">
+                  500sqm
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input mt-[12px]"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="defaultRadio"
+                />
+                <label class="form-check-label px-2" for="defaultCheckRadio">
+                  1000sqm
+                </label>
+              </div>
             </div>
           </div>
-        </div>
         {/if}
       </div>
       <div class="row mx-0">

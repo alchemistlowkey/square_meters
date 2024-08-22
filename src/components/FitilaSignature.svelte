@@ -5,7 +5,7 @@
   import Form from "../shared/Form.svelte";
   import CardText from "../shared/CardText.svelte";
   import Modal from "../shared/Modal.svelte";
-  
+
   let showModal = false;
   let formHeader = "";
   let formText = "";
@@ -15,7 +15,14 @@
   let date = "";
 
   function handleOpenForm(event) {
-    const { formHeader: header, formText: text, fullName: name, email: mail, phoneNumber: phone, date: dt } = event.detail;
+    const {
+      formHeader: header,
+      formText: text,
+      fullName: name,
+      email: mail,
+      phoneNumber: phone,
+      date: dt,
+    } = event.detail;
     formHeader = header;
     formText = text;
     fullName = name;
@@ -50,7 +57,7 @@
         <p class="fw-bold my-2">Ketu, Epe</p>
       </div>
       <div class="col text-nowrap text-center my-4 my-md-4 my-lg-1">
-        <Button 
+        <Button
           btnDetails="Schedule an inspection"
           formHeader="Schedule Inspection"
           formText="For Fitila Signatures"
@@ -58,7 +65,7 @@
           email="Email"
           phoneNumber="Phone Number"
           date="Date"
-          on:openform={handleOpenForm} 
+          on:openform={handleOpenForm}
         />
       </div>
     </div>
@@ -66,14 +73,7 @@
 </Bg>
 
 <Modal isOpen={showModal} close={closeModal}>
-  <Form 
-    formHeader={formHeader}
-    formText={formText}
-    fullName={fullName}
-    email={email}
-    phoneNumber={phoneNumber}
-    date={date}
-  />
+  <Form {formHeader} {formText} {fullName} {email} {phoneNumber} {date} />
 </Modal>
 
 <section>

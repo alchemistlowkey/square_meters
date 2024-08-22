@@ -10,7 +10,7 @@
           collection, use, and disclosure of certain information, including your
           personal information in connection with our brand (SQUARE METRES)."
   >
-    <Button btnDetails={{ text: "Contact Us", link: "/contact" }}></Button>
+    <Button btnDetails="Contact Us"></Button>
   </PageHead>
 </Bg>
 

@@ -14,7 +14,7 @@
     CardContent3="We've assembled an exceptional team of forward thinkers, fueled by
           passion and wielding skills that surpasses the ordinary."
   >
-    <Button btnDetails={{ text: "All Open Roles", link: "#positions" }}
+    <Button btnDetails="All Open Roles"
     ></Button>
   </PageHead>
 </Bg>

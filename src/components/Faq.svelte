@@ -2,6 +2,7 @@
   import Bg from "../shared/Bg.svelte";
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
+  import Offer from "../shared/Offer.svelte";
 </script>
 
 <Bg headerBG="faq.jpeg">
@@ -196,6 +197,8 @@
     </div>
   </div>
 </div>
+
+<Offer />
 
 <style>
 </style>

@@ -10,6 +10,8 @@
   export let email = "";
   export let phoneNumber = "";
   export let date = "";
+  export let amount = "";
+  export let preferredSize = "";
 
   let showModal = false;
 
@@ -22,6 +24,8 @@
       email,
       phoneNumber,
       date,
+      amount,
+      preferredSize,
     });
   }
 

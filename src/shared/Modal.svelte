@@ -6,10 +6,14 @@
 {#if isOpen}
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <!-- svelte-ignore a11y-click-events-have-key-events -->
-  <div class="modal" on:click={() => close()}>
-    <div class="modal-content" on:click|stopPropagation>
-      <span class="close" on:click={() => close()}>&times;</span>
-      <slot></slot>
+  <div class="container">
+    <div class="row mx-0">
+      <div class="modal" on:click={() => close()}>
+        <div class="modal-content" on:click|stopPropagation>
+          <span class="close text-end" on:click={() => close()}>&times;</span>
+          <slot></slot>
+        </div>
+      </div>
     </div>
   </div>
 {/if}
@@ -36,7 +40,6 @@
   }
   .close {
     color: #aaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
   }

@@ -1,105 +1,141 @@
 <script>
-
+  export let formHeader = "";
+  export let formText = "";
+  export let fullName = "";
+  export let email = "";
+  export let phoneNumber = "";
+  export let date = "";
+  export let amount = "";
+  export let preferredSize = "";
 </script>
 
-<div class="container">
+<section class="bg-white">
+  <div class="container text-cgreen text-start fw-medium">
+    <div class="row mx-0">
+      <h1 class="fw-bold fs-3">{formHeader}</h1>
+      <p class="text-uppercase mt-3">{formText}</p>
+    </div>
     <form action="">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      <div class="row mx-0 my-4">
+        {#if fullName}
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="fullname">{fullName}</label>
+              <input
+                type="text"
+                class="form-control md:h-14 sm:h-12"
+                id="fullname"
+              />
+            </div>
+          </div>
+        {/if}
+        {#if email}
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="email">{email}</label>
+              <input
+                type="email"
+                class="form-control md:h-14 sm:h-12"
+                id="email"
+              />
+            </div>
+          </div>
+        {/if}
+      </div>
+      <div class="row mx-0 my-4">
+        {#if phoneNumber}
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="phone-number">{phoneNumber}</label>
+              <input
+                type="number"
+                class="form-control md:h-14 sm:h-12"
+                id="phonenumber"
+              />
+            </div>
+          </div>
+        {/if}
+        {#if date}
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="date">{date}</label>
+              <input
+                type="date"
+                class="form-control md:h-14 sm:h-12"
+                id="date"
+              />
+            </div>
+          </div>
+        {/if}
+        {#if amount}
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="amount">{amount}</label>
+              <input
+                type="number"
+                class="form-control md:h-14 sm:h-12"
+                id="amount"
+              />
+            </div>
+          </div>
+        {/if}
+      </div>
+      <div class="row mx-0">
+        {#if preferredSize}
+        <div>
+          <p>Preferred Size</p>
+          <div class="mt-3">
+            <div class="form-check">
+              <input
+                class="form-check-input mt-[12px]"
+                type="radio"
+                name="flexRadioDefault"
+                id="defaultCheckRadio"
+                checked
+              />
+              <label class="form-check-label px-2" for="defaultRadio">
+                300sqm
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input  mt-[12px]"
+                type="radio"
+                name="flexRadioDefault"
+                id="defaultRadio"
+              />
+              <label class="form-check-label px-2" for="defaultCheckRadio">
+                500sqm
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input  mt-[12px]"
+                type="radio"
+                name="flexRadioDefault"
+                id="defaultRadio"
+              />
+              <label class="form-check-label px-2" for="defaultCheckRadio">
+                1000sqm
+              </label>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        {/if}
+      </div>
+      <div class="row mx-0">
+        <div class="my-4 mb-4">
+          <button
+            type="submit"
+            class="btn btn-xs hover:bg-orange-400 privacy-btn text-w"
+            >Submit</button
+          >
         </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </form>
-</div>
+  </div>
+</section>
 
 <style>
-    .container {
-        margin-top: 50px;
-    }
-    .form-group {
-        margin-bottom: 20px;
-    }
-    label {
-        font-weight: bold;
-    }
-    .btn {
-        background-color: #f96b29;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    .btn:hover {
-        background-color: #f96b29;
-    }
-    .btn-primary {
-        background-color: #f96b29;
-    }
-    .btn-primary:hover {
-        background-color: #f96b29;
-    }
-    .form-control {
-        width: 100%;
-        padding: 10px;
-        border-radius: 5px;
-        border: 1px solid #f96b29;
-    }
-    .form-control:focus {
-        outline: none;
-        border: 1px solid #f96b29;
-    }
-    .form-control::placeholder {
-        color: #f96b29;
-    }
-    .form-control:focus::placeholder {
-        color: #f96b29;
-    }
-    .form-control:focus {
-        border: 1px solid #f96b29;
-    }
-    .form-control:focus::placeholder {
-        color: #f96b29;
-    }
-    .form-control:focus {
-        border: 1px solid #f96b29;
-    }
-    .form-control:focus::placeholder {
-        color: #f96b29;
-    }
-    .form-control:focus {
-        border: 1px solid #f96b29;
-    }
-    .form-control:focus::placeholder {
-        color: #f96b29;
-    }
-    .form-control:focus {
-        border: 1px solid #f96b29;
-    }
-    .form-control:focus::placeholder {
-        color: #f96b29;
-    }
-    .form-control:focus {
-        border: 1px solid #f96b29;
-    }
-    .form-control:focus::placeholder {
-        color: #f96b29;
-    }
-    .form-control:focus {
-        border: 1px solid #f96b29;
-    }
-    .form-control:focus::placeholder {
-        color: #f96b29;
-    }
-    .form-control:focus {
-        border: 1px solid #f96b29;
-    }
+  /* Add your custom styles here */
 </style>

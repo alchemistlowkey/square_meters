@@ -1,20 +1,48 @@
 <script>
-  export let btnDetails = {
-    text: "",
-    link: "",
-    target: "_blank",
-  };
+  import Modal from "../shared/Modal.svelte";
+  import { createEventDispatcher } from "svelte";
+
+  const dispatch = createEventDispatcher();
+  export let btnDetails = "";
+  export let formHeader = "";
+  export let formText = "";
+  export let fullName = "";
+  export let email = "";
+  export let phoneNumber = "";
+  export let date = "";
+
+  let showModal = false;
+
+  function openModal() {
+    // Dispatch the event with form details
+    dispatch("openform", {
+      formHeader,
+      formText,
+      fullName,
+      email,
+      phoneNumber,
+      date,
+    });
+  }
+
+  function closeModal() {
+    showModal = false;
+  }
 </script>
 
-<button class="btn btn-xs  privacy-btn text-w">
-  <a href={btnDetails.link} target={btnDetails.target}>{btnDetails.text}</a>
+<button class="btn btn-xs privacy-btn text-w" on:click={openModal}>
+  {btnDetails}
 </button>
+
+<Modal isOpen={showModal} close={closeModal}>
+  <slot />
+</Modal>
 
 <style>
   .privacy-btn:hover {
     background-color: #f96b29;
   }
-  .btn-xs{
+  .btn-xs {
     font-size: smaller;
   }
 </style>

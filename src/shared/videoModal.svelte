@@ -36,9 +36,9 @@
     background-color: rgba(0, 0, 0, 0.7);
   }
   .modal-content {
-    background-color: #fff;
+    background-color: #0D493D;
     margin: 10% auto;
-    padding: 20px;
+    padding: 0px 30px 30px;
     border: 1px solid #888;
     width: 80%;
     max-width: 800px;

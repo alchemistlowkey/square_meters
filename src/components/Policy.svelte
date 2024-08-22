@@ -1,9 +1,9 @@
 <script>
+  import Bg from "../shared/Bg.svelte";
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
 </script>
-
-<section class="privacy-bg">
+<Bg headerBG="privacy.jpeg">
   <PageHead
     CardContent="Privacy & Data Protection Policy"
     CardContent3="This following document outlines our practices regarding the
@@ -12,7 +12,7 @@
   >
     <Button btnDetails={{ text: "Contact Us", link: "/contact" }}></Button>
   </PageHead>
-</section>
+</Bg>
 
 <section class="py-10 mb-16">
   <div class="container">
@@ -205,15 +205,6 @@
 </section>
 
 <style>
-  section {
-    font-family: Poppins;
-  }
-  .privacy-bg {
-    background-image: linear-gradient(#0000009e, #001410),
-      url("../lib/img/privacy.jpeg");
-    background-size: cover;
-    background-position: center center;
-  }
   .collection {
     font-size: 30px;
     font-weight: 700;

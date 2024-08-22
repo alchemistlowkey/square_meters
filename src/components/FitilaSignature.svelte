@@ -1,10 +1,11 @@
 <script>
+  import Bg from "../shared/Bg.svelte";
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
   import CardText from "../shared/CardText.svelte";
 </script>
 
-<section class="investment-bg">
+<Bg headerBG="investment-page-bg.jpeg">
   <PageHead
     SpanContent="Fitila Signature "
     CardContent2="tells the story of your hard work through Real Estate"
@@ -30,7 +31,7 @@
       </div>
     </div>
   </PageHead>
-</section>
+</Bg>
 
 <section>
   <div class="container">
@@ -43,10 +44,4 @@
 </section>
 
 <style>
-  .investment-bg {
-    background-image: linear-gradient(#0000009e, #001410),
-      url("../lib/img/investment-page-bg.jpeg");
-    background-size: cover;
-    background-position: center;
-  }
 </style>

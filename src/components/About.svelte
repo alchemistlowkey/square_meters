@@ -1,4 +1,5 @@
 <script>
+  import Bg from "../shared/Bg.svelte";
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
   import CardText from "../shared/CardText.svelte";
@@ -6,7 +7,7 @@
   import BoxCard from "../shared/BoxCard.svelte";
 </script>
 
-<section class="about-bg">
+<Bg headerBG="bg.jpeg">
   <PageHead
     CardHeader="About Us"
     CardContent="Building friendships with our customers for life"
@@ -16,7 +17,7 @@
     <Button btnDetails={{ text: "Know what we value", link: "#values" }}
     ></Button>
   </PageHead>
-</section>
+</Bg>
 
 <section>
   <div class="container">
@@ -130,10 +131,4 @@
 <Offer />
 
 <style>
-  .about-bg {
-    background-image: linear-gradient(#0000009e, #001410),
-      url("../lib/img/bg.jpeg");
-    background-size: cover;
-    background-position: center;
-  }
 </style>

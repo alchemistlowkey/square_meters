@@ -1,4 +1,5 @@
 <script>
+  import "../bg.css"
   import "../custom.css";
   import "../app.css";
   import "../global.css";

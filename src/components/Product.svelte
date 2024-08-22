@@ -1,22 +1,17 @@
 <script>
+  import Bg from "../shared/Bg.svelte";
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
 </script>
 
-<section class="product-bg">
+<Bg headerBG="product.jpeg">
   <PageHead
   CardHeader="Our Products"
     CardContent="You are a step closer to making a great decision today, cheers."
   >
     <Button btnDetails={{ text: "See our projects", link: "#projects" }}></Button>
   </PageHead>
-</section>
+</Bg>
 
 <style>
-  .product-bg {
-    background-image: linear-gradient(#0000009e, #001410),
-      url("../lib/img/product.jpeg");
-    background-size: cover;
-    background-position: center center;
-  }
 </style>

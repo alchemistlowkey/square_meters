@@ -1,4 +1,5 @@
 <script>
+  import Bg from "../shared/Bg.svelte";
   import DropCard from "./DropCard.svelte";
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
@@ -6,7 +7,7 @@
   import CardText from "../shared/CardText.svelte";
 </script>
 
-<section class="career-bg">
+<Bg headerBG="career.jpeg">
   <PageHead
     CardHeader="Careers at SQUARE METRES"
     CardContent="A Successful team is a group of many hand and one mind."
@@ -16,7 +17,7 @@
     <Button btnDetails={{ text: "All Open Roles", link: "#positions" }}
     ></Button>
   </PageHead>
-</section>
+</Bg>
 
 <section class="py-10 mb-16">
   <div class="container">
@@ -91,10 +92,4 @@
 <Offer />
 
 <style>
-  .career-bg {
-    background-image: linear-gradient(#0000009e, #001410),
-      url("../lib/img/career.jpeg");
-    background-size: cover;
-    background-position: center;
-  }
 </style>

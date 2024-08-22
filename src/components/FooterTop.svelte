@@ -20,7 +20,7 @@
           <li class="list-unstyled pt-2">
             <a href="/career">Career</a>
           </li>
-          <li class="list-unstyled pt-2"><a href="blog">Blog</a></li>
+          <li class="list-unstyled pt-2"><a href="/blog">Blog</a></li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-4 col-4 mt-5">
@@ -32,7 +32,7 @@
           <li class="list-unstyled pt-2">
             <a href="/policy">Policy service</a>
           </li>
-          <li class="list-unstyled pt-2"><a href="faq">FAQ’s</a></li>
+          <li class="list-unstyled pt-2"><a href="/faq">FAQ’s</a></li>
         </ul>
       </div>
       <div class="col-md-4 col-lg-3 col-sm-12 col-12 mt-5">

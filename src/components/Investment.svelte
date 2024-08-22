@@ -1,10 +1,10 @@
 <script>
+  import Bg from "../shared/Bg.svelte";
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
   import Offer from "../shared/Offer.svelte";
 </script>
-
-<section class="investment-bg">
+<Bg headerBG="investment-page-bg.jpeg">
   <PageHead
     CardContent="Invest in "
     SpanContent="Fitila Signatures "
@@ -12,15 +12,9 @@
   >
     <Button btnDetails={{ text: "Reserve a Slot", link: "/reserve" }} />
   </PageHead>
-</section>
+</Bg>
 
 <Offer />
 
 <style>
-    .investment-bg {
-        background-image: linear-gradient(#0000009e, #001410),
-      url("../lib/img/investment-page-bg.jpeg");
-    background-size: cover;
-    background-position: center;
-    }
 </style>

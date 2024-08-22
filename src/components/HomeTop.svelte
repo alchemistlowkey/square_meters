@@ -1,3 +1,18 @@
+<script>
+  import VideoModal from "../shared/videoModal.svelte";
+
+  let showModal = false;
+  let videoUrl = "https://www.youtube.com/embed/mKAkIrad4vA"; // YouTube embed URL
+
+  function openModal() {
+    showModal = true;
+  }
+
+  function closeModal() {
+    showModal = false;
+  }
+</script>
+
 <div class="container-fluid homepage_banner">
   <div class="pt-4 container body">
     <div class="row mx-0">
@@ -52,8 +67,11 @@
               Watch Onion Nigeria CEO,Mordi Orchi, discuss working with Square
               Metres
             </div>
-            <div class="col-1 pl-0 pt-2 pt-md-4">
-              <a class="icon-link" href="https://youtu.be/mKAkIrad4vA?si=I9hmd2rLsqXBVcTR" target="_blank">
+            <div class="col-1 pl-0 pt-2 pt-md-4 cursor-pointer">
+              <!-- svelte-ignore a11y-missing-attribute -->
+              <!-- svelte-ignore a11y-no-static-element-interactions -->
+              <!-- svelte-ignore a11y-click-events-have-key-events -->
+              <a class="icon-link" on:click|preventDefault={openModal}>
               <i class="bi bi-play-circle-fill md:text-6xl text-5xl"></i>
               </a>
             </div>
@@ -63,6 +81,8 @@
     </div>
   </div>
 </div>
+
+<VideoModal isOpen={showModal} videoUrl={videoUrl} close={closeModal} />
 
 <style>
   .trust-text1 {

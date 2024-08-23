@@ -7,6 +7,7 @@
   export let date = "";
   export let amount = "";
   export let preferredSize = "";
+  export let message = "";
 </script>
 
 <section class="bg-white">
@@ -76,6 +77,17 @@
                 class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="amount"
               />
+            </div>
+          </div>
+        {/if}
+        {#if message}
+          <div class="col-md-6 col-12">
+            <div class="form-group">
+              <label for="message">{message}</label>
+              <textarea
+                class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
+                id="message"
+              ></textarea>
             </div>
           </div>
         {/if}

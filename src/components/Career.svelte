@@ -14,7 +14,7 @@
     CardContent3="We've assembled an exceptional team of forward thinkers, fueled by
           passion and wielding skills that surpasses the ordinary."
   >
-    <Button btnDetails="All Open Roles"
+    <Button btnDetails="All Open Roles" btnlink="#positions"
     ></Button>
   </PageHead>
 </Bg>

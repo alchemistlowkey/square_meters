@@ -4,6 +4,7 @@
 
   const dispatch = createEventDispatcher();
   export let btnDetails = "";
+  export let btnlink = "";
   export let formHeader = "";
   export let formText = "";
   export let fullName = "";
@@ -12,6 +13,7 @@
   export let date = "";
   export let amount = "";
   export let preferredSize = "";
+  export let message = "";
 
   let showModal = false;
 
@@ -26,6 +28,7 @@
       date,
       amount,
       preferredSize,
+      message,
     });
   }
 
@@ -34,9 +37,9 @@
   }
 </script>
 
-<button class="btn btn-xs privacy-btn text-w" on:click={openModal}>
+<a class="btn btn-xs privacy-btn text-w" role="button" href={btnlink} on:click={openModal}>
   {btnDetails}
-</button>
+</a>
 
 <Modal isOpen={showModal} close={closeModal}>
   <slot />

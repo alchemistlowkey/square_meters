@@ -2,7 +2,40 @@
   import Bg from "../shared/Bg.svelte";
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
+  import Modal from "../shared/Modal.svelte";
+  import Form from "../shared/Form.svelte";
+
+  let showModal = false;
+  let formHeader = "";
+  let formText = "";
+  let fullName = "";
+  let email = "";
+  let phoneNumber = "";
+  let message = "";
+
+  function handleOpenForm(event) {
+    const {
+      formHeader: header,
+      formText: text,
+      fullName: name,
+      email: mail,
+      phoneNumber: phone,
+      message: msg,
+    } = event.detail;
+    formHeader = header;
+    formText = text;
+    fullName = name;
+    email = mail;
+    phoneNumber = phone;
+    message = msg;
+    showModal = true;
+  }
+
+  function closeModal() {
+    showModal = false;
+  }
 </script>
+
 <Bg headerBG="privacy.jpeg">
   <PageHead
     CardContent="Privacy & Data Protection Policy"
@@ -10,9 +43,22 @@
           collection, use, and disclosure of certain information, including your
           personal information in connection with our brand (SQUARE METRES)."
   >
-    <Button btnDetails="Contact Us"></Button>
+    <Button
+      btnDetails="Contact Us"
+      formHeader="Contact Us"
+      formText="For Land and Investments"
+      fullName="Full Name"
+      email="Email"
+      phoneNumber="Phone Number"
+      message="Message"
+      on:openform={handleOpenForm}
+    ></Button>
   </PageHead>
 </Bg>
+
+<Modal isOpen={showModal} close={closeModal}>
+  <Form {formHeader} {formText} {fullName} {email} {phoneNumber} {message} />
+</Modal>
 
 <section class="py-10 mb-16">
   <div class="container">

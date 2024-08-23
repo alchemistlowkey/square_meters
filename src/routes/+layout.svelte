@@ -10,7 +10,7 @@
   import NavBar from "../components/NavBar.svelte";
 </script>
 
-<NavBar />
+<!-- <NavBar /> -->
 
 <!-- <Nav /> -->
 

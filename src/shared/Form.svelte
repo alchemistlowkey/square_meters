@@ -23,7 +23,7 @@
               <label for="fullname">{fullName}</label>
               <input
                 type="text"
-                class="form-control md:h-14 sm:h-12"
+                class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="fullname"
               />
             </div>
@@ -35,7 +35,7 @@
               <label for="email">{email}</label>
               <input
                 type="email"
-                class="form-control md:h-14 sm:h-12"
+                class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="email"
               />
             </div>
@@ -49,7 +49,7 @@
               <label for="phone-number">{phoneNumber}</label>
               <input
                 type="number"
-                class="form-control md:h-14 sm:h-12"
+                class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="phonenumber"
               />
             </div>
@@ -61,7 +61,7 @@
               <label for="date">{date}</label>
               <input
                 type="date"
-                class="form-control md:h-14 sm:h-12"
+                class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="date"
               />
             </div>
@@ -73,7 +73,7 @@
               <label for="amount">{amount}</label>
               <input
                 type="number"
-                class="form-control md:h-14 sm:h-12"
+                class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="amount"
               />
             </div>

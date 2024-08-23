@@ -12,7 +12,7 @@
         </ul>
       </div>
       <div class="col-md-2 col-lg-3 col-sm-4 col-4 mt-5">
-        <h3 class="product text-nowrap">Who We Are</h3>
+        <h3 class="product sm:text-nowrap">Who We Are</h3>
         <ul class="list-unstyled mt-3">
           <li class="list-unstyled pt-2">
             <a href="/about-us">About Us</a>

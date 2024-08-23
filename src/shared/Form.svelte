@@ -13,7 +13,7 @@
   <div class="container text-cgreen text-start fw-medium">
     <div class="row mx-0">
       <h1 class="fw-bold fs-2">{formHeader}</h1>
-      <p class="text-uppercase fw-normal fs-5 mt-3">{formText}</p>
+      <p class="text-uppercase fw-normal fs-6 mt-3">{formText}</p>
     </div>
     <form action="">
       <div class="row mx-0 my-4">

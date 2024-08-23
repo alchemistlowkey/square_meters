@@ -1,5 +1,5 @@
 <script>
-  import VideoModal from "../shared/videoModal.svelte";
+  import VideoModal from "../shared/VideoModal.svelte";
 
   let showModal = false;
   let videoUrl = "https://www.youtube.com/embed/mKAkIrad4vA"; // YouTube embed URL

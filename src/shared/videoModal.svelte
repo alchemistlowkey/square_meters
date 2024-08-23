@@ -38,7 +38,7 @@
   .modal-content {
     background-color: #0D493D;
     margin: 10% auto;
-    padding: 0px 30px 30px;
+    padding: 0px;
     border: 1px solid #888;
     width: 80%;
     max-width: 800px;

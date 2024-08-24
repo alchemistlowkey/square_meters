@@ -4274,6 +4274,13 @@ a.nav-link {
     ),
     url(./lib/img/land.jpg);
 }
+.prod-land2 {
+  background-image: linear-gradient(
+      rgba(128, 128, 128, 0.226),
+      rgba(255, 255, 255, 0.096)
+    ),
+    url(./lib/img/land2.png);
+}
 .prod-investment {
   background-image: linear-gradient(
       rgba(128, 128, 128, 0.185),
@@ -4282,10 +4289,11 @@ a.nav-link {
     url(./lib/img/investment.jpeg);
 }
 .prod-investment,
+.prod-land2,
 .prod-land {
   display: flex;
   min-height: 74vh;
-  color: white;
+  color: #F6FFFD;
   font-size: 23px;
   font-family: "Poppins";
   flex-wrap: wrap;
@@ -4528,6 +4536,7 @@ a.nav-link {
     font-size: 28px;
   }
   .prod-investment,
+  .prod-land2,
   .prod-land {
     display: flex;
     min-height: 39vh;

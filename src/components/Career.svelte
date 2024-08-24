@@ -68,22 +68,29 @@
 
     <div class="row mx-0 py-10 p-text text-cgreen text-center" id="positions">
       <div class="collection text-center py-4">Open positions</div>
-      <DropCard />
+      <DropCard
+        DropHeader="Growth Hacker"
+        DropContent="We seek the expertise of an experience marketing specialist to drive a 360 degree marketing campaign and customer experience which leads to customer retention and sales"
+      DropBtn="Apply"/>
       <DropCard
         DropHeader="Sales Executive"
         DropContent="We seek the expertise of an experienced sales professional to drive strategic sales initiatives and build strong customer relationships, ultimately leading to increased revenue and long-term business growth."
+        DropBtn="Apply"
       />
       <DropCard
         DropHeader="Business Manager"
         DropContent="We seek the expertise of an experienced business manager to oversee and optimize daily operations, implement strategic plans, and drive organizational success through effective leadership and resource management."
+        DropBtn="Apply"
       />
       <DropCard
         DropHeader="Social Media Manager"
         DropContent="We seek the expertise of an experienced social media specialist to craft and execute comprehensive social media strategies that enhance brand visibility, engage target audiences, and foster community growth."
+        DropBtn="Apply"
       />
       <DropCard
         DropHeader="Driver"
         DropContent="We seek the expertise of a skilled and reliable driver to ensure safe and timely transportation, while maintaining a high standard of service and professionalism in all interactions."
+        DropBtn="Apply"
       />
     </div>
   </div>

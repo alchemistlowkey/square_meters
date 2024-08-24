@@ -3,6 +3,7 @@
   import PageHead from "../shared/PageHead.svelte";
   import Button from "../shared/Button.svelte";
   import Offer from "../shared/Offer.svelte";
+  import DropCard from "./DropCard.svelte";
 </script>
 
 <Bg headerBG="faq.jpeg">
@@ -18,102 +19,37 @@
   </PageHead>
 </Bg>
 
-<div class="container">
-  <div class="ag-format-container">
-    <div class="ag-faq_list">
-      <div class="ag-faq_item">
-        <div class="js-ag-faq_title">
-          <span class="fw-light">Question:</span>&nbsp;What do you want to know?
-          &nbsp;&nbsp;<span class="iconn position-relative"
-            ><i class="fa fa-angle-up" aria-hidden="true"></i></span
-          >
-        </div>
-
-        <div class="js-ag-faq_text">
-          At Square Meters, we prioritize the well-being of our team because
-          it's not only the right thing to do, as it is what empowers us to
-          deliver our best work.
-          <br />
-          At Square Meters, we prioritize the well-being of our team because it's
-          not only the right thing to do, as it is what empowers us to deliver our
-          best work.
-        </div>
-      </div>
-
-      <div class="ag-faq_item">
-        <div class="js-ag-faq_title">
-          <span class="fw-light">Question:</span>&nbsp;What do you want to know?
-          &nbsp;&nbsp;<span class="iconn position-relative"
-            ><i class="fa fa-angle-up" aria-hidden="true"></i></span
-          >
-        </div>
-
-        <div class="js-ag-faq_text js-ag-hide">
-          At Square Meters, we prioritize the well-being of our team because
-          it's not only the right thing to do, as it is what empowers us to
-          deliver our best work.
-          <br />
-          At Square Meters, we prioritize the well-being of our team because it's
-          not only the right thing to do, as it is what empowers us to deliver our
-          best work.
-        </div>
-      </div>
-      <div class="ag-faq_item">
-        <div class="js-ag-faq_title">
-          <span class="fw-light">Question:</span>&nbsp;What do you want to know?
-          &nbsp;&nbsp;<span class="iconn position-relative"
-            ><i class="fa fa-angle-up" aria-hidden="true"></i></span
-          >
-        </div>
-
-        <div class="js-ag-faq_text js-ag-hide">
-          At Square Meters, we prioritize the well-being of our team because
-          it's not only the right thing to do, as it is what empowers us to
-          deliver our best work.
-          <br />
-          At Square Meters, we prioritize the well-being of our team because it's
-          not only the right thing to do, as it is what empowers us to deliver our
-          best work.
-        </div>
-      </div>
-      <div class="ag-faq_item">
-        <div class="js-ag-faq_title">
-          <span class="fw-light">Question:</span>&nbsp;What do you want to know?
-          &nbsp;&nbsp;<span class="iconn position-relative"
-            ><i class="fa fa-angle-up" aria-hidden="true"></i></span
-          >
-        </div>
-
-        <div class="js-ag-faq_text js-ag-hide">
-          At Square Meters, we prioritize the well-being of our team because
-          it's not only the right thing to do, as it is what empowers us to
-          deliver our best work.
-          <br />
-          At Square Meters, we prioritize the well-being of our team because it's
-          not only the right thing to do, as it is what empowers us to deliver our
-          best work.
-        </div>
-      </div>
-      <div class="ag-faq_item">
-        <div class="js-ag-faq_title">
-          <span class="fw-light">Question:</span>&nbsp;What do you want to know?
-          &nbsp;&nbsp;<span class="iconn position-relative"
-            ><i class="fa fa-angle-up" aria-hidden="true"></i></span
-          >
-        </div>
-
-        <div class="js-ag-faq_text js-ag-hide">
-          At Square Meters, we prioritize the well-being of our team because
-          it's not only the right thing to do, as it is what empowers us to
-          deliver our best work.
-          <br />
-          At Square Meters, we prioritize the well-being of our team because it's
-          not only the right thing to do, as it is what empowers us to deliver our
-          best work.
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="row mx-0 py-10 p-text text-cgreen text-center" id="positions">
+  <DropCard
+    DropHeader2="What do you want to know?"
+    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+  />
+  <DropCard
+    DropHeader2="What do you want to know?"
+    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+  />
+  <DropCard
+    DropHeader2="What do you want to know?"
+    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+  />
+  <DropCard
+    DropHeader2="What do you want to know?"
+    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+  />
+  <DropCard
+    DropHeader2="What do you want to know?"
+    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+  />
+  <DropCard
+    DropHeader2="What do you want to know?"
+    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+  />
 </div>
 
 <div class="container">

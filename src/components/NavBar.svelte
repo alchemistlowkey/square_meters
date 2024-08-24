@@ -127,7 +127,7 @@
               dropheader="FAQ's"
               droptext="Got Questions, We've answers"
               dropimg="images/faq_icon.png"
-              droplink="/contact-us"
+              droplink="/faq"
             />
 
             <NavDropCard
@@ -274,7 +274,7 @@
               dropheader="FAQ's"
               droptext="Got Questions, We've answers"
               dropimg="images/faq_icon.png"
-              droplink="/contact-us"
+              droplink="/faq"
             />
 
             <NavDropCard

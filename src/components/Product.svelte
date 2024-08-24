@@ -9,7 +9,7 @@
   CardHeader="Our Products"
     CardContent="You are a step closer to making a great decision today, cheers."
   >
-    <Button btnDetails={{ text: "See our projects", link: "#projects" }}></Button>
+    <Button btnDetails="See our projects"></Button>
   </PageHead>
 </Bg>
 

@@ -1,3 +1,7 @@
+<script>
+
+</script>
+
 <section class="footer-top">
   <div class="container text-green p-5">
     <div class="row">
@@ -95,12 +99,12 @@
           </div>
         </div>
         <div class="col pt-md-10 pt-md-5 py-3">
-          <div class="content text-nowrap md:text-[18px] text-xs md:pt-0 pt-12 md:text-left text-right">
+          <div class="content text-nowrap md:text-[18px] text-xs md:pt-0 pt-12 md:text-left text-right md:leading-10 leading-5">
             Join more than 1500 recipients <br />
              of real estate updates and trends
           </div>
         </div>
-        <div class="col-md-5 col-sm-12 pt-md-5 pt-0 m-0">
+        <div class="col-md-5 col-sm-12 pt-md-5 md:mt-3 pt-0">
           <div class="">
             <form action="">
               <div class="input-group">

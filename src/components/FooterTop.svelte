@@ -87,24 +87,24 @@
   </div>
 
   <div class="container">
-    <div class="newsletter-footer-1">
-      <div class="row mx-0 p-2 pt-1 py-0">
-        <div class="col-4 col-md">
+    <div class="bg-[#F6FFFD] m-0">
+      <div class="row mx-0 py-0">
+        <div class="col-5 col-md-3">
           <div class="m-auto">
             <img
               src="/images/sqm-footer-logo.png"
-              class="img-fluid"
+              class="img-fluid w-40 mt-md-3"
               alt="logo"
             />
           </div>
         </div>
-        <div class="col pt-md-10 pt-md-5 py-3">
+        <div class="col-7 col-md-4 pt-md-5 py-3">
           <div class="content text-nowrap md:text-[18px] text-xs md:pt-0 pt-12 md:text-left text-right md:leading-10 leading-5">
             Join more than 1500 recipients <br />
              of real estate updates and trends
           </div>
         </div>
-        <div class="col-md-5 col-sm-12 pt-md-5 md:mt-3 pt-0">
+        <div class="col-12 col-md-5 pt-md-5 mt-md-3 pt-0 mb-2">
           <div class="">
             <form action="">
               <div class="input-group">
@@ -128,9 +128,6 @@
 <style>
   .text-green {
     color: #0d493d;
-  }
-  .newsletter-footer-1 {
-    background-color: #f6fffd;
   }
   .bg-green {
     background-color: #0d493d;

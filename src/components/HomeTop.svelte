@@ -29,29 +29,29 @@
   <div class="container pt-lg-5 pt-3 pb-lg-5 mb-lg-4 mb-3">
     <div class="row mx-0">
       <div class="col-lg-6">
-        <div class="w-100 pt-3 trust-text1 text-start fs-6 text-nowrap text-white">
+        <div class="w-100 pt-3 trust-text1 fs-6 text-nowrap text-center text-md-start text-white">
           Trusted by over 1000 individuals
         </div>
         <div class="w-100 pt-3">
-          <div class="row mx-0">
+          <div class="row mx-0 justify-content-md-start justify-content-center">
             <div class="col-lg-3 col-3">
               <img
                 src="images/business_day.png"
-                class="w-100 img-white"
+                class="w-100"
                 alt=""
               />
             </div>
             <div class="col-lg-3 col-3">
                 <img
                   src="images/CNN.jpeg"
-                  class="w-100 img-white rounded"
+                  class="w-100 rounded"
                   alt=""
                 />
             </div>
             <div class="col-lg-3 col-3">
               <img
                 src="images/punch_logo.png"
-                class="w-100 img-white"
+                class="w-100"
                 alt=""
               />
             </div>
@@ -84,7 +84,6 @@
 
 <style>
   .trust-text1 {
-    text-align: center;
     font-size: 23px;
     font-style: normal;
     font-weight: 400;

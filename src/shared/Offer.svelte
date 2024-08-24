@@ -6,7 +6,7 @@
       <div class="second text-center pt-3">Start Investing Today</div>
     </div>
     <div class="col mt-md-5 mt-5 mt-lg-0">
-      <a class="offer-cite-btn btn btn-danger" href="/"> Our Offering </a>
+      <a class="offer-cite-btn btn btn-danger" href="/investment"> Our Offering </a>
     </div>
   </div>
 </div>

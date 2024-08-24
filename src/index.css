@@ -4262,7 +4262,7 @@ a.nav-link {
 .seamingly-text {
   color: #0d493d;
   font-family: Poppins;
-  font-size: 17px;
+  /* font-size: 17px; */
   font-style: normal;
   font-weight: 400;
   line-height: normal;

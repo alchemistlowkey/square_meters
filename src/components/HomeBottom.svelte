@@ -6,7 +6,7 @@
           <span class="seamingly text-white"> News & Insight </span>
         </div>
         <div class="col-md-7">
-          <span class="seamingly-text text-white"
+          <span class="seamingly-text text-white md:text-lg text-sm"
             >A summary of industry news and updates in and around Square Metres
           </span>
         </div>
@@ -92,7 +92,7 @@
       <span class="seamingly">You name it, we’ve figured it out </span>
     </div>
     <div class="col-md-7 pt-2">
-      <span class="seamingly-text">
+      <span class="seamingly-text md:text-lg text-sm">
         Making your real estate investment decisions wise is our business.
       </span>
     </div>

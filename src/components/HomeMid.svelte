@@ -5,7 +5,7 @@
         <span class="seamingly"> Invest Seamlessly </span>
       </div>
       <div class="col-md-6">
-        <span class="seamingly-text ms-lg-0 ps-lg-0"
+        <span class="seamingly-text ms-lg-0 ps-lg-0 md:text-lg text-sm text-nowrap"
           >Making your money is hard, investing it shouldn’t be
         </span>
       </div>
@@ -38,7 +38,7 @@
         <span class="seamingly"> We are SquareMetres </span>
       </div>
       <div class="col-md-6">
-        <span class="seamingly-text"
+        <span class="seamingly-text md:text-lg text-sm"
           >We are bringing a new reality to the eye of those who appreciate
           quality investment and project delivery.We are building the future
           Today

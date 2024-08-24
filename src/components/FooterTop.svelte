@@ -84,9 +84,9 @@
 
   <div class="container">
     <div class="newsletter-footer-1">
-      <div class="row p-3 pt-5">
-        <div class="col">
-          <div class="">
+      <div class="row mx-0 p-2 pt-1 py-0">
+        <div class="col-4 col-md">
+          <div class="m-auto">
             <img
               src="/images/sqm-footer-logo.png"
               class="img-fluid"
@@ -94,21 +94,22 @@
             />
           </div>
         </div>
-        <div class="col pt-5">
-          <div class="content text-wrap">
-            Join more than 1500 recipients of real estate updates and trends
+        <div class="col pt-md-10 pt-md-5 py-3">
+          <div class="content text-nowrap md:text-[18px] text-xs md:pt-0 pt-12 md:text-left text-right">
+            Join more than 1500 recipients <br />
+             of real estate updates and trends
           </div>
         </div>
-        <div class="col-md-5 col-sm-12 pt-5">
+        <div class="col-md-5 col-sm-12 pt-md-5 pt-0 m-0">
           <div class="">
             <form action="">
               <div class="input-group">
                 <input
                   type="email"
-                  class="form-control"
+                  class="form-control text-xs md:text-sm"
                   placeholder="Type your email address"
                 />
-                <button type="submit" class="btn bg-green text-white fw-6"
+                <button type="submit" class="btn bg-green text-white md:text-lg text-xs"
                   >SIGN UP</button
                 >
               </div>
@@ -132,13 +133,6 @@
   }
   .text-white {
     color: #f6fffd;
-  }
-  .fw-6 {
-    font-weight: 600;
-    font-size: 18px;
-  }
-  .img-fluid {
-    width: 200px;
   }
   .product {
     font-size: 17px;

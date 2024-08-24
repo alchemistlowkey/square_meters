@@ -43,10 +43,10 @@
         <h3 class="product">Contact Us</h3>
         <ul class="list-unstyled footer-social mt-3">
           <li class="list-unstyled pt-2">
-            <a href="/">
+            <a href="https://www.google.com/maps/search/?api=1&query=7/9+Molade+Okoya+Thomas,+Victoria+Island,+Lagos" target="_blank">
               <div class="row mx-0">
                 <div class="col-2 py-2 d-flex align-center">
-                  <a class="" href="/">
+                  <a class="" href="https://www.google.com/maps/search/?api=1&query=7/9+Molade+Okoya+Thomas,+Victoria+Island,+Lagos" target="_blank">
                     <i class="bi-building-fill"></i>
                   </a>
                 </div>

@@ -37,24 +37,26 @@
   }
 </script>
 
-<Bg headerBG="investment-page-bg.jpeg">
-  <PageHead
-    CardContent="Invest in "
-    SpanContent="Fitila Signatures "
-    CardContent2="through short-term real estate debt that yield high returns."
-  >
-    <Button
-      btnDetails="Reserve a Slot"
-      formHeader="Invest"
-      formText="Backed by Fitila Signatures"
-      fullName="Full Name"
-      email="Email"
-      phoneNumber="Phone Number"
-      amount="Amount"
-      on:openform={handleOpenForm}
-    />
-  </PageHead>
-</Bg>
+<section>
+  <Bg headerBG="investment-page-bg.jpeg">
+    <PageHead
+      CardContent="Invest in "
+      SpanContent="Fitila Signatures "
+      CardContent2="through short-term real estate debt that yield high returns."
+    >
+      <Button
+        btnDetails="Reserve a Slot"
+        formHeader="Invest"
+        formText="Backed by Fitila Signatures"
+        fullName="Full Name"
+        email="Email"
+        phoneNumber="Phone Number"
+        amount="Amount"
+        on:openform={handleOpenForm}
+      />
+    </PageHead>
+  </Bg>
+</section>
 
 <Modal isOpen={showModal} close={closeModal}>
   <Form {formHeader} {formText} {fullName} {email} {phoneNumber} {amount} />
@@ -63,4 +65,5 @@
 <Offer />
 
 <style>
+  
 </style>

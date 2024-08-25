@@ -134,7 +134,7 @@
               dropheader="Contact Us"
               droptext="Reach us with ease"
               dropimg="images/contact_icon.png"
-              droplink="/policy"
+              droplink="/contact-us"
             />
           </div>
         </div>
@@ -281,7 +281,7 @@
               dropheader="Contact Us"
               droptext="Reach us with ease"
               dropimg="images/contact_icon.png"
-              droplink="/policy"
+              droplink="/contact-us"
             />
           </div>
         {/if}

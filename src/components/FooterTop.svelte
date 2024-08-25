@@ -89,19 +89,18 @@
   <div class="container">
     <div class="bg-[#F6FFFD] m-0">
       <div class="row mx-0 py-0">
-        <div class="col-5 col-md-3">
-          <div class="m-auto">
+        <div class="col-4 mx-auto col-md-3">
+          <div class="">
             <img
               src="/images/sqm-footer-logo.png"
-              class="img-fluid w-40 mt-md-3"
+              class="w-[120px] mt-md-3 m-0"
               alt="logo"
             />
           </div>
         </div>
-        <div class="col-7 col-md-4 pt-md-5 py-3">
-          <div class="content text-nowrap md:text-[18px] text-xs md:pt-0 pt-12 md:text-left text-right md:leading-10 leading-5">
-            Join more than 1500 recipients <br />
-             of real estate updates and trends
+        <div class="col col-md-4 pt-md-5 pt-3">
+          <div class="content text-wrap md:text-[18px] text-xs md:pt-0 mt-md-0 mt-3 md:text-left text-right md:leading-10 leading-5">
+            Join more than 1500 recipients of real estate updates and trends
           </div>
         </div>
         <div class="col-12 col-md-5 pt-md-5 mt-md-3 pt-0 mb-2">

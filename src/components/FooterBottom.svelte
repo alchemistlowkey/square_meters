@@ -3,28 +3,28 @@
     <div class="row mx-0 text-green fs-5">
       <div class="col-6 col-md-6 text-xs sm:text-sm md:text-base lg:text-lg float-start pt-3">
         <ul class="d-flex">
-          <li class="px-2 px-sm-3 px-md-4">
+          <li class="px-1 px-sm-3 px-md-4">
             <a href="https://www.instagram.com/squaremetresng/" target="_blank"
               ><i class="bi-instagram"></i></a
             >
           </li>
-          <li class="px-2 px-sm-3 px-md-4">
+          <li class="px-1 px-sm-3 px-md-4">
             <a href="https://web.facebook.com/squaremetresng" target="_blank"
               ><i class="bi-facebook"></i></a
             >
           </li>
-          <li class="px-2 px-sm-3 px-md-4">
+          <li class="px-1 px-sm-3 px-md-4">
             <a
               href="https://www.linkedin.com/company/square-meters-real-estate-limited?trk=feed_main-feed-card_feed-actor-name "
               target="_blank"><i class="bi-linkedin"></i></a
             >
           </li>
-          <li class="px-2 px-sm-3 px-md-4">
+          <li class="px-1 px-sm-3 px-md-4">
             <a href="https://x.com/squaremetresng" target="_blank"
               ><i class="bi-twitter"></i></a
             >
           </li>
-          <li class="px-2 px-sm-3 px-md-4">
+          <li class="px-1 px-sm-3 px-md-4">
             <a href="https://www.youtube.com/@squaremetresng" target="_blank"
               ><i class="bi-youtube"></i></a
             >

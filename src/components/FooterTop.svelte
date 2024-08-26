@@ -99,7 +99,7 @@
           </div>
         </div>
         <div class="col col-md-4 pt-md-5 pt-3">
-          <div class="content text-wrap md:text-[18px] text-xs md:pt-0 mt-md-0 mt-3 md:text-left text-right md:leading-10 leading-5">
+          <div class="content md:text-[14px] lg:text-[18px] text-xs md:pt-0 mt-md-0 mt-3 md:text-left text-right md:leading-5 lg:leading-10 leading-5">
             Join more than 1500 recipients of real estate updates and trends
           </div>
         </div>

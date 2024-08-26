@@ -14,8 +14,8 @@
         />
       </div>
     </div>
-    <div class="">
-      <img src="/images/address.png" class="rounded p-3" alt="map address" />
+    <div class="rounded-lg">
+      <img src="/images/address.png" class="p-3 rounded-lg" alt="map address" />
     </div>
     <div class="row mx-0">
       <div class="col-6 text-nowrap">

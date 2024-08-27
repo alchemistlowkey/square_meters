@@ -14,8 +14,7 @@
     CardContent3="To put a smile on the faces of investors by delivering and improving the
         quality of work."
   >
-    <Button btnDetails="Know what we value"
-    ></Button>
+    <Button btnDetails="Know what we value"></Button>
   </PageHead>
 </Bg>
 
@@ -23,16 +22,17 @@
   <div class="container">
     <CardText
       TextHeader="Who We Are"
-      TextContent="At Square Metres Construction Limited, we are passionate about driving
-          a wholesome experience for you through timely project delivery,
-          safeguarding your investment and guaranteeing high returns on your
-          investment."
-      TextContent2="Our Journey began with a simple yet profound goal which is to provide
-          investors with an experience that truly reflects the potential of
-          their real estate investment."
-      TextContent3="We recognize that good real estate can complete ones living experience
-          and increase life expectancy, giving ones life more meaning at old
-          age."
+      TextContent={[
+        {
+          body: "At Square Metres Construction Limited, we are passionate about driving a wholesome experience for you through timely project delivery, safeguarding your investment and guaranteeing high returns on your investment.",
+        },
+        {
+          body: "Our Journey began with a simple yet profound goal which is to provide investors with an experience that truly reflects the potential of their real estate investment.",
+        },
+        {
+          body: "We recognize that good real estate can complete one's living experience and increase life expectancy, giving one's life more meaning at old age.",
+        },
+      ]}
     ></CardText>
   </div>
 </section>
@@ -47,7 +47,8 @@
           </span>
         </div>
         <div class="col-lg-8 offset-lg-2 px-0 text-lg-center pt-2">
-          <span class="seamingly-text text-white text-xs md:text-base lg:text-lg"
+          <span
+            class="seamingly-text text-white text-xs md:text-base lg:text-lg"
             >Square Metres is managed by experienced professionals who are
             working collaboratively with a vast background in real estate
             investment and entrepreneurship.
@@ -102,8 +103,13 @@
 <section>
   <div class="container">
     <CardText
-      TextHeader="What Defines Us"
-      TextContent="Our values define the SquareMetres culture, who we are, and why we do what we do. Shaping our interaction with all stakeholders: customers, regulators, investors, partners and our host communities."
+    TextHeader="What Defines Us"
+
+      TextContent={[
+        {
+          body: "Our values define the SquareMetres culture, who we are, and why we do what we do. Shaping our interaction with all stakeholders, customers, regulators, investors, partners and our host communities.",
+        },
+      ]}
     ></CardText>
   </div>
 </section>

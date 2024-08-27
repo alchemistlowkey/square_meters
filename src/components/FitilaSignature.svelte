@@ -80,9 +80,15 @@
   <div class="container">
     <CardText
       TextHeader="About Fitila Signatures"
-      TextContent="Fitila Signature is a timeless piece of real estate investment experience, design with the future in mind for those who love fine living. it comes with features and facilities that completes you and elevate your living experience"
-      TextContent2="Poised to be one of the most organized settlement in its host community, Epe, which is also the fastest-selling and most sought-after area in Nigeria, it is more than offering you a destination but wholeness in a piecemeal"
-    />
+      TextContent={[
+        {
+          body: "Fitila Signature is a timeless piece of real estate investment experience, design with the future in mind for those who love fine living. it comes with features and facilities that completes you and elevate your living experience",
+        },
+        {
+          body: "Poised to be one of the most organized settlement in its host community, Epe, which is also the fastest-selling and most sought-after area in Nigeria, it is more than offering you a destination but wholeness in a piecemeal",
+        },
+      ]}
+    ></CardText>
   </div>
 </section>
 

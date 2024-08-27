@@ -23,20 +23,26 @@
   <div class="container">
     <CardText
       TextHeader="A little about working with us"
-      TextContent="At Square Meters, we prioritize the well-being of our team because
-          it's not only the right thing to do, as it is what empowers us to
-          deliver our best work."
-      TextContent2="Are you beginning your career or already a star, our system provides
-          numerous opportunities for you to make a positive impact on people's
-          lives."
-      TextContent3="SquareMetres is a welcoming place for everyone, and we do our best to
-          make sure our people feel supported and happy at work."
+      TextContent={[
+        {
+          body: "At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work.",
+        },
+        {
+          body: "Are you beginning your career or already a star, our system provides numerous opportunities for you to make a positive impact on people's lives.",
+        },
+        {
+          body: "SquareMetres is a welcoming place for everyone, and we do our best to make sure our people feel supported and happy at work.",
+        },
+      ]}
     ></CardText>
 
     <CardText
       TextHeader="Life at Square Metres"
-      TextContent="In everything we do, we uphold these values without compromise. At
-          Square Meters, its people over process and teamwork over perfection."
+      TextContent={[
+        {
+          body: "In everything we do, we uphold these values without compromise. At Square Meters, its people over process and teamwork over perfection.",
+        },
+      ]}
     ></CardText>
 
     <div class="row mx-0 pt-md-1 p-text text-cgreen text-center">

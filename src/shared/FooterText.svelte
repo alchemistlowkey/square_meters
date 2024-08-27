@@ -9,11 +9,12 @@
     <li class="list-unstyled pt-2">
       <a href={linkItem.href}>
         {#if linkItem.icon}
-        <span class="pe-1">
-          <i class={linkItem.icon}></i>
-        </span>
+          <span class="pe-1">
+            <i class={linkItem.icon}></i>
+          </span>
         {/if}
-        {linkItem.text}</a>
+        {linkItem.text}</a
+      >
     </li>
   {/each}
 </ul>

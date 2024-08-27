@@ -43,7 +43,7 @@
       <div class="col-md-4 py-md-0 py-5 text-center">
         <img src="/images/goal.png" alt="" class="mx-auto d-block" />
         <p class="py-4 fw-bold">Find your Balance</p>
-        <p>
+        <p class="text-xs md:text-base lg:text-lg">
           We recognize the importance of work-life balance. encourage
           collaboration & nurture career growth
         </p>
@@ -51,7 +51,7 @@
       <div class="col-md-4 py-md-0 py-5 text-center">
         <img src="/images/growth.png" alt="" class="mx-auto d-block" />
         <p class="py-4 fw-bold">A Place For All</p>
-        <p>
+        <p class="text-xs md:text-base lg:text-lg">
           Diversity and inclusion are at the core of our being. There's a
           space for everyone at Square Metres
         </p>
@@ -59,7 +59,7 @@
       <div class="col-md-4 py-md-0 py-5 text-center">
         <img src="/images/core-values.png" alt="" class="mx-auto d-block" />
         <p class="py-4 fw-bold">Thrive With Us</p>
-        <p>
+        <p class="text-xs md:text-base lg:text-lg">
           Join us on a journey of growth and learning. Engage in personalized
           training, unwind at happy hours, and more ....
         </p>

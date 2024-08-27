@@ -47,7 +47,7 @@
           </span>
         </div>
         <div class="col-lg-8 offset-lg-2 px-0 text-lg-center pt-2">
-          <span class="seamingly-text text-white"
+          <span class="seamingly-text text-white text-xs md:text-base lg:text-lg"
             >Square Metres is managed by experienced professionals who are
             working collaboratively with a vast background in real estate
             investment and entrepreneurship.

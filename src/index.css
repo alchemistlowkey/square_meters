@@ -8,7 +8,6 @@
   width: 100%;
 }
 .forget-everything-you-container {
-  font-size: 44.91px;
   line-height: 58.68px;
   font-weight: 600;
   font-family: var(--font-public-sans);
@@ -36,7 +35,6 @@
   width: 293px;
   height: 67px;
   cursor: pointer;
-  font-size: 24.43px;
 }
 .group-item {
   position: absolute;
@@ -78,7 +76,6 @@
   left: 1153px;
   width: 257.32px;
   height: 51px;
-  font-size: 21.48px;
 }
 .icon {
   position: absolute;
@@ -110,8 +107,7 @@
   position: absolute;
   top: 69px;
   text-align: center;
-  font-size: var(--font-size-sm);
-  font-family: var(--font-inter);
+  font-family: Poppins;
 }
 .frame-parent {
   left: 958px;
@@ -186,9 +182,8 @@
   height: 579px;
 }
 .more-value-in-container {
-  font-size: 31.84px;
   line-height: 44.08px;
-  font-family: var(--font-public-sans);
+  font-family: Poppins;
 }
 
 /* //homepage */
@@ -207,8 +202,7 @@
 .homepage_banner .first_head {
   color: #f6fffd;
   text-align: center;
-  font-family: "Urbanist", "san-serif";
-  font-size: 50px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -216,8 +210,7 @@
 .homepage_banner .second_head {
   color: #f6fffd;
   text-align: center;
-  font-family: "Poppins", "san-serif";
-  font-size: 25px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -225,7 +218,6 @@
 
 .product {
   position: relative;
-  font-size: 17.54px;
   font-family: var(--font-poppins);
   color: #0d493d;
   text-align: left;
@@ -241,16 +233,13 @@
   background-repeat: no-repeat;
   background-position: top;
   text-align: left;
-  font-size: 17.54px;
   color: var(--color-darkslategray);
   font-family: var(--font-poppins);
 }
 
 .product-item a {
   color: #0d493d !important;
-
   font-family: Poppins;
-  font-size: 17.537px;
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
@@ -285,7 +274,6 @@ li.list-unstyled.product-item {
   height: 100%;
   overflow: hidden;
   text-align: left;
-  font-size: 27.01px;
   color: var(--color-white);
   font-family: var(--font-poppins);
 }
@@ -296,17 +284,13 @@ li.list-unstyled.product-item {
 
 .logo {
   width: 225px;
-  /* ; */
 }
 
 .navbar-light .navbar-nav .nav-link {
   text-align: center;
-  font-size: var(--font-size-sm);
-  font-family: var(--font-inter);
   color: var(--color-darkslategray);
   color: #0d493d;
   font-family: "Poppins" !important;
-  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -324,7 +308,6 @@ li.list-unstyled.product-item {
 }
 
 .quick-support {
-  font-size: 21.48px;
   color: var(--color-white);
   font-family: var(--font-poppins);
 }
@@ -333,7 +316,6 @@ li.list-unstyled.product-item {
   position: fixed;
   bottom: 30px;
   right: 30px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,7 +331,6 @@ li.list-unstyled.product-item {
   gap: 114px;
   border-radius: 6px;
   background: #f6fffd;
-
   box-shadow: 0px 15px 20px 0px rgba(208, 208, 208, 0.25);
 }
 @media (min-width: 768px) {
@@ -369,10 +350,6 @@ li.list-unstyled.product-item {
     height: 100%;
   }
 
-  .residential {
-    font-size: 22px;
-  }
-
   .welcome-page-child,
   .welcome-page-item {
     /* position: absolute; */
@@ -387,14 +364,12 @@ li.list-unstyled.product-item {
   }
 
   .forget-everything-you-container {
-    font-size: 27.91px;
     line-height: 37.68px;
   }
 
   .more-value-in-container {
-    font-size: 17.84px;
     line-height: 27.08px;
-    font-family: var(--font-public-sans);
+    font-family: Poppins;
   }
 
   .offering-btn {
@@ -404,7 +379,6 @@ li.list-unstyled.product-item {
   }
 
   .lorem-ipsum-dolor {
-    font-size: 21px;
     line-height: 33.21px;
     text-align: center;
     margin-bottom: 51px;
@@ -412,7 +386,6 @@ li.list-unstyled.product-item {
   }
 
   .square-metres-residential {
-    font-size: 35.16px;
     line-height: 48.89px;
     font-weight: 500;
     margin-top: 17px;
@@ -460,7 +433,6 @@ a.see-selling-projects {
 
 .starting-price {
   position: relative;
-  /* font-size: 30.14px; */
   line-height: 53px;
   font-weight: 600;
   font-family: Inter;
@@ -3869,9 +3841,7 @@ a.see-selling-projects {
 }
 .title-bar {
   color: #f6fffd;
-
   font-family: "Poppins";
-  font-size: 17px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -3882,7 +3852,6 @@ a.see-selling-projects {
   padding: 30px;
   flex-direction: column;
   text-align: center;
-
   border: 2px solid #f96b29;
   background: #f6fffd;
   -webkit-border-radius: 10px;
@@ -3902,7 +3871,6 @@ a.see-selling-projects {
   color: #0d493d;
   text-align: center;
   font-family: Poppins;
-  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -3926,10 +3894,8 @@ a.see-selling-projects {
 }
 .js-ag-faq_title {
   padding: 15px 30px;
-
   cursor: pointer;
   border-radius: 10px 10px 0px 0px;
-  font-size: 20px;
   color: #fff;
 }
 .js-ag-faq_title,
@@ -3937,7 +3903,6 @@ a.see-selling-projects {
   color: #0d493d;
   text-align: center;
   font-family: Poppins;
-  font-size: 22px;
   border: 1px solid #0d493d;
   font-style: normal;
   font-weight: 500;
@@ -3963,7 +3928,6 @@ a.see-selling-projects {
 .js-ag-faq_text {
   color: #f6fffd;
   font-family: Poppins;
-  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -3971,7 +3935,6 @@ a.see-selling-projects {
   padding: 30px 40px;
   background-color: #eee;
 
-  font-size: 18px;
   /* color: #5b5b5b; */
   border-radius: 0px 0px 10px 10px;
   background: #0d493d;
@@ -4033,7 +3996,6 @@ a.see-selling-projects {
   color: #ff7a00;
 }
 .testimonials .testi .item .profile .information p {
-  font-size: 24px;
   margin: 0px auto 0px;
   color: #5a3733;
   font-weight: 900;
@@ -4044,11 +4006,9 @@ a.see-selling-projects {
   font-weight: bold;
   margin-top: -4px;
   line-height: 1.6em;
-  font-size: 14px;
 }
 .testimonials .testi .item > p {
   margin-bottom: 15px;
-  font-size: 16px;
   line-height: 1.6em;
   display: block;
   z-index: 2;
@@ -4060,7 +4020,6 @@ a.see-selling-projects {
   text-align: center;
 }
 .testimonials .testi .item .icon i {
-  font-size: 32px;
   color: white;
 }
 .owl-item.active > .item {
@@ -4090,10 +4049,8 @@ a.see-selling-projects {
 }
 
 .testimonials .testi .item .icon i {
-  font-size: 32px;
   background: #ff7a00;
   padding: 9px;
-  font-size: 25px;
   border-radius: 72px;
 }
 
@@ -4134,7 +4091,6 @@ a.see-selling-projects {
   min-height: 39vh;
   margin-bottom: 11px;
   padding-bottom: 28px;
-  font-size: 18px;
 }
 .product-filtla,
 .product-land {
@@ -4142,7 +4098,6 @@ a.see-selling-projects {
   min-height: 73vh;
   margin-bottom: 11px;
   padding-bottom: 28px;
-  font-size: 18px;
   border-radius: 17px;
   align-content: flex-end;
   flex-wrap: wrap;
@@ -4155,13 +4110,12 @@ a.nav-link {
 }
 
 .font-graphix {
-  font-family: var(--font-graphik) !important;
+  font-family: var(--font-graphik);
 }
 
 .project-title {
   color: #0d493d;
-  font-family: Graphik;
-  font-size: 28px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -4170,20 +4124,17 @@ a.nav-link {
 .project-text {
   color: #0d493d !important;
 
-  font-size: 20px;
   font-weight: 600;
 }
 
 .project-text-small {
   font-family: Poppins;
-  font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
 
 .project-price {
-  font-size: 30px;
   font-weight: 700;
 }
 
@@ -4191,16 +4142,9 @@ a.nav-link {
   color: #767676;
 
   font-family: Poppins;
-  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-@media (max-width: 768px) {
-  .project-text-small {
-    font-size: 15px;
-  }
 }
 
 .bg-green {
@@ -4216,7 +4160,6 @@ a.nav-link {
 
 .normal-font {
   font-family: Poppins;
-  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -4231,11 +4174,10 @@ a.nav-link {
   color: #0d493d;
 }
 .font-poppins {
-  font-family: "Poppins", "san-serif";
+  font-family: "Poppins";
 }
 .trust-text {
   text-align: center;
-  font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -4252,8 +4194,7 @@ a.nav-link {
 .seamingly {
   color: #f96b29;
   text-align: center;
-  font-family: "Urbanist", "sans-serif";
-  font-size: 37px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -4262,7 +4203,6 @@ a.nav-link {
 .seamingly-text {
   color: #0d493d;
   font-family: Poppins;
-  /* font-size: 17px; */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -4293,8 +4233,7 @@ a.nav-link {
 .prod-land {
   display: flex;
   min-height: 74vh;
-  color: #F6FFFD;
-  font-size: 23px;
+  color: #f6fffd;
   font-family: "Poppins";
   flex-wrap: wrap;
   align-content: flex-end;
@@ -4309,7 +4248,6 @@ a.nav-link {
 .product-item a {
   color: #0d493d !important;
   font-family: Poppins;
-  font-size: 14.537px;
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
@@ -4330,7 +4268,6 @@ a.nav-link {
 .white-box .head {
   color: #656565;
   font-family: Poppins;
-  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -4338,7 +4275,6 @@ a.nav-link {
 .white-box .body {
   color: #0d493d;
   font-family: Poppins;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -4346,7 +4282,6 @@ a.nav-link {
 .danger-box .head {
   color: white;
   font-family: Poppins;
-  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -4354,7 +4289,6 @@ a.nav-link {
 .danger-box .body {
   color: white;
   font-family: Poppins;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -4390,7 +4324,6 @@ a.nav-link {
 .news_card .head {
   color: #f6fffd;
   font-family: Poppins;
-  font-size: 19.744px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -4399,7 +4332,6 @@ a.nav-link {
 .news_card .body {
   color: #f6fffd;
   font-family: Poppins;
-  font-size: 16.453px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -4408,7 +4340,6 @@ a.nav-link {
   color: #f6fffd;
 
   font-family: Poppins;
-  font-size: 16.453px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -4432,7 +4363,6 @@ a.nav-link {
   background: #fbfffe;
   color: #656565;
   font-family: "Poppins";
-  font-size: 17px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -4458,7 +4388,6 @@ a.nav-link {
   color: #f6fffd;
   text-align: center;
   font-family: Poppins;
-  font-size: 35px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -4466,7 +4395,6 @@ a.nav-link {
 .offer-cite .second {
   color: #f6fffd;
   font-family: Poppins;
-  font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: 136%; /* 54.4px */
@@ -4489,7 +4417,6 @@ a.nav-link {
   color: #0d493d;
   text-align: right;
   font-family: Poppins;
-  font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -4499,7 +4426,6 @@ a.nav-link {
   color: #979797;
 
   font-family: Poppins;
-  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px; /* 116.667% */
@@ -4517,23 +4443,13 @@ a.nav-link {
   .container.desktop_nav {
     justify-content: left;
   }
-  .homepage_banner .first_head {
-    font-size: 27px;
-  }
-  .homepage_banner .second_head {
-    font-size: 20px;
-  }
   .homepage_banner .body {
     padding: 244px 0px;
     padding-bottom: 21px;
   }
   .trust-text {
     text-align: left;
-    font-size: 16px;
     font-style: normal;
-  }
-  .seamingly {
-    font-size: 28px;
   }
   .prod-investment,
   .prod-land2,
@@ -4542,7 +4458,6 @@ a.nav-link {
     min-height: 39vh;
     margin-bottom: 11px;
     padding-bottom: 28px;
-    font-size: 18px;
   }
   .news_card {
     margin-bottom: 55px;
@@ -4569,7 +4484,6 @@ a.nav-link {
   .newsletter-footer input {
     color: #979797;
     font-family: Poppins;
-    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     padding: 13px 2px;
@@ -4612,7 +4526,6 @@ a.nav-link {
     color: #0d493d;
     text-align: center;
     font-family: Poppins;
-    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     margin-top: 40px;
@@ -4620,14 +4533,6 @@ a.nav-link {
   }
   .offer-cite-btn {
     width: 240px;
-  }
-  .offer-cite .first {
-    font-size: 19px;
-    font-style: normal;
-  }
-
-  .offer-cite .second {
-    font-size: 19px;
   }
   .offer-cite {
     padding: 0px 40px;
@@ -4658,7 +4563,6 @@ a.nav-link {
     background: #fbfffe;
     color: #656565;
     font-family: "Poppins";
-    font-size: 17px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -4672,7 +4576,6 @@ a.nav-link {
   height: 100%;
   overflow: hidden;
   text-align: left;
-  font-size: 36.01px;
   color: var(--color-white);
   font-family: var(--font-poppins);
 }
@@ -4687,8 +4590,7 @@ a.nav-link {
 
 .navbar-light .navbar-nav .nav-link {
   text-align: center;
-  font-size: var(--font-size-sm);
-  font-family: var(--font-inter);
+  font-family: Poppins;
   color: var(--color-darkslategray);
 }
 
@@ -4706,8 +4608,7 @@ a.nav-link {
 .first-forget-text {
   color: #141414;
 
-  font-family: Graphik;
-  font-size: 40px;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -4715,9 +4616,7 @@ a.nav-link {
 
 .second-forget-text {
   color: #686868;
-
   font-family: Poppins;
-  font-size: 22px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -4756,10 +4655,6 @@ a.nav-link {
     height: 34vh;
   }
 
-  .first-forget-text {
-    font-size: 33px;
-  }
-
   .residential {
     bottom: 44px;
     left: 35%;
@@ -4774,16 +4669,11 @@ a.nav-link {
 }
 
 @media (max-width: 767px) {
-  .residential {
-    font-size: 22px;
-  }
-
   .nopaddingsmall {
     padding: 0px !important;
   }
 
   .forget-everything-you-container {
-    font-size: 34.91px;
     line-height: 44.68px;
   }
 
@@ -4797,32 +4687,10 @@ a.nav-link {
   }
 }
 
-@media (min-width: 425px) {
-  .first-forget-text {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 320px) {
-  .first-forget-text {
-    font-size: 27px;
-  }
-}
-
 @media (min-width: 769px) {
-  .first-forget-text {
-    font-size: 40px;
-  }
-
   .residential {
     bottom: 44px;
     left: 10%;
-  }
-}
-
-@media (max-width: 425px) {
-  .second-forget-text {
-    font-size: 20px;
   }
 }
 

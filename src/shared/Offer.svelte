@@ -1,39 +1,65 @@
-<div class="container pt-3">
-  <div class="row mx-0 offer-cite">
-    <div class="col ps-lg-4">
-      <div class="first text-wrap lg:text-nowrap">Experience SquareMetres Now</div>
-
-      <div class="second text-center pt-3">Start Investing Today</div>
-    </div>
-    <div class="col mt-md-5 mt-5 mt-lg-0">
-      <a class="offer-cite-btn btn btn-danger" href="/investment"> Our Offering </a>
+<section class="md:text-2xl lg:text-4xl text-base">
+  <div class="pt-3 px-3">
+    <div class="offer-cite">
+      <div class="text-content text-md-center">
+        <div class="first">Experience SquareMetres Now</div>
+        <div class="second text-md-center">Start Investing Today</div>
+      </div>
+      <div class="button-content">
+        <a class="offer-cite-btn hover:bg-orange-700" href="/investment">
+          Our Offering
+        </a>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <style>
   .offer-cite {
     background-color: #f8f9fa;
-    padding: 20px;
+    padding: 50px 20px; /* Increased padding for vertical centering */
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    justify-content: center; /* Center content vertically */
+  }
+
+  @media (min-width: 768px) {
+    .offer-cite {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      padding: 20px; /* Reset padding for larger screens */
+    }
+
+    .text-content {
+      flex: 1;
+    }
+
+    .button-content {
+      flex: 0;
+    }
   }
 
   .offer-cite .first {
-    font-size: 1.5rem;
     font-weight: 600;
     color: #bbb;
+    white-space: nowrap;
   }
 
   .offer-cite .second {
-    font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
+    margin-top: 10px;
   }
 
   .offer-cite-btn {
-    font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
+    background-color: #f96b29;
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -41,9 +67,5 @@
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-  }
-
-  .offer-cite-btn:hover {
-    background-color: #ff0000;
   }
 </style>

@@ -16,7 +16,7 @@
               <img src={BoxSrc} class="mx-auto d-block" alt="" />
             </div>
             <div class="title my-3">{BoxHead}</div>
-            <div class="body text-green">{BoxBody}
+            <div class="body text-green text-xs md:text-base lg:text-lg">{BoxBody}
             </div>
           </div>
         </div>
@@ -26,7 +26,7 @@
                 <img src={BoxSrc1} class="mx-auto d-block" alt="" />
               </div>
               <div class="title my-3">{BoxHead1}</div>
-              <div class="body text-green">{BoxBody1}
+              <div class="body text-green text-xs md:text-base lg:text-lg">{BoxBody1}
               </div>
             </div>
           </div>

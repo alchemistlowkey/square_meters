@@ -14,41 +14,41 @@
 </script>
 
 <div class="container-fluid homepage_banner pt-5">
-  <div class="pt-4 container body">
+  <div class="pt-4 body">
     <div class="row mx-0">
 
       <div class="mt-4 col-12 pt-5 fs-1 fw-semibold text-white px-0 text-center lg:text-nowrap">
         Wholesome Real Estate and Investment Solutions
       </div>
-      <div class="col-12 col-lg-8 offset-lg-2 text-center fs-4 text-gray-300 text-wrap fw-lighter px-0">
+      <div class="col-12 col-lg-10 offset-lg-1 text-center fs-4 text-gray-300 text-wrap fw-lighter px-0">
         Square Metres helps you do real estate better than anyone else does,
         prioritizing quality and timely project delivery
       </div>
     </div>
   </div>
-  <div class="container pt-lg-5 pt-3 pb-lg-5 mb-lg-4 mb-3">
+  <div class="pt-lg-5 pt-3 pb-lg-5 mb-lg-4 mb-3">
     <div class="row mx-0">
       <div class="col-lg-6">
-        <div class="w-100 pt-3 trust-text1 fs-6 text-nowrap text-center text-md-start text-white">
+        <div class="w-100 pt-3 trust-text1 fs-6 text-nowrap text-center text-lg-start text-white">
           Trusted by over 1000 individuals
         </div>
         <div class="w-100 pt-3">
-          <div class="row mx-0 justify-content-md-start justify-content-center">
-            <div class="col-lg-3 col-3">
+          <div class="row mx-0 justify-content-lg-start justify-content-center">
+            <div class="col-3">
               <img
                 src="images/business_day.png"
                 class="w-100"
                 alt=""
               />
             </div>
-            <div class="col-lg-3 col-3">
+            <div class="col-3">
                 <img
                   src="images/CNN.jpeg"
                   class="w-100 rounded"
                   alt=""
                 />
             </div>
-            <div class="col-lg-3 col-3">
+            <div class="col-3">
               <img
                 src="images/punch_logo.png"
                 class="w-100"
@@ -59,11 +59,13 @@
         </div>
       </div>
       <div class="col-lg-6">
-        <div class="trust-text text-center mt-3 font-poppins text-white">
+        <div class="trust-text text-center mb-3 mt-3 font-poppins text-white">
           <div class="row mx-0">
             <div class="col-11">
-              Watch Onion Nigeria CEO,Mordi Orchi, discuss working with Square
-              Metres
+              <h1 class="fs-3 text-left">
+                Watch Onion Nigeria CEO Mordi Orchi, discuss working with Square
+                Metres
+              </h1>
             </div>
             <div class="col-1 pl-0 pt-2 pt-md-4 cursor-pointer">
               <!-- svelte-ignore a11y-missing-attribute -->

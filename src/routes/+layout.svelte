@@ -1,14 +1,69 @@
 <script>
-  import "../bg.css"
+  import "../bg.css";
   import "../custom.css";
   import "../app.css";
   import "../global.css";
-  import "../index.css";  
+  import "../index.css";
   import WaIcon from "../components/WaIcon.svelte";
   import Footers from "../components/Footers.svelte";
   import Nav from "../components/Nav.svelte";
   import NavBar from "../components/NavBar.svelte";
+
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    // Meta Pixel Code
+    (function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+
+    fbq("init", "2155515458142973");
+    fbq("track", "PageView");
+
+    // Google Tag (gtag.js)
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-7REW6CW0T8";
+    script.async = true;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-7REW6CW0T8");
+  });
 </script>
+
+<noscript>
+  <img
+    height="1"
+    width="1"
+    style="display:none"
+    alt=""
+    src="https://www.facebook.com/tr?id=2155515458142973&ev=PageView&noscript=1"
+  />
+</noscript>
 
 <NavBar />
 

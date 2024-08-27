@@ -52,6 +52,15 @@
     }
     gtag("js", new Date());
     gtag("config", "G-7REW6CW0T8");
+
+    document.title = "Square Metres";
+    document.head.innerHTML += `
+      <meta name="title" content="Square metres">
+      <meta name="description" content="Square Metres Construction Limited is more than just a real estate development company, we are passionate about driving a wholesome experience through real estate and investment solutions. Our Journey began with a simple yet profound goal which is to provide investors with an experience that truly reflects the potential of their real estate investment">
+
+      <link rel="canonical" href="https://squaremetres.ng/">
+      <!-- Add more meta tags as needed -->
+    `;
   });
 </script>
 

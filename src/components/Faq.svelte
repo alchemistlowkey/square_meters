@@ -68,7 +68,7 @@
             training, unwind at happy hours, and more ....
           </div>
           <div class="profile">
-            <img src="carreer-img/emeka.png" alt="" />
+            <img src="images/emeka.jpeg" alt="" />
             <div class="information">
               <div class="fw-bold mb-2 text-green">Emeka Offor</div>
               <div class="text-green">Sales Rep</div>
@@ -85,7 +85,7 @@
             training, unwind at happy hours, and more ....
           </div>
           <div class="profile">
-            <img src="carreer-img/emeka.png" alt="" />
+            <img src="images/emeka.jpeg" alt="" />
             <div class="information">
               <div class="fw-bold mb-2 text-green">Emeka Offor</div>
               <div class="text-green">Sales Rep</div>
@@ -102,7 +102,7 @@
             training, unwind at happy hours, and more ....
           </div>
           <div class="profile">
-            <img src="carreer-img/emeka.png" alt="" />
+            <img src="images/emeka.jpeg" alt="" />
             <div class="information">
               <div class="fw-bold mb-2 text-green">Emeka Offor</div>
               <div class="text-green">Sales Rep</div>
@@ -119,7 +119,7 @@
             training, unwind at happy hours, and more ....
           </div>
           <div class="profile">
-            <img src="carreer-img/emeka.png" alt="" />
+            <img src="images/emeka.jpeg" alt="" />
             <div class="information">
               <div class="fw-bold mb-2 text-green">Emeka Offor</div>
               <div class="text-green">Sales Rep</div>

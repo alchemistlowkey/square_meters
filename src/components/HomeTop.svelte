@@ -29,7 +29,7 @@
   <div class="pt-lg-5 pt-3 pb-lg-5 mb-lg-4 mb-3">
     <div class="row mx-0">
       <div class="col-lg-6">
-        <div class="w-100 pt-3 trust-text1 fs-6 text-nowrap text-center text-lg-start text-white">
+        <div class="w-100 p-3 fs-6 text-nowrap text-center text-lg-start text-white">
           Trusted by over 1000 individuals
         </div>
         <div class="w-100 pt-3">
@@ -62,7 +62,7 @@
         <div class="trust-text text-center mb-3 mt-3 font-poppins text-white">
           <div class="row mx-0">
             <div class="col-11">
-              <h1 class="fs-3 text-left">
+              <h1 class="fs-5 text-left">
                 Watch Onion Nigeria CEO Mordi Orchi, discuss working with Square
                 Metres
               </h1>
@@ -85,13 +85,4 @@
 <VideoModal isOpen={showModal} videoUrl={videoUrl} close={closeModal} />
 
 <style>
-  .trust-text1 {
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-radius: 10px;
-    backdrop-filter: blur(2.5px);
-    padding: 13px;
-  }
 </style>

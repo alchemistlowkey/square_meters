@@ -72,18 +72,19 @@ import FooterText from "../shared/FooterText.svelte";
         </div>
         <div class="col col-md-4 pt-md-5 pt-3">
           <div
-            class="content md:text-[14px] lg:text-[18px] text-xs md:pt-0 mt-md-0 mt-3 md:text-left text-right md:leading-5 lg:leading-10 leading-5"
+            class="content text-[#0d493d] md:text-sm lg:text-lg text-xs md:pt-0 mt-md-0 mt-3 md:text-left text-right md:leading-5 lg:leading-10 leading-5"
           >
             Join more than 1500 recipients of real estate updates and trends
           </div>
         </div>
         <div class="col-12 col-md-5 pt-md-5 mt-md-3 pt-0 mb-2">
           <div class="">
-            <form action="">
+            <form action="" method="">
               <div class="input-group">
                 <input
                   type="email"
-                  class="form-control text-xs md:text-sm"
+                  name="email"
+                  class="form-control text-xs md:text-sm text-[#0d493d]"
                   placeholder="Type your email address"
                 />
                 <button

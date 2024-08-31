@@ -49,7 +49,7 @@
               setTimeout(() => {
                 update({ exists: false });
               }, 3000);
-            }            
+            }
           };
         }}
       >

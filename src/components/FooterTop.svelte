@@ -1,5 +1,59 @@
 <script>
-import FooterText from "../shared/FooterText.svelte";
+  import FooterText from "../shared/FooterText.svelte";
+  import { enhance } from "$app/forms";
+
+  let formState = {
+    success: false,
+    missing: false,
+    incorrect: false,
+    exists: false,
+    email: "",
+  };
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const email = formData.get("email");
+
+    // Reset states
+    formState.success = false;
+    formState.missing = false;
+    formState.incorrect = false;
+    formState.exists = false;
+
+    if (!email) {
+      formState.missing = true;
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      formState.incorrect = true;
+      return;
+    }
+
+    try {
+      const response = await fetch("/db/newsletter", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        formState.success = true;
+      } else {
+        const result = await response.json();
+        if (result.exists) {
+          formState.exists = true;
+        } else {
+          throw new Error("Submission failed");
+        }
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
+
+    // Clear email input
+    formState.email = "";
+  }
 </script>
 
 <section class="footer-top md:text-base lg:text-lg text-sm">
@@ -34,7 +88,6 @@ import FooterText from "../shared/FooterText.svelte";
             { href: "/faq", text: "FAQ’s" },
           ]}
         />
-        
       </div>
       <div class="col-md-4 col-lg-3 col-sm-12 col-12 mt-5">
         <FooterText
@@ -45,15 +98,18 @@ import FooterText from "../shared/FooterText.svelte";
               icon: "bi-building-fill",
               text: "7/9 Molade Okoya Thomas, Victoria Island, Lagos",
             },
-            { href: "mailto:hello@squaremetres.ng",
+            {
+              href: "mailto:hello@squaremetres.ng",
               icon: "bi-envelope-fill",
-            text: "hello@squaremetres.ng" },
-            { href: "tel:+2348066267094",
-              icon: "bi-telephone-fill",            
-            text: "08066267094" },
+              text: "hello@squaremetres.ng",
+            },
+            {
+              href: "tel:+2348066267094",
+              icon: "bi-telephone-fill",
+              text: "08066267094",
+            },
           ]}
         />
-        
       </div>
     </div>
   </div>
@@ -79,13 +135,30 @@ import FooterText from "../shared/FooterText.svelte";
         </div>
         <div class="col-12 col-md-5 pt-md-5 mt-md-3 pt-0 mb-2">
           <div class="">
-            <form action="" method="">
+            <form on:submit|preventDefault={handleSubmit}>
+              <!-- Display messages based on form submission state -->
+              {#if formState.success}
+                <p class="success">
+                  Thank you for subscribing to our newsletter.
+                </p>
+              {/if}
+              {#if formState.missing}
+                <p class="error">Please input an email address.</p>
+              {/if}
+              {#if formState.incorrect}
+                <p class="error">The email address is not valid.</p>
+              {/if}
+              {#if formState.exists}
+                <p class="error">We already have you as a subscriber.</p>
+              {/if}
               <div class="input-group">
                 <input
                   type="email"
                   name="email"
+                  bind:value={formState.email}
                   class="form-control text-xs md:text-sm text-[#0d493d]"
                   placeholder="Type your email address"
+                  required
                 />
                 <button
                   type="submit"

@@ -25,6 +25,7 @@ export async function POST({ request }) {
   const inspectionDate = formData.get("date");
   const amount = formData.get("amount");
   const preferredSize = formData.get("preferredSize");
+  const contact = formData.get("message");
 
   try {
     // Insert into inspection table
@@ -60,6 +61,20 @@ export async function POST({ request }) {
       const result = await pool.query(
         "INSERT INTO request_information (fullname, email, phone_number, preferred_size) VALUES ($1, $2, $3, $4) RETURNING *",
         [fullname, email, phoneNumber, preferredSize]
+      );
+      return new Response(
+        JSON.stringify({ success: true, data: result.rows[0] }),
+        {
+          status: 200,
+        }
+      );
+    }
+
+    // Insert into contact table
+    if (contact) {
+      const result = await pool.query(
+        "INSERT INTO contact_us (fullname, email, phone_number, message]) VALUES ($1, $2, $3, $4) RETURNING *",
+        [fullname, email, phoneNumber, message]
       );
       return new Response(
         JSON.stringify({ success: true, data: result.rows[0] }),

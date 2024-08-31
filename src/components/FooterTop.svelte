@@ -134,7 +134,7 @@
           </div>
         </div>
         <div class="col-12 col-md-5 pt-md-5 mt-md-3 pt-0 mb-2">
-          <div class="">
+          <div class="md:text-sm lg:text-lg text-xs">
             <form on:submit|preventDefault={handleSubmit}>
               <!-- Display messages based on form submission state -->
               {#if formState.success}

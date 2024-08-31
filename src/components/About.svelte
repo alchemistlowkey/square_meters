@@ -14,7 +14,7 @@
     CardContent3="To put a smile on the faces of investors by delivering and improving the
         quality of work."
   >
-    <Button btnDetails="Know what we value"></Button>
+    <Button btnDetails="Know what we value" btnlink="#values"></Button>
   </PageHead>
 </Bg>
 
@@ -100,7 +100,7 @@
   </div>
 </div>
 
-<section>
+<section id="values">
   <div class="container">
     <CardText
     TextHeader="What Defines Us"

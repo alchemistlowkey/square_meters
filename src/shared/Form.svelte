@@ -8,6 +8,71 @@
   export let amount = "";
   export let preferredSize = "";
   export let message = "";
+
+  let formState = {
+    success: false,
+    missing: false,
+    incorrect: false,
+    exists: false,
+    email: "",
+    fullName: "",
+    phoneNumber: "",
+    date: "",
+    amount: "",
+    preferredSize: "300sqm", // Default selection
+    message: "",
+  };
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    // Reset states
+    formState.success = false;
+    formState.missing = false;
+    formState.incorrect = false;
+    formState.exists = false;
+
+    const email = formData.get("email");
+    if (!email) {
+      formState.missing = true;
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      formState.incorrect = true;
+      return;
+    }
+
+    try {
+      const response = await fetch("/db/form", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        formState.success = true;
+        // Reset form state
+        formState.email = "";
+        formState.fullName = "";
+        formState.phoneNumber = "";
+        formState.date = "";
+        formState.amount = "";
+        formState.preferredSize = "300sqm"; // Reset to default selection
+        formState.message = "";
+      } else {
+        const result = await response.json();
+        if (result.exists) {
+          formState.exists = true;
+        } else {
+          throw new Error("Submission failed");
+        }
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
+  }
 </script>
 
 <section class="bg-white">
@@ -16,7 +81,13 @@
       <h1 class="fw-bold fs-2">{formHeader}</h1>
       <p class="text-uppercase fw-normal fs-6 mt-3">{formText}</p>
     </div>
-    <form action="">
+    <form on:submit|preventDefault={handleSubmit}>
+      <!-- Display messages based on form submission state -->
+      {#if formState.success}
+        <p class="success">
+          Thank you for your submission. We will get back to you shortly.
+        </p>
+      {/if}
       <div class="row mx-0 my-4">
         {#if fullName}
           <div class="col-md-6 col-12">
@@ -26,6 +97,9 @@
                 type="text"
                 class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="fullname"
+                name="fullname"
+                bind:value={formState.fullName}
+                required
               />
             </div>
           </div>
@@ -38,6 +112,9 @@
                 type="email"
                 class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="email"
+                name="email"
+                bind:value={formState.email}
+                required
               />
             </div>
           </div>
@@ -49,9 +126,12 @@
             <div class="form-group">
               <label for="phone-number">{phoneNumber}</label>
               <input
-                type="number"
+                type="tel"
                 class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
-                id="phonenumber"
+                id="phone-number"
+                name="phoneNumber"
+                bind:value={formState.phoneNumber}
+                required
               />
             </div>
           </div>
@@ -64,6 +144,9 @@
                 type="date"
                 class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="date"
+                name="date"
+                bind:value={formState.date}
+                required
               />
             </div>
           </div>
@@ -76,6 +159,9 @@
                 type="number"
                 class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="amount"
+                name="amount"
+                bind:value={formState.amount}
+                required
               />
             </div>
           </div>
@@ -87,13 +173,16 @@
               <textarea
                 class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="message"
+                name="message"
+                bind:value={formState.message}
+                required
               ></textarea>
             </div>
           </div>
         {/if}
       </div>
-      <div class="row mx-0">
-        {#if preferredSize}
+      {#if preferredSize}
+        <div class="row mx-0">
           <div>
             <p>Preferred Size</p>
             <div class="mt-3">
@@ -101,11 +190,13 @@
                 <input
                   class="form-check-input mt-[12px]"
                   type="radio"
-                  name="flexRadioDefault"
-                  id="defaultCheckRadio"
-                  checked
+                  name="preferredSize"
+                  id="size300"
+                  value="300sqm"
+                  on:change={() => formState.preferredSize = '300sqm'}
+                  checked={formState.preferredSize === '300sqm'}
                 />
-                <label class="form-check-label px-2" for="defaultRadio">
+                <label class="form-check-label px-2" for="size300">
                   300sqm
                 </label>
               </div>
@@ -113,10 +204,13 @@
                 <input
                   class="form-check-input mt-[12px]"
                   type="radio"
-                  name="flexRadioDefault"
-                  id="defaultRadio"
+                  name="preferredSize"
+                  id="size500"
+                  value="500sqm"
+                  on:change={() => formState.preferredSize = '500sqm'}
+                  checked={formState.preferredSize === '500sqm'}
                 />
-                <label class="form-check-label px-2" for="defaultCheckRadio">
+                <label class="form-check-label px-2" for="size500">
                   500sqm
                 </label>
               </div>
@@ -124,17 +218,20 @@
                 <input
                   class="form-check-input mt-[12px]"
                   type="radio"
-                  name="flexRadioDefault"
-                  id="defaultRadio"
+                  name="preferredSize"
+                  id="size1000"
+                  value="1000sqm"
+                  on:change={() => formState.preferredSize = '1000sqm'}
+                  checked={formState.preferredSize === '1000sqm'}
                 />
-                <label class="form-check-label px-2" for="defaultCheckRadio">
+                <label class="form-check-label px-2" for="size1000">
                   1000sqm
                 </label>
               </div>
             </div>
           </div>
-        {/if}
-      </div>
+        </div>
+      {/if}
       <div class="row mx-0">
         <div class="my-4 mb-4">
           <button

@@ -8,6 +8,7 @@
   import Img from "../shared/Img.svelte";
   import Carousel from "../shared/Carousel.svelte";
   import IconBox from "../shared/IconBox.svelte";
+  import ProjectSummary from "../shared/ProjectSummary.svelte";
 
   let showModal = false;
   let formHeader = "";
@@ -16,6 +17,7 @@
   let email = "";
   let phoneNumber = "";
   let date = "";
+  let amount = "";
 
   function handleOpenForm(event) {
     const {
@@ -25,6 +27,7 @@
       email: mail,
       phoneNumber: phone,
       date: dt,
+      amount: amt,
     } = event.detail;
     formHeader = header;
     formText = text;
@@ -32,6 +35,7 @@
     email = mail;
     phoneNumber = phone;
     date = dt;
+    amount = amt;
     showModal = true;
   }
 
@@ -74,10 +78,6 @@
     </div>
   </PageHead>
 </Bg>
-
-<Modal isOpen={showModal} close={closeModal}>
-  <Form {formHeader} {formText} {fullName} {email} {phoneNumber} {date} />
-</Modal>
 
 <section>
   <div class="container">
@@ -200,14 +200,55 @@
               },
             ]}
           ></IconBox>
-
-          
-
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<section class="bg-[#F6FFFDCC]">
+  <div class="container">
+    <div class="row mx-0">
+      <div class="col-12">
+        <div class="text-[#F96B29] text-center text-3xl fw-bold">
+          Project Summary
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row mx-0">
+          <ProjectSummary
+            ProjectDetails={[
+              { head: "Type", body: "Mixed Development" },
+              { head: "Size", body: "10 acres" },
+              { head: "Location", body: "Ilara, Epe" },
+              { head: "Status", body: "In progress" },
+              { head: "Initial Deposit", body: "N500,000.00" },
+              { head: "Timeline", body: "18 months" },
+              { head: "Payment Plan", body: "Up-to-12 months" },
+              { head: "Start Date", body: "Dec 2023" },
+            ]}
+          ></ProjectSummary>
+        </div>
+      </div>
+      <div class="text-center mb-5">
+        <Button
+        btnDetails="Reserve a Slot"
+        formHeader="Invest"
+        formText="Backed by Fitila Signatures"
+        fullName="Full Name"
+        email="Email"
+        phoneNumber="Phone Number"
+        amount="Amount"
+        on:openform={handleOpenForm}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<Modal isOpen={showModal} close={closeModal}>
+  <Form {formHeader} {formText} {fullName} {email} {phoneNumber} {date} {amount} />
+</Modal>
 
 <style>
   /* Add your custom styles here */

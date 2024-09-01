@@ -87,12 +87,19 @@
     <form on:submit|preventDefault={handleSubmit}>
       <!-- Display messages based on form submission state -->
       {#if formState.success}
-      <div class="row mx-0">
-
-        <p class="success mt-3 text-[#F96B29]">
-          Thank you {formState.fullName} for your submission. We will get back to you shortly.
-        </p>
-      </div>
+        <div class="row mx-0">
+          <p class="success mt-3 text-[#F96B29]">
+            Thank you {formState.fullName} for your submission. We will get back
+            to you shortly.
+          </p>
+        </div>
+      {/if}
+      {#if formState.incorrect}
+        <div class="row mx-0">
+          <p class="error text-warning mt-3 text-danger">
+            Please enter a valid email address.
+          </p>
+        </div>
       {/if}
       <div class="row mx-0 my-4">
         {#if fullName}
@@ -199,8 +206,8 @@
                   name="preferredSize"
                   id="size300"
                   value="300sqm"
-                  on:change={() => formState.preferredSize = '300sqm'}
-                  checked={formState.preferredSize === '300sqm'}
+                  on:change={() => (formState.preferredSize = "300sqm")}
+                  checked={formState.preferredSize === "300sqm"}
                 />
                 <label class="form-check-label px-2" for="size300">
                   300sqm
@@ -213,8 +220,8 @@
                   name="preferredSize"
                   id="size500"
                   value="500sqm"
-                  on:change={() => formState.preferredSize = '500sqm'}
-                  checked={formState.preferredSize === '500sqm'}
+                  on:change={() => (formState.preferredSize = "500sqm")}
+                  checked={formState.preferredSize === "500sqm"}
                 />
                 <label class="form-check-label px-2" for="size500">
                   500sqm
@@ -227,8 +234,8 @@
                   name="preferredSize"
                   id="size1000"
                   value="1000sqm"
-                  on:change={() => formState.preferredSize = '1000sqm'}
-                  checked={formState.preferredSize === '1000sqm'}
+                  on:change={() => (formState.preferredSize = "1000sqm")}
+                  checked={formState.preferredSize === "1000sqm"}
                 />
                 <label class="form-check-label px-2" for="size1000">
                   1000sqm

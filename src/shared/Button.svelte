@@ -37,9 +37,16 @@
   }
 </script>
 
-<a class="btn btn-xs privacy-btn text-w lg:text-3xl md:text-2xl text-lg fw-semibold" role="button" href={btnlink} on:click={openModal}>
-  {btnDetails}
-</a>
+<div class="fs-4">
+  <a
+    class="btn btn-xs privacy-btn text-w lg:text-3xl md:text-2xl text-lg fw-semibold"
+    role="button"
+    href={btnlink}
+    on:click|preventDefault={openModal}
+  >
+    {btnDetails}
+  </a>
+</div>
 
 <Modal isOpen={showModal} close={closeModal}>
   <slot />

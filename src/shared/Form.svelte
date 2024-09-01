@@ -45,6 +45,9 @@
       return;
     }
 
+    // before reset
+    const newFullname = formData.get("fullname");
+
     try {
       const response = await fetch("/db/form", {
         method: "POST",
@@ -53,9 +56,9 @@
 
       if (response.ok) {
         formState.success = true;
+        formState.fullName = newFullname;
         // Reset form state
         formState.email = "";
-        formState.fullName = "";
         formState.phoneNumber = "";
         formState.date = "";
         formState.amount = "";
@@ -84,9 +87,12 @@
     <form on:submit|preventDefault={handleSubmit}>
       <!-- Display messages based on form submission state -->
       {#if formState.success}
-        <p class="success">
-          Thank you for your submission. We will get back to you shortly.
+      <div class="row mx-0">
+
+        <p class="success mt-3">
+          Thank you {formState.fullName} for your submission. We will get back to you shortly.
         </p>
+      </div>
       {/if}
       <div class="row mx-0 my-4">
         {#if fullName}
@@ -126,7 +132,7 @@
             <div class="form-group">
               <label for="phone-number">{phoneNumber}</label>
               <input
-                type="tel"
+                type="number"
                 class="form-control md:h-14 sm:h-12 border-2 border-gray-300"
                 id="phone-number"
                 name="phoneNumber"

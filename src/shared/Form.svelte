@@ -89,7 +89,7 @@
       {#if formState.success}
       <div class="row mx-0">
 
-        <p class="success mt-3">
+        <p class="success mt-3 text-[#F96B29]">
           Thank you {formState.fullName} for your submission. We will get back to you shortly.
         </p>
       </div>

@@ -138,18 +138,20 @@
             <form on:submit|preventDefault={handleSubmit}>
               <!-- Display messages based on form submission state -->
               {#if formState.success}
-                <p class="success">
-                  Thank you for subscribing to our newsletter.
-                </p>
+                <div>
+                  <p class="success text-[#F96B29]">
+                    Thank you for subscribing to our newsletter.
+                  </p>
+                </div>
               {/if}
               {#if formState.missing}
-                <p class="error">Please input an email address.</p>
+                <p class="error text-warning">Please input an email address.</p>
               {/if}
               {#if formState.incorrect}
-                <p class="error">The email address is not valid.</p>
+                <p class="error text-warning fw-bolder">The email address is not valid.</p>
               {/if}
               {#if formState.exists}
-                <p class="error">We already have you as a subscriber.</p>
+                <p class="error text-[#F96B29]">We already have you as a subscriber.</p>
               {/if}
               <div class="input-group">
                 <input

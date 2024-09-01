@@ -37,7 +37,7 @@
   }
 </script>
 
-<a class="btn btn-xs privacy-btn text-w" role="button" href={btnlink} on:click={openModal}>
+<a class="btn btn-xs privacy-btn text-w lg:text-3xl md:text-2xl text-lg fw-semibold" role="button" href={btnlink} on:click={openModal}>
   {btnDetails}
 </a>
 

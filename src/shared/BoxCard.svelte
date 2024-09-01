@@ -8,7 +8,7 @@
 </script>
 
 <div class="container my-lg-2">
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+    <div class="col-md-10 offset-md-1">
       <div class="mx-0 row">
         <div class="col-md-6 mb-3">
           <div class="about_define_box h-[25rem] md:h-[34rem] lg:h-[26rem]"> 

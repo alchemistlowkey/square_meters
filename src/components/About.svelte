@@ -39,24 +39,14 @@
 
 <section class="bg-[#0D493DF2]">
   <div class="container pt-4">
-    <div
-      class="row mx-0 py-md-10 py-3 p-text text-center text-xs md:text-base lg:text-lg"
-    >
-      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-        <div
-          class="text-white text-center text-base md:text-lg lg:text-xl pb-2 font-bold"
-        >
-          The right people can make anything Possible
-        </div>
-        <p class="py-2 py-md-3 text-white">
-          Square Metres is managed by experienced professionals who are working
-          collaboratively with a vast background in real estate investment and
-          entrepreneurship.
-        </p>
-      </div>
-    </div>
+    <CardText
+      BgGreen={{
+        head: "The right people can make anything Possible",
+        body: "Square Metres is managed by experienced professionals who are working collaboratively with a vast background in real estate investment and entrepreneurship.",
+      }}
+    ></CardText>
 
-    <div class="mt-lg-5 mt-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+    <div class="mt-lg-5 mt-3 col-md-10 offset-md-1">
       <div class="row mx-0 justify-content-center">
         <div class="col-lg-6 col-12 mb-3">
           <div class="news_card text-lg-center text-center">

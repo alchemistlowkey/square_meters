@@ -1,15 +1,18 @@
 <script>
+  import Bg from "./Bg.svelte";
+
   export let TextHeader = "";
   export let TextHeader2 = "";
   export let TextContent = [];
   export let TextLink = "";
   export let TextLinkText = "";
+  export let BgGreen = false;
 </script>
 
 <div
   class="row mx-0 py-md-10 py-3 p-text text-cgreen text-center text-xs md:text-base lg:text-lg"
 >
-  <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+  <div class="col-md-10 offset-md-1">
     {#if TextHeader}
       <div class="collection text-center fs-4">{TextHeader}</div>
     {/if}
@@ -31,7 +34,7 @@
         {/each}
       </ul>
     {/if}
-    
+
     {#if TextLinkText}
       <a href={TextLink} class="fw-medium py-md-0" target="_blank"
         >{TextLinkText}</a
@@ -40,6 +43,22 @@
     {/if}
   </div>
 </div>
+
+{#if BgGreen}
+<div
+  class="row mx-0 py-md-10 py-3 p-text text-center text-xs md:text-base lg:text-lg"
+>
+  <div class="col-md-10 offset-md-1">
+    <div
+      class="text-white text-center text-base md:text-lg lg:text-xl pb-2 font-bold"
+    >
+      {BgGreen.head}
+    </div>
+    <p class="py-2 py-md-3 text-white">{BgGreen.body}
+    </p>
+  </div>
+</div>
+{/if}
 
 <style>
 </style>

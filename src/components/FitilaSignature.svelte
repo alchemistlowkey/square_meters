@@ -7,6 +7,7 @@
   import Modal from "../shared/Modal.svelte";
   import Img from "../shared/Img.svelte";
   import Carousel from "../shared/Carousel.svelte";
+  import IconBox from "../shared/IconBox.svelte";
 
   let showModal = false;
   let formHeader = "";
@@ -138,7 +139,7 @@
   </div>
 </section>
 
-<section class="bg-[#0D493D]">
+<section class="bg-[#0D493D] my-5">
   <div class="container">
     <div class="row mx-0 py-5">
       <Carousel
@@ -148,16 +149,62 @@
           { src: "images/fitila_bottom.jpeg" },
         ]}
         Images2={[
-          { src: "images/fitila_bottom.jpeg" },
-          { src: "images/fitila_bottom.jpeg" },
-          { src: "images/fitila_bottom.jpeg" },
+          { src: "images/land.jpg" },
+          { src: "images/land.jpg" },
+          { src: "images/land.jpg" },
         ]}
         Images3={[
-          { src: "images/fitila_bottom.jpeg" },
-          { src: "images/fitila_bottom.jpeg" },
-          { src: "images/fitila_bottom.jpeg" },
+          { src: "images/product.jpeg" },
+          { src: "images/product.jpeg" },
+          { src: "images/product.jpeg" },
         ]}
-      ></Carousel>      
+      ></Carousel>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#0D493D] my-5">
+  <div class="container">
+    <div class="row mx-0">
+      <div class="col">
+        <CardText
+          BgGreen={{
+            head: "Reasons to Invest",
+            body: "As a limited time offer with limited slots available, invest and enjoy these exclusive benefits as we join hands to elevate your real estate experience at Fitila Signatures",
+          }}
+        ></CardText>
+      </div>
+      <div class="col-md-10 offset-md-1">
+        <div class="row mx-0">
+          <IconBox
+            IconDetails={[
+              {
+                src: "images/bestSeller.png",
+                head: "Lagos’ Best Seller",
+                body: "The best time to invest in Epe is now, as it stands as lagos’ fastest selling and most sought after area in Nigeria",
+              },
+              {
+                src: "images/organized.png",
+                head: "Organized Settlement",
+                body: "With a well planned layout with development and delivery at the fore front, your living experience is elevated",
+              },
+              {
+                src: "images/legal.png",
+                head: "Legal & Documentation",
+                body: "We ensure all processes are transparent and well documented for a hassle free experience",
+              },
+              {
+                src: "images/roi.png",
+                head: "ROI Projection",
+                body: "We believe you are being positioned to get a consistent rise in returns due to our development goals",
+              },
+            ]}
+          ></IconBox>
+
+          
+
+        </div>
+      </div>
     </div>
   </div>
 </section>

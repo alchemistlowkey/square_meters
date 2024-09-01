@@ -43,56 +43,49 @@
       class="row mx-0 py-md-10 py-3 p-text text-center text-xs md:text-base lg:text-lg"
     >
       <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-        <div class="text-white text-center text-base md:text-lg lg:text-xl pb-2 font-bold">The right people can make anything Possible</div>
+        <div
+          class="text-white text-center text-base md:text-lg lg:text-xl pb-2 font-bold"
+        >
+          The right people can make anything Possible
+        </div>
         <p class="py-2 py-md-3 text-white">
-          Square Metres is managed by experienced professionals who are
-            working collaboratively with a vast background in real estate
-            investment and entrepreneurship.
+          Square Metres is managed by experienced professionals who are working
+          collaboratively with a vast background in real estate investment and
+          entrepreneurship.
         </p>
-        
       </div>
     </div>
 
-
-
-    <div class="mt-lg-5 mt-3 col-lg-8 offset-lg-2">
+    <div class="mt-lg-5 mt-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
       <div class="row mx-0 justify-content-center">
         <div class="col-lg-6 col-12 mb-3">
-          
-            <div class="news_card text-lg-center text-center">
-              <img src="images/ceo.jpeg" class="rounded " alt="" />
-              <div class="head">Oghe Ogheneriode I.</div>
-              <div class="body">CEO</div>
-            </div>
-          
+          <div class="news_card text-lg-center text-center">
+            <img src="images/ceo.jpeg" class="rounded" alt="" />
+            <div class="head">Oghe Ogheneriode I.</div>
+            <div class="body">CEO</div>
+          </div>
         </div>
         <div class="col-lg-6 col-12 mb-3">
-          
-            <div class="news_card text-lg-center text-center">
-              <img src="images/ho.jpeg" class="rounded" alt="" />
-              <div class="head">Raphael Obaro</div>
-              <div class="body">Head of Operation</div>
-            </div>
-          
+          <div class="news_card text-lg-center text-center">
+            <img src="images/ho.jpeg" class="rounded" alt="" />
+            <div class="head">Raphael Obaro</div>
+            <div class="body">Head of Operation</div>
+          </div>
         </div>
         <div class="col-lg-6 col-12 mb-3">
-          
-            <div class="news_card text-lg-center text-center">
-              <img src="images/hcv.jpeg" class="rounded" alt="" />
-              <div class="head">Gbadeyan Oluwafemi</div>
-              <div class="body">Head, Creative & Visuals</div>
-            </div>
-          
+          <div class="news_card text-lg-center text-center">
+            <img src="images/hcv.jpeg" class="rounded" alt="" />
+            <div class="head">Gbadeyan Oluwafemi</div>
+            <div class="body">Head, Creative & Visuals</div>
+          </div>
         </div>
 
         <div class="col-lg-6 col-12 mb-3">
-          
-            <div class="news_card text-lg-center text-center">
-              <img src="images/cc.jpeg" class="rounded" alt="" />
-              <div class="head">Cynthia Edosomwan</div>
-              <div class="body">Corporate Comms</div>
-            </div>
-          
+          <div class="news_card text-lg-center text-center">
+            <img src="images/cc.jpeg" class="rounded" alt="" />
+            <div class="head">Cynthia Edosomwan</div>
+            <div class="body">Corporate Comms</div>
+          </div>
         </div>
       </div>
     </div>

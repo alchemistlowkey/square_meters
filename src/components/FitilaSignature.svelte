@@ -5,6 +5,8 @@
   import Form from "../shared/Form.svelte";
   import CardText from "../shared/CardText.svelte";
   import Modal from "../shared/Modal.svelte";
+  import Img from "../shared/Img.svelte";
+  import Carousel from "../shared/Carousel.svelte";
 
   let showModal = false;
   let formHeader = "";
@@ -89,6 +91,74 @@
         },
       ]}
     ></CardText>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row mx-0">
+      <div class="col">
+        <img src="images/fitila_bottom.jpeg" alt="" class="rounded" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-xs md:text-base lg:text-lg">
+  <div class="container">
+    <div class="row mx-0">
+      <div class="col-12">
+        <div
+          class="text-[#F96B29] text-center text-base md:text-lg lg:text-3xl font-bold pt-5"
+        >
+          Specs and details
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row mx-0">
+          <Img
+            Images={[
+              { src: "images/dry.png" },
+              { src: "images/paved.png" },
+              { src: "images/drainage.png" },
+              { src: "images/playGround.png" },
+              { src: "images/elect.png" },
+              { src: "images/green.png" },
+              { src: "images/streetlight.png" },
+              { src: "images/gateHouse.png" },
+              { src: "images/security.png" },
+              { src: "images/perimeter.png" },
+              { src: "images/management.png" },
+              { src: "images/gym.png" },
+            ]}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#0D493D]">
+  <div class="container">
+    <div class="row mx-0 py-5">
+      <Carousel
+        Images1={[
+          { src: "images/fitila_bottom.jpeg" },
+          { src: "images/fitila_bottom.jpeg" },
+          { src: "images/fitila_bottom.jpeg" },
+        ]}
+        Images2={[
+          { src: "images/fitila_bottom.jpeg" },
+          { src: "images/fitila_bottom.jpeg" },
+          { src: "images/fitila_bottom.jpeg" },
+        ]}
+        Images3={[
+          { src: "images/fitila_bottom.jpeg" },
+          { src: "images/fitila_bottom.jpeg" },
+          { src: "images/fitila_bottom.jpeg" },
+        ]}
+      ></Carousel>      
+    </div>
   </div>
 </section>
 

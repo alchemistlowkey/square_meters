@@ -36,7 +36,7 @@
     <div class="carousel-item">
       <div class="row mx-0 my-4">
         {#each Images3 as image3}
-        <div class="col-md-4">
+        <div class="col-md-4 my-2">
           <div class="card">
             <img src={image3.src} class="card-img-top rounded h-[25rem] w-full" alt="" />
           </div>

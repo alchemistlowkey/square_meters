@@ -109,7 +109,7 @@
     <div class="row mx-0">
       <div class="col-12">
         <div
-          class="text-[#F96B29] text-center text-base md:text-lg lg:text-3xl font-bold pt-5"
+          class="text-[#F96B29] text-center text-xl md:text-2xl lg:text-3xl font-bold pt-5"
         >
           Specs and details
         </div>

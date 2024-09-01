@@ -10,7 +10,7 @@
     <div class="carousel-item active">
       <div class="row mx-0 my-4">
         {#each Images1 as image1}
-        <div class="col-md-4">
+        <div class="col-md-4 my-2">
           <div class="card">
             <img src={image1.src} class="card-img-top rounded h-[25rem] w-full" alt="" />
           </div>
@@ -23,7 +23,7 @@
     <div class="carousel-item">
       <div class="row mx-0 my-4">
         {#each Images2 as image2}
-        <div class="col-md-4">
+        <div class="col-md-4 my-2">
           <div class="card">
             <img src={image2.src} class="card-img-top rounded h-[25rem] w-full" alt="" />
           </div>

@@ -11,7 +11,7 @@
 >
   <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
     {#if TextHeader}
-      <div class="collection text-center">{TextHeader}</div>
+      <div class="collection text-center fs-4">{TextHeader}</div>
     {/if}
     {#if TextHeader2}
       <div

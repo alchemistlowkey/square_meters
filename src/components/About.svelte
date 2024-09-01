@@ -37,74 +37,72 @@
   </div>
 </section>
 
-<div class="bg-green py-5 mt-lg-5 mt-3 container-fluid">
-  <div class="container py-5">
-    <div class="">
-      <div class="mx-0">
-        <div class="col-lg-12 px-0 text-lg-center">
-          <span class="seamingly text-white">
-            The right people can make anything Possible
-          </span>
-        </div>
-        <div class="col-lg-8 offset-lg-2 px-0 text-lg-center pt-2">
-          <span
-            class="seamingly-text text-white text-xs md:text-base lg:text-lg"
-            >Square Metres is managed by experienced professionals who are
+<section class="bg-[#0D493DF2]">
+  <div class="container pt-4">
+    <div
+      class="row mx-0 py-md-10 py-3 p-text text-center text-xs md:text-base lg:text-lg"
+    >
+      <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <div class="text-white text-center fs-5 text-nowrap pb-2 font-bold">The right people can make anything Possible</div>
+        <p class="py-2 py-md-3 text-white">
+          Square Metres is managed by experienced professionals who are
             working collaboratively with a vast background in real estate
             investment and entrepreneurship.
-          </span>
-        </div>
+        </p>
+        
       </div>
     </div>
-    <div class="mt-lg-5 mt-3 col-lg-8 offset-2 px-0">
+
+
+
+    <div class="mt-lg-5 mt-3 col-lg-8 offset-lg-2">
       <div class="row mx-0 justify-content-center">
-        <div class="col-lg-6 mb-3">
-          <a href="/" class="text-decoration-none">
-            <div class="news_card text-lg-center">
-              <img src="images/ceo.jpeg" class="rounded" alt="" />
+        <div class="col-lg-6 col-12 mb-3">
+          
+            <div class="news_card text-lg-center text-center">
+              <img src="images/ceo.jpeg" class="rounded " alt="" />
               <div class="head">Oghe Ogheneriode I.</div>
               <div class="body">CEO</div>
             </div>
-          </a>
+          
         </div>
-        <div class="col-lg-6 mb-3">
-          <a href="/" class="text-decoration-none">
-            <div class="news_card text-lg-center">
+        <div class="col-lg-6 col-12 mb-3">
+          
+            <div class="news_card text-lg-center text-center">
               <img src="images/ho.jpeg" class="rounded" alt="" />
               <div class="head">Raphael Obaro</div>
               <div class="body">Head of Operation</div>
             </div>
-          </a>
+          
         </div>
-        <div class="col-lg-6 mb-3">
-          <a href="/" class="text-decoration-none">
-            <div class="news_card text-lg-center">
+        <div class="col-lg-6 col-12 mb-3">
+          
+            <div class="news_card text-lg-center text-center">
               <img src="images/hcv.jpeg" class="rounded" alt="" />
               <div class="head">Gbadeyan Oluwafemi</div>
               <div class="body">Head, Creative & Visuals</div>
             </div>
-          </a>
+          
         </div>
 
-        <div class="col-lg-6 mb-3">
-          <a href="/" class="text-decoration-none">
-            <div class="news_card text-lg-center">
+        <div class="col-lg-6 col-12 mb-3">
+          
+            <div class="news_card text-lg-center text-center">
               <img src="images/cc.jpeg" class="rounded" alt="" />
               <div class="head">Cynthia Edosomwan</div>
               <div class="body">Corporate Comms</div>
             </div>
-          </a>
+          
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <section id="values">
   <div class="container">
     <CardText
-    TextHeader="What Defines Us"
-
+      TextHeader="What Defines Us"
       TextContent={[
         {
           body: "Our values define the SquareMetres culture, who we are, and why we do what we do. Shaping our interaction with all stakeholders, customers, regulators, investors, partners and our host communities.",

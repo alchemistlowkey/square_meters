@@ -43,7 +43,7 @@
       class="row mx-0 py-md-10 py-3 p-text text-center text-xs md:text-base lg:text-lg"
     >
       <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-        <div class="text-white text-center fs-5 text-nowrap pb-2 font-bold">The right people can make anything Possible</div>
+        <div class="text-white text-center text-base md:text-lg lg:text-xl pb-2 font-bold">The right people can make anything Possible</div>
         <p class="py-2 py-md-3 text-white">
           Square Metres is managed by experienced professionals who are
             working collaboratively with a vast background in real estate

@@ -174,7 +174,7 @@
           }}
         ></CardText>
       </div>
-      <div class="col-md-10 offset-md-1">
+      <div class="col-md-12">
         <div class="row mx-0">
           <IconBox
             IconDetails={[

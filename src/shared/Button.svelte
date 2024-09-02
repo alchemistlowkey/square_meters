@@ -39,7 +39,7 @@
 
 <div class="fs-4">
   <a
-    class="btn btn-xs privacy-btn text-w lg:text-3xl md:text-2xl text-lg fw-semibold"
+    class="btn btn-xs privacy-btn text-w lg:text-2xl md:text-xl text-xs fw-semibold"
     role="button"
     href={btnlink}
     on:click|preventDefault={openModal}

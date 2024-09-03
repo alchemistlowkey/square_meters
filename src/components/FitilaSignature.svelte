@@ -105,7 +105,7 @@
   </div>
 </section>
 
-<section class="text-xs md:text-base lg:text-lg">
+<section class="text-sm md:text-base lg:text-lg">
   <div class="container">
     <div class="row mx-0">
       <div class="col-12">
@@ -164,7 +164,7 @@
 </section>
 
 <section class="bg-[#0D493D] my-5">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row mx-0">
       <div class="col">
         <CardText
@@ -251,5 +251,4 @@
 </Modal>
 
 <style>
-  /* Add your custom styles here */
 </style>

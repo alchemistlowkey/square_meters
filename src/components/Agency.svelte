@@ -4,6 +4,8 @@
   import Button from "../shared/Button.svelte";
   import Modal from "../shared/Modal.svelte";
   import Form from "../shared/Form.svelte";
+  import CardText from "../shared/CardText.svelte";
+  import IconBox from "../shared/IconBox.svelte";
 
   let showModal = false;
   let formHeader = "";
@@ -66,6 +68,86 @@ and enhance your earnings."
     {preferredSize}
   />
 </Modal>
+
+<section>
+  <div class="container-fluid pt-5">
+    <CardText
+      TextHeader="Welcome"
+      TextContent={[
+        {
+          body: "We are building a community that is passion-driven, to make available the best consultancy service for clients, realtor’s and real estate enthusiast.",
+        },
+        {
+          body: "With learning and development at the forefront, we hope to have more ambassadors of the brand by committing to you knowledge base, help with networking and necessary skills and materials.",
+        },
+        {
+          body: "Everyone’s real estate experience was induced by someone, Lets embark on a Journey to create happiness and relieve though real estate together",
+        },
+      ]}
+    ></CardText>
+  </div>
+</section>
+
+<section class="bg-[#0D493D] my-5">
+  <div class="container-fluid">
+    <div class="row mx-0">
+      <div class="col">
+        <CardText
+          BgGreen={{
+            head: "Benefits",
+            body: "Anyone in real estate or finance, including agents, property managers, dealmakers, Lawyers, and Bankers, can apply! Once submitted, we'll review your application within 24 hours.",
+          }}
+        ></CardText>
+      </div>
+      <div class="col-md-12">
+        <div class="row mx-0">
+          <IconBox
+            IconDetails={[
+              {
+                src: "images/premium.png",
+                head: "One-of-a-kind opportunity",
+                body: "Connect interested property buyers with Square Metres. Earn up to ₦500,000 per property transaction, which you can reinvest in the project.",
+              },
+              {
+                src: "images/handshake.png",
+                head: "Close 2x more Deals",
+                body: "Maximize your potential for closing deals and expanding your wealth",
+              },
+              {
+                src: "images/finance.png",
+                head: "Build Equity",
+                body: "Boost your credibility by being part of significant development projects, accumulating equity to build your portfolio, and earning income while gaining appreciation.",
+              },
+              {
+                src: "images/profits.png",
+                head: "Profits",
+                body: "Earn up to ₦5million monthly in sales commission and be on your way to become a property owner as you can convert your earnings to any of our Project.",
+              },
+            ]}
+          ></IconBox>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-sm md:text-base lg:text-lg">
+  <div class="container-fluid">
+    <div class="row mx-0">
+      <div class="col-5">
+        <CardText TextHeader="It takes only 5 minutes"></CardText>
+        <ul class="">
+          <li class="list-group-item"><span class="border rounded-5 p-2">1</span>Sign Up Below</li>
+          <li class="list-group-item">Get a confirmation</li>
+          <li class="list-group-item">Start earning by selling and referring</li>
+      </ul>
+      </div>
+      <div class="col-7">
+
+      </div>
+    </div>
+  </div>
+</section>
 
 <style>
 </style>

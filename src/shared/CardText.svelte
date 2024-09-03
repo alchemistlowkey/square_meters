@@ -10,7 +10,7 @@
 </script>
 
 <div
-  class="row mx-0 py-md-10 py-3 p-text text-cgreen text-center text-sm md:text-base lg:text-lg"
+  class="row mx-0 py-md-10 py-3 p-text text-[#0D493D] text-center text-sm md:text-base lg:text-lg"
 >
   <div class="col-md-10 offset-md-1">
     {#if TextHeader}
@@ -27,7 +27,7 @@
       <ul>
         {#each TextContent as TextItem}
           <li class="list-unstyled pt-2">
-            <p class="py-2 py-md-3">
+            <p class="py-2 fw-medium">
               {TextItem.body}
             </p>
           </li>
@@ -46,15 +46,15 @@
 
 {#if BgGreen}
 <div
-  class="row mx-0 py-md-10 py-3 p-text text-center text-xs md:text-base lg:text-lg"
+  class="row mx-0 py-md-10 text-[#F6FFFD] py-3 p-text text-center text-xs md:text-base lg:text-lg"
 >
   <div class="col-md-10 offset-md-1">
     <div
-      class="text-white text-center text-base md:text-lg lg:text-xl pb-2 font-bold"
+      class="text-[#F6FFFD] text-center text-base md:text-lg lg:text-xl pb-2 font-bold"
     >
       {BgGreen.head}
     </div>
-    <p class="py-2 py-md-3 text-white">{BgGreen.body}
+    <p class="py-2 py-md-3 text-[#F6FFFD]">{BgGreen.body}
     </p>
   </div>
 </div>

@@ -1,6 +1,8 @@
 body {
   margin: 0;
   line-height: normal;
+  background-color: #F6FFFD;
+  color: #0D493D;
 }
 
 :root {

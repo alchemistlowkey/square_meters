@@ -5,7 +5,7 @@
 <section
   class="footer-bottom border-top mt-5 pt-3 pb-5 md:text-base lg:text-lg text-sm"
 >
-  <div class="container">
+  <div class="container-fluid">
     <div class="row mx-0 text-[#0D493D]">
       <FooterSocial
         SocialItem={[

@@ -6,11 +6,15 @@
   import Form from "../shared/Form.svelte";
   import CardText from "../shared/CardText.svelte";
   import IconBox from "../shared/IconBox.svelte";
+  import ListItem from "../shared/ListItem.svelte";
+  import FormCard from "../shared/FormCard.svelte";
 
   let showModal = false;
   let formHeader = "";
   let formText = "";
   let fullName = "";
+  let firstName = "";
+  let lastName = "";
   let email = "";
   let phoneNumber = "";
   let preferredSize = "";
@@ -20,6 +24,8 @@
       formHeader: header,
       formText: text,
       fullName: name,
+      firstName: fname,
+      lastName: lname,
       email: mail,
       phoneNumber: phone,
       preferredSize: size,
@@ -27,6 +33,8 @@
     formHeader = header;
     formText = text;
     fullName = name;
+    firstName = fname;
+    lastName = lname;
     email = mail;
     phoneNumber = phone;
     preferredSize = size;
@@ -131,19 +139,43 @@ and enhance your earnings."
   </div>
 </section>
 
-<section class="text-sm md:text-base lg:text-lg">
+<section class="py-5 text-sm md:text-base lg:text-lg">
   <div class="container-fluid">
     <div class="row mx-0">
-      <div class="col-5">
-        <CardText TextHeader="It takes only 5 minutes"></CardText>
-        <ul class="">
-          <li class="list-group-item"><span class="border rounded-5 p-2">1</span>Sign Up Below</li>
-          <li class="list-group-item">Get a confirmation</li>
-          <li class="list-group-item">Start earning by selling and referring</li>
-      </ul>
+      <div class="col-12 col-md-6 col-lg-7">
+        <div class="text-[#F96B29] fw-bold text-start md:text-2xl text-lg pb-4">It takes only 5 minutes</div>
+        <ListItem
+          Lists={[
+            { Number: "1", Text: "Sign Up Below" },
+            { Number: "2", Text: "Get a confirmation" },
+            { Number: "3", Text: "Start earning by selling and referring" },
+          ]}
+        ></ListItem>
       </div>
-      <div class="col-7">
+      <div class="col-12 col-md-6 col-lg-5">
+        <div>
+          <img src="images/agency.jpeg" class="rounded" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="my-5">
+  <div class="container">
+    <div class="row mx-0">
+      <div class="col-12 text-[#F96B29] text-base md:text-xl lg:text-2xl text-center py-3 fw-semibold">
+        Agent Form
+      </div>
+      <div class="row mx-0">
+        <div class="col-12 col-lg-8 offset-lg-2">
+          <FormCard
+            firstName="First Name"
+            lastName="Last Name"
+            email="Email"
+            phoneNumber="Phone number"
+          />          
+        </div>
       </div>
     </div>
   </div>

@@ -114,27 +114,27 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <div class="bg-[#F6FFFD] m-0">
       <div class="row mx-0 py-0">
-        <div class="col-4 mx-auto col-md-3">
+        <div class="col-3 mx-auto col-md-3 mt-2">
           <div class="">
             <img
               src="/images/sqm-footer-logo.png"
-              class="w-[120px] mt-md-3 m-0"
+              class="w-full m-0 mt-5 mt-lg-0"
               alt="logo"
             />
           </div>
         </div>
-        <div class="col col-md-4 pt-md-5 pt-3">
+        <div class="col-7 col-md-4 pt-md-5 mt-md-3 pt-lg-5 pt-5">
           <div
-            class="content text-[#0d493d] md:text-sm lg:text-lg text-xs md:pt-0 mt-md-0 mt-3 md:text-left text-right md:leading-5 lg:leading-10 leading-5"
+            class="content text-[#0d493d] md:text-sm lg:text-lg text-xs md:pt-0 mt-5 text-right md:leading-5 lg:leading-10 leading-5"
           >
             Join more than 1500 recipients of real estate updates and trends
           </div>
         </div>
-        <div class="col-12 col-md-5 pt-md-5 mt-md-3 pt-0 mb-2">
-          <div class="md:text-sm lg:text-lg text-xs">
+        <div class="col-12 col-md-5 pt-md-5 mt-md-5 pt-0 mb-2">
+          <div class="md:text-sm lg:text-lg text-xs mt-md-3 mt-lg-4">
             <form on:submit|preventDefault={handleSubmit}>
               <!-- Display messages based on form submission state -->
               {#if formState.success}

@@ -7,6 +7,7 @@
   import Form from "../shared/Form.svelte";
   import CardText from "../shared/CardText.svelte";
   import IconBox from "../shared/IconBox.svelte";
+  import ListItem from "../shared/ListItem.svelte";
 
   let showModal = false;
   let formHeader = "";
@@ -58,6 +59,53 @@
       />
     </PageHead>
   </Bg>
+</section>
+
+<section class="py-5 text-sm md:text-base lg:text-lg">
+  <div class="container-fluid">
+    <div class="row mx-0">
+      <div class="col-12 col-md-6 col-lg-7">
+        <div class="text-[#F96B29] fw-bold text-start md:text-2xl text-lg pb-4">It takes only 5 minutes</div>
+        <ListItem
+          Lists={[
+            { Number: "1", Text: "Short-term, high-yield real estate debt investments accessible to all." },
+            { Number: "2", Text: "Earn a 25% annual interest." },
+            { Number: "3", Text: "Collateralized by Fitila Signature(Mixed use Land Project)" },
+            { Number: "4", Text: "SquareMetres take priority in payback over underlying common equity." },
+            { Number: "5", Text: "Fitila Signatures consistently generate higher risk-adjusted returns compared to other property types." },
+            { Number: "6", Text: "Competitive return of 20bps plus Inflation" },
+            { Number: "7", Text: "$5k min investment & quarterly distributions." },
+            { Number: "8", Text: "Also can be a roadmap to Property Acquisition, own it in fractions." },
+          ]}
+        ></ListItem>
+      </div>
+      <div class="col-12 col-md-6 col-lg-5 text-sm md:text-base lg:text-lg border-[#0D493D] border-3 rounded">
+        <div class="row mx-0">
+          <div class="col-12 fw-semibold py-4 p-0">
+            Make an investment
+          </div>
+          <div class="col-12 border">
+            <img src="images/investment-terms.png" alt="investment" class="mx-auto d-block" />
+          </div>
+          <div class="col-12 fw-semibold py-4 p-0">
+            Investment Terms
+          </div>
+          <div class="col-12">
+            <div class="row mx-0">
+              <div class="col-6 text-start">
+                <ul>
+                  <li>Interest : 25%</li>
+                  <li>Payment : Annually</li>
+                  <li>Terms : 12 Months</li>
+                </ul>
+              </div>
+              <div class="col-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>

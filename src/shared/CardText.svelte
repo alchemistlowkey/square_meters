@@ -10,15 +10,15 @@
 </script>
 
 <div
-  class="row mx-0 py-md-10 py-3 p-text text-cgreen text-center text-xs md:text-base lg:text-lg"
+  class="row mx-0 py-md-10 py-3 p-text text-cgreen text-center text-sm md:text-base lg:text-lg"
 >
   <div class="col-md-10 offset-md-1">
     {#if TextHeader}
-      <div class="collection text-center fs-4">{TextHeader}</div>
+      <div class="collection text-center md:text-base lg:text-lg text-sm">{TextHeader}</div>
     {/if}
     {#if TextHeader2}
       <div
-        class="text-[#F96B29] md:text-3xl sm:text-xl text-lg fw-bold text-center"
+        class="text-[#F96B29] md:text-base lg:text-lg text-sm fw-bold text-center"
       >
         {TextHeader2}
       </div>

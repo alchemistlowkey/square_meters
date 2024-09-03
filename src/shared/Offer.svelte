@@ -1,11 +1,11 @@
-<section class="md:text-2xl lg:text-4xl text-base">
-  <div class="pt-3 px-3">
-    <div class="offer-cite">
-      <div class="text-content text-md-center">
-        <div class="first">Experience SquareMetres Now</div>
-        <div class="second text-md-center">Start Investing Today</div>
+<section class="md:text-lg lg:text-xl text-base">
+  <div class="container-fluid">
+    <div class="row mx-0 offer-cite py-5">
+      <div class="text-content float-start md:text-2xl text-base col-md offset-md-1">
+        <div class="text-[#F6FFFD] py-3 fw-lighter">Experience SquareMetres Now</div>
+        <div class="text-[#F6FFFD] fw-bold">Start Investing Today</div>
       </div>
-      <div class="button-content">
+      <div class="button-content pe-5">
         <a class="offer-cite-btn hover:bg-orange-700" href="/investment">
           Our Offering
         </a>
@@ -42,18 +42,6 @@
     .button-content {
       flex: 0;
     }
-  }
-
-  .offer-cite .first {
-    font-weight: 600;
-    color: #bbb;
-    white-space: nowrap;
-  }
-
-  .offer-cite .second {
-    font-weight: 600;
-    color: #fff;
-    margin-top: 10px;
   }
 
   .offer-cite-btn {

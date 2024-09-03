@@ -1,60 +1,59 @@
 section {
-    font-family: Poppins;
-  }
-  
-  .career {
-    font-weight: 600;
-    line-height: 30px;
-    text-align: center;
-  }
-  .privacy-data {
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-align: center;
-  }
-  .p-content {
-    font-weight: 400;
-    text-align: center;
-  }
+  font-family: Poppins;
+}
+
+.career {
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+}
+.privacy-data {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.p-content {
+  font-weight: 400;
+  text-align: center;
+}
+.privacy-btn {
+  background-color: #f96b29;
+  padding: 15px 80px 15px 80px;
+  gap: 0px;
+  border: 1px;
+  border-radius: 6px;
+  opacity: 0px;
+}
+@media (max-width: 768px) {
   .privacy-btn {
-    background-color: #f96b29;
-    padding: 15px 80px 15px 80px;
-    gap: 0px;
-    border: 1px;
-    border-radius: 6px;
-    opacity: 0px;
+    padding: 15px 40px 15px 40px;
+    margin-top: 20px;
   }
-  @media (max-width: 768px) {
-    .privacy-btn {
-      padding: 15px 40px 15px 40px;
-      margin-top: 20px;
-    }
-    
-  }
+}
 
-  .text-w {
-    color: #f6fffd;
-  }
-  .collection {
-    font-weight: 700;
-    line-height: 52.5px;
-    text-align: left;
-    color: #f96b29;
-  }
+.text-w {
+  color: #f6fffd;
+}
+.collection {
+  font-weight: 700;
+  line-height: 52.5px;
+  text-align: left;
+  color: #f96b29;
+}
 
-  .p-text {
-    font-weight: 400;
-    text-align: left;
-  }
+.p-text {
+  font-weight: 400;
+  text-align: left;
+}
 
-  .text-cgreen {
-    color: #0d493d;
-  }
-  .bg-cgreen {
-    background-color: #0d493d;
-  }
-  .dropdown.show .dropdown-menu {
-    display: block;
-    max-height: 500px; /* Set a height limit for the transition effect */
-    opacity: 1;
-  }
+.text-cgreen {
+  color: #0d493d;
+}
+.bg-cgreen {
+  background-color: #0d493d;
+}
+.dropdown.show .dropdown-menu {
+  display: block;
+  max-height: 500px; /* Set a height limit for the transition effect */
+  opacity: 1;
+}

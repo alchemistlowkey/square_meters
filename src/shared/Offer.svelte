@@ -5,8 +5,8 @@
         <div class="text-[#F6FFFD] py-3 fw-lighter">Experience SquareMetres Now</div>
         <div class="text-[#F6FFFD] fw-bold">Start Investing Today</div>
       </div>
-      <div class="button-content pe-5">
-        <a class="offer-cite-btn hover:bg-orange-700" href="/investment">
+      <div class="button-content pe-md-5">
+        <a class="offer-cite-btn hover:bg-orange-700 text-center" href="/investment">
           Our Offering
         </a>
       </div>

@@ -112,7 +112,7 @@
             />
           </div>
           <div class="col-12 fw-semibold py-4 p-0">Investment Terms</div>
-          <div class="col-12 p-0">
+          <div class="col-12 p-0 pb-5">
             <div class="row mx-0">
               <div class="col-6 p-0">
                 <ul>
@@ -146,7 +146,7 @@
                   <span class="fw-medium">min : ₦50,000</span>
                 </div>
               </div>
-              <div class="col-6 p-3 text-end border-c rounded">₦50,000</div>
+              <div class="col-6 p-3 text-end border-c rounded fw-light">₦50,000</div>
             </div>
           </div>
           <div class="col-12 fw-semibold py-2 w-full p-0">

@@ -4,6 +4,7 @@
   import Button from "../shared/Button.svelte";
   import Offer from "../shared/Offer.svelte";
   import DropCard from "./DropCard.svelte";
+  import FaqCarousel from "../shared/FaqCarousel.svelte";
 </script>
 
 <Bg headerBG="faq.jpeg">
@@ -13,126 +14,130 @@
         <button type="button" class="btn btn-light">
           <i class="bi-search"></i>
         </button>
-        <input type="text" class="form-control" placeholder="What do you want to know?" />
+        <input
+          type="text"
+          class="form-control"
+          placeholder="What do you want to know?"
+        />
       </div>
     </div>
   </PageHead>
 </Bg>
 
-<div class="row mx-0 py-10 p-text text-cgreen text-center" id="positions">
-  <DropCard
-    DropHeader2="What do you want to know?"
-    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-  />
-  <DropCard
-    DropHeader2="What do you want to know?"
-    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-  />
-  <DropCard
-    DropHeader2="What do you want to know?"
-    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-  />
-  <DropCard
-    DropHeader2="What do you want to know?"
-    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-  />
-  <DropCard
-    DropHeader2="What do you want to know?"
-    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-  />
-  <DropCard
-    DropHeader2="What do you want to know?"
-    DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-    DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-  />
-</div>
-
-<div class="container">
-  <div class="col-lg-12 my=lg-5 my-3 text-lg-center">
-    <small class="text-danger">Testimonials</small>
-    <span class="seamingly"><br /> What is said about us </span>
+<section>
+  <div class="container">
+    <div class="row mx-0 py-10 p-text text-cgreen text-center" id="positions">
+      <DropCard
+        DropHeader2="What do you want to know?"
+        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+      />
+      <DropCard
+        DropHeader2="What do you want to know?"
+        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+      />
+      <DropCard
+        DropHeader2="What do you want to know?"
+        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+      />
+      <DropCard
+        DropHeader2="What do you want to know?"
+        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+      />
+      <DropCard
+        DropHeader2="What do you want to know?"
+        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+      />
+      <DropCard
+        DropHeader2="What do you want to know?"
+        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+      />
+    </div>
   </div>
+</section>
 
-  <div class="testimonials">
-    <div class="container px-0">
-      <div class="owl-carousel owl-theme testi">
-        <!-- Single Starts -->
-        <div class="item">
-          <div class="text-green pb-4 text-center">
-            Join us on a journey of growth and learning. Engage in personalized
-            training, unwind at happy hours, and more ....
-          </div>
-          <div class="profile">
-            <img src="images/emeka.jpeg" alt="" />
-            <div class="information">
-              <div class="fw-bold mb-2 text-green">Emeka Offor</div>
-              <div class="text-green">Sales Rep</div>
-            </div>
-          </div>
-          <div class="icon">
-            <i class="fa fa-quote-right" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="text-green pb-4 text-center">
-            Join us on a journey of growth and learning. Engage in personalized
-            training, unwind at happy hours, and more ....
-          </div>
-          <div class="profile">
-            <img src="images/emeka.jpeg" alt="" />
-            <div class="information">
-              <div class="fw-bold mb-2 text-green">Emeka Offor</div>
-              <div class="text-green">Sales Rep</div>
-            </div>
-          </div>
-          <div class="icon">
-            <i class="fa fa-quote-right" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="text-green pb-4 text-center">
-            Join us on a journey of growth and learning. Engage in personalized
-            training, unwind at happy hours, and more ....
-          </div>
-          <div class="profile">
-            <img src="images/emeka.jpeg" alt="" />
-            <div class="information">
-              <div class="fw-bold mb-2 text-green">Emeka Offor</div>
-              <div class="text-green">Sales Rep</div>
-            </div>
-          </div>
-          <div class="icon">
-            <i class="fa fa-quote-right" aria-hidden="true"></i>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="text-green pb-4 text-center">
-            Join us on a journey of growth and learning. Engage in personalized
-            training, unwind at happy hours, and more ....
-          </div>
-          <div class="profile">
-            <img src="images/emeka.jpeg" alt="" />
-            <div class="information">
-              <div class="fw-bold mb-2 text-green">Emeka Offor</div>
-              <div class="text-green">Sales Rep</div>
-            </div>
-          </div>
-          <div class="icon">
-            <i class="fa fa-quote-right" aria-hidden="true"></i>
-          </div>
+<section class="text-sm md:text-base lg:text-lg">
+  <div class="container">
+    <div class="row mx-0">
+      <div class="col-12">
+        <div class="text-center text-[#F96B29]">
+          <p class="fw-light">Testimonials</p>
+          <p class="fw-semibold text-base md:text-lg lg:text-xl">
+            What is said about us
+          </p>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+
+<FaqCarousel
+  Images1={[
+    {
+      src: "emeka.jpeg",
+      text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
+      name: "Emeka Offor",
+      position: "Sales Rep",
+    },
+    {
+      src: "emeka.jpeg",
+      text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
+      name: "Emeka Offor",
+      position: "Sales Rep",
+    },
+    {
+      src: "emeka.jpeg",
+      text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
+      name: "Emeka Offor",
+      position: "Sales Rep",
+    },
+  ]}
+  Images2={[
+    {
+      src: "emeka.jpeg",
+      text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
+      name: "Emeka Offor",
+      position: "Sales Rep",
+    },
+    {
+      src: "emeka.jpeg",
+      text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
+      name: "Emeka Offor",
+      position: "Sales Rep",
+    },
+    {
+      src: "emeka.jpeg",
+      text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
+      name: "Emeka Offor",
+      position: "Sales Rep",
+    },
+  ]}
+  Images3={[
+    {
+      src: "emeka.jpeg",
+      text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
+      name: "Emeka Offor",
+      position: "Sales Rep",
+    },
+    {
+      src: "emeka.jpeg",
+      text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
+      name: "Emeka Offor",
+      position: "Sales Rep",
+    },
+    {
+      src: "emeka.jpeg",
+      text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
+      name: "Emeka Offor",
+      position: "Sales Rep",
+    },
+  ]}
+/>
 
 <Offer />
 

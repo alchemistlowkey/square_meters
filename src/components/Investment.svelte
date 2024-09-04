@@ -65,42 +65,102 @@
   <div class="container-fluid">
     <div class="row mx-0">
       <div class="col-12 col-md-6 col-lg-7">
-        <div class="text-[#F96B29] fw-bold text-start md:text-2xl text-lg pb-4">It takes only 5 minutes</div>
+        <div class="text-[#F96B29] fw-bold text-start md:text-2xl text-lg pb-4">
+          It takes only 5 minutes
+        </div>
         <ListItem
           Lists={[
-            { Number: "1", Text: "Short-term, high-yield real estate debt investments accessible to all." },
+            {
+              Number: "1",
+              Text: "Short-term, high-yield real estate debt investments accessible to all.",
+            },
             { Number: "2", Text: "Earn a 25% annual interest." },
-            { Number: "3", Text: "Collateralized by Fitila Signature(Mixed use Land Project)" },
-            { Number: "4", Text: "SquareMetres take priority in payback over underlying common equity." },
-            { Number: "5", Text: "Fitila Signatures consistently generate higher risk-adjusted returns compared to other property types." },
+            {
+              Number: "3",
+              Text: "Collateralized by Fitila Signature(Mixed use Land Project)",
+            },
+            {
+              Number: "4",
+              Text: "SquareMetres take priority in payback over underlying common equity.",
+            },
+            {
+              Number: "5",
+              Text: "Fitila Signatures consistently generate higher risk-adjusted returns compared to other property types.",
+            },
             { Number: "6", Text: "Competitive return of 20bps plus Inflation" },
-            { Number: "7", Text: "$5k min investment & quarterly distributions." },
-            { Number: "8", Text: "Also can be a roadmap to Property Acquisition, own it in fractions." },
+            {
+              Number: "7",
+              Text: "$5k min investment & quarterly distributions.",
+            },
+            {
+              Number: "8",
+              Text: "Also can be a roadmap to Property Acquisition, own it in fractions.",
+            },
           ]}
         ></ListItem>
       </div>
-      <div class="col-12 col-md-6 col-lg-5 text-sm md:text-base lg:text-lg border-[#0D493D] border-3 rounded">
+      <div
+        class="col-12 col-md-6 col-lg-5 text-sm md:text-base lg:text-lg border-[#0D493D] border-3 rounded fw-semibold"
+      >
         <div class="row mx-0">
-          <div class="col-12 fw-semibold py-4 p-0">
-            Make an investment
+          <div class="col-12 fw-semibold py-4 p-0">Make an investment</div>
+          <div class="col-12 border-c rounded">
+            <img
+              src="images/investment-terms.png"
+              alt="investment"
+              class="mx-auto d-block"
+            />
           </div>
-          <div class="col-12 border">
-            <img src="images/investment-terms.png" alt="investment" class="mx-auto d-block" />
-          </div>
-          <div class="col-12 fw-semibold py-4 p-0">
-            Investment Terms
-          </div>
-          <div class="col-12">
+          <div class="col-12 fw-semibold py-4 p-0">Investment Terms</div>
+          <div class="col-12 p-0">
             <div class="row mx-0">
-              <div class="col-6 text-start">
+              <div class="col-6 p-0">
                 <ul>
-                  <li>Interest : 25%</li>
-                  <li>Payment : Annually</li>
-                  <li>Terms : 12 Months</li>
+                  <li class="py-2">
+                    Interest <span class="fw-medium"> : 25%</span>
+                  </li>
+                  <li class="py-2">
+                    Payment <span class="fw-medium">: Annually</span>
+                  </li>
+                  <li class="py-2">
+                    Terms <span class="fw-medium">: 12 Months</span>
+                  </li>
                 </ul>
               </div>
-              <div class="col-6"></div>
+              <div class="col-6 text-end">
+                <ul>
+                  <li class="py-2">
+                    Min Investment <span class="fw-medium">: ₦50,000</span>
+                  </li>
+                  <li class="py-2">
+                    Holding Period <span class="fw-medium">: 12 Months</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <div class="col-12 fw-semibold py-4 p-0 border-tb">
+            <div class="row mx-0">
+              <div class="col-6 p-0">Invest
+                <div class="py-2">
+                  <span class="fw-medium">min : ₦50,000</span>
+                </div>
+              </div>
+              <div class="col-6 p-3 text-end border-c rounded">₦50,000</div>
+            </div>
+          </div>
+          <div class="col-12 fw-semibold py-2 w-full p-0">
+            <Button
+              btnDetails="Reserve a Slot"
+              formHeader="Invest"
+              formText="Backed by Fitila Signatures"
+              fullName="Full Name"
+              email="Email"
+              phoneNumber="Phone Number"
+              amount="Amount"
+              on:openform={handleOpenForm}
+            >
+            </Button>            
           </div>
         </div>
       </div>
@@ -165,14 +225,14 @@
       </div>
       <div class="text-center mb-5">
         <Button
-        btnDetails="Reserve a Slot"
-        formHeader="Invest"
-        formText="Backed by Fitila Signatures"
-        fullName="Full Name"
-        email="Email"
-        phoneNumber="Phone Number"
-        amount="Amount"
-        on:openform={handleOpenForm}
+          btnDetails="Reserve a Slot"
+          formHeader="Invest"
+          formText="Backed by Fitila Signatures"
+          fullName="Full Name"
+          email="Email"
+          phoneNumber="Phone Number"
+          amount="Amount"
+          on:openform={handleOpenForm}
         />
       </div>
     </div>
@@ -186,5 +246,11 @@
 <Offer />
 
 <style>
-  
+  .border-tb {
+    border-top: 2px solid #e2e2e2 !important;
+    border-bottom: 2px solid #e2e2e2 !important;
+  }
+  .border-c {
+    border: 2px solid #e2e2e2 !important;
+  }
 </style>

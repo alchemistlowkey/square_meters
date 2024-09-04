@@ -39,7 +39,7 @@
 
 <div class="fs-4">
   <a
-    class="btn btn-xs privacy-btn text-w md:text-base lg:text-lg text-sm fw-semibold"
+    class="btn privacy-btn text-w md:text-base lg:text-lg text-sm fw-medium"
     role="button"
     href={btnlink}
     on:click|preventDefault={openModal}
@@ -56,7 +56,7 @@
   .privacy-btn:hover {
     background-color: #f96b29;
   }
-  .btn-xs {
+  /* .btn-xs {
     font-size: smaller;
-  }
+  } */
 </style>

@@ -14,6 +14,7 @@
   export let amount = "";
   export let preferredSize = "";
   export let message = "";
+  export let fullLength = false;
 
   let showModal = false;
 
@@ -41,6 +42,7 @@
   <a
     class="btn privacy-btn text-w md:text-base lg:text-lg text-sm fw-medium"
     role="button"
+    class:fullLength
     href={btnlink}
     on:click|preventDefault={openModal}
   >
@@ -55,6 +57,9 @@
 <style>
   .privacy-btn:hover {
     background-color: #f96b29;
+  }
+  .fullLength {
+    width: 100%;
   }
   /* .btn-xs {
     font-size: smaller;

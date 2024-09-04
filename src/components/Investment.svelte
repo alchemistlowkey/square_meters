@@ -141,16 +141,20 @@
           </div>
           <div class="col-12 fw-semibold py-4 p-0 border-tb">
             <div class="row mx-0">
-              <div class="col-6 p-0">Invest
+              <div class="col-6 p-0">
+                Invest
                 <div class="py-2">
                   <span class="fw-medium">min : ₦50,000</span>
                 </div>
               </div>
-              <div class="col-6 p-3 text-end border-c rounded fw-light">₦50,000</div>
+              <div class="col-6 p-3 text-end border-c rounded fw-medium">
+                ₦50,000
+              </div>
             </div>
           </div>
-          <div class="col-12 fw-semibold py-2 w-full p-0">
+          <div class="col-12 fw-semibold py-2 p-0">
             <Button
+              fullLength={true}
               btnDetails="Reserve a Slot"
               formHeader="Invest"
               formText="Backed by Fitila Signatures"
@@ -159,8 +163,14 @@
               phoneNumber="Phone Number"
               amount="Amount"
               on:openform={handleOpenForm}
-            >
-            </Button>            
+            ></Button>
+          </div>
+          <div class="col-12 fw-semibold p-0 my-2">
+            <button class="w-full p-3 rounded border-o">
+              <a href="/faq" target="_blank" class="text-[#F96B29]"
+                >Ask a question?</a
+              >
+            </button>
           </div>
         </div>
       </div>
@@ -169,7 +179,7 @@
 </section>
 
 <section>
-  <div class="container pt-5">
+  <div class="container">
     <CardText
       TextHeader="Summary"
       TextContent={[
@@ -252,5 +262,8 @@
   }
   .border-c {
     border: 2px solid #e2e2e2 !important;
+  }
+  .border-o {
+    border: 1px solid #f2c5b0 !important;
   }
 </style>

@@ -4,7 +4,7 @@
   export let Images3 = [];
 </script>
 
-<section class="my-5 py-5">
+<section class="my-5 py-5 lg:text-lg md:text-base text-sm">
   <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <!-- Page 1 -->
@@ -22,12 +22,12 @@
                   </div>
                   <div class="col-12">
                     <div class="row mx-0">
-                      <div class="col-6 fs-6">
+                      <div class="col-6">
                         <img
                           src="/images/{image1.src}"
                           alt=""
                           style="width: 65px; height: 65px"
-                          class="rounded-5 fs-6 my-3 float-end"
+                          class="rounded-5 my-3 float-end"
                         />
                       </div>
                       <div class="col-6 py-4">
@@ -57,12 +57,12 @@
                   </div>
                   <div class="col-12">
                     <div class="row mx-0">
-                      <div class="col-6 fs-6">
+                      <div class="col-6">
                         <img
                           src="/images/{image2.src}"
                           alt=""
                           style="width: 65px; height: 65px"
-                          class="rounded-5 fs-6 my-3 float-end"
+                          class="rounded-5 my-3 float-end"
                         />
                       </div>
                       <div class="col-6 py-4">
@@ -92,12 +92,12 @@
                   </div>
                   <div class="col-12">
                     <div class="row mx-0">
-                      <div class="col-6 fs-6">
+                      <div class="col-6">
                         <img
                           src="/images/{image3.src}"
                           alt=""
                           style="width: 65px; height: 65px"
-                          class="rounded-5 fs-6 my-3 float-end"
+                          class="rounded-5 my-3 float-end"
                         />
                       </div>
                       <div class="col-6 py-4">
@@ -121,10 +121,7 @@
       data-bs-slide="prev"
     >
       <span aria-hidden="true" class="prev-icon">
-        <img
-          src="images/prev.png"
-          alt="Previous"
-        />
+        <img src="images/prev.png" alt="Previous" />
       </span>
       <span class="visually-hidden">Previous</span>
     </button>
@@ -136,10 +133,7 @@
       data-bs-slide="next"
     >
       <span aria-hidden="true" class="next-icon">
-        <img
-          src="images/next.png"
-          alt="Next"
-        />
+        <img src="images/next.png" alt="Next" />
       </span>
       <span class="visually-hidden">Next</span>
     </button>

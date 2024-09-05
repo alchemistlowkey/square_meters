@@ -4,7 +4,7 @@
   export let Images3 = [];
 </script>
 
-<section class="mb-5 pb-5">
+<section class="my-5 py-5">
   <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <!-- Page 1 -->
@@ -113,47 +113,40 @@
         </div>
       </div>
     </div>
-    <!-- Custom Controls -->
-    <button
-      class="carousel-control-prev"
-      type="button"
-      data-bs-target="#customCarousel"
-      data-bs-slide="prev"
-    >
-      <span class="custom-prev-icon" aria-hidden="true">
-        <img src="images/prev.svg" alt="Previous" />
-      </span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button
-      class="carousel-control-next"
-      type="button"
-      data-bs-target="#customCarousel"
-      data-bs-slide="next"
-    >
-      <span class="custom-next-icon" aria-hidden="true">
-        <img src="images/next.svg" alt="Next" />
-      </span>
-      <span class="visually-hidden">Next</span>
-    </button>
+     <!-- Custom Controls -->
+     <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+        <!-- Custom SVG for Previous -->
+        <span aria-hidden="true">
+          <img src="images/prev.svg" alt="Previous" />
+        </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+        <!-- Custom SVG for Next -->
+        <span aria-hidden="true">
+          <img src="images/next.svg" alt="Next" />
+        </span>
+        <span class="visually-hidden">Next</span>
+      </button>
   </div>
 </section>
 
 <style>
   .border-orange {
-    border: 2px solid #f96b29;
-  }
+  border: 2px solid #f96b29;
+  position: relative;
+}
 
-  .custom-prev-icon img,
-  .custom-next-icon img {
-    transition: all 0.3s ease;
-  }
+.border-orange::before {
+  content: '';
+  position: absolute;
+  top: -20px; /* Adjust as necessary to position the SVG correctly */
+  left: 40px; /* Adjust as necessary to position the SVG correctly */
+  width: 40px; /* Adjust the size of the SVG */
+  height: 40px; /* Adjust the size of the SVG */
+  background-image: url('images/quote.svg'); /* Path to the SVG */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-  .carousel-control-prev:hover .custom-prev-icon img {
-    content: url("images/prev-hover.svg"); /* Replace with your hover state icon */
-  }
-
-  .carousel-control-next:hover .custom-next-icon img {
-    content: url("images/next-hover.svg"); /* Replace with your hover state icon */
-  }
 </style>

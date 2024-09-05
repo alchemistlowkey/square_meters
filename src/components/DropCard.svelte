@@ -25,7 +25,7 @@
     {#if DropHeader2}
       <!-- svelte-ignore a11y-missing-attribute -->
       <a
-        class="btn btn-white border-[#0D493D] w-[100%] text-center text-cgreen fw-bold text-lg"
+        class="btn btn-white border-[#0D493D] w-[100%] text-center text-cgreen fw-bold lg:text-lg md:text-base text-sm"
         role="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
@@ -36,19 +36,19 @@
       </a>
     {/if}
 
-    <div class="dropdown-content w-100 bg-cgreen text-w rounded">
+    <div class="dropdown-content w-100 bg-cgreen text-w rounded lg:text-lg md:text-base text-sm">
       <div class="w-[90%] mx-auto py-4">
         {#if DropContent}
           <!-- svelte-ignore a11y-missing-attribute -->
-          <a class="dropdown-item text-w text-wrap fs-6">{DropContent}</a>
+          <a class="dropdown-item text-w text-wrap">{DropContent}</a>
         {/if}
         {#if DropContent2}
           <!-- svelte-ignore a11y-missing-attribute -->
-          <a class="dropdown-item text-[#f6fffd] text-wrap text-start p-2 fs-6">{DropContent2}</a>
+          <a class="dropdown-item text-[#f6fffd] text-wrap text-start p-2">{DropContent2}</a>
         {/if}
         {#if DropContent3}
           <!-- svelte-ignore a11y-missing-attribute -->
-          <a class="dropdown-item text-[#f6fffd] text-wrap fs-6 text-start p-2">{DropContent3}</a>
+          <a class="dropdown-item text-[#f6fffd] text-wrap text-start p-2">{DropContent3}</a>
         {/if}
         {#if DropBtn}
           <div class="">

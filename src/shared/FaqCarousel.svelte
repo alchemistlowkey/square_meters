@@ -113,40 +113,49 @@
         </div>
       </div>
     </div>
-     <!-- Custom Controls -->
-     <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
-        <!-- Custom SVG for Previous -->
-        <span aria-hidden="true">
-          <img src="images/prev.svg" alt="Previous" />
-        </span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
-        <!-- Custom SVG for Next -->
-        <span aria-hidden="true">
-          <img src="images/next.svg" alt="Next" />
-        </span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    <!-- Custom Controls -->
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#customCarousel"
+      data-bs-slide="prev"
+    >
+      <!-- Custom SVG for Previous -->
+      <span aria-hidden="true">
+        <img src="images/prev.svg" alt="Previous" />
+      </span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#customCarousel"
+      data-bs-slide="next"
+    >
+      <!-- Custom SVG for Next -->
+      <span aria-hidden="true">
+        <img src="images/next.svg" alt="Next" />
+      </span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </section>
 
 <style>
   .border-orange {
-  border: 2px solid #f96b29;
-  position: relative;
-}
+    border: 2px solid #f96b29;
+    position: relative;
+  }
 
-.border-orange::before {
-  content: '';
-  position: absolute;
-  top: -20px; /* Adjust as necessary to position the SVG correctly */
-  left: 40px; /* Adjust as necessary to position the SVG correctly */
-  width: 40px; /* Adjust the size of the SVG */
-  height: 40px; /* Adjust the size of the SVG */
-  background-image: url('images/quote.svg'); /* Path to the SVG */
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
+  .border-orange::before {
+    content: "";
+    position: absolute;
+    top: -20px; /* Adjust as necessary to position the SVG correctly */
+    left: 40px; /* Adjust as necessary to position the SVG correctly */
+    width: 40px; /* Adjust the size of the SVG */
+    height: 40px; /* Adjust the size of the SVG */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80" fill="none"><rect width="80" height="80" rx="40" fill="%23F96B29"/><path d="M30.63 26.8018C27.41 26.8018 24.798 29.4878 24.798 32.8018C24.798 36.1138 27.41 38.8018 30.63 38.8018C36.46 38.8018 32.574 50.3998 24.798 50.3998V53.1998C38.676 53.2018 44.114 26.8018 30.63 26.8018ZM47.43 26.8018C44.212 26.8018 41.6 29.4878 41.6 32.8018C41.6 36.1138 44.212 38.8018 47.43 38.8018C53.262 38.8018 49.376 50.3998 41.6 50.3998V53.1998C55.476 53.2018 60.914 26.8018 47.43 26.8018Z" fill="%23F6FFFD"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 </style>

@@ -96,7 +96,7 @@ and enhance your earnings."
   </div>
 </section>
 
-<section class="bg-[#0D493D] my-5">
+<section class="bg-[#0D493D] my-5 lg:text-lg md:text-base text-sm">
   <div class="container-fluid">
     <div class="row mx-0">
       <div class="col">

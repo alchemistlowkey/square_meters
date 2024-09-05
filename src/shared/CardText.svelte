@@ -46,7 +46,7 @@
 
 {#if BgGreen}
 <div
-  class="row mx-0 py-md-10 text-[#F6FFFD] py-3 p-text text-center text-xs md:text-base lg:text-lg"
+  class="row mx-0 py-md-10 text-[#F6FFFD] py-3 p-text text-center text-sm md:text-base lg:text-lg"
 >
   <div class="col-md-10 offset-md-1">
     <div

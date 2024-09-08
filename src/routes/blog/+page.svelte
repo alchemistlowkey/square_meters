@@ -2,4 +2,4 @@
     import Blog from "../../components/Blog.svelte";
 </script>
 
-<Blog />
+<!-- <Blog /> -->

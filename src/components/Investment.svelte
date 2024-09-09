@@ -152,7 +152,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 fw-semibold py-2 p-0">
+          <div class="col-12 fw-semibold py-2 p-0 pt-4">
             <Button
               fullLength={true}
               btnDetails="Reserve a Slot"

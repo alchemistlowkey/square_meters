@@ -60,18 +60,18 @@
   <Form {formHeader} {formText} {fullName} {email} {phoneNumber} {message} />
 </Modal>
 
-<section class="py-10 mb-16">
+<section class="py-10 mb-16 md:text-lg lg:text-xl text-base">
   <div class="container">
-    <div class="row mx-0 py-10 p-text text-cgreen">
+    <div class="row mx-0 py-10 text-cgreen">
       <div class="col-lg-10 offset-lg-1">
         <div class="collection">Collection of Information</div>
-        <p class="md:text-lg lg:text-xl text-base">
-          We receive and store information about you such as:
-        </p>
+        <p class="">We receive and store information about you such as:</p>
         <div class="">
-          <ul class="responsive-list md:text-lg lg:text-xl text-base">
+          <ul class="responsive-list">
             <li class="py-2">
-              <span class="boldtext">Information you provide to us:</span>
+              <span class="text-start fw-bold text-lg md:text-xl lg:text-2xl"
+                >Information you provide to us:</span
+              >
               We collect information you provide to us, which includes:
               <ul class="responsive-list">
                 <li>
@@ -84,13 +84,14 @@
               </ul>
             </li>
             <li class="py-2">
-              <span class="boldtext">Information we collect automatically:</span
+              <span class="text-start fw-bold text-lg md:text-xl lg:text-2xl"
+                >Information we collect automatically:</span
               >
               We collect information about you and your use of our service, your
               interactions with us and our advertising, as well as information regarding
               your network, network devices, and your computer you might use to access
               our website. This information includes:
-              <ul class="responsive-list md:text-lg lg:text-xl text-base">
+              <ul class="responsive-list">
                 <li>
                   your interactions with our emails and texts, and with our
                   messages through push and online messaging channels;
@@ -117,18 +118,20 @@
           </ul>
         </div>
         <div class="py-4 mx-0">
-          <h6 class="boldtext">What we do with your information</h6>
-          <p class="md:text-lg lg:text-xl text-base">
+          <h6 class="text-start fw-bold text-lg md:text-xl lg:text-2xl">
+            What we do with your information
+          </h6>
+          <p class="">
             We use information to provide, analyze, administer, enhance, and
             personalize our services and marketing efforts, to process your
             registration, your orders, and your payments, and to communicate
             with you on these and other topics. For example, we use such
             information to:
           </p>
-          <div class="py-3 mx-0 md:text-lg lg:text-xl text-base">
+          <div class="py-3 mx-0">
             <p>We may use your personal information to:</p>
 
-            <ul class="responsive-list md:text-lg lg:text-xl text-base">
+            <ul class="responsive-list">
               <li>
                 help us quickly and efficiently respond to inquiries and
                 requests;
@@ -157,12 +160,12 @@
       </div>
     </div>
 
-    <div class="row mx-0 py-3 p-text text-cgreen">
+    <div class="row mx-0 py-3 text-cgreen">
       <div class="col-lg-10 offset-lg-1">
         <div class="collection">
           When do we send you marketing communications
         </div>
-        <p class="py-2 md:text-lg lg:text-xl text-base py-md-3">
+        <p class="py-2 py-md-3">
           We will only send you marketing communications where there is a
           necessity for us to do so. You have the right to withdraw your consent
           for us to use your personal information at any time for marketing
@@ -172,17 +175,17 @@
       </div>
     </div>
 
-    <div class="row mx-0 p-text py-3 text-cgreen">
+    <div class="row mx-0 py-3 text-cgreen">
       <div class="col-lg-10 offset-lg-1">
         <div class="collection">
           What is our legal basis for using your personal information
         </div>
-        <p class="py-2 md:text-lg lg:text-xl text-base py-md-3">
+        <p class="py-2 py-md-3">
           We only use your personal information where it is permitted by laws
           that protect your privacy rights. These include but not are not
           limited to:
         </p>
-        <ul class="responsive-list md:text-lg lg:text-xl text-base">
+        <ul class="responsive-list">
           <li>we have your consent (if applicable);</li>
           <li>
             we need to use the information to perform a contract with you;
@@ -196,10 +199,10 @@
         </ul>
       </div>
     </div>
-    <div class="row mx-0 p-text py-3 text-cgreen">
+    <div class="row mx-0 py-3 text-cgreen">
       <div class="col-lg-10 offset-lg-1">
         <div class="collection">Retention of Your Personal Data</div>
-        <p class="py-2 md:text-lg lg:text-xl text-base py-md-3">
+        <p class="py-2 py-md-3">
           The Company will retain Your Personal Data only for as long as is
           necessary for the purposes set out in this Privacy Policy. We will
           retain and use Your Personal Data to the extent necessary to comply
@@ -214,14 +217,14 @@
         </p>
       </div>
     </div>
-    <div class="row mx-0 p-text py-3 text-cgreen">
+    <div class="row mx-0 py-3 text-cgreen">
       <div class="col-lg-10 offset-lg-1">
         <div class="collection">Other legal requirements</div>
-        <p class="py-2 md:text-lg lg:text-xl text-base py-md-3">
+        <p class="py-2 py-md-3">
           The Company may disclose Your Personal Data in the good faith belief
           that such action is necessary to:
         </p>
-        <ul class="responsive-list md:text-lg lg:text-xl text-base">
+        <ul class="responsive-list">
           <li>Comply with a legal obligation</li>
           <li>Protect and defend the rights or property of the Company</li>
           <li>
@@ -235,10 +238,10 @@
         </ul>
       </div>
     </div>
-    <div class="row mx-0 p-text py-3 text-cgreen">
+    <div class="row mx-0 py-3 text-cgreen">
       <div class="col-lg-10 offset-lg-1">
         <div class="collection">Information Security</div>
-        <p class="py-2 md:text-lg lg:text-xl text-base py-md-3">
+        <p class="py-2 py-md-3">
           The security of Your Personal Data is important to Us, but remember
           that no method of transmission over the Internet, or method of
           electronic storage is 100% secure. While We strive to use commercially
@@ -252,23 +255,11 @@
 
 <style>
   .collection {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
-    line-height: 52.5px;
+    line-height: 40px;
     text-align: left;
     color: #f96b29;
-  }
-  .boldtext {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 37.5px;
-    text-align: left;
-  }
-  .p-text {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 37.5px;
-    text-align: left;
   }
   .responsive-list {
     list-style-type: disc;
@@ -286,6 +277,10 @@
     .responsive-list ul {
       margin-left: 1rem;
     }
+    .collection {
+      font-size: 22px;
+      line-height: 26px;
+    }
   }
 
   @media (max-width: 576px) {
@@ -294,6 +289,10 @@
     }
     .responsive-list ul {
       margin-left: 0.5rem;
+    }
+    .collection {
+      font-size: 18px;
+      line-height: 20px;
     }
   }
   .text-cgreen {

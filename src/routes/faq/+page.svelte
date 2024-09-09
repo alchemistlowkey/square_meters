@@ -1,6 +1,6 @@
 <script>
     import Faq from "../../components/Faq.svelte";
-    export let title = "Square Metres - FAQ";
+    export let title = "Square Metres - Frequently Asked Questions";
 </script>
 
 <svelte:head>

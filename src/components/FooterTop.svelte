@@ -127,9 +127,9 @@
         </div>
         <div class="col-7 col-md-4 pt-md-5 pt-3">
           <div
-            class="content text-[#0d493d] md:text-base lg:text-lg text-sm md:pt-0 mt-md-0 mt-3 md:text-left text-right lg:leading-9 leading-5"
+            class="content text-[#0d493d] md:text-base lg:text-lg text-sm mt-md-2 mt-3 md:text-left text-end lg:leading-6 leading-5"
           >
-            Join more than 1500 recipients of real estate updates and trends
+            Join more than 1500 recipients of real <br> estate updates and trends
           </div>
         </div>
         <div class="col-12 col-md-5 pt-md-5 mt-md-3 pt-0 mb-2">
@@ -157,7 +157,7 @@
                   type="email"
                   name="email"
                   bind:value={formState.email}
-                  class="form-control text-xs md:text-sm text-[#0d493d]"
+                  class="form-control text-xs md:text-sm text-[#0d493d] h-10"
                   placeholder="Type your email address"
                   required
                 />

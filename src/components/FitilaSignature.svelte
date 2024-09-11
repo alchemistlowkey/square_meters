@@ -47,7 +47,7 @@
 <Bg headerBG="investment-page-bg.jpeg">
   <PageHead
     SpanContent="Fitila Signature "
-    CardContent2="tells the story of your hard work through Real Estate"
+    CardContent2="tells the story of your hardwork through Real Estate"
     CardContent3="And it is comprehensively delivered by our dedicated team to solidify your investment goals"
   >
     <div class="row mx-0 py-16 text-w">
@@ -220,7 +220,7 @@
             ProjectDetails={[
               { head: "Type", body: "Mixed Development" },
               { head: "Size", body: "10 acres" },
-              { head: "Location", body: "Ilara, Epe" },
+              { head: "Location", body: "Ketu, Epe" },
               { head: "Status", body: "In progress" },
               { head: "Initial Deposit", body: "N500,000.00" },
               { head: "Timeline", body: "18 months" },

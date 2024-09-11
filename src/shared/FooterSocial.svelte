@@ -5,7 +5,7 @@
 <div class="col-6 float-start pt-3">
   <ul class="d-flex">
     {#each SocialItem as linkItem}
-      <li class="px-1 px-sm-2 px-md-3">
+      <li class="px-1 px-sm-2 px-md-3 hover:text-[#F96B29]">
         <a href={linkItem.href} target="_blank">
           <i class={linkItem.icon}></i>
         </a>
@@ -15,4 +15,5 @@
 </div>
 
 <style>
+
 </style>

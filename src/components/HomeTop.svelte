@@ -15,12 +15,12 @@
 
 <div class="container-fluid homepage_banner pt-5">
   <div class="pt-4 body">
-    <div class="row mx-0">
+    <div class="row mx-0 pt-5">
 
-      <div class="mt-4 col-12 pt-5 fs-1 fw-semibold text-white px-0 text-center lg:text-nowrap">
+      <div class="mt-4 col-12 pt-5 fs-1 fw-bold text-[#F6FFFD] px-0 text-center lg:text-nowrap">
         Wholesome Real Estate and Investment Solutions
       </div>
-      <div class="col-12 col-lg-10 offset-lg-1 text-center fs-4 text-gray-300 text-wrap fw-lighter px-0">
+      <div class="col-12 col-lg-8 offset-lg-2 text-center fs-4 text-[#F6FFFD] text-wrap fw-light px-0">
         Square Metres helps you do real estate better than anyone else does,
         prioritizing quality and timely project delivery
       </div>
@@ -43,7 +43,7 @@
             </div>
             <div class="col-3">
                 <img
-                  src="images/CNN.jpeg"
+                  src="images/bbc-group.png"
                   class="w-100 rounded"
                   alt=""
                 />

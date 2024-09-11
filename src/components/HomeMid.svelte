@@ -20,7 +20,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="prod-investment">Investment</div>
+          <div class="prod-investment">Other Listings</div>
         </div>
       </div>
     </div>

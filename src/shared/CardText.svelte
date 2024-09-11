@@ -14,11 +14,11 @@
 >
   <div class="col-md-10 offset-md-1">
     {#if TextHeader}
-      <div class="collection text-center md:text-base lg:text-lg text-sm">{TextHeader}</div>
+      <div class="collection text-center md:text-xl lg:text-3xl text-lg">{TextHeader}</div>
     {/if}
     {#if TextHeader2}
       <div
-        class="text-[#F96B29] md:text-base lg:text-lg text-sm fw-bold text-center"
+        class="text-[#F96B29] md:text-xl lg:text-2xl text-lg fw-bold text-center"
       >
         {TextHeader2}
       </div>
@@ -50,7 +50,7 @@
 >
   <div class="col-md-10 offset-md-1">
     <div
-      class="text-[#F6FFFD] text-center text-base md:text-lg lg:text-xl pb-2 font-bold"
+      class="text-[#F6FFFD] text-center md:text-xl lg:text-2xl text-lg pb-2 font-bold"
     >
       {BgGreen.head}
     </div>

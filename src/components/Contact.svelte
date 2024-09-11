@@ -21,8 +21,8 @@
       <div class="col-6 text-nowrap">
         <CardText
           TextHeader2="Email Us"
-          TextLinkText="enquiries@squaremetres.ng"
-          TextLink="mailto:enquiries@squaremetres.ng"
+          TextLinkText="hello@squaremetres.ng"
+          TextLink="mailto:hello@squaremetres.ng"
         />
       </div>
       <div class="col-6 text-nowrap">

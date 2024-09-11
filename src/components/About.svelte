@@ -18,7 +18,7 @@
   </PageHead>
 </Bg>
 
-<section>
+<section class="pt-5">
   <div class="container">
     <CardText
       TextHeader="Who We Are"
@@ -82,7 +82,7 @@
   </div>
 </section>
 
-<section id="values">
+<section id="values" class="pt-5">
   <div class="container">
     <CardText
       TextHeader="What Defines Us"

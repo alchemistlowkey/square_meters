@@ -3,10 +3,10 @@
 </script>
 
 <section
-  class="footer-bottom border-top mt-5 pt-3 pb-5 md:text-base lg:text-lg text-sm"
+  class="footer-bottom mt-5 pb-5 md:text-base lg:text-lg text-sm"
 >
   <div class="container-fluid">
-    <div class="row mx-0 text-[#0D493D]">
+    <div class="row mx-0 text-[#0D493D] hover:text-[#F96B29]">
       <FooterSocial
         SocialItem={[
           {
@@ -29,7 +29,7 @@
         ]}
       />
       <div
-        class="col-6 col-md-6 text-[10px] md:text-base lg:text-lg float-end fw-semibold px-sm-0 pt-3"
+        class="col-6 col-md-6 text-[10px] md:text-base lg:text-lg float-end fw-medium px-sm-0 pt-3"
       >
         <div class="float-end md:pr-[120px] sm:pr-[40px] pe-0">
           <p class="md:text-nowrap" data-wow-duration="1s">

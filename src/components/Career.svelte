@@ -82,14 +82,14 @@
 <section>
   <div class="container">
     <div class="row mx-0 py-10 p-text text-cgreen text-center" id="positions">
-      <div class="collection text-center py-4">Open positions</div>
+      <div class="collection text-center py-4 md:text-xl lg:text-2xl text-lg">Open positions</div>
       <DropCard
         DropHeader="Growth Hacker"
         DropContent="We seek the expertise of an experience marketing specialist to drive a 360 degree marketing campaign and customer experience which leads to customer retention and sales"
         DropBtn="Apply"
       />
       <DropCard
-        DropHeader="Sales Executive"
+        DropHeader="Sales Associate"
         DropContent="We seek the expertise of an experienced sales professional to drive strategic sales initiatives and build strong customer relationships, ultimately leading to increased revenue and long-term business growth."
         DropBtn="Apply"
       />

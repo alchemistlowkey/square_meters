@@ -40,7 +40,7 @@
       <div class="w-[90%] mx-auto py-4">
         {#if DropContent}
           <!-- svelte-ignore a11y-missing-attribute -->
-          <a class="dropdown-item text-w text-wrap">{DropContent}</a>
+          <a class="dropdown-item text-w text-wrap text-start">{DropContent}</a>
         {/if}
         {#if DropContent2}
           <!-- svelte-ignore a11y-missing-attribute -->
@@ -51,7 +51,7 @@
           <a class="dropdown-item text-[#f6fffd] text-wrap text-start p-2">{DropContent3}</a>
         {/if}
         {#if DropBtn}
-          <div class="">
+          <div class="text-start">
             <button class="btn mt-3 bg-[#f96b29] w-[200px] text-w"
               >{DropBtn}</button
             >

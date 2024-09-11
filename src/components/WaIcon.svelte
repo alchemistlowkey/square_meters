@@ -10,7 +10,7 @@
       <i class="fab fa-whatsapp rmy-float"></i>
     </div>
   </a>
-  <p class="rtext_icon text-white">Quick response</p>
+  <p class="rtext_icon text-white bg-[#0D493D] p-2 text-nowrap rounded fw-medium">Quick Response</p>
 </div>
 
 <style>
@@ -63,7 +63,6 @@
 
   .rtext_icon {
     margin-top: 8px;
-    color: red !important;
     font-size: 13px;
   }
 </style>

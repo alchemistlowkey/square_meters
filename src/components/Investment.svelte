@@ -65,8 +65,8 @@
   <div class="container-fluid">
     <div class="row mx-0">
       <div class="col-12 col-md-6 col-lg-7">
-        <div class="text-[#F96B29] fw-bold text-start md:text-2xl text-lg pb-4">
-          It takes only 5 minutes
+        <div class="text-[#F96B29] fw-bold text-center md:text-2xl text-lg pb-4">
+          Highlights
         </div>
         <ListItem
           Lists={[

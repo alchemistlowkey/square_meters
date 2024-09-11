@@ -8,13 +8,22 @@
   {#each FooterItem as linkItem}
     <li class="list-unstyled pt-2">
       <a href={linkItem.href}>
-        {#if linkItem.icon}
-          <span class="pe-1">
-            <i class={linkItem.icon}></i>
-          </span>
-        {/if}
-        {linkItem.text}</a
-      >
+        <div class="container">
+          <div class="row">
+            {#if linkItem.icon}
+              <div class="col-1">
+                <i class={linkItem.icon}></i>
+              </div>
+              <div class="col-11">
+                {linkItem.text2}
+              </div>
+            {/if}
+            {#if !linkItem.icon}
+              {linkItem.text}
+            {/if}
+          </div>
+        </div>
+      </a>
     </li>
   {/each}
 </ul>

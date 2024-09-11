@@ -6,7 +6,7 @@
   class="footer-bottom mt-5 pb-5 md:text-base lg:text-lg text-sm w-[90%] mx-auto"
 >
   <div class="container">
-    <div class="row mx-0 text-[#0D493D] hover:text-[#F96B29]">
+    <div class="row mx-0 text-[#0D493D]">
       <FooterSocial
         SocialItem={[
           {

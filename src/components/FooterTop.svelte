@@ -96,17 +96,17 @@
             {
               href: "https://www.google.com/maps/search/?api=1&query=7/9+Molade+Okoya+Thomas,+Victoria+Island,+Lagos",
               icon: "bi-building-fill",
-              text: "7/9 Molade Okoya Thomas, Victoria Island, Lagos",
+              text2: "7/9 Molade Okoya Thomas, Victoria Island, Lagos",
             },
             {
               href: "mailto:hello@squaremetres.ng",
               icon: "bi-envelope-fill",
-              text: "hello@squaremetres.ng",
+              text2: "hello@squaremetres.ng",
             },
             {
               href: "tel:+2348066267094",
               icon: "bi-telephone-fill",
-              text: "08066267094",
+              text2: "08066267094",
             },
           ]}
         />

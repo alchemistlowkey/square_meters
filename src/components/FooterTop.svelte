@@ -115,7 +115,7 @@
   </div>
 </section>
 
-<section class="md:text-base lg:text-lg text-sm">
+<section class="md:text-base lg:text-lg text-sm w-[90%] mx-auto">
   <div class="container bg-[#F6FFFD]">
       <div class="row mx-0">
         <div class="col-4 mx-auto col-md-3">

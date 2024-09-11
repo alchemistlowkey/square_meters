@@ -3,9 +3,9 @@
 </script>
 
 <section
-  class="footer-bottom mt-5 pb-5 md:text-base lg:text-lg text-sm"
+  class="footer-bottom mt-5 pb-5 md:text-base lg:text-lg text-sm w-[90%] mx-auto"
 >
-  <div class="container-fluid">
+  <div class="container">
     <div class="row mx-0 text-[#0D493D] hover:text-[#F96B29]">
       <FooterSocial
         SocialItem={[

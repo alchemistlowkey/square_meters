@@ -62,7 +62,7 @@
 </section>
 
 <section class="py-5 text-sm md:text-base lg:text-lg">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row mx-0">
       <div class="col-12 col-md-6 col-lg-7">
         <div class="text-[#F96B29] fw-bold text-center md:text-2xl text-lg pb-4">
@@ -166,11 +166,11 @@
             ></Button>
           </div>
           <div class="col-12 fw-semibold p-0 my-2">
-            <button class="w-full p-3 rounded border-o">
+            
               <a href="/faq" target="_blank" class="text-[#F96B29]"
-                >Ask a question?</a
+                ><button class="w-full p-3 rounded border-o hover:bg-[#0d493d]">Ask a question?</button></a
               >
-            </button>
+            
           </div>
         </div>
       </div>

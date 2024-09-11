@@ -132,7 +132,7 @@
             Join more than 1500 recipients of real <br> estate updates and trends
           </div>
         </div>
-        <div class="col-12 col-md-5 pt-md-5 mt-md-3 pt-0 mb-2">
+        <div class="col-12 col-md-4 pt-md-5 mt-md-3 pt-0 mb-2">
           <div class="md:text-base lg:text-lg text-sm">
             <form on:submit|preventDefault={handleSubmit}>
               <!-- Display messages based on form submission state -->
@@ -163,7 +163,7 @@
                 />
                 <button
                   type="submit"
-                  class="btn bg-green text-white md:text-lg text-xs"
+                  class="btn bg-[#0d493d] hover:bg-[#F96B29] text-[#f6fffd]"
                   >SIGN UP</button
                 >
               </div>
@@ -177,11 +177,5 @@
 <style>
   .text-green {
     color: #0d493d;
-  }
-  .bg-green {
-    background-color: #0d493d;
-  }
-  .text-white {
-    color: #f6fffd;
   }
 </style>

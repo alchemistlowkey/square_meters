@@ -40,7 +40,7 @@
 
 <div class="fs-4">
   <a
-    class="btn privacy-btn text-w md:text-base lg:text-lg text-sm fw-medium"
+    class="btn bg-[#f96b29] hover:bg-[#0d493d] text-[#f6fffd] hover:text-[#f6fffd] border py-3 px-20 md:text-base lg:text-lg text-sm fw-medium"
     role="button"
     class:fullLength
     href={btnlink}
@@ -55,9 +55,6 @@
 </Modal>
 
 <style>
-  .privacy-btn:hover {
-    background-color: #f96b29;
-  }
   .fullLength {
     width: 100%;
   }

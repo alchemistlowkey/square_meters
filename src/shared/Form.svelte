@@ -249,7 +249,7 @@
         <div class="my-4 mb-4">
           <button
             type="submit"
-            class="btn btn-xs hover:bg-orange-400 privacy-btn text-w"
+            class="btn bg-[#f96b29] py-3 px-20 hover:bg-[#0d493d] text-[#f6fffd] hover:text-[#f6fffd]"
             >Submit</button
           >
         </div>

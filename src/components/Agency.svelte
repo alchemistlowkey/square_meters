@@ -1,49 +1,11 @@
 <script>
   import Bg from "../shared/Bg.svelte";
   import PageHead from "../shared/PageHead.svelte";
-  import Button from "../shared/Button.svelte";
-  import Modal from "../shared/Modal.svelte";
-  import Form from "../shared/Form.svelte";
   import CardText from "../shared/CardText.svelte";
   import IconBox from "../shared/IconBox.svelte";
   import ListItem from "../shared/ListItem.svelte";
   import FormCard from "../shared/FormCard.svelte";
-
-  let showModal = false;
-  let formHeader = "";
-  let formText = "";
-  let fullName = "";
-  let firstName = "";
-  let lastName = "";
-  let email = "";
-  let phoneNumber = "";
-  let preferredSize = "";
-
-  function handleOpenForm(event) {
-    const {
-      formHeader: header,
-      formText: text,
-      fullName: name,
-      firstName: fname,
-      lastName: lname,
-      email: mail,
-      phoneNumber: phone,
-      preferredSize: size,
-    } = event.detail;
-    formHeader = header;
-    formText = text;
-    fullName = name;
-    firstName = fname;
-    lastName = lname;
-    email = mail;
-    phoneNumber = phone;
-    preferredSize = size;
-    showModal = true;
-  }
-
-  function closeModal() {
-    showModal = false;
-  }
+  import ButtonId from "../shared/ButtonId.svelte";
 </script>
 
 <Bg headerBG="privacy.jpeg">
@@ -53,29 +15,9 @@ investing in yourself"
     CardContent3="Join today to prioritize your clients, close more deals like never before
 and enhance your earnings."
   >
-    <Button
-      btnDetails="Apply now to Join"
-      formHeader="Request information"
-      formText="For Fitila Signatures"
-      fullName="Full Name"
-      email="Email"
-      phoneNumber="Phone Number"
-      preferredSize="Preferred Size"
-      on:openform={handleOpenForm}
-    />
+    <ButtonId btnDetails="Apply now to Join" btnlink="#agent" />
   </PageHead>
 </Bg>
-
-<Modal isOpen={showModal} close={closeModal}>
-  <Form
-    {formHeader}
-    {formText}
-    {fullName}
-    {email}
-    {phoneNumber}
-    {preferredSize}
-  />
-</Modal>
 
 <section>
   <div class="container-fluid pt-5">
@@ -139,11 +81,13 @@ and enhance your earnings."
   </div>
 </section>
 
-<section class="py-5 text-sm md:text-base lg:text-lg">
-  <div class="container-fluid">
+<section class="py-5 text-sm md:text-base lg:text-lg w-[90%] mx-auto">
+  <div class="container">
     <div class="row mx-0">
       <div class="col-12 col-md-6 col-lg-7">
-        <div class="text-[#F96B29] fw-bold text-start md:text-2xl text-lg pb-4">It takes only 5 minutes</div>
+        <div class="text-[#F96B29] fw-bold text-start md:text-2xl text-lg pb-4">
+          It takes only 5 minutes
+        </div>
         <ListItem
           Lists={[
             { Number: "1", Text: "Sign Up Below" },
@@ -154,17 +98,19 @@ and enhance your earnings."
       </div>
       <div class="col-12 col-md-6 col-lg-5">
         <div>
-          <img src="images/agency.jpeg" class="rounded" alt="">
+          <img src="images/agency.jpeg" class="rounded" alt="" />
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="my-5">
-  <div class="container">
+<section id="agent">
+  <div class="container my-5">
     <div class="row mx-0">
-      <div class="col-12 text-[#F96B29] text-base md:text-xl lg:text-2xl text-center py-3 fw-semibold">
+      <div
+        class="col-12 text-[#F96B29] text-base md:text-xl lg:text-2xl text-center py-3 fw-semibold"
+      >
         Agent Form
       </div>
       <div class="row mx-0">
@@ -174,7 +120,7 @@ and enhance your earnings."
             lastName="Last Name"
             email="Email"
             phoneNumber="Phone number"
-          />          
+          />
         </div>
       </div>
     </div>

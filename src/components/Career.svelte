@@ -2,7 +2,7 @@
   import Bg from "../shared/Bg.svelte";
   import DropCard from "./DropCard.svelte";
   import PageHead from "../shared/PageHead.svelte";
-  import Button from "../shared/Button.svelte";
+  import ButtonId from "../shared/ButtonId.svelte";
   import Offer from "../shared/Offer.svelte";
   import CardText from "../shared/CardText.svelte";
 </script>
@@ -14,7 +14,7 @@
     CardContent3="We've assembled an exceptional team of forward thinkers, fueled by
           passion and wielding skills that surpasses the ordinary."
   >
-    <Button btnDetails="All Open Roles" btnlink="#positions"></Button>
+    <ButtonId btnDetails="All Open Roles" btnlink="#positions"></ButtonId>
   </PageHead>
 </Bg>
 
@@ -79,9 +79,9 @@
   </div>
 </section>
 
-<section>
+<section class="py-10">
   <div class="container">
-    <div class="row mx-0 py-10 p-text text-cgreen text-center" id="positions">
+    <div class="row mx-0 p-text text-cgreen text-center" id="positions">
       <div class="collection text-center py-4 md:text-xl lg:text-2xl text-lg">Open positions</div>
       <DropCard
         DropHeader="Growth Hacker"

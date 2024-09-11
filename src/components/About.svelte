@@ -1,7 +1,7 @@
 <script>
   import Bg from "../shared/Bg.svelte";
   import PageHead from "../shared/PageHead.svelte";
-  import Button from "../shared/Button.svelte";
+  import ButtonId from "../shared/ButtonId.svelte";
   import CardText from "../shared/CardText.svelte";
   import Offer from "../shared/Offer.svelte";
   import BoxCard from "../shared/BoxCard.svelte";
@@ -14,7 +14,7 @@
     CardContent3="To put a smile on the faces of investors by delivering and improving the
         quality of work."
   >
-    <Button btnDetails="Know what we value" btnlink="#values"></Button>
+    <ButtonId btnDetails="Know what we value" btnlink="#values"></ButtonId>
   </PageHead>
 </Bg>
 

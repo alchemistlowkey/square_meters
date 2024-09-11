@@ -1,6 +1,5 @@
-<script></script>
-
 <div class="rfloating_btn">
+  
   <a
     class="rcontact"
     target="_blank"
@@ -10,21 +9,22 @@
       <i class="fab fa-whatsapp rmy-float"></i>
     </div>
   </a>
-  <p class="rtext_icon text-white bg-[#0D493D] p-2 text-nowrap rounded fw-medium">Quick Response</p>
+  <p class="rtext_icon bg-[#f96b29] text-[#F6FFFD] rounded p-2 fw-medium">
+    Quick Response
+  </p>
 </div>
 
 <style>
   .rcontact {
     text-decoration: none;
   }
+
   .rfloating_btn {
     position: fixed;
-    bottom: 30px;
+    bottom: 70px;
     right: 30px;
-    width: 100px;
-    height: 100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     z-index: 1000;
@@ -62,7 +62,7 @@
   }
 
   .rtext_icon {
-    margin-top: 8px;
     font-size: 13px;
+    margin-left: 5px;
   }
 </style>

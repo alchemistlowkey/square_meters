@@ -1,5 +1,6 @@
 <script>
   import HomeText from "../shared/HomeText.svelte";
+  import HomeCarousel from "../shared/HomeCarousel.svelte";
 </script>
 
 <section class="md:text-2xl lg:text-4xl text-base">
@@ -20,7 +21,9 @@
         </div>
       </div>
       <div class="mt-lg-5 mt-3">
-        <div class="row mx-0 justify-content-center md:text-base lg:text-lg text-sm">
+        <div
+          class="row mx-0 justify-content-center md:text-base lg:text-lg text-sm"
+        >
           <div class="col-md-4">
             <a href="/" class="text-decoration-none">
               <div class="news_card">
@@ -99,27 +102,27 @@
     TextContent="Making your real estate investment decisions wise is our business."
   ></HomeText>
 
-  <div class="my-lg-5 pt-3 md:text-base lg:text-lg text-sm">
-    <div class="mx-0 row">
-      <div class="col-md-4 mb-3">
-        <div class="cite-map">
-          “<br />Get better returns for your money
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-3">
-        <div class="cite-map">
-          “<br />Diversified long-term investing
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-3">
-        <div class="cite-map">
-          “<br />Invest for my kids
-        </div>
-      </div>
-    </div>
-  </div>
+  <HomeCarousel
+    Texts1={[
+      { word: "Get better returns for your money" },
+      { word: "Diversified long-term investing" },
+      { word: "Invest for my kids" },
+      { word: "Secure my financial future" },
+    ]}
+    Texts2={[
+      { word: "Grow my wealth steadily" },
+      { word: "Plan for retirement" },
+      { word: "Invest in global markets" },
+      { word: "Achieve my financial goals" },
+    ]}
+    Texts3={[
+      { word: "Get better returns for your money" },
+      { word: "Diversified long-term investing" },
+      { word: "Invest for my kids" },
+      { word: "Build a strong investment portfolio" },
+    ]}
+    
+  ></HomeCarousel>
 </section>
 
 <style>

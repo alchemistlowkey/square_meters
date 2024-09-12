@@ -44,7 +44,7 @@
   }
 </script>
 
-<Bg headerBG="investment-page-bg.jpeg">
+<Bg headerBG="fitila_signatures1.jpg">
   <PageHead
     SpanContent="Fitila Signature "
     CardContent2="tells the story of your hardwork through Real Estate"
@@ -99,7 +99,7 @@
   <div class="container">
     <div class="row mx-0">
       <div class="col">
-        <img src="images/fitila_bottom.jpeg" alt="" class="rounded" />
+        <img src="images/fitila_signatures.jpg" alt="" class="rounded" />
       </div>
     </div>
   </div>
@@ -144,19 +144,19 @@
     <div class="row mx-0 py-5">
       <Carousel
         Images1={[
-          { src: "images/fitila_bottom.jpeg" },
-          { src: "images/fitila_bottom.jpeg" },
-          { src: "images/fitila_bottom.jpeg" },
+          { src: "images/fitila_signatures1.jpg" },
+          { src: "images/fitila_signatures2.jpg" },
+          { src: "images/fitila_signatures3.jpg" },
         ]}
         Images2={[
-          { src: "images/land.jpg" },
-          { src: "images/land.jpg" },
-          { src: "images/land.jpg" },
+          { src: "images/fitila_signatures3.jpg" },
+          { src: "images/fitila_signatures1.jpg" },
+          { src: "images/fitila_signatures2.jpg" },
         ]}
         Images3={[
-          { src: "images/product.jpeg" },
-          { src: "images/product.jpeg" },
-          { src: "images/product.jpeg" },
+          { src: "images/fitila_signatures2.jpg" },
+          { src: "images/fitila_signatures3.jpg" },
+          { src: "images/fitila_signatures1.jpg" },
         ]}
       ></Carousel>
     </div>

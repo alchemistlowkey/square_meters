@@ -11,7 +11,7 @@
         <div class="container">
           <div class="row align-items-center">
             {#if linkItem.icon}
-              <div class="col-12 d-flex align-items-start">
+              <div class="col-12 ps-0 d-flex align-items-start">
                 <i class={linkItem.icon}></i>
                 <span class="ml-2">{linkItem.text2}</span>
               </div>

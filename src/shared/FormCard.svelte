@@ -118,7 +118,7 @@
       <label for=""></label>
       <button
         type="submit"
-        class="w-full bg-[#F96B29] hover:bg-[#0d493d] text-[#FFFFFF] rounded p-2 my-2"
+        class="btn w-full bg-[#F96B29] hover:bg-[#0d493d] border-[#0d493d] hover:border-[#F96B29] text-[#F6FFFD] hover:text-[#f6fffd] rounded p-2 my-2"
       >
         Submit
       </button>

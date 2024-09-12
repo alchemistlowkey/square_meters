@@ -155,7 +155,7 @@
       <div class="hidden md:flex items-center">
         <a href="/agency" class="hover:text-gray-900 mr-4">Agency</a>
         <button
-          class="px-4 py-2 bg-[#0D493D] text-[#F6FFFD] rounded hover:bg-green-700"
+          class="px-4 py-2 bg-[#0D493D] text-[#F6FFFD] rounded hover:bg-[#f96b29]"
         >
           <a class="px-2" href="tel:+2348066267094">
             <i class="bi-telephone-fill px-2"></i>08066267094

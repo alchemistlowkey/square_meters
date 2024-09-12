@@ -11,7 +11,7 @@
         <div class="container">
           <div class="row mx-0">
             {#each Texts1 as Text1}
-              <div class="col-md-3 mb-3">
+              <div class="col-md-3 col-6 mb-3">
                 <div class="cite-map hover:text-[#f9fffd] hover:bg-[#F96B29]">
                   “<br />{Text1.word}
                 </div>
@@ -24,7 +24,7 @@
         <div class="container">
           <div class="row mx-0">
             {#each Texts2 as Text2}
-              <div class="col-md-3 mb-3">
+              <div class="col-md-3 col-6 mb-3">
                 <div class="cite-map">
                   “<br />{Text2.word}
                 </div>
@@ -37,7 +37,7 @@
         <div class="container">
           <div class="row mx-0">
             {#each Texts3 as Text3}
-              <div class="col-md-3 mb-3">
+              <div class="col-md-3 col-6 mb-3">
                 <div class="cite-map">
                   “<br />{Text3.word}
                 </div>

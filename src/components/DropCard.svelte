@@ -99,6 +99,7 @@
   }
 
   .dropdown-content button:hover {
-    background-color: #e2b7a0;
+    background-color: #0d493d;
+    border-color: #f96b29;
   }
 </style>

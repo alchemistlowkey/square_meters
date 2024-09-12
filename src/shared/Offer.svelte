@@ -2,23 +2,23 @@
 </script>
 
 <section
-  class="bg-[#0D493D] text-[#F6FFFD] w-[90%] mx-auto p-5 my-5 rounded md:text-base lg:text-lg text-sm"
+  class="bg-[#0D493D] text-[#F6FFFD] w-[90%] mx-auto my-5 rounded-5 md:text-base lg:text-lg text-sm"
 >
   <div class="container">
-    <div class="row mx-0">
+    <div class="row mx-0 py-5 text-center">
       <div
-        class="col-lg-4 col-md-12 col-12 mt-lg-4 mt-md-7 mt-xl-2 md:text-2xl lg:text-3xl text-lg"
+        class="col-lg-4 col-md-12 col-12 mt-lg-4 mt-md-7 mt-xl-4 md:text-2xl lg:text-3xl text-lg"
       >
         Connect with us
       </div>
-      <div class="col-lg-5 col-md-12 col-12 mt-md-3 mt-lg-0 mt-sm-4 mt-xl-0">
-        Let's explore available possibilities or design <br /> bespoke solutions
+      <div class="col-lg-5 col-md-12 col-12 mt-md-3 mt-lg-0 mt-sm-4 mt-xl-0 mt-3 text-nowrap">
+        Let's explore available possibilities <br> or design bespoke solutions <br>
         to meet your investment needs
       </div>
-      <div class="col-lg-3 col-md-12 col-12 mt-md-7 mt-lg-4 mt-sm-4 mt-xl-1">
+      <div class="col-lg-3 col-md-12 col-12 mt-md-7 mt-lg-4 mt-sm-4 mt-xl-4 mt-3">
         <a href="/investment">
           <button
-            class="btn w-60 text-[#F6FFFD] bg-[#f96b29] hover:text-[#0d493d] hover:bg-[#f6fffd] fw-medium md:text-base lg:text-lg text-sm"
+            class="btn w-52 text-[#F6FFFD] bg-[#f96b29] hover:bg-[#0d493d] border-[#0d493d] hover:border-[#f96b29] hover:text-[#f6fffd] fw-medium md:text-base lg:text-lg text-sm rounded-3"
             >Our Offering</button
           >
         </a>

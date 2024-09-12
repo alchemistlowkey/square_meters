@@ -12,7 +12,7 @@
           <div class="row mx-0">
             {#each Texts1 as Text1}
               <div class="col-md-3 mb-3">
-                <div class="cite-map">
+                <div class="cite-map hover:text-[#f9fffd] hover:bg-[#F96B29]">
                   “<br />{Text1.word}
                 </div>
               </div>

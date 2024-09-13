@@ -1,30 +1,31 @@
 <script>
   import HomeText from "../shared/HomeText.svelte";
+  import Img from "../shared/Img.svelte";
 </script>
 
-<section class="md:text-2xl lg:text-4xl text-base px-3">
+<section class="md:text-2xl lg:text-4xl text-base w-[90%] mx-auto">
   <HomeText
     TextHeader="Invest Seamlessly"
     TextContent="Making your money is hard, investing it shouldn’t be"
   ></HomeText>
 
-  <div class="mt-4">
-    <div class="w-100">
-      <div class="mx-0 row">
-        <div class="col-md-4 mb-sm-1">
-          <div class="prod-land">Land</div>
-        </div>
+  <Img 
+  HomeImages={[
+    {src: "land_2.jpg",
+      text: "Land",
+      href: "/fitila-signature"
 
-        <div class="col-md-4">
-          <div class="prod-investment">Investment</div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="prod-investment">Other Listings</div>
-        </div>
-      </div>
-    </div>
-  </div>
+    },
+    {src: "investment.jpeg",
+      text: "Investment",
+      href: "/investment"
+    },
+    {src: "investment.jpeg",
+      text: "Other Listings",
+      href: "/investment"
+    }
+  ]}
+  />
 
   <HomeText
     TextHeader="We are SquareMetres"

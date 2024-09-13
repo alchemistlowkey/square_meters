@@ -4232,7 +4232,7 @@ a.nav-link {
 .prod-land2,
 .prod-land {
   display: flex;
-  min-height: 74vh;
+  min-height: 60vh;
   color: #f6fffd;
   font-family: "Poppins";
   flex-wrap: wrap;
@@ -4242,7 +4242,7 @@ a.nav-link {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 8px;
+  letter-spacing: 2px;
   border-radius: 10px;
 }
 .product-item a {

@@ -4,7 +4,7 @@
 
 <section
   class="bg pt-5"
-  style="background-image: linear-gradient(#0000009e, #001410), url('/images/{headerBG}')"
+  style="background-image: linear-gradient(#0000009e, #0d493da2), url('/images/{headerBG}')"
 >
   <slot></slot>
 </section>

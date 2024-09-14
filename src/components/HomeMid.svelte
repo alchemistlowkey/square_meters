@@ -1,32 +1,25 @@
 <script>
   import HomeText from "../shared/HomeText.svelte";
   import Img from "../shared/Img.svelte";
+  import BoxCard from "../shared/BoxCard.svelte";
 </script>
 
-<section class="md:text-2xl lg:text-4xl text-base w-[90%] mx-auto">
+<section class="w-[90%] mx-auto my-5">
   <HomeText
     TextHeader="Invest Seamlessly"
     TextContent="Making your money is hard, investing it shouldn’t be"
   ></HomeText>
 
-  <Img 
-  HomeImages={[
-    {src: "land_2.jpg",
-      text: "Land",
-      href: "/fitila-signature"
-
-    },
-    {src: "investment.jpeg",
-      text: "Investment",
-      href: "/investment"
-    },
-    {src: "investment.jpeg",
-      text: "Other Listings",
-      href: "/investment"
-    }
-  ]}
+  <Img
+    HomeImages={[
+      { src: "land_2.jpg", text: "Land", href: "/fitila-signature" },
+      { src: "investment.jpeg", text: "Investment", href: "/investment" },
+      { src: "land2.png", text: "Other Listings", href: "/investment" },
+    ]}
   />
+</section>
 
+<section class="w-[90%] mx-auto">
   <HomeText
     TextHeader="We are SquareMetres"
     TextContent="We are bringing a new reality to the eye of those who appreciate
@@ -34,42 +27,26 @@
             Today"
   ></HomeText>
 
-  <div class="mt-4">
-    <div class="row mx-0 md:text-base lg:text-lg text-sm">
-      <div class="col-md-4 mb-lg-0 mb-3">
-        <div class="white-box">
-          <img src="images/client.png" alt="" />
-          <div class="head">You First</div>
-
-          <div class="body">
-            Your view shapes our vision. focused on driving an experience that
-            prioritizes you above all else.
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-lg-0 mb-3">
-        <div class="danger-box">
-          <img src="images/quality.png" alt="" />
-          <div class="head">Quality & Timely Delivery</div>
-
-          <div class="body">
-            Providing timely delivery is our promise, and every brick reflects
-            our commitment to excellence.
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-lg-0 mb-3">
-        <div class="white-box">
-          <img src="images/innovation.png" alt="" />
-          <div class="head">Innovation & Leadership</div>
-
-          <div class="body">
-            Creating spaces where diversity thrives. Staying ahead, shaping a
-            future that inspires
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <BoxCard
+    HomeBoxes={[
+      {
+        hover: "clienthover.png",
+        src: "client.png",
+        head: "You First",
+        body: "Your view shapes our vision. focused on driving an experience that prioritizes you above all else.",
+      },
+      {
+        hover: "quality.png",
+        src: "business.png",
+        head: "Quality & Timely Delivery",
+        body: "Providing timely delivery is our promise, and every brick reflects our commitment to excellence.",
+      },
+      {
+        hover: "thumb.png",
+        src: "innovation.png",
+        head: "Innovation & Leadership",
+        body: "Creating spaces where diversity thrives. Staying ahead, shaping a future that inspires",
+      },
+    ]}
+  />
 </section>

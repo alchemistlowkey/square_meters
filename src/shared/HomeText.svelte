@@ -3,15 +3,15 @@
   export let TextContent = "";
 </script>
 
-<div class="mt-4">
+<div class="mt-5">
   <div class="w-100">
     <div class="mx-0 row">
       <div class="col-md-6">
-        <span class="seamingly">{TextHeader}</span>
+        <span class="md:text-2xl lg:text-4xl text-base text-[#F96B29]">{TextHeader}</span>
       </div>
       <div class="col-md-6">
         <span
-          class="seamingly-text ms-lg-0 ps-lg-0 md:text-base lg:text-lg text-sm text-wrap"
+          class="ms-lg-0 ps-lg-0 lg:text-lg md:text-base text-sm pt-1 text-wrap float-end"
           >{TextContent}
         </span>
       </div>

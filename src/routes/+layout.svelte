@@ -7,6 +7,7 @@
   import WaIcon from "../components/WaIcon.svelte";
   import Footers from "../components/Footers.svelte";
   import NavBar from "../components/NavBar.svelte";
+  import Nav from "../components/Nav.svelte";
 
   import { onMount } from "svelte";
 
@@ -74,6 +75,8 @@
 </noscript>
 
 <NavBar />
+
+<!-- <Nav /> -->
 
 <slot></slot>
 

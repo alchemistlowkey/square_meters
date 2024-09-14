@@ -80,7 +80,7 @@
         <div class="relative dropdown" id="products-dropdown">
           <button
             on:click={toggleProductsDropdown}
-            class="inline-flex items-center px-3 py-2 hover:text-[#f96b29] focus:outline-none"
+            class="inline-flex items-center px-3 py-4 hover:text-[#f96b29] focus:outline-none"
             aria-haspopup="true"
             aria-expanded={isProductsDropdownOpen}
           >
@@ -102,7 +102,7 @@
           </button>
           <!-- Dropdown Menu -->
           <div
-            class={`dropdown-menu container absolute left-0 mt-2 w-80 bg-[#F6FFFD] border-[#f96b29] rounded-md shadow-lg ${isProductsDropdownOpen ? "block" : "hidden"}`}
+            class={`dropdown-menu container absolute left-0 w-80 bg-[#F6FFFD] border-[#f96b29] rounded-md shadow-lg ${isProductsDropdownOpen ? "block" : "hidden"}`}
           >
             <NavDropCard
               dropheader="Land"
@@ -124,7 +124,7 @@
         <div class="relative dropdown ml-4" id="company-dropdown">
           <button
             on:click={toggleCompanyDropdown}
-            class="inline-flex items-center px-3 py-2 hover:text-[#f96b29] focus:outline-none"
+            class="inline-flex items-center px-3 py-4 hover:text-[#f96b29] focus:outline-none"
             aria-haspopup="true"
             aria-expanded={isCompanyDropdownOpen}
           >
@@ -146,7 +146,7 @@
           </button>
           <!-- Dropdown Menu -->
           <div
-            class={`dropdown-menu absolute left-0 mt-2 w-80 bg-white border-[#f96b29] rounded-md shadow-lg ${isCompanyDropdownOpen ? "block" : "hidden"}`}
+            class={`dropdown-menu absolute left-0 w-[350px] bg-white border-[#f96b29] rounded-md shadow-lg ${isCompanyDropdownOpen ? "block" : "hidden"}`}
           >
             <NavDropCard
               dropheader="About Us"

@@ -9,9 +9,11 @@
       <i class="fab fa-whatsapp rmy-float"></i>
     </div>
   </a>
-  <p class="rtext_icon bg-[#f96b29] text-[#F6FFFD] rounded p-2 fw-medium">
-    Quick Response
-  </p>
+  <a href="https://wa.me/2348066267094?text=Hello">
+    <p class="rtext_icon bg-[#f96b29] text-[#F6FFFD] rounded p-2 fw-medium">
+      Quick Response
+    </p>
+  </a>
 </div>
 
 <style>

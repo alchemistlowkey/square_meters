@@ -5,11 +5,11 @@
 
 <section class="md:text-2xl lg:text-4xl text-base">
   <div class="bg-green py-5 py-md-2 mt-md-5 mt-3">
-    <div class="py-5">
+    <div class="py-5 w-[90%] mx-auto">
       <div class="">
         <div class="mx-0 row pb-md-3">
           <div class="col-md-5">
-            <span class="seamingly text-white"> News & Insight </span>
+            <span class="seamingly text-white">News & Insight</span>
           </div>
           <div class="col-md-7">
             <span

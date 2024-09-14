@@ -5,6 +5,8 @@
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="canonical" href="https://squaremetres.ng/about-us" />
+    <meta name="description" content="About us Page" />
 </svelte:head>
 
 <About />

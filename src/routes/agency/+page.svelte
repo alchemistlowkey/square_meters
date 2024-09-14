@@ -5,6 +5,8 @@
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="canonical" href="https://squaremetres.ng/agency" />
+    <meta name="description" content="Agency Page" />
 </svelte:head>
 
 <Agency />

@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import "../bg.css";
   import "../custom.css";
   import "../app.css";
@@ -8,8 +9,10 @@
   import Footers from "../components/Footers.svelte";
   import NavBar from "../components/NavBar.svelte";
   import Nav from "../components/Nav.svelte";
-
-  import { onMount } from "svelte";
+  
+  let title = 'Square Metres';
+  let description = 'Square Metres Construction Limited is more than just a real estate development company, we are passionate about driving a wholesome experience through real estate and investment solutions. Our Journey began with a simple yet profound goal which is to provide investors with an experience that truly reflects the potential of their real estate investment';
+  let keywords = 'Real Estate, Investment, Construction, Property, Land, House, Home, Apartment, Square Metres, Square Metres Construction Limited, Square Metres Construction, Square Metres Nigeria, Square Metres NG, Square Metres Limited, Square Metres NG Limited, Square Metres Nigeria Limited, Square Metres Construction Nigeria, Square Metres Construction';
 
   onMount(() => {
     // Meta Pixel Code
@@ -64,6 +67,36 @@
   });
 </script>
 
+<script context="module">
+  export const load = async () => {
+    return {
+      title: 'Square Metres',
+      description: 'Square Metres Construction Limited is more than just a real estate development company, we are passionate about driving a wholesome experience through real estate and investment solutions. Our Journey began with a simple yet profound goal which is to provide investors with an experience that truly reflects the potential of their real estate investment',
+      keywords: 'Real Estate, Investment, Construction, Property, Land, House, Home, Apartment, Square Metres, Square Metres Construction Limited, Square Metres Construction, Square Metres Nigeria, Square Metres NG, Square Metres Limited, Square Metres NG Limited, Square Metres Nigeria Limited, Square Metres Construction Nigeria, Square Metres Construction',
+    };
+  };
+</script>
+
+<svelte:head>
+  <title>{title}</title>
+  <meta name="description" content="{description}" />
+  <meta name="keywords" content="{keywords}" />
+  <link rel="canonical" href="https://squaremetres.ng" />
+  <meta name="image" content="%sveltekit.assets%/logo_desktop.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Square Metres" />
+  <meta property="og:title" content="{title}" />
+  <meta property="og:description" content="{description}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://squaremetres.ng" />
+  <meta property="og:image" content="%sveltekit.assets%/logo_desktop.png" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://x.com/squaremetresng" />
+  <meta property="twitter:title" content="Square Metres" />
+  <meta property="twitter:description" content={description} />
+  <meta property="twitter:image" content="%sveltekit.assets%/logo_desktop.png" />
+</svelte:head>
+
 <noscript>
   <img
     height="1"
@@ -85,5 +118,5 @@
 <Footers />
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap");
 </style>

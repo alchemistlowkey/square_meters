@@ -5,6 +5,8 @@
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="canonical" href="https://squaremetres.ng/policy" />
+    <meta name="description" content="Policy Page" />
 </svelte:head>
 
 <Policy />

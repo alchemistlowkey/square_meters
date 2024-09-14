@@ -5,6 +5,8 @@
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="canonical" href="https://squaremetres.ng/faq" />
+    <meta name="description" content="Frequently Asked Questions Page" />
 </svelte:head>
 
 <Faq />

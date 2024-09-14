@@ -5,6 +5,8 @@
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="canonical" href="https://squaremetres.ng/investment" />
+    <meta name="description" content="Investment Page" />
 </svelte:head>
 
 <Investment />

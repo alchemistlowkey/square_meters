@@ -120,7 +120,7 @@
     height="1"
     width="1"
     style="display:none"
-    alt=""
+    alt="facebook pixel"
     src="https://www.facebook.com/tr?id=2155515458142973&ev=PageView&noscript=1"
   />
 </noscript>

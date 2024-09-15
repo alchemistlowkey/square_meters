@@ -55,21 +55,25 @@ and enhance your earnings."
             IconDetails={[
               {
                 src: "images/premium.png",
+                alt: "premium",
                 head: "One-of-a-kind opportunity",
                 body: "Connect interested property buyers with Square Metres. Earn up to ₦500,000 per property transaction, which you can reinvest in the project.",
               },
               {
                 src: "images/handshake.png",
+                alt: "handshake",
                 head: "Close 2x more Deals",
                 body: "Maximize your potential for closing deals and expanding your wealth",
               },
               {
                 src: "images/finance.png",
+                alt: "finance",
                 head: "Build Equity",
                 body: "Boost your credibility by being part of significant development projects, accumulating equity to build your portfolio, and earning income while gaining appreciation.",
               },
               {
                 src: "images/profits.png",
+                alt: "profits",
                 head: "Profits",
                 body: "Earn up to ₦5million monthly in sales commission and be on your way to become a property owner as you can convert your earnings to any of our Project.",
               },
@@ -98,7 +102,7 @@ and enhance your earnings."
       </div>
       <div class="col-12 col-md-6 col-lg-5">
         <div>
-          <img src="images/agency.jpeg" class="rounded" alt="" />
+          <img src="images/agency.jpeg" class="rounded" alt="Agency" />
         </div>
       </div>
     </div>

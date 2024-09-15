@@ -5,6 +5,7 @@
   export let DropContent2 = "";
   export let DropContent3 = "";
   export let DropBtn = "";
+  export let DropLink = "";
 </script>
 
 <div class="col-md-10 offset-md-1 py-1">
@@ -12,31 +13,44 @@
     {#if DropHeader}
       <!-- svelte-ignore a11y-missing-attribute -->
       <a
-        class="btn btn-white border-[#0D493D] px-16 w-[100%] text-start text-cgreen fw-semibold"
+        class="btn btn-white border-[#0D493D] px-16 w-[100%] text-start text-cgreen fw-semibold d-flex justify-content-between align-items-center"
         role="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
         {DropHeader}
         <!-- svelte-ignore a11y-missing-content -->
-        <a class="dropdown-toggle float-end"></a>
+        <span class="dropdown-toggle"></span>
       </a>
     {/if}
     {#if DropHeader2}
       <!-- svelte-ignore a11y-missing-attribute -->
       <a
-        class="btn btn-white border-[#0D493D] w-[100%] text-center text-cgreen fw-bold lg:text-lg md:text-base text-sm"
+        class="btn btn-white border-[#0D493D] w-[100%] text-center text-cgreen fw-bold lg:text-lg md:text-base text-sm d-flex align-items-center"
         role="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
-        ><span class="fw-medium">Question :</span>
-        {DropHeader2}
-        <!-- svelte-ignore a11y-missing-content -->
-        <a class="dropdown-toggle ps-3"></a>
+      >
+        <div class="container">
+          <div class="row mx-0">
+            <div class="col-2">
+              <span class="fw-medium float-start">Question :</span>
+            </div>
+            <div class="col-10">
+              <span class="text-nowrap float-end text-center"
+                >{DropHeader2}
+                <!-- svelte-ignore a11y-missing-content -->
+                <span class="dropdown-toggle ps-3"></span>
+              </span>
+            </div>
+          </div>
+        </div>
       </a>
     {/if}
 
-    <div class="dropdown-content w-100 bg-cgreen text-w rounded lg:text-lg md:text-base text-sm">
+    <div
+      class="dropdown-content w-100 bg-cgreen text-w rounded lg:text-lg md:text-base text-sm"
+    >
       <div class="w-[90%] mx-auto py-4">
         {#if DropContent}
           <!-- svelte-ignore a11y-missing-attribute -->
@@ -44,11 +58,23 @@
         {/if}
         {#if DropContent2}
           <!-- svelte-ignore a11y-missing-attribute -->
-          <a class="dropdown-item text-[#f6fffd] text-wrap text-start p-2">{DropContent2}</a>
+          <a class="dropdown-item text-[#f6fffd] text-wrap text-start p-2"
+            >{DropContent2}
+            {#if DropLink}
+              <a class="text-w" href={DropLink.href}>
+                <button class="btn btn-[#f96b29] bg-[#f96b29] text-[#f6fffd]">
+                  {DropLink.text}
+                </button>
+              </a>
+            {/if}
+            </a
+          >
         {/if}
         {#if DropContent3}
           <!-- svelte-ignore a11y-missing-attribute -->
-          <a class="dropdown-item text-[#f6fffd] text-wrap text-start p-2">{DropContent3}</a>
+          <a class="dropdown-item text-[#f6fffd] text-wrap text-start p-2"
+            >{DropContent3}</a
+          >
         {/if}
         {#if DropBtn}
           <div class="text-start">

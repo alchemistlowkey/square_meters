@@ -25,7 +25,7 @@
                       <div class="col-6">
                         <img
                           src="/images/{image1.src}"
-                          alt=""
+                          alt={image1.alt}
                           style="width: 65px; height: 65px"
                           class="rounded-5 my-3 float-end"
                         />
@@ -60,7 +60,7 @@
                       <div class="col-6">
                         <img
                           src="/images/{image2.src}"
-                          alt=""
+                          alt={image2.alt}
                           style="width: 65px; height: 65px"
                           class="rounded-5 my-3 float-end"
                         />
@@ -95,7 +95,7 @@
                       <div class="col-6">
                         <img
                           src="/images/{image3.src}"
-                          alt=""
+                          alt={image3.alt}
                           style="width: 65px; height: 65px"
                           class="rounded-5 my-3 float-end"
                         />

@@ -32,18 +32,21 @@
       {
         hover: "clienthover.png",
         src: "client.png",
+        alt: "client",
         head: "You First",
         body: "Your view shapes our vision. focused on driving an experience that prioritizes you above all else.",
       },
       {
         hover: "quality.png",
         src: "business.png",
+        alt: "business",
         head: "Quality & Timely Delivery",
         body: "Providing timely delivery is our promise, and every brick reflects our commitment to excellence.",
       },
       {
         hover: "thumb.png",
         src: "innovation.png",
+        alt: "innovation",
         head: "Innovation & Leadership",
         body: "Creating spaces where diversity thrives. Staying ahead, shaping a future that inspires",
       },
@@ -52,5 +55,4 @@
 </section>
 
 <style>
-  
 </style>

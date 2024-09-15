@@ -12,7 +12,7 @@
       {#each Images1 as image1}
       <div class="col-md-4 my-2">
         <div class="card border-white">
-          <img src={image1.src} class="card-img-top rounded h-[25rem] w-full" alt="" />
+          <img src={image1.src} class="card-img-top rounded h-[25rem] w-full" alt={image1.alt} />
         </div>
       </div>
       {/each}
@@ -25,7 +25,7 @@
       {#each Images2 as image2}
       <div class="col-md-4 my-2">
         <div class="card border-white">
-          <img src={image2.src} class="card-img-top rounded h-[25rem] w-full" alt="" />
+          <img src={image2.src} class="card-img-top rounded h-[25rem] w-full" alt={image2.alt} />
         </div>
       </div>
       {/each}
@@ -38,7 +38,7 @@
       {#each Images3 as image3}
       <div class="col-md-4 my-2">
         <div class="card border-white">
-          <img src={image3.src} class="card-img-top rounded h-[25rem] w-full" alt="" />
+          <img src={image3.src} class="card-img-top rounded h-[25rem] w-full" alt={image3.alt} />
         </div>
       </div>
       {/each}

@@ -27,7 +27,7 @@
           <div class="col-md-4">
             <a href="/" class="text-decoration-none">
               <div class="news_card">
-                <img src="images/new1.jpeg" class="rounded" alt="" />
+                <img src="images/new1.jpeg" class="rounded" alt="news" />
                 <div class="head">Team Values</div>
                 <div class="body">
                   Poised to be one of the most organised setllement in its host
@@ -37,7 +37,7 @@
                 <div class="date d-flex">
                   <div class="col-5 pt-2 text-white">APR 21 2023</div>
                   <div class="col arrow-up text-white">
-                    <img src="images/up-arrow.png" alt="" />
+                    <img src="images/up-arrow.png" alt="news" />
                   </div>
                 </div>
               </div>
@@ -47,7 +47,7 @@
           <div class="col-md-4">
             <a href="/" class="text-decoration-none">
               <div class="news_card">
-                <img src="images/news2.jpeg" class="rounded" alt="" />
+                <img src="images/news2.jpeg" class="rounded" alt="news" />
                 <div class="head">Team Values</div>
                 <div class="body">
                   Poised to be one of the most organised setllement in its host
@@ -57,7 +57,7 @@
                 <div class="date d-flex">
                   <div class="col-5 pt-2 text-white">APR 21 2023</div>
                   <div class="col arrow-up text-white">
-                    <img src="images/up-arrow.png" alt="" />
+                    <img src="images/up-arrow.png" alt="news" />
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@
           <div class="col-md-4">
             <a href="/" class="text-decoration-none">
               <div class="news_card">
-                <img src="images/news3.jpeg" class="rounded" alt="" />
+                <img src="images/news3.jpeg" class="rounded" alt="news" />
                 <div class="head">Team Values</div>
                 <div class="body">
                   Poised to be one of the most organised setllement in its host
@@ -77,7 +77,7 @@
                 <div class="date d-flex">
                   <div class="col-5 pt-2 text-white">APR 21 2023</div>
                   <div class="col arrow-up text-white">
-                    <img src="images/up-arrow.png" alt="" />
+                    <img src="images/up-arrow.png" alt="news" />
                   </div>
                 </div>
               </div>
@@ -87,7 +87,7 @@
           <div class="col-md-6 mt-5">
             <a
               href="/"
-              class="text-decoration-none text-white w-100 news-read-more btn hover:bg-orange-700"
+              class="text-decoration-none text-white w-100 news-read-more btn border-[#0D493D] hover:border-[#F96B29] hover:bg-[#0D493D]"
             >
               Read More
             </a>
@@ -121,7 +121,6 @@
       { word: "Invest for my kids" },
       { word: "Build a strong investment portfolio" },
     ]}
-    
   ></HomeCarousel>
 </section>
 

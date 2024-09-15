@@ -30,32 +30,27 @@
       <DropCard
         DropHeader2="What do you want to know?"
         DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
       />
       <DropCard
-        DropHeader2="What do you want to know?"
-        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropHeader2="What types of properties does Square Metres specialize in?"
+        DropContent2="Square Metres specializes in a wide range of properties, including residential homes, commercial spaces, land parcels, and luxury estates. Our diverse portfolio caters to various real estate needs."
       />
       <DropCard
-        DropHeader2="What do you want to know?"
-        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropHeader2="What sets Square Metres apart from other real estate agencies?"
+        DropContent2="Square Metres stands out through its commitment to excellence, market expertise, cutting-edge technology, and a customer-centric approach. We prioritize your unique needs and offer tailored solutions."
       />
       <DropCard
-        DropHeader2="What do you want to know?"
-        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropHeader2="Are there any additional fees or hidden costs when working with Square Metres?"
+        DropContent2="We believe in transparency. While there may be standard transaction fees, all costs are discussed upfront, ensuring no hidden charges. Our goal is to provide clarity and reliability."
       />
       <DropCard
-        DropHeader2="What do you want to know?"
-        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropHeader2="How can I stay updated on the latest real estate trends and market insights?"
+        DropContent2="Square Metres regularly publishes informative blogs, newsletters, and reports on our website, providing you with up-to-date industry knowledge and market trends."
       />
       <DropCard
-        DropHeader2="What do you want to know?"
-        DropContent2="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
-        DropContent3="At Square Meters, we prioritize the well-being of our team because it's not only the right thing to do, as it is what empowers us to deliver our best work."
+        DropHeader2="How can I get in touch with Square Metres for further inquiries?"
+        DropContent2="You can reach out to us through our website's contact form with the link below, call our customer support hotline at 08066267094, or visit our office. We're here to assist you."
+        DropLink={{ text: "Contact Us", href: "/contact-us" }}
       />
     </div>
   </div>
@@ -80,18 +75,21 @@
   Images1={[
     {
       src: "emeka.jpeg",
+      alt: "emeka",
       text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
       name: "Emeka Offor",
       position: "Sales Rep",
     },
     {
       src: "emeka.jpeg",
+      alt: "emeka",
       text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
       name: "Emeka Offor",
       position: "Sales Rep",
     },
     {
       src: "emeka.jpeg",
+      alt: "emeka",
       text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
       name: "Emeka Offor",
       position: "Sales Rep",
@@ -100,18 +98,21 @@
   Images2={[
     {
       src: "emeka.jpeg",
+      alt: "emeka",
       text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
       name: "Emeka Offor",
       position: "Sales Rep",
     },
     {
       src: "emeka.jpeg",
+      alt: "emeka",
       text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
       name: "Emeka Offor",
       position: "Sales Rep",
     },
     {
       src: "emeka.jpeg",
+      alt: "emeka",
       text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
       name: "Emeka Offor",
       position: "Sales Rep",
@@ -120,18 +121,21 @@
   Images3={[
     {
       src: "emeka.jpeg",
+      alt: "emeka",
       text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
       name: "Emeka Offor",
       position: "Sales Rep",
     },
     {
       src: "emeka.jpeg",
+      alt: "emeka",
       text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
       name: "Emeka Offor",
       position: "Sales Rep",
     },
     {
       src: "emeka.jpeg",
+      alt: "emeka",
       text: "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more...",
       name: "Emeka Offor",
       position: "Sales Rep",

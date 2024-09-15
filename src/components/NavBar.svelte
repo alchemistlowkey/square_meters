@@ -108,6 +108,7 @@
               dropheader="Land"
               droptext="Fitila Signatures"
               dropimg="images/land_icon.png"
+              dropimgalt="Land Icon"
               droplink="/fitila-signature"
             />
 
@@ -115,6 +116,7 @@
               dropheader="Investment"
               droptext="Up to 25% ROI"
               dropimg="images/investment_icon.png"
+              dropimgalt="Investment Icon"
               droplink="/investment"
             />
           </div>
@@ -152,6 +154,7 @@
               dropheader="About Us"
               droptext="Our Team and Who we are"
               dropimg="images/about_icon.png"
+              dropimgalt="About Us Icon"
               droplink="/about-us"
             />
 
@@ -159,6 +162,7 @@
               dropheader="Our News"
               droptext="In and around SquareMetres"
               dropimg="images/news_icon.png"
+              dropimgalt="News Icon"
               droplink="/news"
             />
 
@@ -166,6 +170,7 @@
               dropheader="Career"
               droptext="Join Now"
               dropimg="images/career_icon.png"
+              dropimgalt="Career Icon"
               droplink="/career"
             />
 
@@ -173,6 +178,7 @@
               dropheader="FAQ's"
               droptext="Got Questions, We've answers"
               dropimg="images/faq_icon.png"
+              dropimgalt="FAQ Icon"
               droplink="/faq"
             />
 
@@ -180,6 +186,7 @@
               dropheader="Contact Us"
               droptext="Reach us with ease"
               dropimg="images/contact_icon.png"
+              dropimgalt="Contact Us Icon"
               droplink="/contact-us"
             />
           </div>
@@ -262,6 +269,7 @@
               dropheader="Land"
               droptext="Fitila Signatures"
               dropimg="images/land_icon.png"
+              dropimgalt="Land Icon"
               droplink="/fitila-signature"
             />
 
@@ -269,6 +277,7 @@
               dropheader="Investment"
               droptext="Up to 25% ROI"
               dropimg="images/investment_icon.png"
+              dropimgalt="Investment Icon"
               droplink="/investment"
             />
           </div>
@@ -299,6 +308,7 @@
               dropheader="About Us"
               droptext="Our Team and Who we are"
               dropimg="images/about_icon.png"
+              dropimgalt="About Us Icon"
               droplink="/about-us"
             />
 
@@ -306,6 +316,7 @@
               dropheader="Our News"
               droptext="In and around SquareMetres"
               dropimg="images/news_icon.png"
+              dropimgalt="News Icon"
               droplink="/news"
             />
 
@@ -313,6 +324,7 @@
               dropheader="Career"
               droptext="Join Now"
               dropimg="images/career_icon.png"
+              dropimgalt="Career Icon"
               droplink="/career"
             />
 
@@ -320,6 +332,7 @@
               dropheader="FAQ's"
               droptext="Got Questions, We've answers"
               dropimg="images/faq_icon.png"
+              dropimgalt="FAQ Icon"
               droplink="/faq"
             />
 
@@ -327,6 +340,7 @@
               dropheader="Contact Us"
               droptext="Reach us with ease"
               dropimg="images/contact_icon.png"
+              dropimgalt="Contact Us Icon"
               droplink="/contact-us"
             />
           </div>

@@ -1,5 +1,6 @@
 <script>
   export let HomeBoxes = [];
+  export let BoxContent = [];
 
   // Function to update hover state
   const handleMouseEnter = (index) => {
@@ -14,6 +15,34 @@
     );
   };
 </script>
+
+{#if BoxContent}
+<div class="container my-lg-2">
+  <div class="col-md-10 offset-md-1">
+    <div class="mx-0 row">
+      {#each BoxContent as boxcontent}
+        <div class="col-md-6 mb-3">
+          <div
+            class="about_define_box hover:text-[#f6fffd] hover:bg-[#f96b29] hover:border-[#0d493d] h-[25rem] md:h-[34rem] lg:h-[26rem]"
+          >
+            <div class="image">
+              <img
+                src={boxcontent.src}
+                class="mx-auto d-block"
+                alt={boxcontent.alt}
+              />
+            </div>
+            <div class="title my-3">{boxcontent.title}</div>
+            <div class="body text-sm md:text-base lg:text-lg">
+              {boxcontent.body}
+            </div>
+          </div>
+        </div>
+      {/each}
+    </div>
+  </div>
+</div>
+{/if}
 
 {#if HomeBoxes}
   <div class="mt-5">
@@ -30,9 +59,17 @@
             class="shadow-[0_30px_60px_0px_rgba(107,107,107,0.25)] home-box rounded-lg xl:p-10 lg:p-8 md:p-5 p-11 h-full"
           >
             {#if homebox.isHovered}
-              <img src="images/{homebox.hover}" class="max-w-[60px]" alt="" />
+              <img
+                src="images/{homebox.hover}"
+                class="max-w-[60px]"
+                alt={homebox.alt}
+              />
             {:else}
-              <img src="images/{homebox.src}" class="max-w-[60px]" alt="" />
+              <img
+                src="images/{homebox.src}"
+                class="max-w-[60px]"
+                alt={homebox.alt}
+              />
             {/if}
 
             <div class="fw-semibold home-head">

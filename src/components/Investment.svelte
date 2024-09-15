@@ -65,7 +65,9 @@
   <div class="container">
     <div class="row mx-0">
       <div class="col-12 col-md-6 col-lg-7">
-        <div class="text-[#F96B29] fw-bold text-center md:text-2xl text-lg pb-4">
+        <div
+          class="text-[#F96B29] fw-bold text-center md:text-2xl text-lg pb-4"
+        >
           Highlights
         </div>
         <ListItem
@@ -166,11 +168,11 @@
             ></Button>
           </div>
           <div class="col-12 fw-semibold p-0 my-2">
-            
-              <a href="/faq" target="_blank" class="text-[#F96B29]"
-                ><button class="w-full p-3 rounded border-o hover:bg-[#0d493d]">Ask a question?</button></a
-              >
-            
+            <a href="/faq" target="_blank" class="text-[#F96B29]"
+              ><button class="w-full p-3 rounded border-o hover:bg-[#0d493d]"
+                >Ask a question?</button
+              ></a
+            >
           </div>
         </div>
       </div>
@@ -211,21 +213,25 @@
             IconDetails={[
               {
                 src: "images/bestSeller.png",
+                alt: "bestSeller",
                 head: "Steady Cash Flow",
                 body: "SquareMetres offer provides an opportunity for anyone to increase their passive income, regardless of their financial background or means. It allows individuals to dip their toes in the real estate investment pool.",
               },
               {
                 src: "images/organized.png",
+                alt: "organized",
                 head: "Minimum Investment",
                 body: "Our offerings provide an attractive investment opportunity with high yield returns and minimal start-up costs. With just ₦50,000, you can invest in real estate assets, ensuring a secure investment.",
               },
               {
                 src: "images/legal.png",
+                alt: "legal",
                 head: "Payback Priority",
                 body: "Our investment options provide superior payback priority over common equity property owners. The objective of Square Metres is to offer investors a reliable and risk-adjusted income stream with capital protection.",
               },
               {
                 src: "images/roi.png",
+                alt: "return on investment",
                 head: "Ownership Option",
                 body: "Accumulate to own, A roadmap to Property Acquisition, own it in fractions. We encourage fractional ownership which allows you to invest at your own pace conveniently.",
               },

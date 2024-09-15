@@ -180,21 +180,25 @@
             IconDetails={[
               {
                 src: "images/bestSeller.png",
+                alt: "bestSeller",
                 head: "Lagos’ Best Seller",
                 body: "The best time to invest in Epe is now, as it stands as lagos’ fastest selling and most sought after area in Nigeria",
               },
               {
                 src: "images/organized.png",
+                alt: "organized",
                 head: "Organized Settlement",
                 body: "With a well planned layout with development and delivery at the fore front, your living experience is elevated",
               },
               {
                 src: "images/legal.png",
+                alt: "legal",
                 head: "Legal & Documentation",
                 body: "We ensure all processes are transparent and well documented for a hassle free experience",
               },
               {
                 src: "images/roi.png",
+                alt: "return on investment",
                 head: "ROI Projection",
                 body: "We believe you are being positioned to get a consistent rise in returns due to our development goals",
               },
@@ -232,14 +236,14 @@
       </div>
       <div class="text-center mb-5">
         <Button
-        btnDetails="Reserve a Slot"
-        formHeader="Invest"
-        formText="Backed by Fitila Signatures"
-        fullName="Full Name"
-        email="Email"
-        phoneNumber="Phone Number"
-        amount="Amount"
-        on:openform={handleOpenForm}
+          btnDetails="Reserve a Slot"
+          formHeader="Invest"
+          formText="Backed by Fitila Signatures"
+          fullName="Full Name"
+          email="Email"
+          phoneNumber="Phone Number"
+          amount="Amount"
+          on:openform={handleOpenForm}
         />
       </div>
     </div>
@@ -247,7 +251,15 @@
 </section>
 
 <Modal isOpen={showModal} close={closeModal}>
-  <Form {formHeader} {formText} {fullName} {email} {phoneNumber} {date} {amount} />
+  <Form
+    {formHeader}
+    {formText}
+    {fullName}
+    {email}
+    {phoneNumber}
+    {date}
+    {amount}
+  />
 </Modal>
 
 <style>

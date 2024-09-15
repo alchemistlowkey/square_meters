@@ -5,6 +5,7 @@
   import ButtonId from "../shared/ButtonId.svelte";
   import Offer from "../shared/Offer.svelte";
   import CardText from "../shared/CardText.svelte";
+  import CareerBox from "../shared/CareerBox.svelte";
 </script>
 
 <Bg headerBG="career.jpeg">
@@ -48,35 +49,32 @@
   </div>
 </section>
 
-<section>
-  <div class="container-fluid">
-    <div class="row mx-0 pt-md-1 p-text text-cgreen text-center">
-      <div class="col-md-4 py-md-0 py-5 text-center">
-        <img src="/images/goal.png" alt="" class="mx-auto d-block" />
-        <p class="py-4 fw-bold">Find your Balance</p>
-        <p class="text-sm md:text-base lg:text-lg">
-          We recognize the importance of work-life balance. encourage
-          collaboration & nurture career growth
-        </p>
-      </div>
-      <div class="col-md-4 py-md-0 py-5 text-center">
-        <img src="/images/growth.png" alt="" class="mx-auto d-block" />
-        <p class="py-4 fw-bold">A Place For All</p>
-        <p class="text-sm md:text-base lg:text-lg">
-          Diversity and inclusion are at the core of our being. There's a space
-          for everyone at Square Metres
-        </p>
-      </div>
-      <div class="col-md-4 py-md-0 py-5 text-center">
-        <img src="/images/core-values.png" alt="" class="mx-auto d-block" />
-        <p class="py-4 fw-bold">Thrive With Us</p>
-        <p class="text-sm md:text-base lg:text-lg">
-          Join us on a journey of growth and learning. Engage in personalized
-          training, unwind at happy hours, and more ....
-        </p>
-      </div>
-    </div>
-  </div>
+<section class="w-[90%] mx-auto">
+  <CareerBox
+    CareerDetails={[
+      {
+        src: "goal.png",
+        alt: "goal",
+        head: "Find your Balance",
+        body:
+          "We recognize the importance of work-life balance. encourage collaboration & nurture career growth",
+      },
+      {
+        src: "growth.png",
+        alt: "growth",
+        head: "A Place For All",
+        body:
+          "Diversity and inclusion are at the core of our being. There's a space for everyone at Square Metres",
+      },
+      {
+        src: "core-values.png",
+        alt: "core-values",
+        head: "Thrive With Us",
+        body:
+          "Join us on a journey of growth and learning. Engage in personalized training, unwind at happy hours, and more ....",
+      },
+    ]}>
+    </CareerBox>
 </section>
 
 <section class="py-10">

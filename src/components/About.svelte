@@ -97,21 +97,32 @@
 
 <section>
   <BoxCard
-    BoxSrc="images/people.png"
-    BoxHead="Customer-centric"
-    BoxBody="Your view shapes our vision. focused on driving an experience that prioritizes you above all else across all touch points."
-    BoxSrc1="images/innovationAbout.png"
-    BoxHead1="Innovation"
-    BoxBody1="Innovating for inclusivity, we thrive in creating spaces where diversity thrives. we not only stay ahead but lead, shaping a future where every corner of our developments reflects unity and forward-thinking inclusiveness."
-  ></BoxCard>
-
-  <BoxCard
-    BoxSrc="images/badge.png"
-    BoxHead="Project Delivery"
-    BoxBody="Providing timely delivery is our promise, and every brick reflects our commitment to excellence."
-    BoxSrc1="images/globe.png"
-    BoxHead1="Connecting Lives"
-    BoxBody1="Beyond real estate; we're crafting neighborhoods where lives intertwine and flourish, embodying our commitment to connecting lives beyond brick and mortar"
+  BoxContent={[
+    {
+      src: "images/people.png",
+      alt: "people",
+      title: "Customer-centric",
+      body: "Your view shapes our vision. focused on driving an experience that prioritizes you above all else across all touch points.",
+    },
+    {
+      src: "images/innovationAbout.png",
+      alt: "innovation",
+      title: "Innovation",
+      body: "Innovating for inclusivity, we thrive in creating spaces where diversity thrives. we not only stay ahead but lead, shaping a future where every corner of our developments reflects unity and forward-thinking inclusiveness.",
+    },
+    {
+      src: "images/badge.png",
+      alt: "badge",
+      title: "Project Delivery",
+      body: "Providing timely delivery is our promise, and every brick reflects our commitment to excellence.",
+    },
+    {
+      src: "images/globe.png",
+      alt: "globe",
+      title: "Connecting Lives",
+      body: "Beyond real estate; we're crafting neighborhoods where lives intertwine and flourish, embodying our commitment to connecting lives beyond brick and mortar",
+    }
+  ]}
   ></BoxCard>
 </section>
 

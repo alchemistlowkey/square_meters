@@ -86,21 +86,21 @@
   <meta name="description" content={description} />
   <meta name="keywords" content={keywords} />
   <link rel="canonical" href="https://squaremetres.ng" />
-  <meta name="image" content="%sveltekit.assets%/logo_desktop.png" />
+  <meta name="image" content="https://squaremetres.ng/images/logo_desktop.png" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Square Metres" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://squaremetres.ng" />
-  <meta property="og:image" content="%sveltekit.assets%/logo_desktop.png" />
+  <meta property="og:image" content="https://squaremetres.ng/images/logo_desktop.png" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://x.com/squaremetresng" />
   <meta property="twitter:title" content="Square Metres" />
   <meta property="twitter:description" content={description} />
   <meta
     property="twitter:image"
-    content="%sveltekit.assets%/logo_desktop.png"
+    content="https://squaremetres.ng/images/logo_desktop.png"
   />
 </svelte:head>
 

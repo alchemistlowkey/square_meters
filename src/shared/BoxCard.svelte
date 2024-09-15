@@ -6,22 +6,22 @@
     HomeBoxes = HomeBoxes.map((homebox, i) =>
       i === index ? { ...homebox, isHovered: true } : homebox
     );
-  }
+  };
 
   const handleMouseLeave = (index) => {
     HomeBoxes = HomeBoxes.map((homebox, i) =>
       i === index ? { ...homebox, isHovered: false } : homebox
     );
-  }
+  };
 </script>
 
 {#if HomeBoxes}
   <div class="mt-5">
     <div class="row mx-0 md:text-base lg:text-lg text-sm">
       {#each HomeBoxes as homebox, index}
-        <div 
-          class="col-md-4 mb-lg-0 mb-3" 
-          on:mouseenter={() => handleMouseEnter(index)} 
+        <div
+          class="col-md-4 mb-lg-0 mb-3"
+          on:mouseenter={() => handleMouseEnter(index)}
           on:mouseleave={() => handleMouseLeave(index)}
           role="button"
           tabindex="0"
@@ -34,7 +34,7 @@
             {:else}
               <img src="images/{homebox.src}" class="max-w-[60px]" alt="" />
             {/if}
-            
+
             <div class="fw-semibold home-head">
               {homebox.head}
             </div>

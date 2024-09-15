@@ -1,14 +1,4 @@
-<script context="module">
-  export const load = async () => {
-    return {
-      title: "Square Metres",
-      description:
-        "Square Metres Construction Limited is more than just a real estate development company, we are passionate about driving a wholesome experience through real estate and investment solutions. Our Journey began with a simple yet profound goal which is to provide investors with an experience that truly reflects the potential of their real estate investment",
-      keywords:
-        "Real Estate, Investment, Construction, Property, Land, House, Home, Apartment, Square Metres, Square Metres Construction Limited, Square Metres Construction, Square Metres Nigeria, Square Metres NG, Square Metres Limited, Square Metres NG Limited, Square Metres Nigeria Limited, Square Metres Construction Nigeria, Square Metres Construction",
-    };
-  };
-
+<script>
   import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit";
   import { dev } from "$app/environment";
   import { inject } from "@vercel/analytics";

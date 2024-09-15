@@ -1,3 +1,11 @@
 User-agent: *
-Disallow: /private/
-Sitemap: https://squaremetres.ng/sitemap.xml
+Disallow:
+
+Allow: /about-us
+Allow: /agency
+Allow: /career
+Allow: /contact-us
+Allow: /faq
+Allow: /fitila-signature
+Allow: /investment
+Allow: /policy

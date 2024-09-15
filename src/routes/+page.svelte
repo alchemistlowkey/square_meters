@@ -5,7 +5,6 @@
 
 <svelte:head>
     <title>{title}</title>
-    <link rel="canonical" href="https://squaremetres.ng/" />
     <meta name="description" content="Square Metres" />
     <meta name="keywords" content="Real Estate, Investment, Construction, Property, Land, House, Home, Apartment, Square Metres, Square Metres Construction Limited, Square Metres Construction, Square Metres Nigeria, Square Metres NG, Square Metres Limited, Square Metres NG Limited, Square Metres Nigeria Limited, Square Metres Construction Nigeria, Square Metres Construction" />
     <meta name="image" content="https://squaremetres.ng/favicon.png" />

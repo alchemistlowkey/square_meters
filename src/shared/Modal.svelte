@@ -34,12 +34,12 @@
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #F96B29;
     width: 80%;
     max-width: 1000px;
   }
   .close {
-    color: #aaa;
+    color: #F96B29;
     font-size: 28px;
     font-weight: bold;
   }

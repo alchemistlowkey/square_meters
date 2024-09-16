@@ -4,7 +4,7 @@
   export let Images3 = [];
 </script>
 
-<section class="my-5 py-5 lg:text-lg md:text-base text-sm">
+<section class="my-5 lg:text-lg md:text-base text-sm">
   <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <!-- Page 1 -->

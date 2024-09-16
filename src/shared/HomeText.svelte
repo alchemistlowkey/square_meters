@@ -7,7 +7,7 @@
   <div class="w-100">
     <div class="mx-0 row">
       <div class="col-md-6">
-        <span class="md:text-2xl lg:text-4xl text-base text-[#F96B29]">{TextHeader}</span>
+        <span class="md:text-2xl lg:text-3xl text-base text-[#F96B29]">{TextHeader}</span>
       </div>
       <div class="col-md-6">
         <span

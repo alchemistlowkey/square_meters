@@ -96,7 +96,9 @@
       </div>
     </div>
   </div>
+</section>
 
+<section class="w-[90%] mx-auto">
   <HomeText
     TextHeader="You name it, we’ve figured it out"
     TextContent="Making your real estate investment decisions wise is our business."

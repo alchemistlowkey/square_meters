@@ -60,8 +60,12 @@
 
   /* Define the animation for continuous movement */
   @keyframes scroll {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 
   /* Pause animation on hover */

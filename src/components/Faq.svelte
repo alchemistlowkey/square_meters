@@ -56,7 +56,7 @@
   </div>
 </section>
 
-<section class="text-sm md:text-base lg:text-lg">
+<section class="text-sm md:text-base lg:text-lg mt-3">
   <div class="container">
     <div class="row mx-0">
       <div class="col-12">

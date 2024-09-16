@@ -39,15 +39,16 @@
     background-color: #0D493D;
     margin: 10% auto;
     padding: 0px;
-    border: 1px solid #888;
+    border: 1px solid #F96B29;
     width: 80%;
     max-width: 800px;
   }
   .close {
-    color: #aaa;
+    color: #F96B29;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    padding-right: 10px;
   }
   .close:hover,
   .close:focus {

@@ -18,7 +18,7 @@
 <Bg headerBG="hpb.jpeg">
   <HomeHead
     CardContent="Wholesome Real Estate and Investment Solutions"
-    CardContent3="Square Metres helps you do real estate better than anyone else does,"
+    CardContent3="Square Metres helps you do real estate better than anyone else"
     CardContent4="prioritizing quality and timely project delivery"
   ></HomeHead>
   <div class="pt-lg-5 pt-3 pb-lg-5 mb-lg-4 mb-3 w-[90%] mx-auto">

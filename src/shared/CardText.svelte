@@ -1,6 +1,4 @@
 <script>
-  import Bg from "./Bg.svelte";
-
   export let TextHeader = "";
   export let TextHeader2 = "";
   export let TextContent = [];
@@ -14,7 +12,9 @@
 >
   <div class="col-md-10 offset-md-1">
     {#if TextHeader}
-      <div class="collection text-center md:text-xl lg:text-3xl text-lg">{TextHeader}</div>
+      <div class="collection text-center md:text-xl lg:text-3xl text-lg">
+        {TextHeader}
+      </div>
     {/if}
     {#if TextHeader2}
       <div
@@ -45,19 +45,18 @@
 </div>
 
 {#if BgGreen}
-<div
-  class="row mx-0 py-md-10 text-[#F6FFFD] py-3 p-text text-center text-sm md:text-base lg:text-lg"
->
-  <div class="col-md-10 offset-md-1">
-    <div
-      class="text-[#F6FFFD] text-center md:text-xl lg:text-2xl text-lg pb-2 font-bold"
-    >
-      {BgGreen.head}
+  <div
+    class="row mx-0 py-md-10 text-[#F6FFFD] py-3 p-text text-center text-sm md:text-base lg:text-lg"
+  >
+    <div class="col-md-10 offset-md-1">
+      <div
+        class="text-[#F6FFFD] text-center md:text-xl lg:text-2xl text-lg pb-2 font-bold"
+      >
+        {BgGreen.head}
+      </div>
+      <p class="py-2 py-md-3 text-[#F6FFFD]">{BgGreen.body}</p>
     </div>
-    <p class="py-2 py-md-3 text-[#F6FFFD]">{BgGreen.body}
-    </p>
   </div>
-</div>
 {/if}
 
 <style>

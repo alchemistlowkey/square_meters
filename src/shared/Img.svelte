@@ -1,6 +1,7 @@
 <script>
   export let Images = [];
   export let HomeImages = [];
+  export let ProductImages = [];
 </script>
 
 {#if Images}
@@ -29,6 +30,32 @@
             </a>
           </div>
         {/each}
+      </div>
+    </div>
+  </div>
+{/if}
+
+{#if ProductImages}
+  <div class="container mt-4">
+    <div class="mt-4">
+      <div class="w-100">
+        <div class="mx-0 row">
+          {#each ProductImages as ProductImage}
+            <div class="col-md-6">
+              <a href={ProductImage.href}>
+                <div
+                  class="bg text-[#F6FFFD] my-1 hover:text-[#0d493d] fw-semibold rounded-xl pb-10 md:text-2xl lg:text-3xl text-base"
+                  style="background-image: url('/images/{ProductImage.src}')"
+                >
+                  <span
+                    class="text-sm md:text-base lg:text-lg pr-3 hover:text-[#0d493d] text-[#F96B29]"
+                    >{ProductImage.span}</span
+                  >{ProductImage.text}
+                </div>
+              </a>
+            </div>
+          {/each}
+        </div>
       </div>
     </div>
   </div>

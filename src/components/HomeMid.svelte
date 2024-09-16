@@ -14,7 +14,7 @@
     HomeImages={[
       { src: "land_2.jpg", text: "Land", href: "/fitila-signature" },
       { src: "investment.jpeg", text: "Investment", href: "/investment" },
-      { src: "land2.png", text: "Other Listings", href: "/investment" },
+      { src: "land2.png", text: "Other Listings", href: "/product" },
     ]}
   />
 </section>

@@ -21,12 +21,12 @@
           <div class="col-md-4">
             <a href={HomeImage.href}>
               <div
-              class="bg text-[#F6FFFD] hover:text-[#F96B29] my-1 fw-semibold rounded-xl pb-10 md:text-2xl lg:text-3xl text-base"
-              style="background-image: url('/images/{HomeImage.src}')"
+                class="bg text-[#F6FFFD] hover:text-[#F96B29] my-1 fw-semibold rounded-xl pb-10 md:text-2xl lg:text-3xl text-base"
+                style="background-image: url('/images/{HomeImage.src}')"
               >
-              {HomeImage.text}
-            </div>
-          </a>
+                {HomeImage.text}
+              </div>
+            </a>
           </div>
         {/each}
       </div>

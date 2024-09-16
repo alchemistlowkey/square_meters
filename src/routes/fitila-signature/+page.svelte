@@ -11,6 +11,7 @@
 
 <svelte:head>
   <title>{title}</title>
+  <link rel="canonical" href="https://squaremetres.ng/fitila-signature" />
   <meta name="image" content="https://squaremetres.ng/images/fitila_signatures.jpg" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={productDescription} />

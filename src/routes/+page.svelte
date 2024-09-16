@@ -5,6 +5,7 @@
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="canonical" href="https://squaremetres.ng" />
 </svelte:head>
 
 <Home />

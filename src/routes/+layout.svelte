@@ -64,13 +64,11 @@
     }
     gtag("js", new Date());
     gtag("config", "G-7REW6CW0T8");
-
   });
 </script>
 
 <svelte:head>
   <meta name="keywords" content={keywords} />
-  <link rel="canonical" href="https://squaremetres.ng" />
   <meta name="image" content="https://squaremetres.ng/favicon.png" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Square Metres" />

@@ -5,6 +5,7 @@
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="canonical" href="https://squaremetres.ng/career" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content="Career Page" />
     <meta property="og:url" content="https://squaremetres.ng/career" />

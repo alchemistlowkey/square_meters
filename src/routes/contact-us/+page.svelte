@@ -5,6 +5,7 @@
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="canonical" href="https://squaremetres.ng/contact-us" />
     <meta property="og:image" content="https://squaremetres.ng/images/address.png" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content="Contact us Page" />

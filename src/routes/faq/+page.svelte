@@ -5,6 +5,7 @@
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="canonical" href="https://squaremetres.ng/faq" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content="Frequently Asked Questions Page" />
     <meta property="og:url" content="https://squaremetres.ng/faq" />

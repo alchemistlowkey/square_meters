@@ -5,6 +5,7 @@
 
 <svelte:head>
     <title>{title}</title>
+    <link rel="canonical" href="https://squaremetres.ng/investment" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content="Investment Page" />
     <meta property="og:url" content="https://squaremetres.ng/investment" />

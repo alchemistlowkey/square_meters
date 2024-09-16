@@ -99,7 +99,7 @@
   <div class="container">
     <div class="row mx-0">
       <div class="col">
-        <img src="images/fitila_signatures.jpg" alt="" class="rounded" />
+        <img src="images/fitila_signatures.jpg" alt="fitila signatures" class="rounded" />
       </div>
     </div>
   </div>

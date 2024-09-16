@@ -50,21 +50,21 @@
       <div class="row mx-0 justify-content-center">
         <div class="col-lg-6 col-12 mb-3">
           <div class="news_card text-lg-center text-center">
-            <img src="images/ceo.jpeg" class="rounded" alt="" />
+            <img src="images/ceo.jpeg" class="rounded" alt="CEO Square Metres" />
             <div class="head">Oghe Ogheneriode I.</div>
             <div class="body">CEO</div>
           </div>
         </div>
         <div class="col-lg-6 col-12 mb-3">
           <div class="news_card text-lg-center text-center">
-            <img src="images/ho.jpeg" class="rounded" alt="" />
+            <img src="images/ho.jpeg" class="rounded" alt="Head of Operations" />
             <div class="head">Raphael Obaro</div>
             <div class="body">Head of Operation</div>
           </div>
         </div>
         <div class="col-lg-6 col-12 mb-3">
           <div class="news_card text-lg-center text-center">
-            <img src="images/hcv.jpeg" class="rounded" alt="" />
+            <img src="images/hcv.jpeg" class="rounded" alt="Head of Creative and Visuals" />
             <div class="head">Gbadeyan Oluwafemi</div>
             <div class="body">Head, Creative & Visuals</div>
           </div>
@@ -72,7 +72,7 @@
 
         <div class="col-lg-6 col-12 mb-3">
           <div class="news_card text-lg-center text-center">
-            <img src="images/cc.jpeg" class="rounded" alt="" />
+            <img src="images/cc.jpeg" class="rounded" alt="Corporate communications" />
             <div class="head">Cynthia Edosomwan</div>
             <div class="body">Corporate Comms</div>
           </div>

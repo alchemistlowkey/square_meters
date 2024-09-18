@@ -16,7 +16,7 @@
           {CardContent}<span class="text-[#F96B29]">{SpanContent}</span
           >{CardContent2}
       </div>
-      <div class="col-12 mx-auto px-0 text-[#F6FFFD] text-nowrap fw-light text-center lg:text-lg md:text-base sm:text-sm text-xs pb-4">
+      <div class="col-12 mx-auto px-0 text-[#F6FFFD] text-nowrap fw-light text-center text-[clamp(8px,2.5vw,20px)] pb-4">
           {CardContent3} <br> {CardContent4}
         <slot></slot>
       </div>

@@ -4,6 +4,7 @@
   export let Texts3 = [];
 </script>
 
+
 <section class="my-5 py-5 lg:text-lg md:text-base text-sm">
   <div id="customCarousel" class="carousel slide">
     <div class="carousel-inner">
@@ -12,7 +13,7 @@
           <div class="row mx-0">
             {#each Texts1 as Text1}
               <div class="col-md-3 col-6 mb-3">
-                <div class="cite-map hover:text-[#f9fffd] hover:bg-[#F96B29]">
+                <div class="cite-map hover:text-[#f9fffd] hover:bg-[#F96B29] px-xl-5 py-xl-5 px-lg-4 py-lg-4 px-md-4 py-md-4 px-sm-4 py-sm-5 px-3 py-4">
                   “<br />{Text1.word}
                 </div>
               </div>

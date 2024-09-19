@@ -49,7 +49,6 @@ export async function POST({ request }) {
         <img src="https://squaremetres.ng/images/logo_desktop.png" alt="Square Metres Logo" style="margin-bottom: 20px;">
       </div>
       <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
-        <p style="font-size: 18px;">Hello <strong>Lucky Samuel</strong>,</p>
         <p style="font-size: 16px;">Thank you for subscribing to our newsletter at Square Metres.</p>
         <p style="font-size: 14px;">If you did not request this subscription, you can safely ignore this email.</p>
       </div>

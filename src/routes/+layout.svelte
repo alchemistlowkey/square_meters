@@ -53,17 +53,6 @@
     fbq("track", "PageView");
 
     // Google Tag (gtag.js)
-    const script = document.createElement("script");
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-7REW6CW0T8";
-    script.async = true;
-    document.head.appendChild(script);
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-7REW6CW0T8");
   });
 </script>
 

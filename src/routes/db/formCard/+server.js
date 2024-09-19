@@ -58,7 +58,7 @@ export async function POST({ request }) {
       to: email, // User's email
       subject: "Thank you for registering as an agent",
       html: `
-      <div style="font-family:Arial,sans-serif;color:#333;">
+      <div style="font-family:'Poppins',sans-serif;color:#333;">
         <p>Hi ${firstname},</p>
         <p>Thank you for registering as an agent. We will get in touch with you shortly.</p>
         <p>Best regards,</p>

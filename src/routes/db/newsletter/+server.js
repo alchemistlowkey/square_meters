@@ -16,7 +16,7 @@ const pool = new Pool({
 
 // Nodemailer transporter with Zoho Mail settings
 const transporter = nodemailer.createTransport({
-  host: 'smtp.zoho.com',
+  host: "smtp.zoho.com",
   port: 465, // or 587 for non-SSL
   secure: true, // true for 465, false for 587
   auth: {
@@ -42,7 +42,20 @@ export async function POST({ request }) {
       from: process.env.ZOHO_USER,
       to: email,
       subject: "Subscription Confirmation",
-      text: "Thank you for subscribing to our newsletter!",
+      html: `
+    <div style="font-family: 'Poppins', sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd;">
+      <h2 style="text-align: center; color: #333;">Thank you for subscribing to our newsletter!</h2>
+      <div style="text-align: center; padding: 20px;">
+        <img src="https://squaremetres.ng/images/logo_desktop.png" alt="Square Metres Logo" style="margin-bottom: 20px;">
+      </div>
+      <div style="background-color: #f9f9f9; padding: 20px; border-radius: 10px;">
+        <p style="font-size: 18px;">Hello <strong>Lucky Samuel</strong>,</p>
+        <p style="font-size: 16px;">Thank you for subscribing to our newsletter at Square Metres.</p>
+        <p style="font-size: 14px;">If you did not request this subscription, you can safely ignore this email.</p>
+      </div>
+      <p style="font-size: 14px; text-align: center; color: #999;">&copy; 2024 Square Metres. All rights reserved.</p>
+    </div>
+  `,
     });
 
     // Email to the admin (receiver)

@@ -34,10 +34,14 @@
         <div class="container">
           <div class="row mx-0">
             <div class="col-3 col-sm-2">
-              <span class="fw-medium float-start text-start mx-0 px-0 text-nowrap">Question :</span>
+              <span
+                class="fw-medium float-start lg:text-lg md:text-base sm:text-sm text-xs text-start mx-0 px-0 text-nowrap"
+                >Question :</span
+              >
             </div>
             <div class="col-9 col-sm-10">
-              <span class="xl:text-nowrap float-end text-center lg:text-lg md:text-base sm:text-sm text-sm"
+              <span
+                class="xl:text-nowrap float-end sm:text-center sm:ps-0 ps-2 text-end lg:text-lg md:text-base sm:text-sm text-[10px] leading-3"
                 >{DropHeader2}
                 <!-- svelte-ignore a11y-missing-content -->
                 <span class="dropdown-toggle ps-3"></span>
@@ -62,7 +66,9 @@
             >{DropContent2}
             {#if DropLink}
               <a class="text-[#f6fffd] text-center my-3" href={DropLink.href}>
-                <button class="btn btn-[#f96b29] bg-[#f96b29] text-[#f6fffd] text-center">
+                <button
+                  class="btn btn-[#f96b29] bg-[#f96b29] text-[#f6fffd] text-center"
+                >
                   {DropLink.text}
                 </button>
               </a>

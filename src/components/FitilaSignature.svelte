@@ -50,20 +50,20 @@
     CardContent2="tells the story of your hardwork through Real Estate"
     CardContent3="And it is comprehensively delivered by our dedicated team to solidify your investment goals"
   >
-    <div class="row mx-0 py-16 text-w">
-      <div class="col mx-auto text-center">
+    <div class="row mx-0 py-16 text-w float-start">
+      <div class="col-lg-3 col-4 text-center">
         <p class="fw-light">Title</p>
         <p class="fw-bold my-2">Freehold</p>
       </div>
-      <div class="col mx-auto text-center">
+      <div class="col-lg-3 col-4 text-center">
         <p class="fw-light">size</p>
         <p class="fw-bold my-2">300sqm & 500sqm</p>
       </div>
-      <div class="col mx-auto text-center">
+      <div class="col-lg-3 col-4 text-center">
         <p class="fw-light">Location</p>
         <p class="fw-bold my-2">Ketu, Epe</p>
       </div>
-      <div class="col text-nowrap text-center my-4 my-md-4 my-lg-1">
+      <div class="col-lg-3 col-12 text-nowrap text-center my-4 my-md-4 my-lg-1">
         <Button
           btnDetails="Schedule an inspection"
           formHeader="Schedule Inspection"

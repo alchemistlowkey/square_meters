@@ -14,7 +14,7 @@
         {CardContent}<span class="text-[#F96B29]">{SpanContent}</span
         >{CardContent2}
       </h1>
-      <p class="text-w p-content md:text-lg lg:text-xl text-base pb-4">
+      <p class="text-w p-content md:text-lg lg:text-xl text-base pb-4 pt-3">
         {CardContent3}
       </p>
       <slot></slot>

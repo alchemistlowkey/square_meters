@@ -28,6 +28,7 @@
                           alt={image1.alt}
                           style="width: 65px; height: 65px"
                           class="rounded-5 my-3 float-end"
+                          loading="lazy"
                         />
                       </div>
                       <div class="col-6 py-4">
@@ -63,6 +64,7 @@
                           alt={image2.alt}
                           style="width: 65px; height: 65px"
                           class="rounded-5 my-3 float-end"
+                          loading="lazy"
                         />
                       </div>
                       <div class="col-6 py-4">
@@ -98,6 +100,7 @@
                           alt={image3.alt}
                           style="width: 65px; height: 65px"
                           class="rounded-5 my-3 float-end"
+                          loading="lazy"
                         />
                       </div>
                       <div class="col-6 py-4">
@@ -121,7 +124,7 @@
       data-bs-slide="prev"
     >
       <span aria-hidden="true" class="prev-icon">
-        <img src="images/prev.png" alt="Previous" />
+        <img src="images/prev.png" alt="Previous" loading="lazy" />
       </span>
       <span class="visually-hidden">Previous</span>
     </button>
@@ -133,7 +136,7 @@
       data-bs-slide="next"
     >
       <span aria-hidden="true" class="next-icon">
-        <img src="images/next.png" alt="Next" />
+        <img src="images/next.png" alt="Next" loading="lazy" />
       </span>
       <span class="visually-hidden">Next</span>
     </button>

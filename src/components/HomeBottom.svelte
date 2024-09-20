@@ -27,7 +27,7 @@
           <div class="col-md-4">
             <a href="/" class="text-decoration-none">
               <div class="news_card">
-                <img src="images/new1.jpeg" class="rounded" alt="news" />
+                <img src="images/new1.jpeg" class="rounded" alt="news" loading="lazy" />
                 <div class="head">Team Values</div>
                 <div class="body">
                   Poised to be one of the most organised setllement in its host
@@ -37,7 +37,7 @@
                 <div class="date d-flex">
                   <div class="col-5 pt-2 text-white">APR 21 2023</div>
                   <div class="col arrow-up text-white">
-                    <img src="images/up-arrow.png" alt="news" />
+                    <img src="images/up-arrow.png" alt="news" loading="lazy" />
                   </div>
                 </div>
               </div>
@@ -47,7 +47,7 @@
           <div class="col-md-4">
             <a href="/" class="text-decoration-none">
               <div class="news_card">
-                <img src="images/news2.jpeg" class="rounded" alt="news" />
+                <img src="images/news2.jpeg" class="rounded" alt="news" loading="lazy" />
                 <div class="head">Team Values</div>
                 <div class="body">
                   Poised to be one of the most organised setllement in its host
@@ -57,7 +57,7 @@
                 <div class="date d-flex">
                   <div class="col-5 pt-2 text-white">APR 21 2023</div>
                   <div class="col arrow-up text-white">
-                    <img src="images/up-arrow.png" alt="news" />
+                    <img src="images/up-arrow.png" alt="news" loading="lazy" />
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@
           <div class="col-md-4">
             <a href="/" class="text-decoration-none">
               <div class="news_card">
-                <img src="images/news3.jpeg" class="rounded" alt="news" />
+                <img src="images/news3.jpeg" class="rounded" alt="news" loading="lazy" />
                 <div class="head">Team Values</div>
                 <div class="body">
                   Poised to be one of the most organised setllement in its host

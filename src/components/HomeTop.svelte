@@ -36,6 +36,7 @@
                 src="images/business_day.png"
                 class="w-100"
                 alt="Business day Logo"
+                loading="lazy"
               />
             </div>
             <div class="col-3">
@@ -43,10 +44,11 @@
                 src="images/bbc-group.png"
                 class="w-100 rounded"
                 alt="BBC logo"
+                loading="lazy"
               />
             </div>
             <div class="col-3">
-              <img src="images/punch_logo.png" class="w-100" alt="Punch Logo" />
+              <img src="images/punch_logo.png" class="w-100" alt="Punch Logo" loading="lazy" />
             </div>
           </div>
         </div>

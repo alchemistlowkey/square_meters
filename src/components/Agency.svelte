@@ -102,7 +102,7 @@ and enhance your earnings."
       </div>
       <div class="col-12 col-md-6 col-lg-5">
         <div>
-          <img src="images/agency.jpeg" class="rounded" alt="Agency" />
+          <img src="images/agency.jpeg" class="rounded" alt="Agency" loading="lazy" />
         </div>
       </div>
     </div>

@@ -16,6 +16,7 @@
                 src={image1.src}
                 class="card-img-top rounded h-[25rem] w-full"
                 alt={image1.alt}
+                loading="lazy"
               />
             </div>
           </div>
@@ -33,6 +34,7 @@
                 src={image2.src}
                 class="card-img-top rounded h-[25rem] w-full"
                 alt={image2.alt}
+                loading="lazy"
               />
             </div>
           </div>
@@ -50,6 +52,7 @@
                 src={image3.src}
                 class="card-img-top rounded h-[25rem] w-full"
                 alt={image3.alt}
+                loading="lazy"
               />
             </div>
           </div>
@@ -66,7 +69,7 @@
     data-bs-slide="prev"
   >
     <span aria-hidden="true" class="prev-icon">
-      <img src="images/prev.png" alt="Previous" />
+      <img src="images/prev.png" alt="Previous" loading="lazy" />
     </span>
     <span class="visually-hidden">Previous</span>
   </button>
@@ -78,7 +81,7 @@
     data-bs-slide="next"
   >
     <span aria-hidden="true" class="next-icon">
-      <img src="images/next.png" alt="Next" />
+      <img src="images/next.png" alt="Next" loading="lazy" />
     </span>
     <span class="visually-hidden">Next</span>
   </button>

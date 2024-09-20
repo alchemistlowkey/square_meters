@@ -200,6 +200,7 @@
             src="/images/logo_desktop.png"
             class="logo_desktop w-20"
             alt="Company Logo"
+            loading="lazy"
           />
         </a>
       </div>

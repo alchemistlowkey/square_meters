@@ -112,6 +112,7 @@
               src="images/investment-terms.png"
               alt="investment"
               class="mx-auto d-block"
+              loading="lazy"
             />
           </div>
           <div class="col-12 fw-semibold py-4 p-0">Investment Terms</div>

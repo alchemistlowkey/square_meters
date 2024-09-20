@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="rounded-lg">
-      <img src="/images/address.png" class="p-3 rounded-lg" alt="map address" />
+      <img src="/images/address.png" class="p-3 rounded-lg" alt="map address" loading="lazy" />
     </div>
     <div class="row mx-0">
       <div class="col-6 text-nowrap">

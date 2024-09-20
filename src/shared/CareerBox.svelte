@@ -11,6 +11,7 @@
             src="/images/{careerdetail.src}"
             alt={careerdetail.alt}
             class="mx-auto d-block"
+            loading="lazy"
           />
           <p class="py-4 fw-bold">{careerdetail.head}</p>
           <p class="text-sm md:text-base lg:text-lg">{careerdetail.body}</p>

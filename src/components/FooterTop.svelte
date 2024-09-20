@@ -124,6 +124,7 @@
         src="/images/sqm-footer-logo.png"
         class="align-baseline"
         alt="logo"
+        loading="lazy"
       />
     </div>
     <div class="col-9 col-sm-8 col-md-5 xl:mt-[74px] lg:mt-[76px] md:mt-[90px] sm:mt-14 mt-12">

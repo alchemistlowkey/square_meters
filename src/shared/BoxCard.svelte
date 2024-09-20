@@ -30,6 +30,7 @@
                 src={boxcontent.src}
                 class="mx-auto d-block"
                 alt={boxcontent.alt}
+                loading="lazy"
               />
             </div>
             <div class="title my-3">{boxcontent.title}</div>
@@ -63,12 +64,14 @@
                 src="images/{homebox.hover}"
                 class="max-w-[60px]"
                 alt={homebox.alt}
+                loading="lazy"
               />
             {:else}
               <img
                 src="images/{homebox.src}"
                 class="max-w-[60px]"
                 alt={homebox.alt}
+                loading="lazy"
               />
             {/if}
 

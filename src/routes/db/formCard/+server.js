@@ -1,73 +1,66 @@
 import pg from "pg";
 import dotenv from "dotenv";
 import nodemailer from "nodemailer";
-import { randomBytes } from "crypto"; // To generate token
+import { randomBytes } from "crypto";
 
 dotenv.config();
 
 const { Pool } = pg;
-
 const pool = new Pool({
   user: process.env.DB_USERNAME,
   host: process.env.DB_HOST,
   database: process.env.DB_DATABASE,
   password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT || 5432, // Default PostgreSQL port
+  port: process.env.DB_PORT || 5432,
 });
 
-// Configure Nodemailer with Zoho Mail settings
 const transporter = nodemailer.createTransport({
   host: "smtp.zoho.com",
-  port: 465, // or 587 for non-SSL
-  secure: true, // true for 465, false for 587
+  port: 465,
+  secure: true,
   auth: {
-    user: process.env.ZOHO_USER, // Your Zoho email
-    pass: process.env.ZOHO_PASS, // Your Zoho email password or app-specific password
+    user: process.env.ZOHO_USER,
+    pass: process.env.ZOHO_PASS,
   },
 });
 
 export async function POST({ request }) {
   const formData = await request.formData();
-
   const firstname = formData.get("firstname");
   const lastname = formData.get("lastname");
   const email = formData.get("email");
   const phoneNumber = formData.get("phoneNumber");
 
-  // Step 1: Generate a unique verification token
   const verificationToken = randomBytes(20).toString("hex");
 
   try {
-    // Step 2: Insert data into PostgreSQL database with the verification token
+    // Insert agent data into the database
     const result = await pool.query(
       "INSERT INTO agent (firstname, lastname, email, phone_number, verification_token) VALUES ($1, $2, $3, $4, $5) RETURNING *",
       [firstname, lastname, email, phoneNumber, verificationToken]
     );
 
-    // Send email to admin (receiver)
-    const adminMailOptions = {
-      from: process.env.ZOHO_USER, // Your Zoho email
-      to: process.env.ADMIN_EMAIL, // Admin email
+    // Send email to admin
+    await transporter.sendMail({
+      from: process.env.ZOHO_USER,
+      to: process.env.ADMIN_EMAIL,
       subject: "New Agent Submission",
       text: `A new agent has been registered:
       First Name: ${firstname}
       Last Name: ${lastname}
       Email: ${email}
       Phone Number: ${phoneNumber}`,
-    };
+    });
 
-    // Step 3: Send email verification link to the user (sender)
-    const userMailOptions = {
-      from: process.env.ZOHO_USER, // Your Zoho email
-      to: email, // User's email
+    // Send verification email to user
+    await transporter.sendMail({
+      from: process.env.ZOHO_USER,
+      to: email,
       subject: "Verify Your Email Address",
-      html: `
-      <div style="font-family:Arial,sans-serif;color:#333;">
-        <p>Hi ${firstname},</p>
-        <p>Thank you for registering as an agent. Please verify your email address by clicking the link below:</p>
+      html: `<p>Hello ${firstname},</p>
+        <p>Thank you for registering as an agent. Please verify your email by clicking the link below:</p>
         <p><a href="http://squaremetres.ng/verify-email?token=${verificationToken}&email=${email}">Verify Email</a></p>
         <p>If you did not request this registration, please ignore this email.</p>
-        <p>Best regards,</p>
         <div style="border-top:1px solid #ccc;padding-top:10px;">
           <!-- Include branding and contact information -->
           <div style="border-top:1px solid #ccc;padding-top:10px;">
@@ -145,13 +138,8 @@ export async function POST({ request }) {
         </div>
       </div>
           <p style="font-size:14px;color:grey;margin:0;">Square Metres Team</p>
-      </div>
-      `,
-    };
-
-    // Send both emails
-    await transporter.sendMail(adminMailOptions);
-    await transporter.sendMail(userMailOptions);
+        `,
+    });
 
     return new Response(
       JSON.stringify({ success: true, data: result.rows[0] }),
@@ -159,17 +147,20 @@ export async function POST({ request }) {
     );
   } catch (error) {
     if (error.code === "23505") {
-      // Check for duplicate entry error
+      // Duplicate entry
       return new Response(JSON.stringify({ success: false, exists: true }), {
-        status: 409, // Conflict status
+        status: 400,
       });
-    } else {
-      console.error("Database error:", error);
-      return new Response(
-        JSON.stringify({ success: false, error: "Failed to save data." }),
-        { status: 500 }
-      );
     }
+
+    console.error("Database insertion error:", error);
+    return new Response(
+      JSON.stringify({
+        success: false,
+        error: "An error occurred during registration",
+      }),
+      { status: 500 }
+    );
   }
 }
 

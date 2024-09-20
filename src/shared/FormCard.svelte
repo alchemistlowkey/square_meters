@@ -9,6 +9,7 @@
     incorrectEmail: false,
     exists: false,
     submissionError: false,
+    loading: false, // Add loading flag
   };
 
   async function handleSubmit(event) {
@@ -38,6 +39,8 @@
       return;
     }
 
+    formState.loading = true; // Set loading to true when submission starts
+
     try {
       const response = await fetch("/db/formCard", {
         method: "POST",
@@ -61,6 +64,8 @@
     } catch (error) {
       formState.submissionError = true;
       console.error("Form submission error:", error);
+    } finally {
+      formState.loading = false; // Set loading to false when submission completes
     }
   }
 </script>
@@ -114,9 +119,22 @@
     <div class="col-12">
       <button
         type="submit"
-        class="btn w-full bg-[#F96B29] hover:bg-[#0d493d] border-[#0d493d] hover:border-[#F96B29] text-[#F6FFFD] hover:text-[#f6fffd] rounded p-2 my-2"
+        class="btn w-full bg-[#F96B29] hover:bg-[#0d493d] border-[#0d493d] hover:border-[#F96B29] text-[#F6FFFD] hover:text-[#f6fffd] rounded p-2 my-2 flex items-center justify-center"
+        disabled={formState.loading}
       >
-        Submit
+        {#if formState.loading}
+          <!-- Spinner using Bootstrap's spinner-border -->
+          <span class="bg-[#f6fffd] shadow-lg text-[#0d493d]">
+            <span
+              class="spinner-border spinner-border-sm text-[#f96b29] mr-2"
+              role="status"
+              aria-hidden="true"
+            ></span>
+            Submitting...
+          </span>
+        {:else}
+          Submit
+        {/if}
       </button>
     </div>
   </div>

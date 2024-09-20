@@ -9,6 +9,7 @@
   import Carousel from "../shared/Carousel.svelte";
   import IconBox from "../shared/IconBox.svelte";
   import ProjectSummary from "../shared/ProjectSummary.svelte";
+  import FitilaText from "../shared/FitilaText.svelte";
 
   let showModal = false;
   let formHeader = "";
@@ -50,30 +51,30 @@
     CardContent2="tells the story of your hardwork through Real Estate"
     CardContent3="And it is comprehensively delivered by our dedicated team to solidify your investment goals"
   >
-    <div class="row mx-0 py-16 text-w float-start">
-      <div class="col-lg-3 col-4 text-center">
-        <p class="fw-light">Title</p>
-        <p class="fw-bold my-2">Freehold</p>
-      </div>
-      <div class="col-lg-3 col-4 text-center">
-        <p class="fw-light">size</p>
-        <p class="fw-bold my-2">300sqm & 500sqm</p>
-      </div>
-      <div class="col-lg-3 col-4 text-center">
-        <p class="fw-light">Location</p>
-        <p class="fw-bold my-2">Ketu, Epe</p>
-      </div>
-      <div class="col-lg-3 col-12 text-nowrap text-center my-4 my-md-4 my-lg-1">
-        <Button
-          btnDetails="Schedule an inspection"
-          formHeader="Schedule Inspection"
-          formText="For Fitila Signatures"
-          fullName="Full Name"
-          email="Email"
-          phoneNumber="Phone Number"
-          date="Date"
-          on:openform={handleOpenForm}
-        />
+    <div class="container">
+      <div class="row mx-0 justify-center py-16 text-w">
+        <FitilaText
+          TextContent={[
+            { head: "Title", body: "Freehold" },
+            { head: "Size", body: "300sqm & 500sqm" },
+            { head: "Location", body: "Ketu, Epe" },
+          ]}
+        ></FitilaText>
+        
+        <div
+          class="col-lg-3 col-12 text-nowrap text-center my-4 my-md-4 my-lg-1"
+        >
+          <Button
+            btnDetails="Schedule an inspection"
+            formHeader="Schedule Inspection"
+            formText="For Fitila Signatures"
+            fullName="Full Name"
+            email="Email"
+            phoneNumber="Phone Number"
+            date="Date"
+            on:openform={handleOpenForm}
+          />
+        </div>
       </div>
     </div>
   </PageHead>
@@ -99,7 +100,12 @@
   <div class="container">
     <div class="row mx-0">
       <div class="col">
-        <img src="images/fitila_signatures.jpg" alt="fitila signatures" class="rounded" loading="lazy" />
+        <img
+          src="images/fitila_signatures.jpg"
+          alt="fitila signatures"
+          class="rounded"
+          loading="lazy"
+        />
       </div>
     </div>
   </div>
@@ -119,42 +125,18 @@
         <div class="row mx-0">
           <Img
             Images={[
-              { src: "images/dry.png",
-                alt: "dry land",
-               },
-              { src: "images/paved.png",
-                alt: "paved road",
-               },
-              { src: "images/drainage.png",
-                alt: "drainage system",
-               },
-              { src: "images/playGround.png",
-                alt: "children's play area",
-               },
-              { src: "images/elect.png",
-                alt: "electricity",
-               },
-              { src: "images/green.png",
-                alt: "green area",
-               },
-              { src: "images/streetlight.png",
-                alt: "street light",
-               },
-              { src: "images/gateHouse.png",
-                alt: "gate house",
-               },
-              { src: "images/security.png",
-                alt: "security",
-               },
-              { src: "images/perimeter.png",
-                alt: "perimeter fencing",
-               },
-              { src: "images/management.png",
-                alt: "management",
-               },
-              { src: "images/gym.png",
-                alt: "gym",
-               },
+              { src: "images/dry.png", alt: "dry land" },
+              { src: "images/paved.png", alt: "paved road" },
+              { src: "images/drainage.png", alt: "drainage system" },
+              { src: "images/playGround.png", alt: "children's play area" },
+              { src: "images/elect.png", alt: "electricity" },
+              { src: "images/green.png", alt: "green area" },
+              { src: "images/streetlight.png", alt: "street light" },
+              { src: "images/gateHouse.png", alt: "gate house" },
+              { src: "images/security.png", alt: "security" },
+              { src: "images/perimeter.png", alt: "perimeter fencing" },
+              { src: "images/management.png", alt: "management" },
+              { src: "images/gym.png", alt: "gym" },
             ]}
           />
         </div>
@@ -168,37 +150,19 @@
     <div class="row mx-0 py-5">
       <Carousel
         Images1={[
-          { src: "images/fitila_signatures1.jpg",
-            alt: "fitila signatures",
-           },
-          { src: "images/fitila_signatures2.jpg",
-            alt: "fitila signatures",
-           },
-          { src: "images/fitila_signatures3.jpg",
-            alt: "fitila signatures",
-           },
+          { src: "images/fitila_signatures1.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_signatures2.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_signatures3.jpg", alt: "fitila signatures" },
         ]}
         Images2={[
-          { src: "images/fitila_signatures3.jpg",
-            alt: "fitila signatures",
-           },
-          { src: "images/fitila_signatures1.jpg",
-            alt: "fitila signatures",
-           },
-          { src: "images/fitila_signatures2.jpg",
-            alt: "fitila signatures",
-           },
+          { src: "images/fitila_signatures3.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_signatures1.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_signatures2.jpg", alt: "fitila signatures" },
         ]}
         Images3={[
-          { src: "images/fitila_signatures2.jpg",
-            alt: "fitila signatures",
-           },
-          { src: "images/fitila_signatures3.jpg",
-            alt: "fitila signatures",
-           },
-          { src: "images/fitila_signatures1.jpg",
-            alt: "fitila signatures",
-           },
+          { src: "images/fitila_signatures2.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_signatures3.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_signatures1.jpg", alt: "fitila signatures" },
         ]}
       ></Carousel>
     </div>

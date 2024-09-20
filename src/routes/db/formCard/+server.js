@@ -1,6 +1,7 @@
 import pg from "pg";
 import dotenv from "dotenv";
 import nodemailer from "nodemailer";
+import { randomBytes } from "crypto"; // To generate token
 
 dotenv.config();
 
@@ -33,11 +34,14 @@ export async function POST({ request }) {
   const email = formData.get("email");
   const phoneNumber = formData.get("phoneNumber");
 
+  // Step 1: Generate a unique verification token
+  const verificationToken = randomBytes(20).toString("hex");
+
   try {
-    // Insert data into PostgreSQL database
+    // Step 2: Insert data into PostgreSQL database with the verification token
     const result = await pool.query(
-      "INSERT INTO agent (firstname, lastname, email, phone_number) VALUES ($1, $2, $3, $4) RETURNING *",
-      [firstname, lastname, email, phoneNumber]
+      "INSERT INTO agent (firstname, lastname, email, phone_number, verification_token) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+      [firstname, lastname, email, phoneNumber, verificationToken]
     );
 
     // Send email to admin (receiver)
@@ -52,17 +56,21 @@ export async function POST({ request }) {
       Phone Number: ${phoneNumber}`,
     };
 
-    // Send confirmation email to the user (sender)
+    // Step 3: Send email verification link to the user (sender)
     const userMailOptions = {
       from: process.env.ZOHO_USER, // Your Zoho email
       to: email, // User's email
-      subject: "Thank you for registering as an agent",
+      subject: "Verify Your Email Address",
       html: `
-      <div style="font-family:'Poppins',sans-serif;color:#333;">
+      <div style="font-family:Arial,sans-serif;color:#333;">
         <p>Hi ${firstname},</p>
-        <p>Thank you for registering as an agent. We will get in touch with you shortly.</p>
+        <p>Thank you for registering as an agent. Please verify your email address by clicking the link below:</p>
+        <p><a href="http://squaremetres.ng/verify-email?token=${verificationToken}&email=${email}">Verify Email</a></p>
+        <p>If you did not request this registration, please ignore this email.</p>
         <p>Best regards,</p>
         <div style="border-top:1px solid #ccc;padding-top:10px;">
+          <!-- Include branding and contact information -->
+          <div style="border-top:1px solid #ccc;padding-top:10px;">
           <table cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
             <tr>
               <td style="padding:12px 0;">
@@ -110,11 +118,11 @@ export async function POST({ request }) {
               <td style="padding-top:8px;">
                 <p style="font-size:14px;color:grey;margin:0;">
                   <img src="https://static.zohocdn.com/toolkit/assets/8c62b345a3e98fbffcaa.png" width="16" alt="Phone">
-                  08066267094
+                  <a href="tel:+2348066267094">08066267094</a>
                 </p>
                 <p style="font-size:14px;color:grey;margin:0;">
                   <img src="https://static.zohocdn.com/toolkit/assets/e9f50d5df538b77aaf67.png" width="16" alt="Email">
-                  <a href="mailto:dev@squaremetres.ng">dev@squaremetres.ng</a>
+                  <a href="mailto:hello@squaremetres.ng">hello@squaremetres.ng</a>
                 </p>
                 <p style="font-size:14px;color:grey;margin:0;">
                   <img src="https://static.zohocdn.com/toolkit/assets/3c660a292e9d9e5ec69a.png" width="16" alt="Website">
@@ -122,7 +130,7 @@ export async function POST({ request }) {
                 </p>
                 <p style="font-size:14px;color:grey;margin:0;">
                   <img src="https://static.zohocdn.com/toolkit/assets/603ad3f106f2ae6eaf88.png" width="16" alt="Address">
-                  7/9 Molade Okoya Thomas, Victoria Island, Lagos
+                  <a href="https://www.google.com/maps/search/?api=1&query=7/9+Molade+Okoya+Thomas,+Victoria+Island,+Lagos">7/9 Molade Okoya Thomas, Victoria Island, Lagos</a>
                 </p>
               </td>
             </tr>
@@ -135,6 +143,8 @@ export async function POST({ request }) {
             </tr>
           </table>
         </div>
+      </div>
+          <p style="font-size:14px;color:grey;margin:0;">Square Metres Team</p>
       </div>
       `,
     };
@@ -162,3 +172,5 @@ export async function POST({ request }) {
     }
   }
 }
+
+// The above code snippet is a Cloudflare Worker serverless function that handles form submissions for agent registration. The function inserts the form data into a PostgreSQL database and sends a verification email to the user. The email contains a link to verify the user's email address. The function also sends an email notification to the admin with the details of the new agent registration.

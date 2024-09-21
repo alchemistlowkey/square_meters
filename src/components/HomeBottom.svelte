@@ -8,15 +8,13 @@
     <div class="py-5 w-[90%] mx-auto">
       <div class="">
         <div class="mx-0 row pb-md-3">
-          <div class="col-md-5">
-            <span class="seamingly text-white">News & Insight</span>
-          </div>
-          <div class="col-md-7">
-            <span
-              class="seamingly-text text-white md:text-base lg:text-lg text-sm"
+          <div class="">
+            <div class="seamingly text-white text-start">News & Insight</div>
+            <div
+              class="seamingly-text text-white md:text-base lg:text-lg text-sm my-2"
               >A summary of industry news and updates in and around Square
               Metres
-            </span>
+            </div>
           </div>
         </div>
       </div>

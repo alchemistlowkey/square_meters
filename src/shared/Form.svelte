@@ -207,7 +207,7 @@
           >
             {#if loading}
               <!-- Bootstrap spinner for loading -->
-               <span class="bg-[#f6fffd] text-[#0d493d]">
+               <span class="text-[#0d493d]">
 
                  <span
                  class="spinner-border spinner-border-sm text-[#f96b29] mr-2"

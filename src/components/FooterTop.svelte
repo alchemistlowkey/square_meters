@@ -9,6 +9,9 @@
     exists: false,
     email: "",
   };
+
+  let loading = false;
+
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -19,15 +22,18 @@
     formState.missing = false;
     formState.incorrect = false;
     formState.exists = false;
+    loading = true;
 
     if (!email) {
       formState.missing = true;
+      loading = false;
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       formState.incorrect = true;
+      loading = false;
       return;
     }
 
@@ -49,6 +55,8 @@
       }
     } catch (error) {
       console.error("Form submission error:", error);
+    } finally {
+      loading = false;
     }
 
     // Clear email input
@@ -127,7 +135,9 @@
         loading="lazy"
       />
     </div>
-    <div class="col-9 col-sm-8 col-md-5 xl:mt-[74px] lg:mt-[76px] md:mt-[90px] sm:mt-14 mt-12">
+    <div
+      class="col-9 col-sm-8 col-md-5 xl:mt-[74px] lg:mt-[76px] md:mt-[90px] sm:mt-14 mt-12"
+    >
       <div
         class="content text-[#0d493d] text-nowrap xl:text-lg lg:text-lg md:text-sm sm:text-sm text-[10px] md:text-left text-end lg:leading-6 sm:leading-5 leading-3"
       >
@@ -137,10 +147,39 @@
     <div class="col-12 col-md-4 xl:mt-20 lg:mt-20 md:mt-[90px] pb-4">
       <div class="md:text-base lg:text-lg text-sm">
         <form on:submit|preventDefault={handleSubmit}>
+          
+          <div class="input-group">
+            <input
+              type="email"
+              name="email"
+              bind:value={formState.email}
+              class="form-control text-xs md:text-sm text-[#0d493d] h-10"
+              placeholder="Type your email address"
+              required
+            />
+            <button
+              type="submit"
+              class="btn bg-[#0d493d] hover:bg-[#F96B29] lg:text-base md:text-sm text-xs text-[#f6fffd]"
+              disabled={loading}
+              >
+              {#if loading}
+              <span class="text-[#0d493d]">
+                <span class="spinner-grow spinner-grow-sm text-[#f96b29] mr-2"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Signing up...
+              </span>
+                {:else}
+                SIGN UP
+              {/if}
+              </button
+            >
+          </div>
           <!-- Display messages based on form submission state -->
           {#if formState.success}
             <div>
-              <p class="success text-[#F96B29]">
+              <p class="success mt-2 lg:text-base md:text-sm text-xs text-[#F96B29]">
                 Thank you for subscribing to our newsletter.
               </p>
             </div>
@@ -158,21 +197,6 @@
               We already have you as a subscriber.
             </p>
           {/if}
-          <div class="input-group">
-            <input
-              type="email"
-              name="email"
-              bind:value={formState.email}
-              class="form-control text-xs md:text-sm text-[#0d493d] h-10"
-              placeholder="Type your email address"
-              required
-            />
-            <button
-              type="submit"
-              class="btn bg-[#0d493d] hover:bg-[#F96B29] lg:text-base md:text-sm text-xs text-[#f6fffd]"
-              >SIGN UP</button
-            >
-          </div>
         </form>
       </div>
     </div>

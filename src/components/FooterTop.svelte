@@ -124,7 +124,7 @@
 </div>
 
 <div
-  class="container-fluid bg-[#F6FFFD] md:text-base lg:text-lg text-sm w-[90%] mx-auto"
+  class="container-fluid bg-[#F6FFFD] rounded-[20px] md:text-base lg:text-lg text-sm w-[90%] mx-auto"
 >
   <div class="row mx-0">
     <div class="col-3 col-sm-4 mx-auto col-md-3 lg:mt-3 md:mt-10 mt-[38px]">

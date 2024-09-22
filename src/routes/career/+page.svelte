@@ -17,11 +17,14 @@
     gtag("config", "G-7REW6CW0T8");
   });
 
-  export let title = "Square Metres - Career";
+  export let title = "Real Estate Careers in Lagos |  Square Metres";
+  export let Description =
+    "Join Square Metres, a leading real estate developer in Lagos. Explore rewarding career opportunities in real estate.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
+  <meta name="description" content={Description} />
   <link rel="canonical" href="https://squaremetres.ng/career" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content="Career Page" />

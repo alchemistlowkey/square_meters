@@ -1,9 +1,7 @@
 <script>
   import Product from "../../components/Product.svelte";
   import { onMount } from "svelte";
-  
-  export let title = "Square Metres - Product";
-  
+
   onMount(() => {
     // Google Tag (gtag.js)
     const script = document.createElement("script");
@@ -18,10 +16,15 @@
     gtag("js", new Date());
     gtag("config", "G-7REW6CW0T8");
   });
+
+  export let title = "Square Metres Real Estate | Premier Properties in Lagos";
+  export let Description =
+    "Explore Square Metres' premier real estate developments in Lagos, offering luxury properties and high-value investment opportunities.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
+  <meta name="description" content={Description} />
   <link rel="canonical" href="https://squaremetres.ng/product" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content="Product Page" />

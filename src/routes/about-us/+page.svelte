@@ -17,11 +17,15 @@
     gtag("config", "G-7REW6CW0T8");
   });
 
-  export let title = "Square Metres - About Us";
+  export let title =
+    "About Square Metres | Leading Real Estate Developer in Lagos";
+  export let Description =
+    "Discover Square Metres, a leading real estate developer in Lagos, offering prime properties and investments for high returns.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
+  <meta name="description" content={Description} />
   <link rel="canonical" href="https://squaremetres.ng/about-us" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content="About us Page" />

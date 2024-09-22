@@ -21,7 +21,7 @@
   let description =
     "Square Metres Construction Limited is more than just a real estate development company, we are passionate about driving a wholesome experience through real estate and investment solutions. Our Journey began with a simple yet profound goal which is to provide investors with an experience that truly reflects the potential of their real estate investment";
   let keywords =
-    "Real Estate, Investment, Construction, Property, Land, House, Home, Apartment, Square Metres, Square Metres Construction Limited, Square Metres Construction, Square Metres Nigeria, Square Metres NG, Square Metres Limited, Square Metres NG Limited, Square Metres Nigeria Limited, Square Metres Construction Nigeria, Square Metres Construction";
+    "Real estate investment Nigeria, Land buy-back scheme Lagos, Property investment Lagos, Real estate development Nigeria, Affordable land in Lagos, Property ROI Nigeria, Real estate advisory services, Investment in land Lagos, Real estate market trends Nigeria, Land for sale in Victoria Island, Real estate solutions Lagos, Property acquisition services, Land investment in Nigeria, Buy property Lagos, Investment property Lagos, Land ROI Nigeria, Real estate opportunities Lagos, Land development schemes, Secure land investment, Property investment advisory Lagos";
 
   onMount(() => {
     // Meta Pixel Code

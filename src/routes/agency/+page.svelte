@@ -20,15 +20,15 @@
     }
   });
 
-  export let title = "Square Metres - Agency";
+  export let title =
+    "Real Estate Agency in Lagos | Join Square Metres for Success";
+  export let Description =
+    "Join Square Metres agency to prioritize your clients, close more deals, and enhance your earnings. Apply today to become a part of our real estate network.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
-  <meta
-    name="description"
-    content="Join Square Metres agency to prioritize your clients, close more deals, and enhance your earnings. Apply today to become a part of our real estate network."
-  />
+  <meta name="description" content={Description} />
   <meta
     name="keywords"
     content="real estate agency, Square Metres, property deals, real estate agents, real estate consultancy"

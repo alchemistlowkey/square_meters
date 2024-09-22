@@ -17,16 +17,18 @@
     gtag("config", "G-7REW6CW0T8");
   });
 
-  export let title = "Square Metres - Fitila Signature";
-  export const productName = "Fitila Signature";
+  export let title =
+    "Fitila Signature Epe | Prime Real Estate Investment in Lagos by Square Metres";
+  export const productName = "Fitila Signature Epe";
   export const productPrice = "Affordable";
   export const productDescription =
-    "Fitila Signature is a luxurious residential estate located in the heart of Lagos, Nigeria. It is a blend of modern architecture and contemporary designs. The estate is designed to provide a serene and secure environment for residents. The estate features a range of amenities including a swimming pool, gym, and children’s play area. The estate is located close to major business districts, schools, and shopping centers. Fitila Signature is the perfect place to call home.";
+    "Explore Fitila Signature Epe by Square Metres, a premier real estate investment offering luxury living and high ROI in Lagos.";
   export const productAvailability = "InStock";
 </script>
 
 <svelte:head>
   <title>{title}</title>
+  <meta name="description" content={productDescription} />
   <link rel="canonical" href="https://squaremetres.ng/fitila-signature" />
   <meta
     name="image"

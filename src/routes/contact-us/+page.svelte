@@ -17,11 +17,15 @@
     gtag("config", "G-7REW6CW0T8");
   });
 
-  export let title = "Square Metres - Contact Us";
+  export let title =
+    "Get in Touch with Square Metres | Leading Real Estate Developer in Lagos";
+  export let Description =
+    "Contact Square Metres for real estate opportunities in Lagos. Our team is here to help with property inquiries and investments.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
+  <meta name="description" content={Description} />
   <link rel="canonical" href="https://squaremetres.ng/contact-us" />
   <meta
     property="og:image"

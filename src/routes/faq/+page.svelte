@@ -1,9 +1,7 @@
 <script>
   import Faq from "../../components/Faq.svelte";
   import { onMount } from "svelte";
-  
-  export let title = "Square Metres - Frequently Asked Questions";
-  
+
   onMount(() => {
     // Google Tag (gtag.js)
     const script = document.createElement("script");
@@ -18,10 +16,16 @@
     gtag("js", new Date());
     gtag("config", "G-7REW6CW0T8");
   });
+
+  export let title =
+    "Square Metres FAQ | Answers to Your Real Estate Questions";
+  export let Description =
+    "Find answers to common real estate questions with Square Metres. Learn more about our services, investments, and properties.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
+  <meta name="description" content={Description} />
   <link rel="canonical" href="https://squaremetres.ng/faq" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content="Frequently Asked Questions Page" />

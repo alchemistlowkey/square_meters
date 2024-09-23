@@ -2,6 +2,7 @@
   export let Images = [];
   export let HomeImages = [];
   export let ProductImages = [];
+  export let AboutImages = [];
 </script>
 
 {#if Images}
@@ -59,6 +60,23 @@
       </div>
     </div>
   </div>
+{/if}
+
+{#if AboutImages}
+  {#each AboutImages as aboutimage}
+    <div class="col-lg-6 col-12 mb-5">
+      <div class="news_card text-lg-center text-center">
+        <img
+          src={aboutimage.src}
+          class="rounded"
+          alt={aboutimage.alt}
+          loading="lazy"
+        />
+        <div class="head">{aboutimage.head}</div>
+        <div class="body">{aboutimage.body}</div>
+      </div>
+    </div>
+  {/each}
 {/if}
 
 <style>

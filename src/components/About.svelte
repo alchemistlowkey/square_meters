@@ -5,6 +5,7 @@
   import CardText from "../shared/CardText.svelte";
   import Offer from "../shared/Offer.svelte";
   import BoxCard from "../shared/BoxCard.svelte";
+  import Img from "../shared/Img.svelte";
 </script>
 
 <Bg headerBG="bg.jpeg">
@@ -46,37 +47,37 @@
       }}
     ></CardText>
 
-    <div class="mt-lg-5 mt-3 col-md-10 offset-md-1">
+    <div class="mt-lg-5 mt-3 col-xl-10 offset-xl-1">
       <div class="row mx-0 justify-content-center">
-        <div class="col-lg-6 col-12 mb-3">
-          <div class="news_card text-lg-center text-center">
-            <img src="images/ceo.jpeg" class="rounded" alt="CEO Square Metres" loading="lazy" />
-            <div class="head">Oghe Ogheneriode I.</div>
-            <div class="body">CEO</div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-12 mb-3">
-          <div class="news_card text-lg-center text-center">
-            <img src="images/ho.jpeg" class="rounded" alt="Head of Operations" loading="lazy" />
-            <div class="head">Raphael Obaro</div>
-            <div class="body">Head of Operation</div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-12 mb-3">
-          <div class="news_card text-lg-center text-center">
-            <img src="images/hcv.jpeg" class="rounded" alt="Head of Creative and Visuals" loading="lazy" />
-            <div class="head">Gbadeyan Oluwafemi</div>
-            <div class="body">Head, Creative & Visuals</div>
-          </div>
-        </div>
 
-        <div class="col-lg-6 col-12 mb-3">
-          <div class="news_card text-lg-center text-center">
-            <img src="images/cc.jpeg" class="rounded" alt="Corporate communications" loading="lazy" />
-            <div class="head">Cynthia Edosomwan</div>
-            <div class="body">Corporate Comms</div>
-          </div>
-        </div>
+        <Img
+        AboutImages={[
+          {
+            src: "images/PrinceOghe.jpg",
+            alt: "CEO Square Metres",
+            head: "Oghe Ogheneriode",
+            body: "CEO",
+          },
+          {
+            src: "images/BrightUchegbu.jpg",
+            alt: "Enterprise Sales Manager",
+            head: "Bright Uchegbu",
+            body: "Enterprise Sales Manager",
+          },
+          {
+            src: "images/AdeyemiMicheal.jpg",
+            alt: "Head of Creative and Visuals",
+            head: "Adeyemi Micheal",
+            body: "Head, Creative & Visuals",
+          },
+          {
+            src: "images/AmarachiIbeh.jpg",
+            alt: "Corporate communications",
+            head: "Amarachi Ibeh",
+            body: "Cooperate Communications",
+          },
+        ]}
+        ></Img>
       </div>
     </div>
   </div>

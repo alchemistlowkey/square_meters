@@ -64,7 +64,7 @@
 
 {#if AboutImages}
   {#each AboutImages as aboutimage}
-    <div class="col-lg-6 col-12 mb-5">
+    <div class="col-md-3 col-6 mb-3">
       <div class="news_card text-lg-center text-center">
         <img
           src={aboutimage.src}

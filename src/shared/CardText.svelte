@@ -5,6 +5,7 @@
   export let TextLink = "";
   export let TextLinkText = "";
   export let BgGreen = false;
+  export let BgAbout = false;
 </script>
 
 <div
@@ -57,6 +58,15 @@
       <p class="py-2 py-md-3 text-[#F6FFFD]">{BgGreen.body}</p>
     </div>
   </div>
+{/if}
+
+{#if BgAbout}
+  <div
+    class="text-[#F6FFFD] text-center md:text-xl lg:text-2xl text-lg pb-2 font-bold"
+  >
+    {BgAbout.head}
+  </div>
+  <p class="text-[#F6FFFD]">{BgAbout.body}</p>
 {/if}
 
 <style>

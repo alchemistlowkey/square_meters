@@ -23,7 +23,7 @@
           <div class="col-md-4">
             <a href={HomeImage.href}>
               <div
-                class="bg text-[#F6FFFD] hover:text-[#F96B29] my-1 fw-semibold rounded-xl pb-10 md:text-2xl lg:text-3xl text-base"
+                class="bg text-[#F6FFFD] hover:text-[#F96B29] btn border-[#0d493d] hover:border-[#F96B29] my-1 fw-semibold rounded-xl pb-10 md:text-2xl lg:text-3xl text-base"
                 style="background-image: url('/images/{HomeImage.src}')"
               >
                 {HomeImage.text}
@@ -34,6 +34,23 @@
       </div>
     </div>
   </div>
+{/if}
+
+{#if AboutImages}
+  {#each AboutImages as aboutimage}
+    <div class="col-lg-3 col-6">
+      <div class="news_card text-lg-center text-center">
+        <img
+          src={aboutimage.src}
+          class="rounded"
+          alt={aboutimage.alt}
+          loading="lazy"
+        />
+        <div class="head">{aboutimage.head}</div>
+        <div class="body">{aboutimage.body}</div>
+      </div>
+    </div>
+  {/each}
 {/if}
 
 {#if ProductImages}
@@ -60,23 +77,6 @@
       </div>
     </div>
   </div>
-{/if}
-
-{#if AboutImages}
-  {#each AboutImages as aboutimage}
-    <div class="col-md-3 col-6 mb-3">
-      <div class="news_card text-lg-center text-center">
-        <img
-          src={aboutimage.src}
-          class="rounded"
-          alt={aboutimage.alt}
-          loading="lazy"
-        />
-        <div class="head">{aboutimage.head}</div>
-        <div class="body">{aboutimage.body}</div>
-      </div>
-    </div>
-  {/each}
 {/if}
 
 <style>

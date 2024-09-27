@@ -39,50 +39,56 @@
 </section>
 
 <section class="bg-[#0D493DF2]">
-  <div class="container pt-4">
-    <CardText
-      BgGreen={{
-        head: "The right people can make anything Possible",
-        body: "Square Metres is managed by experienced professionals who are working collaboratively with a vast background in real estate investment and entrepreneurship.",
-      }}
-    ></CardText>
+  <div class="container">
+    <div
+      class="row mx-0 text-[#F6FFFD] p-text text-center text-sm md:text-base lg:text-lg"
+    >
+      <div class="col-md-10 offset-md-1">
+        <CardText
+          BgAbout={{
+            head: "The right people can make anything Possible",
+            body: "Square Metres is managed by experienced professionals who are working collaboratively with a vast background in real estate investment and entrepreneurship.",
+          }}
+        ></CardText>
+      </div>
 
-    <div class="col-xl-10 offset-xl-1">
-      <div class="row mx-0 justify-content-center">
-        <Img
-          AboutImages={[
-            {
-              src: "images/ogheOgheneriode_new.png",
-              alt: "CEO Square Metres",
-              head: "Oghe Ogheneriode",
-              body: "CEO",
-            },
-            {
-              src: "images/brightuchegbu_new.png",
-              alt: "Enterprise Sales Manager",
-              head: "Bright Uchegbu",
-              body: "Enterprise Sales Manager",
-            },
-            {
-              src: "images/Micheal_new.png",
-              alt: "Head of Creative and Visuals",
-              head: "Adeyemi Micheal",
-              body: "Head, Creative & Visuals",
-            },
-            {
-              src: "images/AmarachiIbeh_new.png",
-              alt: "Corporate communications",
-              head: "Amarachi Ibeh",
-              body: "Cooperate Communications",
-            },
-          ]}
-        ></Img>
+      <div class="col-xl-10 offset-xl-1">
+        <div class="row mx-0 justify-content-center">
+          <Img
+            AboutImages={[
+              {
+                src: "images/ogheOgheneriode_new.png",
+                alt: "CEO Square Metres",
+                head: "Oghe Ogheneriode",
+                body: "CEO",
+              },
+              {
+                src: "images/brightuchegbu_new.png",
+                alt: "Enterprise Sales Manager",
+                head: "Bright Uchegbu",
+                body: "Enterprise Sales Manager",
+              },
+              {
+                src: "images/Micheal_new.png",
+                alt: "Head of Creative and Visuals",
+                head: "Adeyemi Micheal",
+                body: "Head, Creative & Visuals",
+              },
+              {
+                src: "images/AmarachiIbeh_new.png",
+                alt: "Corporate communications",
+                head: "Amarachi Ibeh",
+                body: "Cooperate Communications",
+              },
+            ]}
+          ></Img>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="values" class="pt-5">
+<section id="values" class="pt-3">
   <div class="container">
     <CardText
       TextHeader="What Defines Us"

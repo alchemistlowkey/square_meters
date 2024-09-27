@@ -11,7 +11,7 @@
       </div>
       <div class="col-md-6">
         <span
-          class="ms-lg-0 ps-lg-0 lg:text-lg md:text-base text-sm pt-1 text-wrap float-end"
+          class="ms-lg-0 ps-lg-0 lg:text-lg md:text-base text-sm pt-1 text-wrap md:float-end"
           >{TextContent}
         </span>
       </div>

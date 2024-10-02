@@ -9,3 +9,4 @@ Allow: /fitila-signature
 Allow: /investment
 Allow: /policy
 Allow: /product
+Allow: /blog

@@ -127,7 +127,7 @@
   class="container-fluid bg-[#F6FFFD] rounded-[20px] md:text-base lg:text-lg text-sm w-[90%] mx-auto"
 >
   <div class="row mx-0">
-    <div class="col-3 col-sm-4 mx-auto col-md-3 lg:mt-3 md:mt-10 mt-[38px]">
+    <div class="col-6 offset-3 mx-auto col-md-3 lg:mt-3 md:mt-10">
       <img
         src="/images/sqm-footer-logo.png"
         class="align-baseline"
@@ -136,15 +136,15 @@
       />
     </div>
     <div
-      class="col-9 col-sm-8 col-md-5 xl:mt-[120px] lg:mt-[76px] md:mt-[90px] sm:mt-[90px] mt-20"
+      class="col-12 col-md-5 col-xl-3 offset-xl-1 xl:mt-[120px] lg:mt-[76px] md:mt-[90px]"
     >
       <div
-        class="content text-[#0d493d] text-nowrap xl:text-lg lg:text-lg md:text-sm sm:text-sm text-[10px] md:text-left text-end lg:leading-6 sm:leading-5 leading-3"
+        class="content text-[#0d493d] xl:text-lg lg:text-lg md:text-sm sm:text-sm text-[10px] md:text-end text-center1 text-align lg:leading-6 sm:leading-5 leading-3"
       >
-        Join more than 1500 recipients of real <br /> estate updates and trends
+        Join more than 1500 recipients of real estate updates and trends
       </div>
     </div>
-    <div class="col-12 col-md-4 xl:mt-[126px] lg:mt-20 md:mt-[90px] pb-4">
+    <div class="col-12 col-md-4 xl:mt-[126px] lg:mt-20 md:mt-[90px] mt-[8px] pb-4">
       <div class="md:text-base lg:text-lg text-sm">
         <form on:submit|preventDefault={handleSubmit}>
           
@@ -206,5 +206,11 @@
 <style>
   .text-green {
     color: #0d493d;
+  }
+
+  @media (max-width: 767px) {
+    .text-center1 {
+      text-align: center;
+    }
   }
 </style>

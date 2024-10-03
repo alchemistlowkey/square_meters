@@ -19,24 +19,24 @@
   });
 
   export let title = "Square Metres - Affordable Land Solutions";
-  export let Description =
+  export let HomeDescription =
     "Square Metres is a real estate company that provides affordable land solutions in Lagos. We offer land for sale in Lagos, and other parts of Nigeria.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
-  <meta name="description" content={Description} />
+  <meta name="description" content={HomeDescription} />
   <link rel="canonical" href="https://squaremetres.ng" />
   <meta name="image" content="https://squaremetres.ng/favicon.png" />
   <meta property="og:title" content={title} />
-  <meta property="og:description" content={Description} />
+  <meta property="og:description" content={HomeDescription} />
   <meta property="og:url" content="https://squaremetres.ng" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://squaremetres.ng/favicon.png" />
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://x.com/squaremetresng" />
   <meta property="twitter:title" content="Square Metres" />
-  <meta property="twitter:description" content={Description} />
+  <meta property="twitter:description" content={HomeDescription} />
   <meta
     property="twitter:image"
     content="https://squaremetres.ng/favicon.png"

@@ -27,10 +27,12 @@
   <title>{title}</title>
   <meta name="description" content={Description} />
   <link rel="canonical" href="https://squaremetres.ng/faq" />
+  <meta name="image" content="https://squaremetres.ng/images/faq.jpeg" />
   <meta property="og:title" content={title} />
-  <meta property="og:description" content="Frequently Asked Questions Page" />
+  <meta property="og:description" content="{Description}" />
   <meta property="og:url" content="https://squaremetres.ng/faq" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://squaremetres.ng/images/faq.jpeg" />
 </svelte:head>
 
 <Faq />

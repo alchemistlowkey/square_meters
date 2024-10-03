@@ -23,7 +23,7 @@
   export let title =
     "Real Estate Agency in Lagos | Join Square Metres for Success";
   export let Description =
-    "Join Square Metres agency to prioritize your clients, close more deals, and enhance your earnings. Apply today to become a part of our real estate network.";
+    "Join Square Metres agency to prioritize your clients, close more deals, and enhance your earnings. Apply today to become a part of our real estate network";
 </script>
 
 <svelte:head>
@@ -34,9 +34,12 @@
     content="real estate agency, Square Metres, property deals, real estate agents, real estate consultancy"
   />
   <link rel="canonical" href="https://squaremetres.ng/agency" />
+  <meta name="image" content="https://squaremetres.ng/images/logo.png" />
   <meta property="og:title" content={title} />
-  <meta property="og:description" content="Agency Page" />
+  <meta property="og:description" content="{Description}" />
   <meta property="og:url" content="https://squaremetres.ng/agency" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://squaremetres.ng/images/logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta

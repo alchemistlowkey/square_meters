@@ -42,8 +42,6 @@
     property="og:image"
     content="https://squaremetres.ng/images/fitila_signatures.jpg"
   />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
 </svelte:head>
 
 <FitilaSignature />

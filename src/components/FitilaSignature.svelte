@@ -60,7 +60,7 @@
             { head: "Location", body: "Ketu, Epe" },
           ]}
         ></FitilaText>
-        
+
         <div
           class="col-lg-3 col-12 text-nowrap text-center my-4 my-md-4 my-lg-1"
         >

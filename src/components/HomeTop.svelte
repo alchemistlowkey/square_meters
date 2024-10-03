@@ -27,7 +27,7 @@
         <div
           class="w-100 p-3 fs-6 text-nowrap text-center text-lg-start text-[#F6FFFD]"
         >
-          Trusted by over 1000 individuals
+          <h1>Trusted by over 1000 individuals</h1>
         </div>
         <div class="w-100 pt-3">
           <div class="row mx-0 justify-content-lg-start justify-content-center">
@@ -48,7 +48,12 @@
               />
             </div>
             <div class="col-3">
-              <img src="images/punch_logo.png" class="w-100" alt="Punch Logo" loading="lazy" />
+              <img
+                src="images/punch_logo.png"
+                class="w-100"
+                alt="Punch Logo"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

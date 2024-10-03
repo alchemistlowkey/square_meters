@@ -14,14 +14,18 @@
   <div class="col-md-10 offset-md-1">
     {#if TextHeader}
       <div class="collection text-center md:text-xl lg:text-3xl text-lg">
-        {TextHeader}
+        <h2>
+          {TextHeader}
+        </h2>
       </div>
     {/if}
     {#if TextHeader2}
       <div
         class="text-[#F96B29] md:text-xl lg:text-2xl text-lg fw-bold text-center"
       >
-        {TextHeader2}
+        <h2>
+          {TextHeader2}
+        </h2>
       </div>
     {/if}
     {#if TextContent}
@@ -53,7 +57,9 @@
       <div
         class="text-[#F6FFFD] text-center md:text-xl lg:text-2xl text-lg pb-2 font-bold"
       >
-        {BgGreen.head}
+        <h2>
+          {BgGreen.head}
+        </h2>
       </div>
       <p class="py-2 py-md-3 text-[#F6FFFD]">{BgGreen.body}</p>
     </div>
@@ -64,7 +70,9 @@
   <div
     class="text-[#F6FFFD] text-center md:text-xl lg:text-2xl text-lg pb-2 font-bold"
   >
-    {BgAbout.head}
+    <h2>
+      {BgAbout.head}
+    </h2>
   </div>
   <p class="text-[#F6FFFD]">{BgAbout.body}</p>
 {/if}

@@ -32,7 +32,7 @@
   <link rel="canonical" href="https://squaremetres.ng/fitila-signature" />
   <meta
     name="image"
-    content="https://squaremetres.ng/images/fitila_signatures.jpg"
+    content="https://squaremetres.ng/images/fitila.jpeg"
   />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={productDescription} />
@@ -40,7 +40,7 @@
   <meta property="og:type" content="website" />
   <meta
     property="og:image"
-    content="https://squaremetres.ng/images/fitila_signatures.jpg"
+    content="https://squaremetres.ng/images/fitila.jpeg"
   />
 </svelte:head>
 

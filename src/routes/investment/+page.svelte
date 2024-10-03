@@ -27,10 +27,12 @@
   <title>{title}</title>
   <meta name="description" content={Description} />
   <link rel="canonical" href="https://squaremetres.ng/investment" />
+  <meta name="image" content="https://squaremetres.ng/images/invest.jpeg" />
   <meta property="og:title" content={title} />
-  <meta property="og:description" content="Investment Page" />
+  <meta property="og:description" content="{Description}" />
   <meta property="og:url" content="https://squaremetres.ng/investment" />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://squaremetres.ng/images/invest.jpeg" />
 </svelte:head>
 
 <Investment />

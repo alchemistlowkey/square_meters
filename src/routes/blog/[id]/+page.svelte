@@ -10,7 +10,7 @@
           <img
             src={data.post.image_url}
             alt={data.post.title}
-            class="w-full h-auto rounded-2"
+            class="w-full h-auto rounded-4"
             loading="lazy"
           />
         </div>
@@ -19,8 +19,8 @@
             {data.post.title}
           </h1>
           <pre class="py-4 text-balance">{data.post.description}</pre>
-          <p>
-            <em
+          <p class="py-5">
+            <em class="font-light"
               >{new Date(data.post.date).toLocaleDateString("en-US", {
                 day: "2-digit",
                 month: "short",
@@ -35,3 +35,9 @@
 {:else}
   <p>Post not found.</p>
 {/if}
+
+<style>
+  pre {
+    font-family: "Poppins";
+  }
+</style>

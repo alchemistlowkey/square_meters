@@ -19,17 +19,17 @@
 
   export let title =
     "About Square Metres | Leading Real Estate Developer in Lagos";
-  export let Description =
+  export let AboutDescription =
     "Discover Square Metres, a leading real estate developer in Lagos, offering prime properties and investments for high returns.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
-  <meta name="description" content={Description} />
+  <meta name="description" content={AboutDescription} />
   <link rel="canonical" href="https://squaremetres.ng/about-us" />
   <meta name="image" content="https://squaremetres.ng/images/logo_desktop.png" />
   <meta property="og:title" content={title} />
-  <meta property="og:description" content="{Description}" />
+  <meta property="og:description" content="{AboutDescription}" />
   <meta property="og:url" content="https://squaremetres.ng/about-us" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://squaremetres.ng/images/logo_desktop.png" />

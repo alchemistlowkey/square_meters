@@ -18,17 +18,17 @@
   });
 
   export let title = "Square Metres Real Estate | Premier Properties in Lagos";
-  export let Description =
+  export let ProductDescriptionProduct =
     "Explore Square Metres' premier real estate developments in Lagos, offering luxury properties and high-value investment opportunities.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
-  <meta name="description" content={Description} />
+  <meta name="description" content={ProductDescriptionProduct} />
   <link rel="canonical" href="https://squaremetres.ng/product" />
   <meta name="image" content="https://squaremetres.ng/images/productland.jpeg" />
   <meta property="og:title" content={title} />
-  <meta property="og:description" content="{Description}" />
+  <meta property="og:description" content="{ProductDescriptionProduct}" />
   <meta property="og:url" content="https://squaremetres.ng/product" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://squaremetres.ng/images/productland.jpeg" />

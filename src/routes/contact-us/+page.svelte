@@ -19,17 +19,17 @@
 
   export let title =
     "Get in Touch with Square Metres | Leading Real Estate Developer in Lagos";
-  export let Description =
+  export let ContactDescription =
     "Contact Square Metres for real estate opportunities in Lagos. Our team is here to help with property inquiries and investments.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
-  <meta name="description" content={Description} />
+  <meta name="description" content={ContactDescription} />
   <link rel="canonical" href="https://squaremetres.ng/contact-us" />
   <meta name="image" content="https://squaremetres.ng/images/address.png" />
   <meta property="og:title" content={title} />
-  <meta property="og:description" content="{Description}" />
+  <meta property="og:description" content="{ContactDescription}" />
   <meta property="og:url" content="https://squaremetres.ng/contact-us" />
   <meta property="og:type" content="website" />
   <meta

@@ -19,17 +19,17 @@
 
   export let title =
     "Real Estate Investments in Lagos | High ROI with Square Metres";
-  export let Description =
+  export let InvestmentDescription =
     "Maximize returns with real estate investments in Lagos through Square Metres. High ROI opportunities in prime locations.";
 </script>
 
 <svelte:head>
   <title>{title}</title>
-  <meta name="description" content={Description} />
+  <meta name="description" content={InvestmentDescription} />
   <link rel="canonical" href="https://squaremetres.ng/investment" />
   <meta name="image" content="https://squaremetres.ng/images/invest.jpeg" />
   <meta property="og:title" content={title} />
-  <meta property="og:description" content="{Description}" />
+  <meta property="og:description" content="{InvestmentDescription}" />
   <meta property="og:url" content="https://squaremetres.ng/investment" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://squaremetres.ng/images/invest.jpeg" />

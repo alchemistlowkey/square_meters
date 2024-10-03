@@ -58,24 +58,11 @@
 
 <svelte:head>
   <meta name="keywords" content={keywords} />
-  <meta name="image" content="https://squaremetres.ng/favicon.png" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="Square Metres" />
-  <meta property="og:description" content={description} />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://squaremetres.ng" />
-  <meta property="og:image" content="https://squaremetres.ng/favicon.png" />
-  <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://x.com/squaremetresng" />
-  <meta property="twitter:title" content="Square Metres" />
-  <meta property="twitter:description" content={description} />
-  <meta
-    property="twitter:image"
-    content="https://squaremetres.ng/favicon.png"
-  />
   <meta name="twitter:site" content="@squaremetresng" />
   <meta name="twitter:creator" content="@squaremetresng" />
-  <meta name="twitter:domain" content="https://squaremetres.ng" />
   <meta name="twitter:label1" content="Written by" />
   <meta name="twitter:data1" content="Square Metres" />
   <meta name="twitter:label2" content="Filed under" />

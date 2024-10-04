@@ -59,26 +59,26 @@
       <!-- Display the latest blog post in a full-width column -->
       <div class="row mb-4 mx-0 my-5">
         <div class="col-12">
-          <div class="card p-0 m-0">
+          <div class="card p-0 m-0 border-[#0D493D] hover:border-[#f96b29]">
             <div class="row mx-0">
               <div class="col-md-6">
-                <div class="card-body p-md-2 p-lg-5">
-                  <h1 class="font-medium">Latest Article</h1>
-                  <h2
-                    class="text-[#0D493D] font-bold text-3xl py-4"
-                  >
-                    {blogPosts[0].title}
-                  </h2>
-                  <div class="py-2 text-balance" style="white-space: pre-wrap;">
-                    {blogPosts[0].description}
+                <a href={`/blog/${blogPosts[0].id}`}>
+                  <div class="card-body p-md-2 p-lg-5">
+                    <h1 class="font-medium">Latest Article</h1>
+                    <h2 class="text-[#0D493D] font-bold text-3xl py-4">
+                      {blogPosts[0].title}
+                    </h2>
+                    <div
+                      class="py-2 text-balance"
+                      style="white-space: pre-wrap;"
+                    >
+                      {blogPosts[0].description}
+                    </div>
+                    <p class="pt-5 font-light">
+                      <em>{formatDate(blogPosts[0].date)}</em>
+                    </p>
                   </div>
-                  <p class="py-2">
-                    <em>{formatDate(blogPosts[0].date)}</em>
-                  </p>
-                  <a href={`/blog/${blogPosts[0].id}`} class="text-[#f96b29]"
-                    >Read more</a
-                  >
-                </div>
+                </a>
               </div>
               <div class="col-md-6">
                 <img
@@ -97,7 +97,7 @@
       <div class="row">
         {#each blogPosts.slice(1) as post}
           <div class="col-md-4">
-            <div class="card mb-4">
+            <div class="card mb-4 border-[#0D493D] hover:border-[#f96b29]">
               <img
                 src={post.image_url}
                 alt={post.title}
@@ -112,10 +112,11 @@
                 </h2>
                 <div class="">
                   {truncateDescription(post.description, DESCRIPTION_LENGTH)}
+                  <a href={`/blog/${post.id}`} class="text-[#f96b29]"
+                    >Read more</a
+                  >
                 </div>
-                <p class="py-4"><em>{formatDate(post.date)}</em></p>
-                <a href={`/blog/${post.id}`} class="text-[#f96b29]">Read more</a
-                >
+                <p class="pt-5 font-light"><em>{formatDate(post.date)}</em></p>
               </div>
             </div>
           </div>

@@ -27,7 +27,7 @@
   }
 
   async function handleSubmit(event) {
-    //   event.preventDefault();
+      event.preventDefault();
 
     const formData = new FormData(event.target);
     const blogTitle = formData.get("blogTitle");
@@ -140,7 +140,7 @@
   </div>
 
   {#if formState.success}
-    <div class="text-[#0D493D] fw-semibold text-center mt-2">
+    <div class="text-[#0D493D] fw-semibold text-center my-5">
       <p>Blog post successfully created!</p>
     </div>
   {/if}

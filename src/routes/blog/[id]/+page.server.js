@@ -1,5 +1,5 @@
-import pg from 'pg';
-import dotenv from 'dotenv';
+import pg from "pg";
+import dotenv from "dotenv";
 
 dotenv.config();
 
@@ -16,13 +16,15 @@ export async function load({ params }) {
   const { id } = params; // Get the blog post ID from the URL parameters
 
   try {
-    const result = await pool.query('SELECT * FROM blog_posts WHERE id = $1', [id]);
+    const result = await pool.query("SELECT * FROM blog_posts WHERE id = $1", [
+      id,
+    ]);
     const post = result.rows[0];
 
     if (!post) {
       return {
         status: 404,
-        error: new Error('Post not found')
+        error: new Error("Post not found"),
       };
     }
 
@@ -31,14 +33,14 @@ export async function load({ params }) {
         title: post.title,
         date: post.date,
         image_url: post.image_url,
-        description: post.description
-      }
+        description: post.description,
+      },
     };
   } catch (error) {
-    console.error('Error fetching blog post:', error);
+    console.error("Error fetching blog post:", error);
     return {
       status: 500,
-      error: new Error('Failed to fetch blog post')
+      error: new Error("Failed to fetch blog post"),
     };
   }
 }

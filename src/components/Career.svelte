@@ -80,7 +80,7 @@
 <section class="py-10">
   <div class="container">
     <div class="row mx-0 p-text text-cgreen text-center" id="positions">
-      <div class="collection text-center py-4 md:text-xl lg:text-2xl text-lg">Open positions</div>
+      <div class="collection text-center py-4 md:text-xl lg:text-2xl text-lg"><h1>Open positions</h1></div>
       <DropCard
         DropHeader="Growth Hacker"
         DropContent="We seek the expertise of an experience marketing specialist to drive a 360 degree marketing campaign and customer experience which leads to customer retention and sales"

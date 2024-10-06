@@ -11,14 +11,19 @@
       >
         Connect with us
       </div>
-      <div class="col-lg-5 col-md-12 col-12 mt-md-3 mt-lg-0 mt-sm-4 mt-xl-0 mt-3 text-nowrap">
-        Let's explore available possibilities <br> or design bespoke solutions <br>
+      <div
+        class="col-lg-5 col-md-12 col-12 mt-md-3 mt-lg-0 mt-sm-4 mt-xl-0 mt-3 text-nowrap"
+      >
+        Let's explore available possibilities <br /> or design bespoke solutions
+        <br />
         to meet your investment needs
       </div>
-      <div class="col-lg-3 col-md-12 col-12 mt-md-7 mt-lg-4 mt-sm-4 mt-xl-4 mt-3">
+      <div
+        class="col-lg-3 col-md-12 col-12 mt-md-7 mt-lg-4 mt-sm-4 mt-xl-4 mt-3"
+      >
         <a href="/investment">
           <button
-            class="btn w-52 text-[#F6FFFD] bg-[#f96b29] hover:bg-[#0d493d] border-[#0d493d] hover:border-[#f96b29] hover:text-[#f6fffd] fw-medium md:text-base lg:text-lg text-sm rounded-3"
+            class="btn w-52 text-[#F6FFFD] bg-[#f96b29] hover:bg-[#0d493d] border-[#0d493d] hover:border-[#f96b29] hover:text-[#f96b29] fw-medium md:text-base lg:text-lg text-sm rounded-3"
             >Our Offering</button
           >
         </a>

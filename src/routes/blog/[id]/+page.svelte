@@ -2,8 +2,19 @@
   export let data; // Access the data object from the load function
 </script>
 
+<section class="my-[100px] fixed ms-5">
+  <div class="container m-auto pb-[100px] px-6 font-semibold">
+    <a
+      href="/blog"
+      class="hover:text-[#F96B29] flex items-center"
+    >
+    <i class="bi bi-arrow-left mr-2"></i> Back to Blog
+    </a>
+  </div>
+</section>
+
 {#if data.post}
-  <section class="mt-[200px]">
+  <section class="pt-[200px]">
     <div class="container">
       <div class="row mx-0">
         <div class="col-md-6">

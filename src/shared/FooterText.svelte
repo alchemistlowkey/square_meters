@@ -11,13 +11,17 @@
         <div class="container">
           <div class="row align-items-center">
             {#if linkItem.icon}
-              <div class="col-12 ps-0 d-flex align-items-start">
+              <div
+                class="col-12 ps-0 d-flex align-items-start hover:text-[#F96B29]"
+              >
                 <i class={linkItem.icon}></i>
                 <span class="ml-2">{linkItem.text2}</span>
               </div>
             {/if}
             {#if !linkItem.icon}
-              {linkItem.text}
+              <div class="hover:text-[#F96B29] ps-0">
+                {linkItem.text}
+              </div>
             {/if}
           </div>
         </div>

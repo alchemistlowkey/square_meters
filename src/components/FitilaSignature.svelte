@@ -118,7 +118,7 @@
         <div
           class="text-[#F96B29] text-center text-xl md:text-2xl lg:text-3xl font-bold pt-5"
         >
-          Specs and details
+          <h1>Specs and details</h1>
         </div>
       </div>
       <div class="col-12">
@@ -221,7 +221,7 @@
     <div class="row mx-0">
       <div class="col-12">
         <div class="text-[#F96B29] text-center text-3xl fw-bold">
-          Project Summary
+          <h3>Project Summary</h3>
         </div>
       </div>
       <div class="col-12">

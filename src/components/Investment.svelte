@@ -106,7 +106,7 @@
         class="col-12 col-md-6 col-lg-5 text-sm md:text-base lg:text-lg border-[#0D493D] border-3 rounded fw-semibold"
       >
         <div class="row mx-0">
-          <div class="col-12 fw-semibold py-4 p-0">Make an investment</div>
+          <div class="col-12 fw-semibold py-4 p-0"><h1>Make an investment</h1></div>
           <div class="col-12 border-c rounded">
             <img
               src="images/investment-terms.png"

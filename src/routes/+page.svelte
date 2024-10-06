@@ -1,5 +1,4 @@
 <script>
-  import exp from "constants";
   import Home from "../components/Home.svelte";
   import { onMount } from "svelte";
 

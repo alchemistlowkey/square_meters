@@ -102,7 +102,12 @@ and enhance your earnings."
       </div>
       <div class="col-12 col-md-6 col-lg-5">
         <div>
-          <img src="images/agency.jpeg" class="rounded" alt="Agency" loading="lazy" />
+          <img
+            src="images/agency.jpeg"
+            class="rounded"
+            alt="Agency"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>
@@ -115,7 +120,7 @@ and enhance your earnings."
       <div
         class="col-12 text-[#F96B29] text-base md:text-xl lg:text-2xl text-center py-3 fw-semibold"
       >
-        Agent Form
+        <h1>Agent Form</h1>
       </div>
       <div class="row mx-0">
         <div class="col-12 col-lg-8 offset-lg-2">

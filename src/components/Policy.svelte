@@ -64,7 +64,7 @@
   <div class="container">
     <div class="row mx-0 py-10 text-cgreen">
       <div class="col-lg-10 offset-lg-1">
-        <div class="collection">Collection of Information</div>
+        <div class="collection"><h1>Collection of Information</h1></div>
         <p class="">We receive and store information about you such as:</p>
         <div class="">
           <ul class="responsive-list">
@@ -118,9 +118,9 @@
           </ul>
         </div>
         <div class="py-4 mx-0">
-          <h6 class="text-start fw-bold text-lg md:text-xl lg:text-2xl">
+          <h3 class="text-start fw-bold text-lg md:text-xl lg:text-2xl">
             What we do with your information
-          </h6>
+          </h3>
           <p class="">
             We use information to provide, analyze, administer, enhance, and
             personalize our services and marketing efforts, to process your
@@ -162,8 +162,8 @@
 
     <div class="row mx-0 py-3 text-cgreen">
       <div class="col-lg-10 offset-lg-1">
-        <div class="collection">
-          When do we send you marketing communications
+        <div class="collection"><h3>
+          When do we send you marketing communications</h3>
         </div>
         <p class="py-2 py-md-3">
           We will only send you marketing communications where there is a
@@ -201,7 +201,7 @@
     </div>
     <div class="row mx-0 py-3 text-cgreen">
       <div class="col-lg-10 offset-lg-1">
-        <div class="collection">Retention of Your Personal Data</div>
+        <div class="collection"><h3>Retention of Your Personal Data</h3></div>
         <p class="py-2 py-md-3">
           The Company will retain Your Personal Data only for as long as is
           necessary for the purposes set out in this Privacy Policy. We will
@@ -240,7 +240,7 @@
     </div>
     <div class="row mx-0 py-3 text-cgreen">
       <div class="col-lg-10 offset-lg-1">
-        <div class="collection">Information Security</div>
+        <div class="collection"><h2>Information Security</h2></div>
         <p class="py-2 py-md-3">
           The security of Your Personal Data is important to Us, but remember
           that no method of transmission over the Internet, or method of

@@ -11,7 +11,7 @@
       <div class="row mx-0 my-4">
         {#each Images1 as image1}
           <div class="col-md-4 my-2">
-            <div class="card border-white">
+            <div class="card border-whit">
               <img
                 src={image1.src}
                 class="card-img-top rounded h-[25rem] w-full"
@@ -29,7 +29,7 @@
       <div class="row mx-0 my-4">
         {#each Images2 as image2}
           <div class="col-md-4 my-2">
-            <div class="card border-white">
+            <div class="card border-whit">
               <img
                 src={image2.src}
                 class="card-img-top rounded h-[25rem] w-full"
@@ -47,7 +47,7 @@
       <div class="row mx-0 my-4">
         {#each Images3 as image3}
           <div class="col-md-4 my-2">
-            <div class="card border-white">
+            <div class="card border-whit">
               <img
                 src={image3.src}
                 class="card-img-top rounded h-[25rem] w-full"
@@ -88,12 +88,18 @@
 </div>
 
 <style>
-  .border-white {
-    border: 2px solid #f96b29;
+  .border-whit {
+    border: 2px solid #f9ffff;
     position: relative;
   }
 
-  .border-white::before {
+  .border-whit:hover {
+    border: 2px solid #f96b29;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .border-whit::before {
     content: "";
     position: absolute;
     top: -20px;

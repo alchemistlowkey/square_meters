@@ -21,7 +21,7 @@
   <div class="col-md-10 offset-md-1">
     <div class="mx-0 row">
       {#each BoxContent as boxcontent}
-        <div class="col-md-6 mb-3">
+        <div class="col-md-6 mb-3 cursor-pointer">
           <div
             class="about_define_box hover:text-[#f6fffd] hover:bg-[#f96b29] hover:border-[#0d493d] h-[25rem] md:h-[34rem] lg:h-[26rem]"
           >

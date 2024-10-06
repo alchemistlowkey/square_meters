@@ -18,7 +18,7 @@
   });
 
   export let title =
-    "Fitila Signature Epe | Prime Real Estate Investment in Lagos by Square Metres";
+    "Fitila Signature Epe | Prime Investment by Square Metres";
   export const productName = "Fitila Signature Epe";
   export const productPrice = "Affordable";
   export const productDescription =

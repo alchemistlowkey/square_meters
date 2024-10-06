@@ -25,10 +25,10 @@
     <div
       class="col-12 mx-auto px-0 text-[#F6FFFD] text-nowrap fw-light text-center text-[clamp(8px,2.5vw,20px)] pb-4"
     >
-      <h1>
+      <h3>
         {CardContent3} <br />
         {CardContent4}
-      </h1>
+      </h3>
       <slot></slot>
     </div>
   </div>

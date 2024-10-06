@@ -18,7 +18,7 @@
   });
 
   export let title =
-    "Real Estate Investments in Lagos | High ROI with Square Metres";
+    "High ROI Real Estate Investments in Lagos | Square Metres";
   export let InvestmentDescription =
     "Maximize returns with real estate investments in Lagos through Square Metres. High ROI opportunities in prime locations.";
 </script>

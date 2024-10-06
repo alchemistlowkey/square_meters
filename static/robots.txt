@@ -10,3 +10,5 @@ Allow: /investment
 Allow: /policy
 Allow: /product
 Allow: /blog
+
+Sitemap: https://squaremetres.ng/sitemap.xml

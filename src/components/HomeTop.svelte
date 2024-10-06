@@ -27,7 +27,7 @@
         <div
           class="w-100 p-3 fs-6 text-nowrap text-center text-lg-start text-[#F6FFFD]"
         >
-          <h1>Trusted by over 1000 individuals</h1>
+          <h2>Trusted by over 1000 individuals</h2>
         </div>
         <div class="w-100 pt-3">
           <div class="row mx-0 justify-content-lg-start justify-content-center">
@@ -64,12 +64,12 @@
         >
           <div class="row mx-0">
             <div class="col-11">
-              <h1
+              <h3
                 class="xl:text-2xl lg:text-xl md:text-xl sm:text-lg text-base text-left"
               >
                 Watch Onion Nigeria CEO Mordi Orchi, discuss working with Square
                 Metres
-              </h1>
+              </h3>
             </div>
             <div class="col-1 pl-0 pt-2 pt-md-4 cursor-pointer">
               <a

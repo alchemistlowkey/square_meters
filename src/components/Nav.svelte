@@ -118,7 +118,7 @@
                 dropheader="Our News"
                 droptext="In and around SquareMetres"
                 dropimg="images/news_icon.png"
-                droplink="/news"
+                droplink="/blog"
               />
   
               <NavDropCard

@@ -96,7 +96,7 @@
       <!-- Display remaining blog posts -->
       <div class="row">
         {#each blogPosts.slice(1) as post}
-          <div class="col-md-4">
+          <div class="col-md-6 col-lg-4 col-xxl-3 col-12">
             <div class="card mb-4 border-[#0D493D] hover:border-[#f96b29]">
               <img
                 src={post.image_url}

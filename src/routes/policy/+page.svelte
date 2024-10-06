@@ -18,7 +18,7 @@
   });
 
   export let title =
-    "Square Metres Real Estate Policies | Privacy, Terms, and Conditions";
+    "Square Metres Policies | Privacy, Terms & Conditions";
   export let PolicyDescription =
     "Read Square Metres' privacy policy, terms, and conditions, ensuring transparency in all real estate transactions and services.";
 </script>

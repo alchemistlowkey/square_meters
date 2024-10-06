@@ -163,7 +163,7 @@
               droptext="In and around SquareMetres"
               dropimg="images/news_icon.png"
               dropimgalt="News Icon"
-              droplink="/news"
+              droplink="/blog"
             />
 
             <NavDropCard
@@ -318,7 +318,7 @@
               droptext="In and around SquareMetres"
               dropimg="images/news_icon.png"
               dropimgalt="News Icon"
-              droplink="/news"
+              droplink="/blog"
             />
 
             <NavDropCard

@@ -18,7 +18,7 @@
   });
 
   export let title =
-    "Get in Touch with Square Metres | Leading Real Estate Developer in Lagos";
+    "Contact Square Metres | Top Real Estate Developer in Lagos";
   export let ContactDescription =
     "Contact Square Metres for real estate opportunities in Lagos. Our team is here to help with property inquiries and investments.";
 </script>

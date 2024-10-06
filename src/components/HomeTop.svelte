@@ -76,7 +76,6 @@
                 class="icon-link"
                 href="/"
                 on:click|preventDefault={openModal}
-                alt="youtube modal"
               >
                 <i class="bi bi-play-circle-fill md:text-6xl text-5xl"></i>
               </a>

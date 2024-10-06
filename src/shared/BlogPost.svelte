@@ -1,6 +1,15 @@
 <!-- src/shared/BlogPosts.svelte -->
 <script>
   import { onMount } from "svelte";
+  import {
+    RingLoader,
+    Jumper,
+    Moon,
+    Circle,
+    Circle2,
+    Circle3,
+    Chasing,
+  } from "svelte-loading-spinners";
 
   let blogPosts = [];
   let loading = true;
@@ -42,14 +51,22 @@
 </script>
 
 <div>
-  {#if loading}
+  <!-- {#if loading}
     <p class="text-center pt-5">
       <span
         class="spinner-border spinner-border-sm text-[#f96b29]"
         role="status"
         aria-hidden="true"
       ></span> Loading blog posts...
-    </p>
+    </p> -->
+  {#if loading}
+    <div class="container">
+      <div class="row mx-0">
+        <div class="col-6 col-sm-4 col-md-2 offset-3 offset-sm-4 offset-md-5">
+          <Circle2 size="200" color="#f96b29" unit="px" duration="1s" />
+        </div>
+      </div>
+    </div>
   {:else if error}
     <p class="text-red-500">Error: {error}</p>
   {:else if blogPosts.length === 0}

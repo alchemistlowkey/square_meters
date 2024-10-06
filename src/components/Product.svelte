@@ -15,6 +15,15 @@
 </Bg>
 
 <section id="projects">
+  <div class="container">
+    <div class="row mx-0">
+      <div>
+        <h1 class="text-4xl mt-5 text-center">
+          Our List of Products
+        </h1>
+      </div>
+    </div>
+  </div>
   <Img
     ProductImages={[
       {

@@ -6,6 +6,7 @@
 <section class="pt-[100px]">
   <div class="container fw-bold">
     <div class="row mx-0">
+      
       <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-nowrap">
         <CardText
           TextHeader2="Head Office"
@@ -15,9 +16,19 @@
       </div>
     </div>
     <div class="rounded-lg">
-      <img src="/images/address.png" class="p-3 rounded-lg" alt="map address" loading="lazy" />
+      <img
+        src="/images/address.png"
+        class="p-3 rounded-lg"
+        alt="map address"
+        loading="lazy"
+      />
     </div>
     <div class="row mx-0">
+      <div class="col-12 collection text-center md:text-xl lg:text-3xl text-lg py-6">
+        <h1>
+          You can reach us at
+        </h1>
+      </div>
       <div class="col-6 text-nowrap">
         <CardText
           TextHeader2="Email Us"

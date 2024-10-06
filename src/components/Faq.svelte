@@ -61,10 +61,10 @@
     <div class="row mx-0">
       <div class="col-12">
         <div class="text-center text-[#F96B29]">
-          <p class="fw-light">Testimonials</p>
-          <p class="fw-semibold text-base md:text-lg lg:text-xl">
+          <h2 class="fw-light">Testimonials</h2>
+          <h1 class="fw-semibold text-base md:text-lg lg:text-xl">
             What is said about us
-          </p>
+          </h1>
         </div>
       </div>
     </div>

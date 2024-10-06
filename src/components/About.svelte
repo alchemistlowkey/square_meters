@@ -90,8 +90,12 @@
 
 <section id="values" class="pt-3">
   <div class="container">
+    <div class="collection text-center md:text-xl lg:text-3xl text-lg">
+      <h1>
+        What Defines Us
+      </h1>
+    </div>
     <CardText
-      TextHeader="What Defines Us"
       TextContent={[
         {
           body: "Our values define the SquareMetres culture, who we are, and why we do what we do. Shaping our interaction with all stakeholders, customers, regulators, investors, partners and our host communities.",

@@ -74,7 +74,7 @@
                     >
                       {blogPosts[0].description}
                     </div>
-                    <p class="pt-5 font-light">
+                    <p class="pt-5 font-normal">
                       <em>{formatDate(blogPosts[0].date)}</em>
                     </p>
                   </div>
@@ -116,7 +116,7 @@
                     >Read more</a
                   >
                 </div>
-                <p class="pt-5 font-light"><em>{formatDate(post.date)}</em></p>
+                <p class="pt-5 font-normal"><em>{formatDate(post.date)}</em></p>
               </div>
             </div>
           </div>

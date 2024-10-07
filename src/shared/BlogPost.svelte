@@ -1,4 +1,3 @@
-<!-- src/shared/BlogPosts.svelte -->
 <script>
   import { onMount } from "svelte";
   import {
@@ -111,7 +110,7 @@
       </div>
 
       <!-- Display remaining blog posts -->
-      <div class="row">
+      <div class="row mx-0">
         {#each blogPosts.slice(1) as post}
           <div class="col-md-6 col-lg-4 col-xxl-3 col-12">
             <div class="card mb-4 border-[#0D493D] hover:border-[#f96b29]">

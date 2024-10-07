@@ -1,19 +1,64 @@
 <script>
   import HomeText from "../shared/HomeText.svelte";
   import HomeCarousel from "../shared/HomeCarousel.svelte";
+  import { onMount } from "svelte";
+  import {
+    RingLoader,
+    Jumper,
+    Moon,
+    Circle,
+    Circle2,
+    Circle3,
+    Chasing,
+  } from "svelte-loading-spinners";
+
+  let blogPosts = [];
+  let loading = true;
+  let error = null;
+  const DESCRIPTION_LENGTH = 100; // Limit to 100 characters (adjust as needed)
+
+  // Format date function
+  function formatDate(dateString) {
+    const options = { day: "2-digit", month: "short", year: "numeric" };
+    return new Date(dateString).toLocaleDateString("en-US", options);
+  }
+
+  // Truncate the description and add a "Read More" link
+  function truncateDescription(description, length) {
+    if (description.length > length) {
+      return description.slice(0, length) + "...";
+    }
+    return description;
+  }
+
+  // Fetch blog posts on component mount
+  onMount(async () => {
+    try {
+      const response = await fetch("/api/getBlogPosts");
+      if (!response.ok) {
+        throw new Error("Failed to fetch blog posts");
+      }
+      const data = await response.json();
+      blogPosts = data.posts.reverse(); // Adjust based on the structure of your response
+    } catch (err) {
+      error = err.message;
+    } finally {
+      loading = false;
+    }
+  });
 </script>
 
 <section class="md:text-2xl lg:text-4xl text-base">
   <div class="bg-green py-5 py-md-2 mt-md-5 mt-3">
-    <div class="py-5 w-[90%] mx-auto">
+    <div class="py-5 w-[95%] mx-auto">
       <div class="">
         <div class="mx-0 row pb-md-3">
-          <div class="">
-            <div class="seamingly text-white text-start">News & Insight</div>
+          <div class="text-center">
+            <div class="seamingly text-white">News & Insight</div>
             <div
               class="seamingly-text text-white md:text-base lg:text-lg text-sm my-2"
-              >A summary of industry news and updates in and around Square
-              Metres
+            >
+              A summary of industry news and updates in and around Square Metres
             </div>
           </div>
         </div>
@@ -22,73 +67,66 @@
         <div
           class="row mx-0 justify-content-center md:text-base lg:text-lg text-sm"
         >
-          <div class="col-md-4">
-            <a href="/" class="text-decoration-none">
-              <div class="news_card">
-                <img src="images/new1.jpeg" class="rounded" alt="news" loading="lazy" />
-                <div class="head">Team Values</div>
-                <div class="body">
-                  Poised to be one of the most organised setllement in its host
-                  community, Epe, which is also the fastest-selling and most
-                  sought....
-                </div>
-                <div class="date d-flex">
-                  <div class="col-5 pt-2 text-white">APR 21 2023</div>
-                  <div class="col arrow-up text-white">
-                    <img src="images/up-arrow.png" alt="news" loading="lazy" />
+          <div>
+            {#if loading}
+              <div class="container">
+                <div class="row mx-0">
+                  <div
+                    class="col-6 col-sm-4 col-md-2 offset-3 offset-sm-4 offset-md-5"
+                  >
+                    <Circle2
+                      size="200"
+                      color="#f96b29"
+                      unit="px"
+                      duration="1s"
+                    />
                   </div>
                 </div>
               </div>
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a href="/" class="text-decoration-none">
-              <div class="news_card">
-                <img src="images/news2.jpeg" class="rounded" alt="news" loading="lazy" />
-                <div class="head">Team Values</div>
-                <div class="body">
-                  Poised to be one of the most organised setllement in its host
-                  community, Epe, which is also the fastest-selling and most
-                  sought....
-                </div>
-                <div class="date d-flex">
-                  <div class="col-5 pt-2 text-white">APR 21 2023</div>
-                  <div class="col arrow-up text-white">
-                    <img src="images/up-arrow.png" alt="news" loading="lazy" />
-                  </div>
+            {:else if error}
+              <p class="text-red-500">Error: {error}</p>
+            {:else if blogPosts.length === 0}
+              <p class="text-center my-5">No blog posts available.</p>
+            {:else}
+              <div class="container">
+                <div class="row mx-0">
+                  {#each blogPosts.slice(0, 3) as post}
+                    <!-- Changed to slice(0, 3) -->
+                    <div class="col-md-4 col-12">
+                      <div
+                        class="card mb-4 border-[#0D493D] hover:border-[#f96b29]"
+                      >
+                        <img
+                          src={post.image_url}
+                          alt={post.title}
+                          class="card-img-top w-100 h-[300px] rounded-2"
+                          loading="lazy"
+                        />
+                        <div class="card-body">
+                          <h2
+                            class="text-[#0D493D] font-bold text-xl py-2 title-ellipsis"
+                          >
+                            {post.title}
+                          </h2>
+                          <div class="">
+                            {truncateDescription(
+                              post.description,
+                              DESCRIPTION_LENGTH
+                            )}
+                            <a href={`/blog/${post.id}`} class="text-[#f96b29]"
+                              >Read more</a
+                            >
+                          </div>
+                          <p class="pt-5 font-normal">
+                            <em>{formatDate(post.date)}</em>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  {/each}
                 </div>
               </div>
-            </a>
-          </div>
-
-          <div class="col-md-4">
-            <a href="/" class="text-decoration-none">
-              <div class="news_card">
-                <img src="images/news3.jpeg" class="rounded" alt="news" loading="lazy" />
-                <div class="head">Team Values</div>
-                <div class="body">
-                  Poised to be one of the most organised setllement in its host
-                  community, Epe, which is also the fastest-selling and most
-                  sought....
-                </div>
-                <div class="date d-flex">
-                  <div class="col-5 pt-2 text-white">APR 21 2023</div>
-                  <div class="col arrow-up text-white">
-                    <img src="images/up-arrow.png" alt="news" />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 mt-5">
-            <a
-              href="/"
-              class="text-decoration-none text-white w-100 news-read-more btn border-[#0D493D] hover:border-[#F96B29] hover:bg-[#0D493D]"
-            >
-              Read More
-            </a>
+            {/if}
           </div>
         </div>
       </div>
@@ -125,4 +163,22 @@
 </section>
 
 <style>
+  .card {
+    transition: transform 0.2s; /* Add a smooth transition effect */
+  }
+
+  .card:hover {
+    transform: scale(1.02); /* Scale up on hover */
+  }
+
+  .card-img-top {
+    object-fit: cover; /* Ensures images fill the space without distortion */
+  }
+
+  .title-ellipsis {
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflowed content */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed content */
+    max-width: 100%; /* Ensures the title uses the full width */
+  }
 </style>

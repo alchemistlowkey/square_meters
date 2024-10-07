@@ -28,9 +28,11 @@ export async function POST({ request }) {
   const blogDescription = formData.get('blogDescription');
   const blogDate = formData.get('blogDate');
   const blogImage = formData.get('blogImage');
+  const blogAuthor = formData.get('blogAuthor');
+
 
   // Check if all fields are provided
-  if (!blogTitle || !blogDescription || !blogDate || !blogImage) {
+  if (!blogTitle || !blogDescription || !blogDate || !blogImage || !blogAuthor) {
     return new Response(JSON.stringify({ success: false, message: 'Missing fields' }), {
       status: 400,
     });
@@ -47,9 +49,9 @@ export async function POST({ request }) {
 
     // Insert the blog post data into the database
     const result = await pool.query(
-      `INSERT INTO blog_posts (title, description, date, image_url) 
-      VALUES ($1, $2, $3, $4) RETURNING *`,
-      [blogTitle, blogDescription, blogDate, `/uploads/${imageName}`]
+      `INSERT INTO blog_posts (title, description, date, image_url, author) 
+      VALUES ($1, $2, $3, $4, $5) RETURNING *`,
+      [blogTitle, blogDescription, blogDate, `/uploads/${imageName}`, blogAuthor]
     );
 
     // Return the blog post data on success

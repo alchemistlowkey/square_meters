@@ -34,6 +34,7 @@ export async function load({ params }) {
         date: post.date,
         image_url: post.image_url,
         description: post.description,
+        author: post.author,
       },
     };
   } catch (error) {

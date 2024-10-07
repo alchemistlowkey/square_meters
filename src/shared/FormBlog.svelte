@@ -5,6 +5,7 @@
     blogTitle: "",
     blogDescription: "",
     blogDate: "", // This will be auto-generated
+    blogAuthor: "", // New field for the author's name
     blogImage: null,
     success: false,
     missingFields: false,
@@ -27,11 +28,12 @@
   }
 
   async function handleSubmit(event) {
-      event.preventDefault();
+    event.preventDefault();
 
     const formData = new FormData(event.target);
     const blogTitle = formData.get("blogTitle");
     const blogDescription = formData.get("blogDescription");
+    const blogAuthor = formData.get("blogAuthor");
     const blogDate = formState.blogDate;
     const blogImage = formState.blogImage;
 
@@ -41,7 +43,7 @@
     formState.incorrectFileType = false;
     formState.submissionError = false;
 
-    if (!blogTitle || !blogDescription || !blogImage) {
+    if (!blogTitle || !blogDescription || !blogAuthor || !blogImage) {
       formState.missingFields = true;
       return;
     }
@@ -77,6 +79,7 @@
     const today = new Date();
     formState.blogDate = today.toISOString().split("T")[0]; // Format as YYYY-MM-DD
   });
+
 </script>
 
 <form on:submit={handleSubmit}>
@@ -91,6 +94,7 @@
         required
       />
     </div>
+
     <div class="col-12">
       <label for="blogDescription">Blog Description</label>
       <textarea
@@ -99,6 +103,17 @@
         class="w-full border-1 bg-[#F6FFFD] border-[#0D493D] rounded p-2 my-2"
         required
       ></textarea>
+    </div>
+
+    <!-- New field for Author -->
+    <div class="col-12">
+      <label for="blogAuthor">Author</label>
+      <input
+        type="text"
+        name="blogAuthor"
+        id="blogAuthor"
+        class="w-full border-1 bg-[#F6FFFD] border-[#0D493D] rounded p-2 my-2"
+      />
     </div>
 
     <!-- Blog date is automatically set and not editable -->

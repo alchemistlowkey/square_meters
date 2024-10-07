@@ -25,13 +25,17 @@
             loading="lazy"
           />
         </div>
-        <div class="col-md-6 p-5">
-          <h1 class="text-[#0D493D] font-bold text-3xl py-4">
+        <div class="col-md-6 p-5 pt-0">
+          <h1 class="text-[#0D493D] font-bold text-3xl">
             {data.post.title}
           </h1>
-          <pre class="py-4 text-balance">{data.post.description}</pre>
-          <p class="py-5">
-            <em class="font-light"
+          <div class="formatted-content py-5 text-balance">
+            {@html data.post.description}
+          </div>
+          
+          <p class="py-4 font-medium">Author: <span class="italic font-semibold">{data.post.author}</span></p>
+          <p class="py-4">
+            <em class="font-normal"
               >{new Date(data.post.date).toLocaleDateString("en-US", {
                 day: "2-digit",
                 month: "short",
@@ -48,7 +52,7 @@
 {/if}
 
 <style>
-  pre {
-    font-family: "Poppins";
+  .formatted-content {
+    white-space: pre-wrap; /* Preserves new lines and spaces */
   }
 </style>

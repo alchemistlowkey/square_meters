@@ -1,6 +1,7 @@
 <script>
   import InputField from "./InputField.svelte";
   import RadioGroup from "./RadioGroup.svelte";
+  import { warning, failure, toastsuccess } from "../lib/js/toast-theme"; // Import custom toast functions
 
   export let formHeader = "";
   export let formText = "";
@@ -42,6 +43,7 @@
     const email = formData.get("email");
     if (!email) {
       formState.missing = true;
+      warning("Please fill in all fields."); // Custom warning toast
       loading = false;
       return;
     }
@@ -49,6 +51,7 @@
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       formState.incorrect = true;
+      failure("Please enter a valid email address."); // Custom failure toast
       loading = false;
       return;
     }
@@ -65,6 +68,7 @@
       if (response.ok) {
         formState.success = true;
         formState.fullName = newFullName;
+        toastsuccess(`Thank you ${formState.fullName} for your submission. We will get back to you shortly.`); // Custom success toast
 
         // Reset form fields after successful submission
         formState.email = "";
@@ -73,15 +77,18 @@
         formState.amount = "";
         formState.preferredSize = "300sqm";
         formState.message = "";
+        event.target.reset(); // Reset the form after successful submission
       } else {
         const result = await response.json();
         if (result.exists) {
           formState.exists = true;
+          warning("It looks like you already submitted this form."); // Custom warning toast
         } else {
           throw new Error("Submission failed");
         }
       }
     } catch (error) {
+      failure("An error occurred during submission. Please try again later."); // Custom failure toast
       console.error("Form submission error:", error);
     } finally {
       loading = false; // Always stop loading, whether success or error
@@ -96,26 +103,6 @@
       <p class="text-uppercase fw-normal fs-6 mt-3">{formText}</p>
     </div>
     <form on:submit|preventDefault={handleSubmit}>
-      <!-- Display messages based on form submission state -->
-      {#if formState.success}
-        <div class="alert alert-success mt-3 text-[#F96B29]">
-          Thank you {formState.fullName} for your submission. We will get back to
-          you shortly.
-        </div>
-      {/if}
-
-      {#if formState.incorrect}
-        <div class="alert alert-danger mt-3 text-danger">
-          Please enter a valid email address.
-        </div>
-      {/if}
-
-      {#if formState.exists}
-        <div class="alert alert-warning mt-3 text-warning">
-          It looks like you already submitted this form.
-        </div>
-      {/if}
-
       <div class="row mx-0 my-4">
         {#if fullName}
           <InputField
@@ -207,15 +194,14 @@
           >
             {#if loading}
               <!-- Bootstrap spinner for loading -->
-               <span class="text-[#0d493d]">
-
-                 <span
-                 class="spinner-border spinner-border-sm text-[#f96b29] mr-2"
-                 role="status"
-                 aria-hidden="true"
-                 ></span>
-                 Submitting...
-                </span>
+              <span class="text-[#0d493d]">
+                <span
+                  class="spinner-border spinner-border-sm text-[#f96b29] mr-2"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+                Submitting...
+              </span>
             {:else}
               Submit
             {/if}

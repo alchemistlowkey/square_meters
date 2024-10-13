@@ -1,4 +1,6 @@
 <script>
+  import { warning, failure, toastsuccess } from "../lib/js/toast-theme";
+
   let formState = {
     firstName: "",
     lastName: "",
@@ -30,12 +32,14 @@
 
     if (!firstName || !lastName || !email || !phoneNumber) {
       formState.missingFields = true;
+      warning("Please fill in all fields."); // Show a warning toast
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       formState.incorrectEmail = true;
+      warning("Please enter a valid email address."); // Show a warning toast for invalid email
       return;
     }
 
@@ -53,21 +57,26 @@
         formState.success = true;
         formState.firstName = firstName;
         formState.lastName = lastName;
+        toastsuccess(`Thank you, ${firstName} ${lastName}, for registering as an agent!`); // Show success toast
         event.target.reset(); // Reset the form fields after successful submission
       } else if (result.exists) {
         formState.exists = true;
         formState.firstName = firstName;
         formState.lastName = lastName;
+        warning(`Dear ${firstName} ${lastName}, you are already registered as an agent.`); // Show exists toast
       } else {
         formState.submissionError = true;
+        failure("An error occurred during submission. Please try again."); // Show error toast
       }
     } catch (error) {
       formState.submissionError = true;
+      failure("Submission failed. Please check your network and try again."); // Show error toast for network issue
       console.error("Form submission error:", error);
     } finally {
       formState.loading = false; // Set loading to false when submission completes
     }
   }
+
 </script>
 
 <form on:submit={handleSubmit}>
@@ -123,8 +132,7 @@
         disabled={formState.loading}
       >
         {#if formState.loading}
-          <!-- Spinner using Bootstrap's spinner-border -->
-          <span class="bg-[#f6fffd] shadow-lg text-[#0d493d]">
+          <span class="text-[#0d493d]">
             <span
               class="spinner-border spinner-border-sm text-[#f96b29] mr-2"
               role="status"
@@ -139,36 +147,10 @@
     </div>
   </div>
 
+  <!-- Optional: Display success message in the form -->
   {#if formState.success}
     <div class="text-[#0D493D] fw-semibold text-center mt-2">
       <p>Thank you, {formState.firstName} {formState.lastName}!</p>
-    </div>
-  {/if}
-
-  {#if formState.missingFields}
-    <div class="text-[#D9534F] fw-semibold text-center mt-2">
-      <p>Please fill in all fields.</p>
-    </div>
-  {/if}
-
-  {#if formState.incorrectEmail}
-    <div class="text-[#D9534F] fw-semibold text-center mt-2">
-      <p>Please enter a valid email address.</p>
-    </div>
-  {/if}
-
-  {#if formState.exists}
-    <div class="text-[#0D493D] fw-semibold text-center mt-2">
-      <p>
-        Dear {formState.firstName}
-        {formState.lastName}, you are already registered as an agent.
-      </p>
-    </div>
-  {/if}
-
-  {#if formState.submissionError}
-    <div class="text-[#D9534F] fw-semibold text-center mt-2">
-      <p>An error occurred during submission. Please try again later.</p>
     </div>
   {/if}
 </form>

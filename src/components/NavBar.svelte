@@ -107,7 +107,7 @@
             <NavDropCard
               dropheader="Land"
               droptext="Fitila Signatures"
-              dropimg="images/land_icon.png"
+              dropimg="images/land.svg"
               dropimgalt="Land Icon"
               droplink="/fitila-signature"
             />

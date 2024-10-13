@@ -1,9 +1,9 @@
 <script>
-    export let dropheader = "";
-    export let droptext = "";
-    export let dropimg = "";
-    export let droplink = "";
-    export let dropimgalt = "";
+  export let dropheader = "";
+  export let droptext = "";
+  export let dropimg = "";
+  export let droplink = "";
+  export let dropimgalt = "";
 </script>
 
 <a href={droplink} class="block px-2 py-2 hover:bg-gray-100">

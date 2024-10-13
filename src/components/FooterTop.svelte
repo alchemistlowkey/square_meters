@@ -1,6 +1,6 @@
 <script>
   import FooterText from "../shared/FooterText.svelte";
-  import { enhance } from "$app/forms";
+  import { warning, failure, toastsuccess } from "../lib/js/toast-theme"; // Import custom toast functions
 
   let formState = {
     success: false,
@@ -26,6 +26,7 @@
 
     if (!email) {
       formState.missing = true;
+      warning("Please input an email address."); // Custom warning toast
       loading = false;
       return;
     }
@@ -33,6 +34,7 @@
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       formState.incorrect = true;
+      failure("The email address is not valid."); // Custom failure toast
       loading = false;
       return;
     }
@@ -45,10 +47,12 @@
 
       if (response.ok) {
         formState.success = true;
+        toastsuccess("Thank you for subscribing to our newsletter."); // Custom success toast
       } else {
         const result = await response.json();
         if (result.exists) {
           formState.exists = true;
+          warning("We already have you as a subscriber."); // Custom warning toast
         } else {
           throw new Error("Submission failed");
         }
@@ -147,7 +151,6 @@
     <div class="col-12 col-md-4 xl:mt-[126px] lg:mt-20 md:mt-[90px] mt-[8px] pb-4">
       <div class="md:text-base lg:text-lg text-sm">
         <form on:submit|preventDefault={handleSubmit}>
-          
           <div class="input-group">
             <input
               type="email"
@@ -161,42 +164,20 @@
               type="submit"
               class="btn bg-[#0d493d] hover:bg-[#F96B29] lg:text-base md:text-sm text-xs text-[#f6fffd]"
               disabled={loading}
-              >
+            >
               {#if loading}
-              <span class="text-[#0d493d]">
-                <span class="spinner-grow spinner-grow-sm text-[#f96b29] mr-2"
-                  role="status"
-                  aria-hidden="true"
-                ></span>
-                Signing up...
-              </span>
-                {:else}
+                <span class="text-[#0d493d]">
+                  <span class="spinner-grow spinner-grow-sm text-[#f96b29] mr-2"
+                    role="status"
+                    aria-hidden="true"
+                  ></span>
+                  Signing up...
+                </span>
+              {:else}
                 SIGN UP
               {/if}
-              </button
-            >
+            </button>
           </div>
-          <!-- Display messages based on form submission state -->
-          {#if formState.success}
-            <div>
-              <p class="success mt-2 lg:text-base md:text-sm text-xs text-[#F96B29]">
-                Thank you for subscribing to our newsletter.
-              </p>
-            </div>
-          {/if}
-          {#if formState.missing}
-            <p class="error text-warning">Please input an email address.</p>
-          {/if}
-          {#if formState.incorrect}
-            <p class="error text-warning fw-bolder">
-              The email address is not valid.
-            </p>
-          {/if}
-          {#if formState.exists}
-            <p class="error text-[#F96B29]">
-              We already have you as a subscriber.
-            </p>
-          {/if}
         </form>
       </div>
     </div>

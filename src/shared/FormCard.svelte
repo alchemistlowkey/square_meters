@@ -132,7 +132,7 @@
         disabled={formState.loading}
       >
         {#if formState.loading}
-          <span class="text-[#0d493d]">
+          <span class="text-[#f96b29]">
             <span
               class="spinner-border spinner-border-sm text-[#f96b29] mr-2"
               role="status"

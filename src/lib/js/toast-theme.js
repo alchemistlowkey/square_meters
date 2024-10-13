@@ -7,7 +7,6 @@ export const toastsuccess = (m) =>
       "--toastColor": "#F6FFFD",
       "--toastBarBackground": "#F96B29",
       "--toastBorderRadius": "6px",
-      "--toastWidth": "25rem",
     },
   });
 
@@ -18,7 +17,6 @@ export const warning = (m) =>
       "--toastColor": "#F96B29",
       "--toastBarBackground": "#F6FFFD",
       "--toastBorderRadius": "6px",
-      "--toastWidth": "25rem",
     },
   });
 

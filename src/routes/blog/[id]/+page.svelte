@@ -14,7 +14,7 @@
 </section>
 
 {#if data.post}
-  <section class="pt-[200px]">
+  <section class="pt-[200px] w-[94%] mx-auto">
     <div class="container">
       <div class="row mx-0">
         <div class="col-md-6">
@@ -25,7 +25,7 @@
             loading="lazy"
           />
         </div>
-        <div class="col-md-6 p-5 pt-0">
+        <div class="col-md-6 p-3 pt-0">
           <h1 class="text-[#0D493D] font-bold text-3xl">
             {data.post.title}
           </h1>

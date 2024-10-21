@@ -13,7 +13,8 @@
   let blogPosts = [];
   let loading = true;
   let error = null;
-  const DESCRIPTION_LENGTH = 80; // Limit to 100 characters (adjust as needed)
+  const DESCRIPTION_LENGTH = 80; // Limit to 80 characters
+  const LATEST_DESCRIPTION_LENGTH = 400; // Limit to 200 characters
 
   // Function to fetch blog posts
   async function fetchBlogPosts() {
@@ -23,7 +24,7 @@
         throw new Error("Failed to fetch blog posts");
       }
       const data = await response.json();
-      blogPosts = data.posts.reverse(); // Adjust based on the structure of your response
+      blogPosts = data.posts.reverse();
     } catch (err) {
       error = err.message;
     } finally {
@@ -39,6 +40,12 @@
 
   // Truncate the description and add a "Read More" link
   function truncateDescription(description, length) {
+    if (description.length > length) {
+      return description.slice(0, length) + "...";
+    }
+    return description;
+  }
+  function latestTruncateDescription(description, length) {
     if (description.length > length) {
       return description.slice(0, length) + "...";
     }
@@ -84,12 +91,13 @@
                     <h2 class="text-[#0D493D] font-bold text-3xl py-4">
                       {blogPosts[0].title}
                     </h2>
-                    <div
-                      class="py-2 text-balance"
-                      style="white-space: pre-wrap;"
-                    >
-                      {blogPosts[0].description}
+                    <div class="">
+                      {latestTruncateDescription(blogPosts[0].description, LATEST_DESCRIPTION_LENGTH)}
+                      <a href={`/blog/${blogPosts[0].id}`} class="text-[#f96b29]"
+                        >Read more</a
+                      >
                     </div>
+                    
                     <p class="pt-5 font-normal">
                       <em>{formatDate(blogPosts[0].date)}</em>
                     </p>

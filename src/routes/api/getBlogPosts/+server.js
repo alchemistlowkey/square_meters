@@ -14,7 +14,7 @@ const pool = new Pool({
 
 export async function GET() {
   try {
-    const result = await pool.query('SELECT * FROM blog_posts ORDER BY created_at DESC'); // Adjust based on your table structure
+    const result = await pool.query('SELECT * FROM blog_posts ORDER BY id'); // Adjust based on your table structure
     return new Response(JSON.stringify({ posts: result.rows }), {
       status: 200,
       headers: {

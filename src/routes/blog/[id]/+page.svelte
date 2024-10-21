@@ -21,7 +21,7 @@
           <img
             src={data.post.image_url}
             alt={data.post.title}
-            class="w-full h-auto rounded-4"
+            class="w-full h-auto rounded"
             loading="lazy"
           />
         </div>

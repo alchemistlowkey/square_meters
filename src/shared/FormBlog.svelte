@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { warning, failure, toastsuccess } from "../lib/js/toast-theme";
 
   let formState = {
     blogTitle: "",
@@ -34,7 +35,6 @@
     const blogTitle = formData.get("blogTitle");
     const blogDescription = formData.get("blogDescription");
     const blogAuthor = formData.get("blogAuthor");
-    const blogDate = formState.blogDate;
     const blogImage = formState.blogImage;
 
     // Reset error states
@@ -45,6 +45,7 @@
 
     if (!blogTitle || !blogDescription || !blogAuthor || !blogImage) {
       formState.missingFields = true;
+      warning("Please fill in all fields."); // Custom warning toast
       return;
     }
 
@@ -61,13 +62,16 @@
 
       if (response.ok) {
         formState.success = true;
+        toastsuccess("Blog post successfully created!"); // Custom success toast
         event.target.reset(); // Reset form on success
         formState.blogImage = null; // Clear image preview
       } else {
         formState.submissionError = true;
+        failure("An error occurred during submission. Please try again later."); // Custom warning toast
       }
     } catch (error) {
       formState.submissionError = true;
+      failure("An error occurred during submission. Please try again later."); // Custom failure toast
       console.error("Form submission error:", error);
     } finally {
       formState.loading = false;

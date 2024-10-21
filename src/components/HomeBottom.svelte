@@ -1,6 +1,7 @@
 <script>
   import HomeText from "../shared/HomeText.svelte";
   import HomeCarousel from "../shared/HomeCarousel.svelte";
+  import InfiniteCarousel from "../shared/InfiniteCarousel.svelte";
   import { onMount } from "svelte";
   import {
     RingLoader,
@@ -139,8 +140,24 @@
     TextHeader="You name it, we’ve figured it out"
     TextContent="Making your real estate investment decisions wise is our business."
   ></HomeText>
+</section>
 
-  <HomeCarousel
+<section>
+  <InfiniteCarousel
+  Logos={[
+    { word: "Get better returns for your money" },
+      { word: "Diversified long-term investing" },
+      { word: "Secure my financial future" },
+      { word: "Grow my wealth steadily" },
+      { word: "Invest in global markets" },
+      { word: "Achieve my financial goals" },
+      { word: "Build a strong investment portfolio" },
+      { word: "Plan for retirement" },
+      { word: "Invest for my kids" },
+  ]}
+  />
+
+  <!-- <HomeCarousel
     Texts1={[
       { word: "Get better returns for your money" },
       { word: "Diversified long-term investing" },
@@ -159,7 +176,7 @@
       { word: "Invest for my kids" },
       { word: "Build a strong investment portfolio" },
     ]}
-  ></HomeCarousel>
+  ></HomeCarousel> -->
 </section>
 
 <style>

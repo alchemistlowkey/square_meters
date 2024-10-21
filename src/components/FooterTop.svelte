@@ -97,7 +97,7 @@
         FooterHead="Helpful Links"
         FooterItem={[
           { href: "/policy", text: "Terms of service" },
-          { href: "/policy", text: "Policy service" },
+          { href: "/product", text: "Products" },
           { href: "/faq", text: "FAQ’s" },
         ]}
       />

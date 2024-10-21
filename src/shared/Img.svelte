@@ -54,26 +54,26 @@
 {/if}
 
 {#if ProductImages}
-  <div class="container mt-4">
-    <div class="mt-4">
-      <div class="w-100">
-        <div class="mx-0 row">
-          {#each ProductImages as ProductImage}
-            <div class="col-md-6">
-              <a href={ProductImage.href}>
+  <div class="container">
+    <div class="w-100">
+      <div class="mx-0 row">
+        {#each ProductImages as ProductImage}
+          <div class="col-md-6 my-5">
+            <a href={ProductImage.href}>
+              <div class="card border-[#0D493D] hover:border-[#f96b29]">
                 <div
-                  class="bg text-[#F6FFFD] my-1 hover:text-[#0d493d] fw-semibold rounded-xl pb-10 md:text-2xl lg:text-3xl text-base"
+                  class="card-body bg text-[#F6FFFD] my-1 fw-semibold rounded-xl pb-10 md:text-2xl lg:text-3xl text-base"
                   style="background-image: url('/images/{ProductImage.src}')"
                 >
                   <span
-                    class="text-sm md:text-base lg:text-lg pr-3 hover:text-[#0d493d] text-[#F96B29]"
+                    class="text-sm md:text-base lg:text-lg pr-3 text-[#F96B29]"
                     >{ProductImage.span}</span
                   >{ProductImage.text}
                 </div>
-              </a>
-            </div>
-          {/each}
-        </div>
+              </div>
+            </a>
+          </div>
+        {/each}
       </div>
     </div>
   </div>
@@ -88,5 +88,12 @@
     flex-wrap: wrap;
     align-content: flex-end;
     justify-content: center;
+  }
+  .card {
+    transition: transform 0.2s; /* Add a smooth transition effect */
+  }
+
+  .card:hover {
+    transform: scale(1.02); /* Scale up on hover */
   }
 </style>

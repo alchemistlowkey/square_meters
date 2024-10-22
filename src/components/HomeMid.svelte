@@ -30,22 +30,22 @@
   <BoxCard
     HomeBoxes={[
       {
-        hover: "clienthover.png",
-        src: "client.png",
+        hover: "clienthover.svg",
+        src: "client.svg",
         alt: "client",
         head: "You First",
         body: "Your view shapes our vision. focused on driving an experience that prioritizes you above all else.",
       },
       {
-        hover: "quality.png",
-        src: "business.png",
+        hover: "quality.svg",
+        src: "business.svg",
         alt: "business",
         head: "Quality & Timely Delivery",
         body: "Providing timely delivery is our promise, and every brick reflects our commitment to excellence.",
       },
       {
         hover: "thumb.png",
-        src: "innovation.png",
+        src: "innovation.svg",
         alt: "innovation",
         head: "Innovation & Leadership",
         body: "Creating spaces where diversity thrives. Staying ahead, shaping a future that inspires",

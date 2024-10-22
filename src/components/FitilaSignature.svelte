@@ -57,7 +57,7 @@
           TextContent={[
             { head: "Title", body: "Freehold" },
             { head: "Size", body: "300sqm & 500sqm" },
-            { head: "Location", body: "Ketu, Epe" },
+            { head: "Location", body: "Igbonla, Epe" },
           ]}
         ></FitilaText>
 
@@ -230,7 +230,7 @@
             ProjectDetails={[
               { head: "Type", body: "Mixed Development" },
               { head: "Size", body: "10 acres" },
-              { head: "Location", body: "Ketu, Epe" },
+              { head: "Location", body: "Igbonla, Epe" },
               { head: "Status", body: "In progress" },
               { head: "Initial Deposit", body: "N500,000.00" },
               { head: "Timeline", body: "18 months" },

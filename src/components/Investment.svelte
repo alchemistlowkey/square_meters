@@ -170,7 +170,7 @@
             ></Button>
           </div>
           <div class="col-12 fw-semibold p-0 my-2">
-            <a href="/faq" target="_blank" class="text-[#F96B29] hover:text-[#F96B29] w-full p-3 rounded border-o hover:bg-[#0d493d] btn"
+            <a data-sveltekit-preload-code href="/faq" target="_blank" class="text-[#F96B29] hover:text-[#F96B29] w-full p-3 rounded border-o hover:bg-[#0d493d] btn"
               >Ask a question?</a
             >
           </div>

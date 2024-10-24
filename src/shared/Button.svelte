@@ -39,7 +39,7 @@
 </script>
 
 <div class="fs-4">
-  <a
+  <a data-sveltekit-preload-code
     class="btn bg-[#f96b29] hover:bg-[#0d493d] text-[#f6fffd] hover:text-[#f6fffd] border-[#0d493d] hover:border-[#f96b29] py-3 px-10 md:text-base lg:text-lg text-sm fw-medium"
     role="button"
     class:fullLength

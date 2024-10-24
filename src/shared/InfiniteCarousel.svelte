@@ -51,7 +51,7 @@
   .logos:after {
       position: absolute;
       top: 0;
-      width: 25dvh;
+      width: 15dvh;
       height: 100%;
       content: "";
       z-index: 2;

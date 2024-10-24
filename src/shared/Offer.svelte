@@ -21,10 +21,10 @@
       <div
         class="col-lg-3 col-md-12 col-12 mt-md-7 mt-lg-4 mt-sm-4 mt-xl-4 mt-3"
       >
-        <a href="/investment">
+        <a href="https://manage.kmail-lists.com/subscriptions/subscribe?a=TzRVJd&g=VCLQje">
           <button
-            class="btn w-52 text-[#F6FFFD] bg-[#f96b29] hover:bg-[#0d493d] border-[#0d493d] hover:border-[#f96b29] hover:text-[#f96b29] fw-medium md:text-base lg:text-lg text-sm rounded-3"
-            >Our Offering</button
+            class="btn h-10 text-[#F6FFFD] bg-[#f96b29] hover:bg-[#0d493d] border-[#F9FFFD] hover:border-[#f96b29] hover:text-[#f96b29] fw-medium text-sm rounded-3"
+            >Sign up for our newsletter</button
           >
         </a>
       </div>

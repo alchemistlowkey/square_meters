@@ -71,13 +71,13 @@
                 Metres
               </h3>
             </div>
-            <div class="col-1 pl-0 pt-2 pt-md-4 cursor-pointer">
+            <div data-sveltekit-preload-code class="col-1 pl-0 pt-2 pt-md-4 cursor-pointer">
               <a
                 class="icon-link"
                 href="/"
                 on:click|preventDefault={openModal}
               >
-                <i class="bi bi-play-circle-fill md:text-6xl text-5xl"></i>
+                <i data-sveltekit-preload-data class="bi bi-play-circle-fill md:text-6xl text-5xl"></i>
               </a>
             </div>
           </div>

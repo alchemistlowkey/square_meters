@@ -7,7 +7,7 @@
 <ul class="list-unstyled mt-3">
   {#each FooterItem as linkItem}
     <li class="list-unstyled pt-2">
-      <a href={linkItem.href}>
+      <a data-sveltekit-preload-code href={linkItem.href}>
         <div class="container">
           <div class="row align-items-center">
             {#if linkItem.icon}

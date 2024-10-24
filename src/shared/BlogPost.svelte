@@ -85,7 +85,7 @@
           <div class="card p-0 m-0 border-[#0D493D] hover:border-[#f96b29]">
             <div class="row mx-0">
               <div class="col-md-6">
-                <a href={`/blog/${blogPosts[0].id}`}>
+                <a data-sveltekit-preload-code href={`/blog/${blogPosts[0].id}`}>
                   <div class="card-body p-md-2 p-lg-5">
                     <h1 class="font-medium">Latest Article</h1>
                     <h2 class="text-[#0D493D] font-bold text-3xl py-4">
@@ -136,7 +136,7 @@
                 </h2>
                 <div class="">
                   {truncateDescription(post.description, DESCRIPTION_LENGTH)}
-                  <a href={`/blog/${post.id}`} class="text-[#f96b29]"
+                  <a data-sveltekit-preload-code href={`/blog/${post.id}`} class="text-[#f96b29]"
                     >Read more</a
                   >
                 </div>

@@ -6,6 +6,7 @@
   export let DropContent3 = "";
   export let DropBtn = "";
   export let DropLink = "";
+
 </script>
 
 <div class="col-md-10 offset-md-1 py-1">
@@ -65,7 +66,7 @@
           <a class="dropdown-item text-[#f6fffd] text-wrap text-start p-2"
             >{DropContent2}
             {#if DropLink}
-              <a class="text-[#f6fffd] text-center my-3" href={DropLink.href}>
+              <a data-sveltekit-preload-code class="text-[#f6fffd] text-center my-3" href={DropLink.href}>
                 <button
                   class="btn btn-[#f96b29] bg-[#f96b29] text-[#f6fffd] text-center"
                 >
@@ -83,9 +84,11 @@
         {/if}
         {#if DropBtn}
           <div class="text-start">
-            <button class="btn mt-3 bg-[#f96b29] w-[200px] text-w"
+            <a data-sveltekit-preload-code href="https://form.jotform.com/242946612167562">
+              <button class="btn mt-3 bg-[#f96b29] w-[200px] text-w"
               >{DropBtn}</button
-            >
+              >
+            </a>
           </div>
         {/if}
       </div>

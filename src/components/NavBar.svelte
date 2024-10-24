@@ -147,7 +147,7 @@
             </svg>
           </button>
           <!-- Dropdown Menu -->
-          <div
+          <div data-sveltekit-preload-code
             class={`dropdown-menu absolute left-0 w-[350px] bg-white border-[#f96b29] rounded-md shadow-lg ${isCompanyDropdownOpen ? "block" : "hidden"}`}
           >
             <NavDropCard
@@ -195,7 +195,7 @@
 
       <!-- Center Logo -->
       <div class="flex items-center">
-        <a href="/" class="text-xl">
+        <a data-sveltekit-preload-code href="/" class="text-xl">
           <img
             src="/images/logo_desktop.png"
             class="logo_desktop w-20"
@@ -207,7 +207,7 @@
 
       <!-- Right Section: Hidden on mobile -->
       <div class="hidden md:flex items-center">
-        <a href="/agency" class="hover:text-[#f96b29] mr-4">Agency</a>
+        <a data-sveltekit-preload-code href="/agency" class="hover:text-[#f96b29] mr-4">Agency</a>
         <button
           class="px-4 btn btn-sm py-2 bg-[#0D493D] text-[#F6FFFD] rounded hover:bg-[#f96b29] hover:border-[#0d493d]"
         >
@@ -265,7 +265,7 @@
           </svg>
         </button>
         {#if isMobileProductsDropdownOpen}
-          <div class="pl-4">
+          <div data-sveltekit-preload-code class="pl-4">
             <NavDropCard
               dropheader="Land"
               droptext="Fitila Signatures"
@@ -304,7 +304,7 @@
           </svg>
         </button>
         {#if isMobileCompanyDropdownOpen}
-          <div class="pl-4">
+          <div data-sveltekit-preload-code class="pl-4">
             <NavDropCard
               dropheader="About Us"
               droptext="Our Team and Who we are"
@@ -347,7 +347,7 @@
           </div>
         {/if}
 
-        <a
+        <a data-sveltekit-preload-code
           href="/agency"
           class="block px-0 py-2 rounded-md text-base font-medium text-[#0D493D] hover:text-[#13705D] hover:bg-gray-100"
           >Agency</a

@@ -71,8 +71,16 @@
 <div
   class="container-fluid text-green p-2 p-xl-5 p-lg-3 md:text-base lg:text-lg text-sm xl:w-[100%] lg:w-[94%] w-[95%] mx-auto"
 >
-  <div class="row mx-0">
-    <div class="col-md-3 col-4 mt-5">
+  <div class="row mx-0 flex justify-between">
+    <div class="col-md-2 col-12 mt-md-5">
+      <img
+        src="/images/sqm-footer-logo.png"
+        class="w-[240px] mx-auto my-auto"
+        alt="logo"
+        loading="lazy"
+      />
+    </div>
+    <div class="col-md-2 col-4 mt-md-5">
       <FooterText
         FooterHead="What We Do"
         FooterItem={[
@@ -82,7 +90,7 @@
         ]}
       />
     </div>
-    <div class="col-md-2 col-lg-3 col-4 mt-5">
+    <div class="col-md-2 col-4 mt-md-5">
       <FooterText
         FooterHead="Who We Are"
         FooterItem={[
@@ -92,7 +100,7 @@
         ]}
       />
     </div>
-    <div class="col-md-3 col-4 mt-5">
+    <div class="col-md-2 col-4 mt-md-5">
       <FooterText
         FooterHead="Helpful Links"
         FooterItem={[
@@ -102,7 +110,7 @@
         ]}
       />
     </div>
-    <div class="col-md-4 col-lg-3 col-sm-12 col-12 mt-5">
+    <div class="col-md-4 col-sm-12 col-12 mt-5">
       <FooterText
         FooterHead="Contact Us"
         FooterItem={[
@@ -130,7 +138,7 @@
 <div
   class="container-fluid bg-[#F6FFFD] rounded-[20px] md:text-base lg:text-lg text-sm w-[90%] mx-auto"
 >
-  <div class="row mx-0">
+  <!-- <div class="row mx-0">
     <div class="col-6 offset-3 mx-auto col-md-3 lg:mt-3 md:mt-10">
       <img
         src="/images/sqm-footer-logo.png"
@@ -181,17 +189,11 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 
 <style>
   .text-green {
     color: #0d493d;
-  }
-
-  @media (max-width: 767px) {
-    .text-center1 {
-      text-align: center;
-    }
   }
 </style>

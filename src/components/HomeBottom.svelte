@@ -64,7 +64,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-lg-5 mt-3">
+      <div class="mt-lg-5 mt-3 container">
         <div
           class="row mx-0 justify-content-center md:text-base lg:text-lg text-sm"
         >
@@ -114,7 +114,7 @@
                               post.description,
                               DESCRIPTION_LENGTH
                             )}
-                            <a href={`/blog/${post.id}`} class="text-[#f96b29]"
+                            <a data-sveltekit-preload-code href={`/blog/${post.id}`} class="text-[#f96b29]"
                               >Read more</a
                             >
                           </div>
@@ -129,6 +129,13 @@
               </div>
             {/if}
           </div>
+        </div>
+      </div>
+      <div>
+        <div class="text-center">
+          <a href="/blog" class="btn btn-md w-[320px] bg-[#f96b29] text-[#f9fffd] fw-medium rounded-3 hover:border-[#f96b29] border-[#F9FFFD] hover:bg-[#0d493d] hover:text-[#f96b29]"
+            >View all Blog posts</a
+          >
         </div>
       </div>
     </div>

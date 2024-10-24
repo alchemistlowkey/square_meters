@@ -45,7 +45,7 @@
   }
 </script>
 
-<Bg headerBG="fitila_signatures1.jpg">
+<Bg headerBG="fitila_signatures.jpg">
   <PageHead
     SpanContent="Fitila Signature "
     CardContent2="tells the story of your hardwork through Real Estate"
@@ -96,12 +96,20 @@
   </div>
 </section>
 
-<section>
+<section class="w-[90%] mx-auto">
   <div class="container">
     <div class="row mx-0">
       <div class="col">
         <img
-          src="images/fitila_signatures.jpg"
+          src="images/fitila_2.jpg"
+          alt="fitila signatures"
+          class="rounded"
+          loading="lazy"
+        />
+      </div>
+      <div class="col">
+        <img
+          src="images/fitila_1.jpg"
           alt="fitila signatures"
           class="rounded"
           loading="lazy"
@@ -150,19 +158,19 @@
     <div class="row mx-0 py-5">
       <Carousel
         Images1={[
+          { src: "images/fitila_2.jpg", alt: "fitila signatures" },
           { src: "images/fitila_signatures1.jpg", alt: "fitila signatures" },
-          { src: "images/fitila_signatures2.jpg", alt: "fitila signatures" },
-          { src: "images/fitila_signatures3.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_1.jpg", alt: "fitila signatures" },
         ]}
         Images2={[
-          { src: "images/fitila_signatures3.jpg", alt: "fitila signatures" },
-          { src: "images/fitila_signatures1.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_1.jpg", alt: "fitila signatures" },
           { src: "images/fitila_signatures2.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_2.jpg", alt: "fitila signatures" },
         ]}
         Images3={[
-          { src: "images/fitila_signatures2.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_2.jpg", alt: "fitila signatures" },
           { src: "images/fitila_signatures3.jpg", alt: "fitila signatures" },
-          { src: "images/fitila_signatures1.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_1.jpg", alt: "fitila signatures" },
         ]}
       ></Carousel>
     </div>

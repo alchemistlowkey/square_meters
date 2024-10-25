@@ -2,31 +2,9 @@
   import VideoModal from "../shared/VideoModal.svelte";
   import Bg from "../shared/Bg.svelte";
   import HomeHead from "../shared/HomeHead.svelte";
-  import { fade, slide, scale, blur, fly, crossfade } from "svelte/transition";
-  import {
-    circOut,
-    cubicOut,
-    quadIn,
-    quartIn,
-    quartOut,
-    quintOut,
-  } from "svelte/easing";
 
   let showModal = false;
   let videoUrl = "https://www.youtube.com/embed/mKAkIrad4vA"; // YouTube embed URL
-
-  let images = [
-    "images/fitila_1.jpg",
-    "images/fitila_2.jpg",
-    "images/fitila_3.jpg",
-  ];
-
-  let activeIndex = 0;
-
-  setInterval(() => {
-    let nextIndex = activeIndex + 1;
-    activeIndex = nextIndex >= images.length ? 0 : nextIndex;
-  }, 3000);
 
   function openModal() {
     showModal = true;
@@ -37,25 +15,7 @@
   }
 </script>
 
-{#each images as image, index}
-  {#if index === activeIndex}
-    <section>
-      <div
-        class="flex justify-center pb-[50px] mx-0"
-        data-sveltekit-preload-code
-      >
-        <img
-          src={image}
-          alt="fitila product"
-          class="mx-0 w-full max-h-[850px]"
-          loading="lazy"
-        />
-      </div>
-    </section>
-  {/if}
-{/each}
-
-<!-- <Bg headerBG="hpb.jpeg">
+<Bg headerBG="hpb.jpeg">
   <HomeHead
     CardContent="Wholesome Real Estate and Investment Solutions"
     CardContent3="Square Metres helps you do real estate better than anyone else"
@@ -112,7 +72,11 @@
               </h3>
             </div>
             <div class="col-1 pl-0 pt-2 pt-md-4 cursor-pointer">
-              <a class="icon-link" href="/" on:click|preventDefault={openModal}>
+              <a
+                class="icon-link"
+                href="/"
+                on:click|preventDefault={openModal}
+              >
                 <i class="bi bi-play-circle-fill md:text-6xl text-5xl"></i>
               </a>
             </div>
@@ -124,6 +88,6 @@
 </Bg>
 
 <VideoModal isOpen={showModal} {videoUrl} close={closeModal} />
- -->
+
 <style>
 </style>

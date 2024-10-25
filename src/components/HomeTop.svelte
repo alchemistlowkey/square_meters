@@ -47,7 +47,7 @@
         <img
           src={image}
           alt="fitila product"
-          class="mx-0 w-full"
+          class="mx-0 w-full max-h-[850px]"
           loading="lazy"
         />
       </div>

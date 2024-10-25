@@ -31,13 +31,14 @@
 </script>
 
 <Bg headerBG="hpb.jpeg">
-  <div class="flex justify-center mt-[100px] pb-[50px] mx-0">
+  <div class="flex justify-center mt-[100px] pb-[50px] mx-0" data-sveltekit-preload-code>
     {#each images as image, index}
       {#if index === activeIndex}
         <img
           src={image}
           alt="fitila product"
           class="rounded mx-0 w-3/5 border-2 border-[#F96B29]"
+          loading="lazy"
         />
       {/if}
     {/each}

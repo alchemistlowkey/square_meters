@@ -3,7 +3,14 @@
   import Bg from "../shared/Bg.svelte";
   import HomeHead from "../shared/HomeHead.svelte";
   import { fade, slide, scale, blur, fly, crossfade } from "svelte/transition";
-  import { circOut, cubicOut, quadIn, quartIn, quartOut, quintOut } from "svelte/easing";
+  import {
+    circOut,
+    cubicOut,
+    quadIn,
+    quartIn,
+    quartOut,
+    quintOut,
+  } from "svelte/easing";
 
   let showModal = false;
   let videoUrl = "https://www.youtube.com/embed/mKAkIrad4vA"; // YouTube embed URL
@@ -30,20 +37,23 @@
   }
 </script>
 
-<Bg headerBG="hpb.jpeg">
-  <div class="flex justify-center mt-[100px] pb-[50px] mx-0" data-sveltekit-preload-code>
-    {#each images as image, index}
-      {#if index === activeIndex}
+{#each images as image, index}
+  {#if index === activeIndex}
+    <section>
+      <div
+        class="flex justify-center pb-[50px] mx-0"
+        data-sveltekit-preload-code
+      >
         <img
           src={image}
           alt="fitila product"
-          class="rounded mx-0 w-3/5 border-2 border-[#F96B29]"
+          class="mx-0 w-full"
           loading="lazy"
         />
-      {/if}
-    {/each}
-  </div>
-</Bg>
+      </div>
+    </section>
+  {/if}
+{/each}
 
 <!-- <Bg headerBG="hpb.jpeg">
   <HomeHead

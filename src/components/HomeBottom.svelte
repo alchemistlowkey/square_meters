@@ -16,7 +16,7 @@
   let blogPosts = [];
   let loading = true;
   let error = null;
-  const DESCRIPTION_LENGTH = 100; // Limit to 100 characters (adjust as needed)
+  const DESCRIPTION_LENGTH = 120; // Limit to 100 characters (adjust as needed)
 
   // Format date function
   function formatDate(dateString) {
@@ -95,12 +95,12 @@
                     <!-- Changed to slice(0, 3) -->
                     <div class="col-md-4 col-12">
                       <div
-                        class="card mb-4 border-[#0D493D] hover:border-[#f96b29]"
+                        class="card mb-4 max-h-[650px] border-[#0D493D] hover:border-[#f96b29]"
                       >
                         <img
                           src={post.image_url}
                           alt={post.title}
-                          class="card-img-top w-100 h-[300px] rounded-2"
+                          class="card-img-top w-100 h-[350px] rounded-2"
                           loading="lazy"
                         />
                         <div class="card-body">

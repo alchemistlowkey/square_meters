@@ -159,13 +159,13 @@
       <Carousel
         Images1={[
           { src: "images/fitila_2.jpg", alt: "fitila signatures" },
-          { src: "images/fitila_signatures1.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_3.jpg", alt: "fitila signatures" },
           { src: "images/fitila_1.jpg", alt: "fitila signatures" },
         ]}
         Images2={[
-          { src: "images/fitila_1.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_signatures1.jpg", alt: "fitila signatures" },
           { src: "images/fitila_signatures2.jpg", alt: "fitila signatures" },
-          { src: "images/fitila_2.jpg", alt: "fitila signatures" },
+          { src: "images/fitila_signatures3.jpg", alt: "fitila signatures" },
         ]}
         Images3={[
           { src: "images/fitila_2.jpg", alt: "fitila signatures" },

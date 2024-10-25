@@ -133,7 +133,7 @@
       </div>
       <div>
         <div class="text-center">
-          <a href="/blog" class="btn btn-md w-[320px] bg-[#f96b29] text-[#f9fffd] fw-medium rounded-3 hover:border-[#f96b29] border-[#F9FFFD] hover:bg-[#0d493d] hover:text-[#f96b29]"
+          <a href="/blog" class="btn btn-md w-[300px] bg-[#f96b29] text-[#f9fffd] fw-medium rounded-3 hover:border-[#f96b29] border-[#F9FFFD] hover:bg-[#0d493d] hover:text-[#f96b29]"
             >View all Blog posts</a
           >
         </div>
